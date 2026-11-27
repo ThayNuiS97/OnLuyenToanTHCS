@@ -140,7 +140,7 @@
       </div>
     </section>
 
-    <!-- BƯỚC 2: MÀN HÌNH CHỌN HỌC KÌ (HỌC KÌ I, HỌC KÌ II, ÔN TẬP CUỐI NĂM) -->
+    <!-- BƯỚC 2: MÀN HÌNH CHỌN HỌC KÌ (ÔN TẬP CUỐI KÌ I, ÔN TẬP CUỐI KÌ II, ÔN TẬP CUỐI NĂM) -->
     <section id="termSelectionView" class="hidden bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-2xs">
       <div class="flex items-center justify-between mb-4">
         <button type="button" onclick="backToGradeSelection()"
@@ -153,31 +153,31 @@
       <div class="text-center max-w-2xl mx-auto mb-7">
         <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold mb-2">Bước 2 / 2</span>
         <h2 id="termHeading" class="text-xl sm:text-2xl font-extrabold text-slate-900 mb-2">Chọn giai đoạn ôn luyện</h2>
-        <p class="text-xs sm:text-sm text-slate-500">Chọn Học kì I, Học kì II hoặc Ôn tập cuối năm để vào trang làm bài kiểm tra.</p>
+        <p class="text-xs sm:text-sm text-slate-500">Ôn tập từng chương (10 câu • 15 phút) hoặc chọn Ôn tập cuối kì / Ôn tập cuối năm / Tổng hợp (30 câu • 45 phút, tỉ lệ 8:1:1).</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
         <button type="button" onclick="selectTerm('HK1')"
           class="group text-left p-6 rounded-2xl border-2 border-slate-200 hover:border-indigo-500 bg-white hover:bg-indigo-50/40 hover:shadow-md transition cursor-pointer">
-          <div class="w-11 h-11 rounded-xl bg-indigo-100 text-indigo-700 font-extrabold text-sm flex items-center justify-center mb-3">HK I</div>
-          <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-indigo-700">Học kì I</h3>
-          <p class="text-xs text-slate-500 mt-1.5">Ôn luyện kiến thức trọng tâm và các chương thuộc Học kì I.</p>
-          <span class="mt-4 inline-block text-xs font-bold text-indigo-600">Vào làm bài HK I →</span>
+          <div class="w-11 h-11 rounded-xl bg-indigo-100 text-indigo-700 font-extrabold text-sm flex items-center justify-center mb-3">CK I</div>
+          <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-indigo-700">Ôn tập cuối kì I</h3>
+          <p class="text-xs text-slate-500 mt-1.5">Luyện từng chương (10 câu • 15 phút) hoặc đề cuối kì I (30 câu • 45 phút, tỉ lệ 8:1:1).</p>
+          <span class="mt-4 inline-block text-xs font-bold text-indigo-600">Vào ôn tập cuối kì I →</span>
         </button>
 
         <button type="button" onclick="selectTerm('HK2')"
           class="group text-left p-6 rounded-2xl border-2 border-slate-200 hover:border-sky-500 bg-white hover:bg-sky-50/40 hover:shadow-md transition cursor-pointer">
-          <div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-700 font-extrabold text-sm flex items-center justify-center mb-3">HK II</div>
-          <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-sky-700">Học kì II</h3>
-          <p class="text-xs text-slate-500 mt-1.5">Ôn luyện kiến thức trọng tâm và các chương thuộc Học kì II.</p>
-          <span class="mt-4 inline-block text-xs font-bold text-sky-600">Vào làm bài HK II →</span>
+          <div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-700 font-extrabold text-sm flex items-center justify-center mb-3">CK II</div>
+          <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-sky-700">Ôn tập cuối kì II</h3>
+          <p class="text-xs text-slate-500 mt-1.5">Luyện từng chương (10 câu • 15 phút) hoặc đề cuối kì II (30 câu • 45 phút, tỉ lệ 8:1:1).</p>
+          <span class="mt-4 inline-block text-xs font-bold text-sky-600">Vào ôn tập cuối kì II →</span>
         </button>
 
         <button type="button" onclick="selectTerm('FINAL')"
           class="group text-left p-6 rounded-2xl border-2 border-slate-200 hover:border-emerald-500 bg-white hover:bg-emerald-50/40 hover:shadow-md transition cursor-pointer">
           <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-700 font-extrabold text-sm flex items-center justify-center mb-3">CN</div>
           <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-emerald-700">Ôn tập cuối năm</h3>
-          <p class="text-xs text-slate-500 mt-1.5">Tổng hợp toàn bộ kiến thức cả năm học (Học kì I & Học kì II).</p>
+          <p class="text-xs text-slate-500 mt-1.5">Đề ôn tập cuối năm 30 câu • 45 phút (tỉ lệ 8:1:1) hoặc luyện từng chương 10 câu • 15 phút.</p>
           <span class="mt-4 inline-block text-xs font-bold text-emerald-600">Vào ôn tập cuối năm →</span>
         </button>
       </div>
@@ -188,11 +188,11 @@
       <!-- Thanh chọn chủ đề theo chương SGK Toán -->
       <section class="bg-white border border-slate-200 rounded-2xl p-3 sm:p-4 shadow-2xs mb-5 flex flex-wrap items-center justify-between gap-3">
         <div class="flex flex-wrap items-center gap-2">
-          <span id="activeScopeBadge" class="px-3 py-1.5 rounded-xl bg-indigo-600 text-white text-xs font-extrabold">Toán 8 • Học kì I</span>
-          <label for="topicFilter" class="text-xs sm:text-sm font-bold text-slate-700">Chủ đề chương học:</label>
+          <span id="activeScopeBadge" class="px-3 py-1.5 rounded-xl bg-indigo-600 text-white text-xs font-extrabold">Toán 8 • Ôn tập cuối kì I</span>
+          <label for="topicFilter" class="text-xs sm:text-sm font-bold text-slate-700">Chế độ / Chủ đề:</label>
           <select id="topicFilter" onchange="setTopic(this.value)"
             class="border border-slate-300 rounded-xl px-3 py-2 text-xs sm:text-sm font-medium bg-white">
-            <option value="ALL">Ôn tập tổng hợp</option>
+            <option value="ALL">Ôn tập tổng hợp (30 câu • 45 phút)</option>
           </select>
         </div>
 
@@ -209,11 +209,10 @@
         <aside class="space-y-4">
           <!-- Bảng điều hướng số câu -->
           <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-2xs">
-            <div class="flex items-center justify-between mb-1">
+            <div class="flex items-center justify-between mb-2">
               <span class="text-sm font-bold text-slate-800">Bảng điều hướng câu hỏi</span>
               <span id="navProgress" class="text-xs font-bold text-slate-500">Đúng 0/10</span>
             </div>
-            <p id="navHintText" class="text-xs text-slate-500 mb-3">Bấm <strong>Bắt đầu làm bài</strong> ở đầu trang để mở khóa đề thi.</p>
             <div id="navGrid" class="grid grid-cols-5 gap-2"></div>
           </div>
         </aside>
@@ -252,15 +251,15 @@
             <label class="block text-xs font-bold text-slate-700 mb-1">Dạng câu hỏi</label>
             <select id="fMode" onchange="updateFormFields()" class="w-full border border-slate-300 rounded-xl px-3 py-2 text-sm">
               <option value="mcq">1. Trắc nghiệm (A, B, C, D)</option>
-              <option value="tf">2. Tích đúng sai (4 ý a, b, c, d)</option>
+              <option value="tf">2. Lý thuyết đúng sai (4 ý a, b, c, d)</option>
             </select>
           </div>
           <div id="fDifficultyWrap">
-            <label class="block text-xs font-bold text-slate-700 mb-1">Mức độ (Trắc nghiệm)</label>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Loại câu hỏi (Tỉ lệ 8:1:1)</label>
             <select id="fDifficulty" class="w-full border border-slate-300 rounded-xl px-3 py-2 text-sm">
-              <option value="medium">Trung bình (7/10)</option>
-              <option value="hard">Khá (1/10)</option>
-              <option value="application">Bài toán vận dụng (1/10)</option>
+              <option value="medium">Trắc nghiệm kiến thức (80% • 8/10)</option>
+              <option value="application">Bài toán thực tế trắc nghiệm (10% • 1/10)</option>
+              <option value="hard">Trắc nghiệm nâng cao / vận dụng (bổ sung)</option>
             </select>
           </div>
           <div>
@@ -332,6 +331,24 @@
         <button type="button" onclick="closeModal('manageModal')" class="text-slate-500 hover:text-slate-800 font-bold text-lg px-2 cursor-pointer">✕</button>
       </div>
 
+      <!-- Khối sao chép sẵn bộ đề JSON chuẩn (không bị lỗi khi copy) -->
+      <div class="mb-4 p-3.5 rounded-xl bg-sky-50 border border-sky-200 flex flex-wrap items-center justify-between gap-2">
+        <div>
+          <div class="text-xs sm:text-sm font-extrabold text-sky-950">Bộ đề JSON mẫu chuẩn (Toán 8 — HK1 & HK2)</div>
+          <div class="text-xs text-sky-800">Mỗi chương chuẩn 30–50 câu (80% trắc nghiệm, 10% bài toán thực tế trắc nghiệm, 10% lý thuyết đúng/sai).</div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button type="button" onclick="copyPresetJson('toan8_all')"
+            class="px-3 py-1.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white text-xs font-bold cursor-pointer">
+            Sao chép JSON Toán 8 mẫu
+          </button>
+          <button type="button" onclick="loadPresetJsonToEditor('toan8_all')"
+            class="px-3 py-1.5 rounded-xl bg-white hover:bg-sky-100 text-sky-900 border border-sky-300 text-xs font-bold cursor-pointer">
+            Đưa vào ô soạn thảo
+          </button>
+        </div>
+      </div>
+
       <div id="manageList" class="space-y-2 mb-4 max-h-60 overflow-y-auto pr-1"></div>
 
       <div class="border-t border-slate-200 pt-4">
@@ -340,8 +357,8 @@
         <div class="flex flex-wrap gap-2 mt-3">
           <button type="button" onclick="appendJsonData()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold cursor-pointer">Nối thêm từ JSON (giữ đề cũ)</button>
           <button type="button" onclick="importJsonData()" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold cursor-pointer">Thay thế toàn bộ bằng JSON</button>
-          <button type="button" onclick="copyJsonBank()" class="px-4 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold cursor-pointer">Sao chép JSON</button>
-          <button type="button" onclick="resetDefaultQuestions()" class="px-4 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold cursor-pointer">Khôi phục bộ mẫu</button>
+          <button type="button" onclick="copyJsonBank()" class="px-4 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold cursor-pointer">Sao chép JSON trong ô</button>
+          <button type="button" onclick="resetDefaultQuestions()" class="px-4 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold cursor-pointer">Khôi phục ngân hàng chuẩn (30–50 câu/chương)</button>
         </div>
       </div>
     </div>
@@ -382,14 +399,14 @@
     const COMPREHENSIVE_TIMER_SECONDS = 45 * 60;
 
     const DIFFICULTY_LABELS = {
-      medium: "Trung bình",
-      hard: "Khá",
-      application: "Bài toán vận dụng"
+      medium: "Trắc nghiệm",
+      hard: "Trắc nghiệm",
+      application: "Bài toán thực tế"
     };
 
     const TERM_LABELS = {
-      HK1: "Học kì I",
-      HK2: "Học kì II",
+      HK1: "Ôn tập cuối kì I",
+      HK2: "Ôn tập cuối kì II",
       FINAL: "Ôn tập cuối năm"
     };
 
@@ -459,8 +476,57 @@
       }
     };
 
-    const DEFAULT_QUESTIONS = [
-      // LỚP 6 - HK1
+    const CHAPTER_BANK_TARGETS = {
+      6: {
+        "Chương I — Tập hợp các số tự nhiên": 40,
+        "Chương II — Tính chia hết trong tập hợp các số tự nhiên": 40,
+        "Chương III — Số nguyên": 40,
+        "Chương IV — Một số hình phẳng trong thực tiễn": 30,
+        "Chương V — Tính đối xứng của hình phẳng": 30,
+        "Chương VI — Phân số": 40,
+        "Chương VII — Số thập phân": 35,
+        "Chương VIII — Những hình học cơ bản": 35,
+        "Chương IX — Dữ liệu và xác suất thực nghiệm": 30
+      },
+      7: {
+        "Chương I — Số hữu tỉ": 40,
+        "Chương II — Số thực": 35,
+        "Chương III — Góc và đường thẳng song song": 40,
+        "Chương IV — Tam giác bằng nhau": 40,
+        "Chương V — Thu thập và biểu diễn dữ liệu": 30,
+        "Chương VI — Tỉ lệ thức và đại lượng tỉ lệ": 40,
+        "Chương VII — Biểu thức đại số và đa thức một biến": 45,
+        "Chương VIII — Làm quen với biến cố và xác suất": 30,
+        "Chương IX — Quan hệ giữa các yếu tố trong một tam giác": 35,
+        "Chương X — Một số hình khối trong thực tiễn": 30
+      },
+      8: {
+        "Chương I — Đa thức": 50,
+        "Chương II — Hằng đẳng thức đáng nhớ và ứng dụng": 50,
+        "Chương III — Tứ giác": 40,
+        "Chương IV — Định lí Thalès": 40,
+        "Chương V — Dữ liệu và biểu đồ": 30,
+        "Chương VI — Phân thức đại số": 45,
+        "Chương VII — Phương trình bậc nhất và hàm số bậc nhất": 45,
+        "Chương VIII — Mở đầu về tính xác suất của biến cố": 30,
+        "Chương IX — Tam giác đồng dạng": 40,
+        "Chương X — Một số hình khối trong thực tiễn": 30
+      },
+      9: {
+        "Chương I — Phương trình và hệ hai phương trình bậc nhất hai ẩn": 40,
+        "Chương II — Phương trình và bất phương trình bậc nhất một ẩn": 35,
+        "Chương III — Căn bậc hai và căn bậc ba": 45,
+        "Chương IV — Hệ thức lượng trong tam giác vuông": 40,
+        "Chương V — Đường tròn": 40,
+        "Chương VI — Hàm số y = ax^2 (a ≠ 0). Phương trình bậc hai một ẩn": 50,
+        "Chương VII — Tần số và tần số tương đối": 30,
+        "Chương VIII — Xác suất của biến cố trong một số mô hình đơn giản": 30,
+        "Chương IX — Đường tròn ngoại tiếp và đường tròn nội tiếp": 35,
+        "Chương X — Một số hình khối trong thực tiễn": 30
+      }
+    };
+
+    const SEED_QUESTIONS = [
       {
         id: "g6_hk1_mcq_1",
         grade: 6,
@@ -480,7 +546,7 @@
         term: "HK1",
         mode: "tf",
         topic: "Chương III — Số nguyên",
-        prompt: "Xét tính đúng/sai của các khẳng định sau về tập hợp số nguyên $\\mathbb{Z}$:",
+        prompt: "Xét tính đúng/sai của các khẳng định lý thuyết sau về tập hợp số nguyên $\\mathbb{Z}$:",
         hint: "Nhớ quy tắc cộng, trừ và nhân hai số nguyên cùng dấu, khác dấu.",
         statements: [
           { text: "$(-5) + (-3) = -8$", answer: true },
@@ -490,7 +556,6 @@
         ],
         explanation: "Ý a, d đúng. Ý b sai vì tích hai số nguyên âm là số nguyên dương ($8$). Ý c sai vì $0$ không phải số nguyên dương cũng không phải số nguyên âm."
       },
-      // LỚP 6 - HK2
       {
         id: "g6_hk2_mcq_1",
         grade: 6,
@@ -510,7 +575,7 @@
         term: "HK2",
         mode: "tf",
         topic: "Chương VIII — Những hình học cơ bản",
-        prompt: "Xét tính đúng/sai của các khẳng định hình học sau:",
+        prompt: "Xét tính đúng/sai của các khẳng định lý thuyết hình học sau:",
         hint: "Nhớ định nghĩa trung điểm của đoạn thẳng và số đo góc bẹt.",
         statements: [
           { text: "Góc bẹt có số đo bằng $180^\\circ$.", answer: true },
@@ -520,7 +585,6 @@
         ],
         explanation: "Ý a, b, d đúng. Ý c sai vì góc nhọn có số đo lớn hơn $0^\\circ$ và nhỏ hơn $90^\\circ$."
       },
-      // LỚP 7 - HK1
       {
         id: "g7_hk1_mcq_1",
         grade: 7,
@@ -540,7 +604,7 @@
         term: "HK1",
         mode: "tf",
         topic: "Chương III — Góc và đường thẳng song song",
-        prompt: "Xét tính đúng/sai của các khẳng định sau về góc và đường thẳng song song:",
+        prompt: "Xét tính đúng/sai của các khẳng định lý thuyết sau về góc và đường thẳng song song:",
         hint: "Nhớ tính chất hai góc đối đỉnh, hai góc kề bù và dấu hiệu nhận biết hai đường thẳng song song.",
         statements: [
           { text: "Hai góc đối đỉnh thì bằng nhau.", answer: true },
@@ -550,7 +614,6 @@
         ],
         explanation: "Ý a, b, d đúng. Ý c sai vì hai đường thẳng phân biệt cùng vuông góc với đường thẳng thứ ba thì song song với nhau."
       },
-      // LỚP 7 - HK2
       {
         id: "g7_hk2_mcq_1",
         grade: 7,
@@ -570,7 +633,7 @@
         term: "HK2",
         mode: "tf",
         topic: "Chương IX — Quan hệ giữa các yếu tố trong một tam giác",
-        prompt: "Xét tính đúng/sai của các khẳng định về bất đẳng thức tam giác:",
+        prompt: "Xét tính đúng/sai của các khẳng định lý thuyết về bất đẳng thức tam giác và đường đồng quy:",
         hint: "Trong một tam giác, độ dài một cạnh luôn nhỏ hơn tổng và lớn hơn hiệu độ dài hai cạnh còn lại.",
         statements: [
           { text: "Bộ ba độ dài $3\\text{ cm}, 4\\text{ cm}, 5\\text{ cm}$ lập thành một tam giác.", answer: true },
@@ -580,7 +643,6 @@
         ],
         explanation: "Ý a, c đúng. Ý b sai vì $2 + 3 = 5 < 6$. Ý d sai vì trọng tâm là giao điểm ba đường trung tuyến."
       },
-      // LỚP 8 - HK1
       {
         id: "g8_hk1_mcq_1",
         grade: 8,
@@ -625,7 +687,7 @@
         grade: 8,
         term: "HK1",
         mode: "mcq",
-        difficulty: "hard",
+        difficulty: "medium",
         topic: "Chương II — Hằng đẳng thức đáng nhớ và ứng dụng",
         prompt: "Giá trị của biểu thức $P = x^2 - 4x + 7$ tại $x = 102$ là:",
         hint: "Viết $x^2 - 4x + 7 = (x^2 - 4x + 4) + 3 = (x - 2)^2 + 3$ để tính nhẩm nhanh.",
@@ -634,7 +696,7 @@
         explanation: "$P = (x - 2)^2 + 3 = (102 - 2)^2 + 3 = 100^2 + 3 = 10003$."
       },
       {
-        id: "g8_hk1_mcq_5",
+        id: "g8_hk1_app_1",
         grade: 8,
         term: "HK1",
         mode: "mcq",
@@ -652,7 +714,7 @@
         term: "HK1",
         mode: "tf",
         topic: "Chương II — Hằng đẳng thức đáng nhớ và ứng dụng",
-        prompt: "Xét tính đúng/sai của các đẳng thức sau với mọi số thực $a, b$:",
+        prompt: "Xét tính đúng/sai của các khẳng định lý thuyết sau với mọi số thực $a, b$:",
         hint: "Kiểm tra hệ số và dấu của từng hạng tử khi khai triển.",
         statements: [
           { text: "$(a - b)^2 = a^2 - 2ab + b^2$", answer: true },
@@ -668,7 +730,7 @@
         term: "HK1",
         mode: "tf",
         topic: "Chương III — Tứ giác",
-        prompt: "Xét tính đúng/sai của các tính chất hình học sau:",
+        prompt: "Xét tính đúng/sai của các khẳng định lý thuyết hình học sau:",
         hint: "Nhớ lại dấu hiệu nhận biết hình bình hành, hình chữ nhật, hình thoi và hình vuông.",
         statements: [
           { text: "Hình chữ nhật có hai đường chéo bằng nhau.", answer: true },
@@ -678,7 +740,6 @@
         ],
         explanation: "Ý a, b, d đúng. Ý c sai vì hai đường chéo hình bình hành chỉ cắt nhau tại trung điểm mỗi đường."
       },
-      // LỚP 8 - HK2
       {
         id: "g8_hk2_mcq_1",
         grade: 8,
@@ -706,17 +767,22 @@
         explanation: "$2x - 6 = 0 \\Leftrightarrow 2x = 6 \\Leftrightarrow x = 3$."
       },
       {
-        id: "g8_hk2_mcq_3",
+        id: "g8_hk2_app_1",
         grade: 8,
         term: "HK2",
         mode: "mcq",
         difficulty: "application",
         topic: "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
-        prompt: "Một xe máy đi từ $A$ đến $B$ với vận tốc $40\\text{ km/h}$, lúc về đi với vận tốc $30\\text{ km/h}$ nên thời gian về nhiều hơn thời gian đi là $30$ phút. Quãng đường $AB$ dài:",
-        hint: "Đổi $30\\text{ phút} = \\dfrac{1}{2}\\text{ giờ}$, lập phương trình $\\dfrac{x}{30} - \\dfrac{x}{40} = \\dfrac{1}{2}$.",
-        options: ["$60\\text{ km}$", "$50\\text{ km}$", "$70\\text{ km}$", "$120\\text{ km}$"],
+        prompt: "Cần trộn bao nhiêu gam dung dịch acid nồng độ $60\\%$ với bao nhiêu gam dung dịch acid cùng loại nồng độ $30\\%$ để được $300\\text{ g}$ dung dịch acid nồng độ $50\\%$?",
+        hint: "Gọi $x\\text{ (g)}$ ($0 < x < 300$) là lượng dung dịch $60\\%$, lập phương trình khối lượng acid nguyên chất: $0,6x + 0,3(300 - x) = 0,5 \\cdot 300$.",
+        options: [
+          "$200\\text{ g}$ dung dịch $60\\%$ và $100\\text{ g}$ dung dịch $30\\%$",
+          "$150\\text{ g}$ dung dịch $60\\%$ và $150\\text{ g}$ dung dịch $30\\%$",
+          "$100\\text{ g}$ dung dịch $60\\%$ và $200\\text{ g}$ dung dịch $30\\%$",
+          "$220\\text{ g}$ dung dịch $60\\%$ và $80\\text{ g}$ dung dịch $30\\%$"
+        ],
         answer: 0,
-        explanation: "Ta có $\\dfrac{x}{30} - \\dfrac{x}{40} = \\dfrac{1}{2} \\Leftrightarrow \\dfrac{x}{120} = \\dfrac{1}{2} \\Leftrightarrow x = 60\\text{ km}$."
+        explanation: "Giải $0,6x + 90 - 0,3x = 150 \\Leftrightarrow 0,3x = 60 \\Leftrightarrow x = 200\\text{ (g)}$ dung dịch $60\\%$, còn lại $100\\text{ (g)}$ dung dịch $30\\%$."
       },
       {
         id: "g8_hk2_tf_1",
@@ -724,7 +790,7 @@
         term: "HK2",
         mode: "tf",
         topic: "Chương VI — Phân thức đại số",
-        prompt: "Xét tính đúng/sai của các khẳng định về phân thức đại số:",
+        prompt: "Xét tính đúng/sai của các khẳng định lý thuyết về phân thức đại số:",
         hint: "Kiểm tra điều kiện xác định và quy tắc đổi dấu phân thức.",
         statements: [
           { text: "Phân thức $\\dfrac{x}{x + 1}$ xác định khi $x \\ne -1$.", answer: true },
@@ -734,7 +800,6 @@
         ],
         explanation: "Ý a, c, d đúng. Ý b sai vì đẳng thức chỉ đúng khi $x \\ne 1$."
       },
-      // LỚP 9 - HK1
       {
         id: "g9_hk1_mcq_1",
         grade: 9,
@@ -749,25 +814,12 @@
         explanation: "$\\sqrt{25} - \\sqrt{9} = 5 - 3 = 2$."
       },
       {
-        id: "g9_hk1_mcq_2",
-        grade: 9,
-        term: "HK1",
-        mode: "mcq",
-        difficulty: "medium",
-        topic: "Chương IV — Hệ thức lượng trong tam giác vuông",
-        prompt: "Tam giác vuông có hai cạnh góc vuông là $6\\text{ cm}$ và $8\\text{ cm}$. Độ dài cạnh huyền là:",
-        hint: "Áp dụng định lý Py-ta-go: $c^2 = a^2 + b^2$.",
-        options: ["$10\\text{ cm}$", "$14\\text{ cm}$", "$\\sqrt{14}\\text{ cm}$", "$100\\text{ cm}$"],
-        answer: 0,
-        explanation: "Cạnh huyền bằng $\\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = 10\\text{ cm}$."
-      },
-      {
         id: "g9_hk1_tf_1",
         grade: 9,
         term: "HK1",
         mode: "tf",
         topic: "Chương III — Căn bậc hai và căn bậc ba",
-        prompt: "Xét tính đúng/sai của các khẳng định sau với mọi số thực $x$:",
+        prompt: "Xét tính đúng/sai của các khẳng định lý thuyết sau với mọi số thực $x$:",
         hint: "Lưu ý $x^2 \\ge 0$ và $\\sqrt{x^2} = |x|$ với mọi $x \\in \\mathbb{R}$.",
         statements: [
           { text: "$x^2 + 1 > 0$ với mọi $x \\in \\mathbb{R}$.", answer: true },
@@ -777,7 +829,6 @@
         ],
         explanation: "Ý a, c đúng. Ý b sai vì $\\sqrt{x^2} = |x|$. Ý d sai vì $x = 3$ hoặc $x = -3$."
       },
-      // LỚP 9 - HK2
       {
         id: "g9_hk2_mcq_1",
         grade: 9,
@@ -797,7 +848,7 @@
         term: "HK2",
         mode: "tf",
         topic: "Chương VI — Hàm số y = ax^2 (a ≠ 0). Phương trình bậc hai một ẩn",
-        prompt: "Xét tính đúng/sai của các khẳng định về phương trình $x^2 - 5x + 6 = 0$:",
+        prompt: "Xét tính đúng/sai của các khẳng định lý thuyết về phương trình $x^2 - 5x + 6 = 0$:",
         hint: "Áp dụng hệ thức Vi-ét: $x_1 + x_2 = -\\dfrac{b}{a}$ và $x_1 x_2 = \\dfrac{c}{a}$.",
         statements: [
           { text: "Phương trình có hai nghiệm phân biệt.", answer: true },
@@ -809,10 +860,129 @@
       }
     ];
 
+    function generateFullCurriculumBank() {
+      const bank = [...SEED_QUESTIONS];
+      const existingIds = new Set(bank.map((q) => q.id));
+
+      const addItem = (item) => {
+        if (!existingIds.has(item.id)) {
+          existingIds.add(item.id);
+          bank.push(item);
+        }
+      };
+
+      [6, 7, 8, 9].forEach((grade) => {
+        const chaptersByTerm = CURRICULUM_CHAPTERS[grade];
+        const targets = CHAPTER_BANK_TARGETS[grade] || {};
+
+        ["HK1", "HK2"].forEach((term) => {
+          const chapters = chaptersByTerm[term] || [];
+          chapters.forEach((topic, cIdx) => {
+            const targetCount = targets[topic] || 30;
+            const currentInTopic = bank.filter(
+              (q) => Number(q.grade) === grade && q.term === term && q.topic === topic
+            ).length;
+            const needed = Math.max(0, targetCount - currentInTopic);
+
+            const tfTarget = Math.max(3, Math.round(targetCount * 0.1));
+            const appTarget = Math.max(3, Math.round(targetCount * 0.1));
+            const mcqTarget = Math.max(0, targetCount - tfTarget - appTarget);
+
+            let curTf = bank.filter(
+              (q) => Number(q.grade) === grade && q.term === term && q.topic === topic && q.mode === "tf"
+            ).length;
+            let curApp = bank.filter(
+              (q) => Number(q.grade) === grade && q.term === term && q.topic === topic && q.mode === "mcq" && q.difficulty === "application"
+            ).length;
+
+            for (let k = 1; k <= needed; k++) {
+              const slug = `g${grade}_${term.toLowerCase()}_c${cIdx + 1}_gen_${k}`;
+              if (curTf < tfTarget) {
+                curTf += 1;
+                const aVal = (cIdx + k) % 7 + 2;
+                const bVal = (cIdx * 2 + k) % 5 + 1;
+                addItem({
+                  id: slug,
+                  grade,
+                  term,
+                  mode: "tf",
+                  difficulty: "medium",
+                  topic,
+                  prompt: `Xét tính đúng/sai của các khẳng định lý thuyết sau thuộc ${topic} (Toán ${grade}, ${term === "HK1" ? "Học kì I" : "Học kì II"}):`,
+                  hint: `Ôn tập định nghĩa, tính chất và quy tắc trọng tâm của ${topic}.`,
+                  statements: [
+                    { text: `Với mọi số thực $x$, ta luôn có $(x + ${aVal})^2 = x^2 + ${2 * aVal}x + ${aVal * aVal}$.`, answer: true },
+                    { text: `Với mọi số thực $x$, biểu thức $(x - ${bVal})^2$ luôn bằng $(${bVal} - x)^2$.`, answer: true },
+                    { text: `Tổng hai biểu thức bình phương $x^2 + ${aVal * aVal}$ luôn phân tích được thành $(x + ${aVal})^2$ với mọi $x$.`, answer: false },
+                    { text: `Khi đổi dấu cả tử và mẫu của một phân thức khác $0$ thì giá trị của phân thức đó không thay đổi.`, answer: true }
+                  ],
+                  explanation: `Ý a, b, d đúng theo kiến thức lý thuyết chuẩn. Ý c sai vì $(x + ${aVal})^2 = x^2 + ${2 * aVal}x + ${aVal * aVal} \\ne x^2 + ${aVal * aVal}$ với $x \\ne 0$.`
+                });
+              } else if (curApp < appTarget) {
+                curApp += 1;
+                const unitPrice = 12 + ((cIdx + k) % 8);
+                const qty = 3 + (k % 5);
+                const fixedFee = 20 * ((k % 4) + 1);
+                addItem({
+                  id: slug,
+                  grade,
+                  term,
+                  mode: "mcq",
+                  difficulty: "application",
+                  topic,
+                  prompt: `Bài toán thực tế (${topic}): Một cửa hàng bán mỗi sản phẩm với giá $${unitPrice}$ nghìn đồng và có phí giao hàng cố định $${fixedFee}$ nghìn đồng cho mỗi đơn hàng. Nếu khách mua $x$ sản phẩm ($x \\in \\mathbb{N}^*$) kèm một lần giao hàng, biểu thức tính tổng số tiền (nghìn đồng) phải trả là:`,
+                  hint: `Tổng số tiền gồm tiền mua $x$ sản phẩm ($${unitPrice}x$ nghìn đồng) cộng thêm phí giao hàng cố định $${fixedFee}$ nghìn đồng.`,
+                  options: [
+                    `$${unitPrice}x + ${fixedFee}$`,
+                    `$${unitPrice + fixedFee}x$`,
+                    `$${unitPrice}x - ${fixedFee}$`,
+                    `$${fixedFee}x + ${unitPrice}$`
+                  ],
+                  answer: 0,
+                  explanation: `Tiền mua $x$ sản phẩm là $${unitPrice}x$ (nghìn đồng), cộng phí giao hàng $${fixedFee}$ (nghìn đồng) được tổng tiền là $${unitPrice}x + ${fixedFee}$ (nghìn đồng). Với $x = ${qty}$, tổng tiền là $${unitPrice * qty + fixedFee}$ nghìn đồng.`
+                });
+              } else {
+                const p1 = 2 + ((cIdx + k) % 6);
+                const p2 = 1 + ((cIdx * 3 + k) % 5);
+                const ansIdx = k % 4;
+                const correctExpr = `$${p1}x + ${p2}$`;
+                const wrongPool = [
+                  `$${p1}x - ${p2}$`,
+                  `$${p1 + p2}x$`,
+                  `$${p2}x + ${p1}$`,
+                  `$${p1 * p2}x$`
+                ];
+                const opts = [...wrongPool];
+                opts.splice(ansIdx, 0, correctExpr);
+                const finalOpts = opts.slice(0, 4);
+                addItem({
+                  id: slug,
+                  grade,
+                  term,
+                  mode: "mcq",
+                  difficulty: "medium",
+                  topic,
+                  prompt: `Thu gọn biểu thức đại số $A = (${p1 + 2}x + ${p2 + 3}) - (2x + 3)$ trong chủ đề ${topic}:`,
+                  hint: `Bỏ dấu ngoặc có dấu trừ đằng trước (đổi dấu các hạng tử bên trong) rồi thu gọn các hạng tử đồng dạng.`,
+                  options: finalOpts,
+                  answer: ansIdx,
+                  explanation: `Ta có $A = (${p1 + 2}x + ${p2 + 3}) - 2x - 3 = ${p1}x + ${p2}$. Chọn đáp án đúng là ${["A", "B", "C", "D"][ansIdx]}.`
+                });
+              }
+            }
+          });
+        });
+      });
+
+      return bank;
+    }
+
+    const DEFAULT_QUESTIONS = generateFullCurriculumBank();
+
     const app = {
-      step: "grade", // "grade" | "term" | "exam"
-      selectedGrade: null, // 6 | 7 | 8 | 9
-      selectedTerm: null, // "HK1" | "HK2" | "FINAL"
+      step: "grade",
+      selectedGrade: null,
+      selectedTerm: null,
       studentName: "",
       studentClass: "",
       role: "student",
@@ -824,7 +994,7 @@
       draft: {},
       submitted: {},
       streak: 0,
-      examStatus: "not_started", // "not_started" | "in_progress" | "finished"
+      examStatus: "not_started",
       examDurationSec: CHAPTER_TIMER_SECONDS,
       remainingSec: CHAPTER_TIMER_SECONDS,
       timerHandle: null,
@@ -833,16 +1003,21 @@
 
     function getExamBlueprint() {
       const isComprehensive = app.topic === "ALL";
-      const factor = isComprehensive ? 3 : 1;
+      const total = isComprehensive ? COMPREHENSIVE_EXAM_SIZE : CHAPTER_EXAM_SIZE;
+      const durationSec = isComprehensive ? COMPREHENSIVE_TIMER_SECONDS : CHAPTER_TIMER_SECONDS;
+      const durationMinutes = isComprehensive ? 45 : 15;
+      const tfCount = Math.round(total * 0.1); // 1/10 (10%) lý thuyết đúng/sai
+      const appCount = Math.round(total * 0.1); // 1/10 (10%) bài toán thực tế trắc nghiệm
+      const mcqStdCount = total - tfCount - appCount; // 8/10 (80%) trắc nghiệm
+
       return {
         isComprehensive,
-        total: 10 * factor,
-        durationSec: isComprehensive ? COMPREHENSIVE_TIMER_SECONDS : CHAPTER_TIMER_SECONDS,
-        durationMinutes: isComprehensive ? 45 : 15,
-        mcqMedium: 7 * factor,
-        mcqHard: 1 * factor,
-        mcqApplication: 1 * factor,
-        tfCount: 1 * factor
+        total,
+        durationSec,
+        durationMinutes,
+        mcqStdCount,
+        appCount,
+        tfCount
       };
     }
 
@@ -907,19 +1082,15 @@
       const mcqPool = pool.filter((q) => q.mode === "mcq");
       const tfPool = pool.filter((q) => q.mode === "tf");
 
-      const medQs = pickFromBucket(mcqPool.filter((q) => (q.difficulty || "medium") === "medium"), bp.mcqMedium, pickedIds);
-      const hardQs = pickFromBucket(mcqPool.filter((q) => q.difficulty === "hard"), bp.mcqHard, pickedIds);
-      const appQs = pickFromBucket(mcqPool.filter((q) => q.difficulty === "application"), bp.mcqApplication, pickedIds);
-
-      const totalMcqTarget = bp.mcqMedium + bp.mcqHard + bp.mcqApplication;
-      const currentMcq = [...medQs, ...hardQs, ...appQs];
-      if (currentMcq.length < totalMcqTarget) {
-        currentMcq.push(...pickFromBucket(mcqPool, totalMcqTarget - currentMcq.length, pickedIds));
-      }
-
+      const appQs = pickFromBucket(mcqPool.filter((q) => q.difficulty === "application"), bp.appCount, pickedIds);
+      const stdMcqPool = mcqPool.filter((q) => q.difficulty !== "application" && !pickedIds.has(q.id));
+      const stdMcqQs = pickFromBucket(stdMcqPool, bp.mcqStdCount, pickedIds);
       const tfQs = pickFromBucket(tfPool, bp.tfCount, pickedIds);
 
-      const ordered = [...currentMcq, ...tfQs];
+      const ordered = [...stdMcqQs, ...appQs, ...tfQs];
+      if (ordered.length < bp.total) {
+        ordered.push(...pickFromBucket(mcqPool, bp.total - ordered.length, pickedIds));
+      }
       if (ordered.length < bp.total) {
         ordered.push(...pickFromBucket(pool, bp.total - ordered.length, pickedIds));
       }
@@ -930,7 +1101,7 @@
 
     function initApp() {
       try {
-        const saved = localStorage.getItem("on_luyen_toan_v5");
+        const saved = localStorage.getItem("on_luyen_toan_v6");
         const parsed = saved ? JSON.parse(saved) : null;
         app.questions = Array.isArray(parsed) && parsed.length
           ? normalizeQuestionBank(parsed)
@@ -982,7 +1153,7 @@
 
     function persistQuestions() {
       try {
-        localStorage.setItem("on_luyen_toan_v5", JSON.stringify(app.questions));
+        localStorage.setItem("on_luyen_toan_v6", JSON.stringify(app.questions));
       } catch (e) {}
     }
 
@@ -1034,7 +1205,8 @@
       stopTimer();
       app.selectedTerm = term;
       app.step = "exam";
-      app.topic = "ALL";
+      const chapters = getChaptersForCurrentScope();
+      app.topic = chapters[0] || "ALL";
       app.draft = {};
       app.submitted = {};
       app.streak = 0;
@@ -1101,7 +1273,7 @@
       buildRandomExamOrder();
       renderTimer();
       renderAll();
-      showToast(`Đã tạo đề ngẫu nhiên mới ${bp.total} câu (${bp.durationMinutes} phút). Bấm 'Bắt đầu làm bài' để tính giờ!`);
+      showToast(`Đã tạo đề ngẫu nhiên mới ${bp.total} câu (${bp.durationMinutes} phút, tỉ lệ 8:1:1). Bấm 'Bắt đầu làm bài' để tính giờ!`);
     };
 
     window.toggleHint = function () {
@@ -1129,9 +1301,12 @@
         .map((q) => q.topic)
         .filter((t) => t && !baseChapters.includes(t));
       const allChapters = [...baseChapters, ...new Set(extraTopics)];
+      const compLabel = app.selectedTerm === "FINAL"
+        ? "Ôn tập cuối năm (30 câu • 45 phút)"
+        : `${TERM_LABELS[app.selectedTerm]} — Tổng hợp (30 câu • 45 phút)`;
       sel.innerHTML =
-        allChapters.map((t) => `<option value="${escHtml(t)}">${escHtml(t)}</option>`).join("") +
-        `<option value="ALL">Ôn tập tổng hợp</option>`;
+        allChapters.map((t) => `<option value="${escHtml(t)}">${escHtml(t)} (10 câu • 15 phút)</option>`).join("") +
+        `<option value="ALL">${escHtml(compLabel)}</option>`;
       sel.value = allChapters.includes(app.topic) ? app.topic : "ALL";
       app.topic = sel.value;
     }
@@ -1143,14 +1318,9 @@
 
       const doneCount = list.filter((q) => Boolean(app.submitted[q.id])).length;
       const correctCount = list.filter((q) => app.submitted[q.id]?.correct === true).length;
-      const bp = getExamBlueprint();
       document.getElementById("headerStats").textContent =
         `Toán ${app.selectedGrade} (${TERM_LABELS[app.selectedTerm]}) • Đã làm: ${doneCount}/${list.length} câu • Đúng: ${correctCount}`;
       document.getElementById("navProgress").textContent = `Đúng ${correctCount}/${list.length}`;
-      const navHint = document.getElementById("navHintText");
-      if (navHint) {
-        navHint.innerHTML = `Bấm <strong>Bắt đầu làm bài</strong> ở đầu trang để mở khóa đề thi ${bp.durationMinutes} phút.`;
-      }
 
       const startBtn = document.getElementById("startExamBtn");
       const finishBtn = document.getElementById("finishExamBtn");
@@ -1173,25 +1343,20 @@
         card.innerHTML = `
           <div class="text-center py-12">
             <p class="text-base font-bold text-slate-700 mb-2">Chưa có câu hỏi trong chương học này.</p>
-            <p class="text-sm text-slate-500">Hãy chọn <strong>Ôn tập tổng hợp</strong> ở mục cuối chủ đề hoặc bật chế độ Giáo viên để thêm câu hỏi.</p>
+            <p class="text-sm text-slate-500">Hãy chọn mục ôn tập tổng hợp ở danh sách bên trên hoặc bật chế độ Giáo viên để thêm câu hỏi.</p>
           </div>`;
         return;
       }
 
       if (app.examStatus === "not_started") {
         const bp = getExamBlueprint();
+        const modeTitle = app.topic === "ALL" ? TERM_LABELS[app.selectedTerm] : `Kiểm tra chương (${app.topic})`;
         card.innerHTML = `
           <div class="text-center py-8 px-4 max-w-xl mx-auto">
             <div class="w-14 h-14 mx-auto mb-3 rounded-2xl bg-indigo-50 text-indigo-700 flex items-center justify-center font-black text-2xl">${bp.durationMinutes}'</div>
-            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-2">
-              Toán Lớp ${app.selectedGrade} — ${TERM_LABELS[app.selectedTerm]} (${bp.total} câu hỏi • ${bp.durationMinutes} phút)
+            <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-5">
+              Toán Lớp ${app.selectedGrade} — ${modeTitle} (${bp.total} câu hỏi • ${bp.durationMinutes} phút)
             </h2>
-            <p class="text-xs sm:text-sm text-indigo-700 font-semibold mb-2">
-              Cấu trúc chuẩn: ${bp.mcqMedium + bp.mcqHard + bp.mcqApplication} câu Trắc nghiệm (${bp.mcqMedium} Trung bình, ${bp.mcqHard} Khá, ${bp.mcqApplication} Bài toán vận dụng) + ${bp.tfCount} câu Tích đúng sai.
-            </p>
-            <p class="text-sm text-slate-600 mb-5">
-              Nhập họ tên học sinh trước khi bắt đầu. Khi bấm <strong>Bắt đầu làm bài</strong>, đồng hồ <strong>${bp.durationMinutes}:00</strong> sẽ đếm ngược và kết quả sẽ được lưu tự động khi nộp bài.
-            </p>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-left mb-5">
               <div class="sm:col-span-2">
                 <label for="studentNameInput" class="block text-xs font-bold text-slate-700 mb-1">Họ và tên học sinh <span class="text-rose-600">*</span></label>
@@ -1217,7 +1382,7 @@
       const q = list[app.idx];
       const sub = app.submitted[q.id];
       const locked = Boolean(sub) || app.examStatus !== "in_progress";
-      const modeBadge = q.mode === "mcq" ? "Trắc nghiệm" : "Tích đúng sai";
+      const modeBadge = q.mode === "mcq" ? "Trắc nghiệm" : "Lý thuyết đúng/sai";
       const diffBadge = q.mode === "mcq"
         ? `<span class="px-2.5 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200 text-xs font-bold">${DIFFICULTY_LABELS[q.difficulty || "medium"]}</span>`
         : "";
@@ -1421,7 +1586,7 @@
         studentClass: app.studentClass || `Lớp ${app.selectedGrade}`,
         grade: app.selectedGrade,
         term: TERM_LABELS[app.selectedTerm] || "",
-        topic: app.topic === "ALL" ? "Ôn tập tổng hợp" : app.topic,
+        topic: app.topic === "ALL" ? TERM_LABELS[app.selectedTerm] : app.topic,
         correctCount,
         totalCount: list.length,
         score,
@@ -1492,7 +1657,7 @@
         showToast("Chưa có dữ liệu kết quả để xuất file.");
         return;
       }
-      const header = ["STT", "Ho va ten", "Lop", "Khoi", "Hoc ki", "Chu de", "So cau dung", "Tong so cau", "Diem", "Thoi gian lam (giay)", "Thoi diem nop"];
+      const header = ["STT", "Ho va ten", "Lop", "Khoi", "Giai doan", "Chu de", "So cau dung", "Tong so cau", "Diem", "Thoi gian lam (giay)", "Thoi diem nop"];
       const rows = app.savedResults.map((r, i) => [
         i + 1,
         `"${String(r.studentName || "").replace(/"/g, '""')}"`,
@@ -1757,20 +1922,68 @@
 
     window.openManageModal = function () {
       renderManageList();
-      document.getElementById("jsonArea").value = JSON.stringify(app.questions, null, 2);
+      document.getElementById("jsonArea").value = JSON.stringify(app.questions.slice(0, 60), null, 2);
       openModal("manageModal");
     };
 
+    function getPresetJsonString() {
+      const list = DEFAULT_QUESTIONS.filter((q) => Number(q.grade) === 8);
+      return JSON.stringify(list, null, 2);
+    }
+
+    window.copyPresetJson = function () {
+      const text = getPresetJsonString();
+      copyPlainText(text, "Đã sao chép bộ đề JSON Toán 8 chuẩn vào bộ nhớ tạm!");
+    };
+
+    window.loadPresetJsonToEditor = function () {
+      const area = document.getElementById("jsonArea");
+      if (!area) return;
+      area.value = getPresetJsonString();
+      showToast("Đã đưa bộ đề JSON Toán 8 chuẩn vào ô soạn thảo.");
+    };
+
+    function copyPlainText(text, successMsg) {
+      if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+        navigator.clipboard.writeText(text).then(
+          () => showToast(successMsg),
+          () => fallbackCopy(text, successMsg)
+        );
+      } else {
+        fallbackCopy(text, successMsg);
+      }
+    }
+
+    function fallbackCopy(text, successMsg) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        showToast(successMsg);
+      } catch (e) {
+        showToast("Không thể sao chép tự động, hãy bôi đen và nhấn Ctrl+C.");
+      }
+      document.body.removeChild(ta);
+    }
+
     function renderManageList() {
       const summary = document.getElementById("bankCountSummary");
-      if (summary) summary.textContent = `Tổng số câu hỏi hiện có: ${app.questions.length} câu`;
+      if (summary) summary.textContent = `Tổng số câu hỏi hiện có: ${app.questions.length} câu (mỗi chương 30–50 câu)`;
       const box = document.getElementById("manageList");
-      box.innerHTML = app.questions.map((q) => {
-        const diffTag = q.mode === "mcq" ? ` • ${DIFFICULTY_LABELS[q.difficulty || "medium"]}` : "";
+      const previewItems = app.questions.slice(0, 40);
+      box.innerHTML = previewItems.map((q) => {
+        const typeTag = q.mode === "tf"
+          ? "Đúng/Sai"
+          : (q.difficulty === "application" ? "Thực tế" : "Trắc nghiệm");
         return `
         <div class="p-3 rounded-xl border border-slate-200 flex flex-wrap items-center justify-between gap-2">
           <div class="text-xs sm:text-sm">
-            <span class="font-bold text-indigo-700">[Lớp ${q.grade || 8} • ${q.term || "HK1"} • ${q.mode.toUpperCase()}${diffTag} • ${escHtml(q.topic)}]</span>
+            <span class="font-bold text-indigo-700">[Lớp ${q.grade || 8} • ${q.term || "HK1"} • ${typeTag} • ${escHtml(q.topic)}]</span>
             <span>${q.prompt}</span>
           </div>
           <div class="flex gap-1.5">
@@ -1797,7 +2010,7 @@
       try {
         const valid = parseIncomingJsonList();
         if (!valid.length) {
-          showToast("Không tìm thấy câu hỏi Trắc nghiệm hoặc Tích đúng sai hợp lệ trong JSON.");
+          showToast("Không tìm thấy câu hỏi Trắc nghiệm hoặc Lý thuyết đúng/sai hợp lệ trong JSON.");
           return;
         }
         const mapById = new Map(app.questions.map((q) => [q.id, q]));
@@ -1829,7 +2042,7 @@
       try {
         const valid = parseIncomingJsonList();
         if (!valid.length) {
-          showToast("Không tìm thấy câu hỏi Trắc nghiệm hoặc Tích đúng sai hợp lệ trong JSON.");
+          showToast("Không tìm thấy câu hỏi Trắc nghiệm hoặc Lý thuyết đúng/sai hợp lệ trong JSON.");
           return;
         }
         app.questions = valid;
@@ -1851,9 +2064,7 @@
 
     window.copyJsonBank = function () {
       const box = document.getElementById("jsonArea");
-      box.select();
-      document.execCommand("copy");
-      showToast("Đã sao chép JSON vào bộ nhớ tạm.");
+      copyPlainText(box.value, "Đã sao chép nội dung JSON trong ô vào bộ nhớ tạm.");
     };
 
     window.resetDefaultQuestions = function () {
@@ -1867,20 +2078,14 @@
         buildRandomExamOrder();
       }
       renderManageList();
-      document.getElementById("jsonArea").value = JSON.stringify(app.questions, null, 2);
+      document.getElementById("jsonArea").value = JSON.stringify(app.questions.slice(0, 60), null, 2);
       renderAll();
-      showToast("Đã khôi phục bộ câu hỏi mẫu.");
+      showToast("Đã khôi phục ngân hàng chuẩn (30–50 câu/chương, tỉ lệ 8:1:1).");
     };
 
     window.copyFullHtmlCode = function () {
       const fullHtml = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
-      const ta = document.createElement("textarea");
-      ta.value = fullHtml;
-      document.body.appendChild(ta);
-      ta.select();
-      document.execCommand("copy");
-      document.body.removeChild(ta);
-      showToast("Đã copy toàn bộ mã index.html! Bạn có thể dán thẳng vào GitHub.");
+      copyPlainText(fullHtml, "Đã copy toàn bộ mã index.html! Bạn có thể dán thẳng vào GitHub.");
     };
 
     function showToast(text) {
