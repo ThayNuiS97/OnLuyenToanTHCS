@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="vi"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ôn Luyện Toán Thông Minh</title>
   <!-- Thư viện KaTeX hiển thị công thức toán học chuẩn SGK -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
   <style>
     :root {
       --bg: #f4f7fb;
@@ -642,27 +641,27 @@
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand">
-        <div class="brand-badge">$\pi$</div>
+        <div class="brand-badge"><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal" style="margin-right: 0.0359em;">π</span></span></span></span></span></div>
         <div>
           <h1>Ôn Luyện Toán Thông Minh</h1>
-          <p id="subtitleInfo">Chọn khối lớp và học kì để bắt đầu</p>
+          <p id="subtitleInfo">Toán Lớp 8 · Học kì I</p>
         </div>
       </div>
 
-      <div id="examTopControls" class="exam-header-controls hidden">
-        <span id="studentBadge" class="student-badge hidden"></span>
-        <span id="timerDisplay" class="timer-pill">15:00</span>
-        <button id="startExamBtn" class="btn btn-primary" type="button" onclick="startExam()">Bắt đầu làm bài</button>
-        <button id="finishExamBtn" class="btn btn-danger hidden" type="button" onclick="finishExam()">Nộp bài</button>
+      <div id="examTopControls" class="exam-header-controls">
+        <span id="studentBadge" class="student-badge">HS: Nguyễn Trọng Sơn</span>
+        <span id="timerDisplay" class="timer-pill">10:58</span>
+        <button id="startExamBtn" class="btn btn-primary hidden" type="button" onclick="startExam()">Bắt đầu làm bài</button>
+        <button id="finishExamBtn" class="btn btn-danger" type="button" onclick="finishExam()">Nộp bài</button>
         <button class="btn" type="button" onclick="openHistoryModal()">Bảng kết quả</button>
       </div>
 
       <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-        <button id="teacherManageBtn" class="btn btn-soft hidden" type="button" onclick="openTeacherModal()">Quản lý đề & JSON</button>
-        <button id="copyHtmlBtn" class="btn hidden" type="button" onclick="copyFullHtml()">Copy mã index.html</button>
+        <button id="teacherManageBtn" class="btn btn-soft" type="button" onclick="openTeacherModal()">Quản lý đề &amp; JSON</button>
+        <button id="copyHtmlBtn" class="btn" type="button" onclick="copyFullHtml()">Copy mã index.html</button>
         <div class="role-switch" role="group" aria-label="Chọn vai trò">
-          <button id="roleStudentBtn" class="role-btn active" type="button" onclick="setRole('student')">Học sinh</button>
-          <button id="roleTeacherBtn" class="role-btn" type="button" onclick="setRole('teacher')">Giáo viên</button>
+          <button id="roleStudentBtn" class="role-btn" type="button" onclick="setRole('student')">Học sinh</button>
+          <button id="roleTeacherBtn" class="role-btn active" type="button" onclick="setRole('teacher')">Giáo viên</button>
         </div>
       </div>
     </div>
@@ -670,7 +669,7 @@
 
   <main class="container">
     <!-- BƯỚC 1: CHỌN KHỐI LỚP -->
-    <section id="stepGrade" class="step-wrap">
+    <section id="stepGrade" class="step-wrap hidden">
       <h2 class="step-title">Chọn khối lớp ôn luyện</h2>
       <p class="step-sub">Chương trình Toán THCS — Kết nối tri thức với cuộc sống</p>
       <div class="grade-grid">
@@ -711,12 +710,12 @@
 
         <div class="field-group">
           <label for="stepStudentNameInput">Họ và tên học sinh <span style="color:var(--danger);">*</span></label>
-          <input id="stepStudentNameInput" type="text" placeholder="Ví dụ: Nguyễn Văn An" onkeydown="if(event.key==='Enter') confirmStudentInfo()" />
+          <input id="stepStudentNameInput" type="text" placeholder="Ví dụ: Nguyễn Văn An" onkeydown="if(event.key==='Enter') confirmStudentInfo()">
         </div>
 
         <div class="field-group">
           <label for="stepStudentClassInput">Lớp (không bắt buộc)</label>
-          <input id="stepStudentClassInput" type="text" placeholder="Ví dụ: 8A1" onkeydown="if(event.key==='Enter') confirmStudentInfo()" />
+          <input id="stepStudentClassInput" type="text" placeholder="Ví dụ: 8A1" onkeydown="if(event.key==='Enter') confirmStudentInfo()">
         </div>
 
         <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:16px;">
@@ -731,7 +730,7 @@
     <section id="stepTerm" class="step-wrap hidden">
       <div style="margin-bottom:14px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
         <button class="btn" type="button" onclick="backToStudentStep()">← Đổi thông tin học sinh</button>
-        <span id="termStudentPill" class="student-badge"></span>
+        <span id="termStudentPill" class="student-badge">Học sinh: Nguyễn Trọng Sơn</span>
       </div>
       <h2 class="step-title" id="termStepTitle">Toán Lớp 8 — Chọn giai đoạn học tập</h2>
       <p class="step-sub">Lựa chọn Học kì I, Học kì II hoặc Ôn tập cuối năm</p>
@@ -755,37 +754,62 @@
     </section>
 
     <!-- BƯỚC 4: MÀN HÌNH LÀM BÀI KIỂM TRA -->
-    <section id="stepExam" class="hidden">
+    <section id="stepExam" class="">
       <div class="controls-bar">
         <div class="filter-group">
           <button class="btn" type="button" onclick="backToTermSelection()">← Đổi học kì / chương</button>
-          <select id="topicSelect" onchange="handleTopicChange()"></select>
+          <select id="topicSelect" onchange="handleTopicChange()"><option value="Chương I — Đa thức">Chương I — Đa thức</option><option value="Chương II — Hằng đẳng thức đáng nhớ và ứng dụng">Chương II — Hằng đẳng thức đáng nhớ và ứng dụng</option><option value="Chương III — Tứ giác">Chương III — Tứ giác</option><option value="Chương IV — Định lí Thalès">Chương IV — Định lí Thalès</option><option value="Chương V — Dữ liệu và biểu đồ">Chương V — Dữ liệu và biểu đồ</option><option value="REVIEW_ALL">Ôn tập tổng hợp</option></select>
           <button class="btn btn-soft" type="button" onclick="generateNewTest()">Tạo đề ngẫu nhiên mới</button>
         </div>
 
         <div class="filter-group">
-          <input id="studentNameInput" type="text" placeholder="Họ và tên học sinh..." style="width:190px;" onchange="syncExamStudentInputs()" />
-          <input id="studentClassInput" type="text" placeholder="Lớp (VD: 8A1)" style="width:110px;" onchange="syncExamStudentInputs()" />
+          <input id="studentNameInput" type="text" placeholder="Họ và tên học sinh..." style="width:190px;" onchange="syncExamStudentInputs()">
+          <input id="studentClassInput" type="text" placeholder="Lớp (VD: 8A1)" style="width:110px;" onchange="syncExamStudentInputs()">
           <button class="btn btn-soft" type="button" onclick="toggleHint()">Gợi ý kiến thức</button>
         </div>
       </div>
 
-      <div id="examSummaryBanner" class="feedback-box info hidden" style="margin-bottom:16px;"></div>
+      <div id="examSummaryBanner" class="feedback-box info hidden" style="margin-bottom:16px;">
+        <strong>Đã nộp bài kiểm tra!</strong><br>
+        Học sinh: <strong>Nguyễn Trọng Sơn</strong> (—) ·
+        Kết quả: <strong>0/10 câu đúng</strong> ·
+        Điểm số: <strong>0.00/10</strong> · Thời gian: <strong>0p 8s</strong>
+      </div>
 
       <div class="layout-grid">
         <section class="card" id="questionCard">
           <div class="q-meta">
             <div style="display:flex; flex-wrap:wrap; gap:6px; align-items:center;">
               <span class="pill" id="qModeLabel">Trắc nghiệm</span>
-              <span class="pill pill-amber" id="qTypeTag" style="display:none;">Bài toán thực tế</span>
-              <span class="pill" id="qTopicLabel">Chương I</span>
-              <span id="qIndexLabel" style="font-weight:600; color:var(--text);">Câu 1 / 10</span>
+              <span class="pill pill-amber" id="qTypeTag" style="display: none;">Bài toán thực tế</span>
+              <span class="pill" id="qTopicLabel">Chương V — Dữ liệu và biểu đồ</span>
+              <span id="qIndexLabel" style="font-weight:600; color:var(--text);">Câu 8 / 10</span>
             </div>
-            <div id="qStatusBadge">Chưa bắt đầu</div>
+            <div id="qStatusBadge">Đang làm bài</div>
           </div>
 
           <div id="hintBox" class="hint-box hidden"></div>
-          <div id="qBodyArea"></div>
+          <div id="qBodyArea"><div class="q-prompt">Biểu đồ dưới đây cho biết cấu trúc dân số Việt Nam năm 2020. Biết dân số Việt Nam năm 2020 là <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>97</mn><mo separator="true">,</mo><mn>41</mn></mrow><annotation encoding="application/x-tex">97,41</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.8389em; vertical-align: -0.1944em;"></span><span class="mord">97</span><span class="mpunct">,</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">41</span></span></span></span></span> triệu người (<span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>97</mn> <mn>410</mn> <mn>000</mn></mrow><annotation encoding="application/x-tex">97\,410\,000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">97</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">410</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">000</span></span></span></span></span> người). Số người thuộc nhóm trên <span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>64</mn></mrow><annotation encoding="application/x-tex">64</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">64</span></span></span></span></span> tuổi năm 2020 là:<br><div style="text-align:center;margin:10px 0"><svg width="325" height="155" viewBox="0 0 325 155" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="5" width="315" height="145" rx="6" fill="#ffffff" stroke="#e2e8f0"></rect><circle cx="80" cy="80" r="58" fill="#ef4444"></circle><path d="M80,80 L80,22 A58,58 0 0,1 137.6,86.7 Z" fill="#3b82f6"></path><path d="M80,80 L52.5,29.0 A58,58 0 0,1 80,22 Z" fill="#84cc16"></path><text x="98" y="64" font-size="10" fill="#fff" font-weight="bold">23,19%</text><text x="62" y="112" font-size="11" fill="#fff" font-weight="bold">68,94%</text><text x="42" y="20" font-size="10" fill="#3f6212" font-weight="bold">7,87%</text><rect x="165" y="40" width="12" height="12" fill="#3b82f6"></rect><text x="183" y="50" font-size="11" fill="#334155">0 – 14 tuổi</text><rect x="165" y="68" width="12" height="12" fill="#ef4444"></rect><text x="183" y="78" font-size="11" fill="#334155">15 – 64 tuổi</text><rect x="165" y="96" width="12" height="12" fill="#84cc16"></rect><text x="183" y="106" font-size="11" fill="#334155">Trên 64 tuổi</text></svg></div></div><div class="option-list">
+              <div class="option-item" onclick="selectMcq('t8_c5_m20', 0)">
+                <strong>A.</strong>
+                <div><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn> <mn>666</mn> <mn>167</mn></mrow><annotation encoding="application/x-tex">7\,666\,167</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">7</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">666</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">167</span></span></span></span></span> người</div>
+              </div>
+            
+              <div class="option-item" onclick="selectMcq('t8_c5_m20', 1)">
+                <strong>B.</strong>
+                <div><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>22</mn> <mn>589</mn> <mn>379</mn></mrow><annotation encoding="application/x-tex">22\,589\,379</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">22</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">589</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">379</span></span></span></span></span> người</div>
+              </div>
+            
+              <div class="option-item" onclick="selectMcq('t8_c5_m20', 2)">
+                <strong>C.</strong>
+                <div><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>67</mn> <mn>154</mn> <mn>454</mn></mrow><annotation encoding="application/x-tex">67\,154\,454</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">67</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">154</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">454</span></span></span></span></span> người</div>
+              </div>
+            
+              <div class="option-item" onclick="selectMcq('t8_c5_m20', 3)">
+                <strong>D.</strong>
+                <div><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>76</mn> <mn>661</mn> <mn>670</mn></mrow><annotation encoding="application/x-tex">76\,661\,670</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6444em;"></span><span class="mord">76</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">661</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mord">670</span></span></span></span></span> người</div>
+              </div>
+            </div></div>
 
           <div class="footer-actions" id="questionFooter">
             <button class="btn" type="button" onclick="prevQuestion()">Câu trước</button>
@@ -800,9 +824,9 @@
           <div class="sidebar-card">
             <div style="display:flex; justify-content:space-between; align-items:center;">
               <strong>Bảng điều hướng câu hỏi</strong>
-              <span id="scoreSummary" style="font-size:13px; color:var(--muted);">0/0</span>
+              <span id="scoreSummary" style="font-size:13px; color:var(--muted);">Đúng 1/10</span>
             </div>
-            <div id="navGrid" class="nav-grid"></div>
+            <div id="navGrid" class="nav-grid"><button type="button" class="nav-num" onclick="jumpToQuestion(0)">1</button><button type="button" class="nav-num" onclick="jumpToQuestion(1)">2</button><button type="button" class="nav-num done-ok" onclick="jumpToQuestion(2)">3</button><button type="button" class="nav-num" onclick="jumpToQuestion(3)">4</button><button type="button" class="nav-num" onclick="jumpToQuestion(4)">5</button><button type="button" class="nav-num" onclick="jumpToQuestion(5)">6</button><button type="button" class="nav-num" onclick="jumpToQuestion(6)">7</button><button type="button" class="nav-num current" onclick="jumpToQuestion(7)">8</button><button type="button" class="nav-num" onclick="jumpToQuestion(8)">9</button><button type="button" class="nav-num" onclick="jumpToQuestion(9)">10</button></div>
           </div>
         </aside>
       </div>
@@ -817,7 +841,7 @@
         <button class="btn" type="button" onclick="closeTeacherModal()">Đóng</button>
       </div>
       <p style="font-size:13.5px; color:var(--muted); margin-top:0;">
-        Hiện có <strong id="bankTotalCount">0</strong> câu hỏi trong ngân hàng. Dán mảng JSON câu hỏi vào khung bên dưới để <strong>Nối thêm</strong> (giữ các chương cũ) hoặc <strong>Thay thế toàn bộ</strong>.
+        Hiện có <strong id="bankTotalCount">150</strong> câu hỏi trong ngân hàng. Dán mảng JSON câu hỏi vào khung bên dưới để <strong>Nối thêm</strong> (giữ các chương cũ) hoặc <strong>Thay thế toàn bộ</strong>.
       </p>
       <textarea id="jsonEditor" spellcheck="false" placeholder="Dán mảng JSON câu hỏi [...] vào đây..."></textarea>
       <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;">
@@ -826,7 +850,7 @@
         <button class="btn btn-soft" type="button" onclick="showCurrentJson()">Xem JSON hiện tại</button>
         <button class="btn" type="button" onclick="resetDefaultBank()">Khôi phục mẫu ban đầu</button>
       </div>
-      <div id="teacherMsg" class="feedback-box info hidden"></div>
+      <div id="teacherMsg" class="feedback-box ok">Đã nối thêm 30 câu hỏi. Tổng ngân hàng hiện có 150 câu.</div>
     </div>
   </div>
 
@@ -846,7 +870,7 @@
   </div>
 
   <!-- THÔNG BÁO NHANH -->
-  <div id="toastNotice" class="toast-notice hidden"></div>
+  <div id="toastNotice" class="toast-notice hidden">Vui lòng chọn Đúng hoặc Sai cho cả 4 ý.</div>
 
   <script>
     // Danh mục các chương SGK Toán 6, 7, 8, 9 (Kết nối tri thức với cuộc sống)
@@ -1792,5 +1816,6 @@
       setTimeout(renderMath, 150);
     });
   </script>
-</body>
-</html>
+
+
+</body></html>
