@@ -123,7 +123,7 @@
           <div>
             <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white font-black text-xl flex items-center justify-center mb-4 group-hover:scale-105 transition">8</div>
             <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-emerald-700">Toán Lớp 8</h3>
-            <p class="text-xs text-slate-500 mt-1">Hằng đẳng thức, Phân thức đại số, Tứ giác, Định lý Py-ta-go & Hàm số.</p>
+            <p class="text-xs text-slate-500 mt-1">Đa thức, Hằng đẳng thức, Tứ giác, Định lí Thalès & Dữ liệu biểu đồ.</p>
           </div>
           <span class="mt-4 inline-flex items-center text-xs font-bold text-emerald-600">Chọn lớp 8 →</span>
         </button>
@@ -153,7 +153,7 @@
       <div class="text-center max-w-2xl mx-auto mb-7">
         <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold mb-2">Bước 2 / 2</span>
         <h2 id="termHeading" class="text-xl sm:text-2xl font-extrabold text-slate-900 mb-2">Chọn giai đoạn ôn luyện</h2>
-        <p class="text-xs sm:text-sm text-slate-500">Chọn Học kì I, Học kì II hoặc Ôn tập cuối năm để vào trang làm bài kiểm tra 15 phút.</p>
+        <p class="text-xs sm:text-sm text-slate-500">Chọn Học kì I, Học kì II hoặc Ôn tập cuối năm để vào trang làm bài kiểm tra.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
@@ -177,9 +177,9 @@
           class="group text-left p-6 rounded-2xl border-2 border-slate-200 hover:border-emerald-500 bg-white hover:bg-emerald-50/40 hover:shadow-md transition cursor-pointer">
           <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-700 font-extrabold text-sm flex items-center justify-center mb-3">CN</div>
           <h3 class="text-lg font-extrabold text-slate-900 group-hover:text-emerald-700">Ôn tập cuối năm</h3>
-            <p class="text-xs text-slate-500 mt-1.5">Tổng hợp toàn bộ kiến thức cả năm học (Học kì I & Học kì II).</p>
-            <span class="mt-4 inline-block text-xs font-bold text-emerald-600">Vào ôn tập cuối năm →</span>
-          </button>
+          <p class="text-xs text-slate-500 mt-1.5">Tổng hợp toàn bộ kiến thức cả năm học (Học kì I & Học kì II).</p>
+          <span class="mt-4 inline-block text-xs font-bold text-emerald-600">Vào ôn tập cuối năm →</span>
+        </button>
       </div>
     </section>
 
@@ -213,7 +213,7 @@
               <span class="text-sm font-bold text-slate-800">Bảng điều hướng câu hỏi</span>
               <span id="navProgress" class="text-xs font-bold text-slate-500">Đúng 0/10</span>
             </div>
-            <p id="navHintText" class="text-xs text-slate-500 mb-3">Bấm <strong>Bắt đầu làm bài</strong> ở đầu trang để mở khóa đề thi 15 phút.</p>
+            <p id="navHintText" class="text-xs text-slate-500 mb-3">Bấm <strong>Bắt đầu làm bài</strong> ở đầu trang để mở khóa đề thi.</p>
             <div id="navGrid" class="grid grid-cols-5 gap-2"></div>
           </div>
         </aside>
@@ -325,17 +325,21 @@
   <div id="manageModal" class="fixed inset-0 bg-slate-900/50 hidden items-center justify-center p-4 z-50">
     <div class="bg-white rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-5 sm:p-6 shadow-xl">
       <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-200">
-        <h2 class="text-lg font-extrabold text-slate-900">Quản lý ngân hàng câu hỏi & Nạp JSON</h2>
+        <div>
+          <h2 class="text-lg font-extrabold text-slate-900">Quản lý ngân hàng câu hỏi & Nạp JSON</h2>
+          <p id="bankCountSummary" class="text-xs text-slate-500">Tổng số câu hỏi hiện có: 0 câu</p>
+        </div>
         <button type="button" onclick="closeModal('manageModal')" class="text-slate-500 hover:text-slate-800 font-bold text-lg px-2 cursor-pointer">✕</button>
       </div>
 
-      <div id="manageList" class="space-y-2 mb-4"></div>
+      <div id="manageList" class="space-y-2 mb-4 max-h-60 overflow-y-auto pr-1"></div>
 
       <div class="border-t border-slate-200 pt-4">
-        <label for="jsonArea" class="block text-xs font-bold text-slate-700 mb-1">Dữ liệu JSON ngân hàng câu hỏi (dán JSON vào đây để nạp tự động)</label>
+        <label for="jsonArea" class="block text-xs font-bold text-slate-700 mb-1">Dữ liệu JSON ngân hàng câu hỏi (dán mảng JSON vào đây rồi chọn Nối thêm hoặc Thay thế)</label>
         <textarea id="jsonArea" rows="6" class="w-full border border-slate-300 rounded-xl p-3 font-mono text-xs"></textarea>
         <div class="flex flex-wrap gap-2 mt-3">
-          <button type="button" onclick="importJsonData()" class="px-4 py-2 rounded-xl bg-emerald-600 text-white text-xs sm:text-sm font-bold cursor-pointer">Nạp JSON này</button>
+          <button type="button" onclick="appendJsonData()" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold cursor-pointer">Nối thêm từ JSON (giữ đề cũ)</button>
+          <button type="button" onclick="importJsonData()" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold cursor-pointer">Thay thế toàn bộ bằng JSON</button>
           <button type="button" onclick="copyJsonBank()" class="px-4 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold cursor-pointer">Sao chép JSON</button>
           <button type="button" onclick="resetDefaultQuestions()" class="px-4 py-2 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold cursor-pointer">Khôi phục bộ mẫu</button>
         </div>
@@ -349,7 +353,7 @@
       <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-4 border-b border-slate-200">
         <div>
           <h2 class="text-lg font-extrabold text-slate-900">Bảng kết quả kiểm tra đã lưu</h2>
-          <p class="text-xs text-slate-500">Tự động lưu lại sau mỗi lần học sinh nộp bài hoặc hết giờ 15 phút.</p>
+          <p class="text-xs text-slate-500">Tự động lưu lại sau mỗi lần học sinh nộp bài hoặc hết thời gian làm bài.</p>
         </div>
         <div class="flex items-center gap-2">
           <button type="button" onclick="exportResultsCsv()"
@@ -907,7 +911,6 @@
       const hardQs = pickFromBucket(mcqPool.filter((q) => q.difficulty === "hard"), bp.mcqHard, pickedIds);
       const appQs = pickFromBucket(mcqPool.filter((q) => q.difficulty === "application"), bp.mcqApplication, pickedIds);
 
-      // Bổ sung nếu một mức độ trong ngân hàng đề chưa đủ số lượng
       const totalMcqTarget = bp.mcqMedium + bp.mcqHard + bp.mcqApplication;
       const currentMcq = [...medQs, ...hardQs, ...appQs];
       if (currentMcq.length < totalMcqTarget) {
@@ -916,7 +919,6 @@
 
       const tfQs = pickFromBucket(tfPool, bp.tfCount, pickedIds);
 
-      // Sắp xếp Trắc nghiệm (Trung bình -> Khá -> Vận dụng) trước, Tích đúng sai ở cuối
       const ordered = [...currentMcq, ...tfQs];
       if (ordered.length < bp.total) {
         ordered.push(...pickFromBucket(pool, bp.total - ordered.length, pickedIds));
@@ -1100,20 +1102,6 @@
       renderTimer();
       renderAll();
       showToast(`Đã tạo đề ngẫu nhiên mới ${bp.total} câu (${bp.durationMinutes} phút). Bấm 'Bắt đầu làm bài' để tính giờ!`);
-    };
-
-    window.reshuffleExam = function () {
-      stopTimer();
-      app.draft = {};
-      app.submitted = {};
-      app.streak = 0;
-      app.showHint = false;
-      app.examStatus = "not_started";
-      app.remainingSec = DEFAULT_TIMER_SECONDS;
-      buildRandomExamOrder();
-      renderTimer();
-      renderAll();
-      showToast("Đã tạo đề ngẫu nhiên mới 10 câu. Bấm 'Bắt đầu làm bài' để tính giờ 15 phút!");
     };
 
     window.toggleHint = function () {
@@ -1774,6 +1762,8 @@
     };
 
     function renderManageList() {
+      const summary = document.getElementById("bankCountSummary");
+      if (summary) summary.textContent = `Tổng số câu hỏi hiện có: ${app.questions.length} câu`;
       const box = document.getElementById("manageList");
       box.innerHTML = app.questions.map((q) => {
         const diffTag = q.mode === "mcq" ? ` • ${DIFFICULTY_LABELS[q.difficulty || "medium"]}` : "";
@@ -1793,15 +1783,51 @@
       runKatex();
     }
 
+    function parseIncomingJsonList() {
+      const raw = document.getElementById("jsonArea").value.trim();
+      const parsed = JSON.parse(raw);
+      const list = Array.isArray(parsed) ? parsed : [
+        ...(parsed.mcq || []).map((x) => ({ ...x, mode: "mcq" })),
+        ...(parsed.tf || []).map((x) => ({ ...x, mode: "tf" }))
+      ];
+      return normalizeQuestionBank(list);
+    }
+
+    window.appendJsonData = function () {
+      try {
+        const valid = parseIncomingJsonList();
+        if (!valid.length) {
+          showToast("Không tìm thấy câu hỏi Trắc nghiệm hoặc Tích đúng sai hợp lệ trong JSON.");
+          return;
+        }
+        const mapById = new Map(app.questions.map((q) => [q.id, q]));
+        let added = 0;
+        let updated = 0;
+        valid.forEach((q) => {
+          if (mapById.has(q.id)) updated += 1;
+          else added += 1;
+          mapById.set(q.id, q);
+        });
+        app.questions = Array.from(mapById.values());
+        app.draft = {};
+        app.submitted = {};
+        app.streak = 0;
+        persistQuestions();
+        if (app.step === "exam") {
+          updateTopicDropdown();
+          buildRandomExamOrder();
+        }
+        closeModal("manageModal");
+        renderAll();
+        showToast(`Đã nối thêm ${added} câu mới${updated ? ` (cập nhật ${updated} câu trùng ID)` : ""}! Tổng cộng: ${app.questions.length} câu.`);
+      } catch (err) {
+        showToast("Lỗi cú pháp JSON: " + err.message);
+      }
+    };
+
     window.importJsonData = function () {
       try {
-        const raw = document.getElementById("jsonArea").value.trim();
-        const parsed = JSON.parse(raw);
-        const list = Array.isArray(parsed) ? parsed : [
-          ...(parsed.mcq || []).map((x) => ({ ...x, mode: "mcq" })),
-          ...(parsed.tf || []).map((x) => ({ ...x, mode: "tf" }))
-        ];
-        const valid = normalizeQuestionBank(list);
+        const valid = parseIncomingJsonList();
         if (!valid.length) {
           showToast("Không tìm thấy câu hỏi Trắc nghiệm hoặc Tích đúng sai hợp lệ trong JSON.");
           return;
@@ -1817,7 +1843,7 @@
         }
         closeModal("manageModal");
         renderAll();
-        showToast(`Đã nạp ${app.questions.length} câu hỏi thành công!`);
+        showToast(`Đã thay thế bằng ${app.questions.length} câu hỏi thành công!`);
       } catch (err) {
         showToast("Lỗi cú pháp JSON: " + err.message);
       }
@@ -1863,7 +1889,7 @@
       el.textContent = text;
       el.classList.remove("hidden");
       clearTimeout(el._t);
-      el._t = setTimeout(() => el.classList.add("hidden"), 2600);
+      el._t = setTimeout(() => el.classList.add("hidden"), 2800);
     }
 
     window.runKatex = function () {
