@@ -1,0 +1,1103 @@
+<!-- ... existing code ... -->
+      <!-- Thống kê nhanh & Nút Thêm câu hỏi / Quản lý câu hỏi -->
+      <div class="flex items-center gap-2 sm:gap-2.5">
+        <!-- Chuyển đổi chế độ Học sinh / Giáo viên -->
+        <div class="inline-flex rounded-xl bg-slate-100 p-1 border border-slate-200" role="group" aria-label="Chế độ Học sinh hoặc Giáo viên">
+          <button
+            id="roleStudentBtn"
+            type="button"
+            class="px-2.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer"
+          >
+            Học sinh
+          </button>
+          <button
+            id="roleTeacherBtn"
+            type="button"
+            class="px-2.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer"
+          >
+            Giáo viên
+          </button>
+        </div>
+
+        <div class="hidden md:flex items-center gap-2 bg-indigo-50 border border-indigo-100 px-3 py-1.5 rounded-xl text-xs font-semibold text-indigo-700">
+          <span>Điểm tích lũy:</span>
+          <span id="headerScore" class="text-sm font-extrabold text-indigo-800">0</span>
+        </div>
+        <button
+          id="openManagerModalBtn"
+          type="button"
+          class="teacher-only inline-flex items-center gap-1.5 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-xs sm:text-sm font-semibold px-3 py-2 rounded-xl shadow-2xs transition cursor-pointer"
+        >
+<!-- ... existing code ... -->
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+          <span>Thêm câu hỏi</span>
+        </button>
+      </div>
+    </div>
+  </header>
+<!-- ... existing code ... -->
+        <button
+          id="resetProgressBtn"
+          type="button"
+          class="mt-2 text-[11px] font-semibold text-rose-600 hover:text-rose-700 self-start underline underline-offset-2 cursor-pointer"
+        >
+          Làm lại từ đầu
+        </button>
+      </div>
+    </section>
+
+    <!-- THANH LỌC ÔN LẠI CÂU LÀM SAI & CHẾ ĐỘ LUYỆN TẬP -->
+    <section aria-label="Bộ lọc ôn tập" class="bg-white px-4 py-3 rounded-2xl border border-slate-200/80 shadow-2xs flex flex-wrap items-center justify-between gap-3">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-xs font-bold text-slate-600">Chế độ lọc:</span>
+        <button
+          id="filterAllItemsBtn"
+          type="button"
+          class="px-3 py-1.5 rounded-xl text-xs font-bold border transition cursor-pointer"
+        >
+          Tất cả câu hỏi
+        </button>
+        <button
+          id="filterMistakesBtn"
+          type="button"
+          class="px-3 py-1.5 rounded-xl text-xs font-bold border transition cursor-pointer"
+        >
+          ↻ Ôn lại câu làm sai / chưa thuộc
+        </button>
+      </div>
+      <div id="roleStatusBadge" class="text-xs font-semibold text-slate-500"></div>
+    </section>
+
+    <!-- THANH CHỌN 4 CHẾ ĐỘ ÔN LUYỆN -->
+<!-- ... existing code ... -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Giải thích chi tiết</label>
+            <input id="mcqExplain" type="text" placeholder="2x = 6 => x = 3." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Gợi ý kiến thức cần áp dụng (hiển thị khi bấm nút Gợi ý)</label>
+            <input id="mcqHint" type="text" placeholder="Áp dụng hằng đẳng thức (a+b)² và (a-b)(a+b)=a²-b²." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
+          </div>
+        </div>
+<!-- ... existing code ... -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Mặt sau (Quy tắc / Ví dụ / Mẹo nhớ)</label>
+            <textarea id="fcBack" rows="3" placeholder="S = πR². Ví dụ: R = 2 cm thì S = 4π cm²." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm"></textarea>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Gợi ý / Kiến thức liên quan</label>
+            <input id="fcHint" type="text" placeholder="Nhớ lại khái niệm bán kính R và số π ≈ 3,14." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
+          </div>
+        </div>
+<!-- ... existing code ... -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Gợi ý / Giải thích</label>
+            <input id="listExplain" type="text" placeholder="Số 1 không phải số nguyên tố; 2 là số nguyên tố chẵn duy nhất." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Gợi ý kiến thức cần áp dụng</label>
+            <input id="listHint" type="text" placeholder="Kiểm tra điều kiện chia hết và các giá trị biên." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
+          </div>
+        </div>
+<!-- ... existing code ... -->
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Giải thích chung</label>
+            <input id="tfExplain" type="text" placeholder="Hệ số góc a = 2 > 0 nên hàm số đồng biến trên ℝ..." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Gợi ý kiến thức cần áp dụng</label>
+            <input id="tfHint" type="text" placeholder="Xét dấu hệ số a và thay tọa độ điểm vào công thức hàm số." class="w-full rounded-xl border border-slate-300 px-3 py-2 text-sm" />
+          </div>
+        </div>
+<!-- ... existing code ... -->
+        {
+          id: 'mcq-1',
+          topic: 'Đại số',
+          points: 10,
+          hint: 'Áp dụng hằng đẳng thức $(a + b)^2 = a^2 + 2ab + b^2$ và $(a - b)(a + b) = a^2 - b^2$, chú ý đổi dấu khi phá ngoặc.',
+          question: 'Rút gọn biểu thức $A = (x + 3)^2 - (x - 3)(x + 3)$ ta được:',
+          options: ['$6x$', '$6x + 18$', '$18$', '$2x^2 + 6x$'],
+          correctIndex: 1,
+          explanation:
+            'Khai triển hằng đẳng thức: $(x + 3)^2 = x^2 + 6x + 9$ và $(x - 3)(x + 3) = x^2 - 9$. Trừ hai biểu thức: $(x^2 + 6x + 9) - (x^2 - 9) = 6x + 18$.'
+        },
+        {
+          id: 'mcq-2',
+          topic: 'Hàm số',
+          points: 10,
+          hint: 'Hàm số bậc nhất $y = ax + b$ đồng biến trên $\\mathbb{R}$ khi và chỉ khi hệ số góc $a > 0$.',
+          question: 'Hàm số bậc nhất $y = (m - 2)x + 5$ đồng biến trên $\\mathbb{R}$ khi và chỉ khi:',
+          options: ['$m \\neq 2$', '$m > 2$', '$m < 2$', '$m \\ge 2$'],
+          correctIndex: 1,
+          explanation:
+            'Hàm số bậc nhất $y = ax + b$ đồng biến trên $\\mathbb{R}$ khi hệ số góc $a > 0$. Ở đây $a = m - 2 > 0 \\iff m > 2$.'
+        },
+        {
+          id: 'mcq-3',
+          topic: 'Phương trình',
+          points: 10,
+          hint: 'Phân tích vế trái thành nhân tử hoặc tìm hai số có tổng bằng $5$ và tích bằng $6$.',
+          question: 'Phương trình $x^2 - 5x + 6 = 0$ có tập nghiệm là:',
+          options: ['$S = \\{-2; -3\\}$', '$S = \\{1; 6\\}$', '$S = \\{2; 3\\}$', '$S = \\{-1; -6\\}$'],
+          correctIndex: 2,
+          explanation:
+            'Phân tích nhân tử: $x^2 - 5x + 6 = (x - 2)(x - 3) = 0$. Suy ra $x = 2$ hoặc $x = 3$. Vậy $S = \\{2; 3\\}$.'
+        },
+        {
+          id: 'mcq-4',
+          topic: 'Hình học',
+          points: 10,
+          hint: 'Sử dụng định lý Py-ta-go: bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông.',
+          question: 'Cho tam giác vuông có hai cạnh góc vuông bằng $6\\text{ cm}$ và $8\\text{ cm}$. Độ dài cạnh huyền là:',
+          options: ['$10\\text{ cm}$', '$14\\text{ cm}$', '$\\sqrt{14}\\text{ cm}$', '$12\\text{ cm}$'],
+          correctIndex: 0,
+          explanation:
+            'Theo định lý Py-ta-go: cạnh huyền $= \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10\\text{ cm}$.'
+        },
+        {
+          id: 'mcq-5',
+          topic: 'Số học',
+          points: 10,
+          hint: 'Phân tích mỗi số ra thừa số nguyên tố rồi lấy tích các thừa số nguyên tố chung với số mũ nhỏ nhất.',
+          question: 'Ước chung lớn nhất của $36$ và $48$ là:',
+          options: ['$6$', '$12$', '$24$', '$4$'],
+          correctIndex: 1,
+          explanation:
+            'Phân tích ra thừa số nguyên tố: $36 = 2^2 \\cdot 3^2$ và $48 = 2^4 \\cdot 3$. Lấy tích các thừa số nguyên tố chung với số mũ nhỏ nhất: $\\text{ƯCLN}(36, 48) = 2^2 \\cdot 3 = 12$.'
+        }
+      ],
+<!-- ... existing code ... -->
+    const STORAGE_KEY = 'on_luyen_toan_thong_minh_v1';
+    const EXAM_DURATION_SEC = 15 * 60; // 15 phút đồng hồ đếm ngược kiểu đề thi
+
+    /**
+     * =========================================================================
+     * 2. QUẢN LÝ TRẠNG THÁI ỨNG DỤNG (STATE)
+     * =========================================================================
+     */
+    function createInitialState() {
+      return {
+        currentMode: 'mcq', // 'mcq' | 'flashcard' | 'listing' | 'tf'
+        topicFilter: 'ALL',
+        userRole: 'student', // 'student' | 'teacher'
+        mistakesOnly: false,
+        timerRemainingSec: EXAM_DURATION_SEC,
+        timerRunning: true,
+        timerExpired: false,
+        revealedHints: {},  // { [itemId]: boolean }
+        // Ngân hàng câu hỏi đầy đủ có thể sửa, nhân bản, xóa và chia sẻ trực tiếp
+        questionBank: {
+<!-- ... existing code ... -->
+    function getItemsByMode(mode) {
+      const combined = getAllItemsByMode(mode);
+      const byTopic = appState.topicFilter === 'ALL'
+        ? combined
+        : combined.filter((item) => item.topic === appState.topicFilter);
+
+      if (!appState.mistakesOnly) return byTopic;
+
+      return byTopic.filter((item) => {
+        if (mode === 'mcq') {
+          const ans = appState.mcqAnswers[item.id];
+          return Boolean(ans && !ans.isCorrect);
+        }
+        if (mode === 'listing') {
+          const ans = appState.listingAnswers[item.id];
+          return Boolean(ans && ans.submitted && (ans.missing.length > 0 || ans.extra.length > 0));
+        }
+        if (mode === 'tf') {
+          const ans = appState.tfAnswers[item.id];
+          const total = (item.statements || []).length || 4;
+          return Boolean(ans && ans.submitted && ans.correctCount < total);
+        }
+        if (mode === 'flashcard') {
+          return appState.flashcardState.statuses[item.id] !== 'mastered';
+        }
+        return true;
+      });
+    }
+
+    function getDefaultHintForItem(mode, item) {
+      if (item && item.hint && String(item.hint).trim()) {
+        return String(item.hint).trim();
+      }
+      if (mode === 'mcq') {
+        return `Kiểm tra lại định nghĩa, công thức thuộc chủ đề "${item?.topic || 'Toán học'}" và thử thay giá trị/biến vào biểu thức.`;
+      }
+      if (mode === 'flashcard') {
+        return `Tập trung nhớ từ khóa cốt lõi và điều kiện áp dụng của khái niệm thuộc chủ đề "${item?.topic || 'Toán học'}".`;
+      }
+      if (mode === 'listing') {
+        return `Xác định đủ các điều kiện ràng buộc trong đề bài (${item?.topic || 'Toán học'}) để không liệt kê thiếu hoặc dư ý.`;
+      }
+      return `Xét từng nhận định độc lập dựa trên tính chất và công thức của chủ đề "${item?.topic || 'Toán học'}".`;
+    }
+
+    function toggleHint(itemId) {
+      if (!appState.revealedHints) appState.revealedHints = {};
+      appState.revealedHints[itemId] = !appState.revealedHints[itemId];
+      saveState();
+      renderWorkspace();
+    }
+
+    function renderHintBox(mode, item) {
+      const isOpen = Boolean(appState.revealedHints && appState.revealedHints[item.id]);
+      const hintText = getDefaultHintForItem(mode, item);
+      return `
+        <div class="space-y-2">
+          <button
+            type="button"
+            onclick="toggleHint('${item.id}')"
+            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold border transition cursor-pointer ${
+              isOpen
+                ? 'bg-amber-100 text-amber-900 border-amber-300'
+                : 'bg-amber-50 hover:bg-amber-100/80 text-amber-800 border-amber-200'
+            }"
+          >
+            <span>💡</span>
+            <span>${isOpen ? 'Ẩn gợi ý kiến thức' : 'Gợi ý kiến thức cần áp dụng'}</span>
+          </button>
+          ${isOpen ? `
+            <div class="rounded-2xl bg-amber-50/90 border border-amber-200/90 px-4 py-3 text-xs sm:text-sm text-amber-950 leading-relaxed">
+              <strong>Kiến thức gợi ý:</strong> ${renderMathHtml(hintText)}
+            </div>
+          ` : ''}
+        </div>
+      `;
+    }
+
+    function formatCountdown(sec) {
+      const safe = Math.max(0, Number(sec) || 0);
+      const mins = Math.floor(safe / 60);
+      const rem = safe % 60;
+      return `${String(mins).padStart(2, '0')}:${String(rem).padStart(2, '0')}`;
+    }
+
+    function isItemAnsweredInMode(mode, item) {
+      if (mode === 'mcq') return Boolean(appState.mcqAnswers[item.id]);
+      if (mode === 'listing') return Boolean(appState.listingAnswers[item.id] && appState.listingAnswers[item.id].submitted);
+      if (mode === 'tf') return Boolean(appState.tfAnswers[item.id] && appState.tfAnswers[item.id].submitted);
+      return false;
+    }
+
+    function getNavTileClass(mode, item, index) {
+      if (mode === 'mcq') {
+        const ans = appState.mcqAnswers[item.id];
+        if (!ans) return 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-indigo-50';
+        return ans.isCorrect
+          ? 'bg-emerald-100 text-emerald-800 border-emerald-400 font-extrabold'
+          : 'bg-rose-100 text-rose-800 border-rose-400 font-extrabold';
+      }
+      if (mode === 'listing') {
+        const ans = appState.listingAnswers[item.id];
+        if (!ans || !ans.submitted) return 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-emerald-50';
+        const perfect = ans.missing.length === 0 && ans.extra.length === 0;
+        return perfect
+          ? 'bg-emerald-100 text-emerald-800 border-emerald-400 font-extrabold'
+          : 'bg-amber-100 text-amber-800 border-amber-400 font-extrabold';
+      }
+      if (mode === 'tf') {
+        const ans = appState.tfAnswers[item.id];
+        if (!ans || !ans.submitted) return 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-violet-50';
+        const total = (item.statements || []).length || 4;
+        return ans.correctCount === total
+          ? 'bg-emerald-100 text-emerald-800 border-emerald-400 font-extrabold'
+          : 'bg-rose-100 text-rose-800 border-rose-400 font-extrabold';
+      }
+      const st = appState.flashcardState.statuses[item.id];
+      const active = appState.flashcardState.index === index;
+      if (active) return 'bg-indigo-600 text-white border-indigo-600 font-extrabold';
+      if (st === 'mastered') return 'bg-emerald-100 text-emerald-800 border-emerald-300';
+      if (st === 'review') return 'bg-amber-100 text-amber-800 border-amber-300';
+      return 'bg-slate-100 text-slate-700 border-slate-200';
+    }
+
+    function scrollToQuestionCard(domId, cardIndex) {
+      if (appState.currentMode === 'flashcard') {
+        jumpToFlashcard(cardIndex);
+        return;
+      }
+      const el = document.getElementById(domId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function renderExamSidebar(mode, items) {
+      const totalInMode = items.length;
+      let answeredCount = 0;
+      if (mode === 'flashcard') {
+        answeredCount = items.filter((c) => appState.flashcardState.statuses[c.id] === 'mastered').length;
+      } else {
+        answeredCount = items.filter((q) => isItemAnsweredInMode(mode, q)).length;
+      }
+      const allCompleted = mode !== 'flashcard' && totalInMode > 0 && answeredCount === totalInMode;
+      const isLowTime = (appState.timerRemainingSec || 0) <= 60;
+
+      return `
+        <aside class="lg:col-span-4 space-y-4 lg:sticky lg:top-24 self-start">
+          <!-- Đồng hồ đếm ngược -->
+          <div class="bg-white rounded-3xl border border-slate-200/90 p-5 shadow-2xs space-y-3">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs font-extrabold uppercase tracking-wider text-slate-500">Đồng hồ làm bài</span>
+              <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full ${
+                appState.timerExpired
+                  ? 'bg-rose-100 text-rose-700'
+                  : appState.timerRunning
+                    ? 'bg-emerald-50 text-emerald-700'
+                    : 'bg-amber-50 text-amber-700'
+              }">
+                ${appState.timerExpired ? 'Hết giờ' : appState.timerRunning ? 'Đang đếm ngược' : 'Tạm dừng'}
+              </span>
+            </div>
+
+            <div class="flex items-center justify-between gap-3">
+              <div id="examTimerDisplay" class="text-3xl font-extrabold font-mono tracking-tight ${
+                isLowTime || appState.timerExpired ? 'text-rose-600' : 'text-indigo-700'
+              }">
+                ${formatCountdown(appState.timerRemainingSec)}
+              </div>
+              <div class="flex items-center gap-1.5">
+                <button
+                  type="button"
+                  onclick="toggleTimerRunning()"
+                  class="px-3 py-1.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-xs font-bold text-slate-700 cursor-pointer"
+                >
+                  ${appState.timerRunning ? 'Tạm dừng' : 'Tiếp tục'}
+                </button>
+                <button
+                  type="button"
+                  onclick="resetExamTimer()"
+                  class="px-2.5 py-1.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-xs font-bold text-slate-500 cursor-pointer"
+                  title="Đặt lại 15 phút"
+                >
+                  ↻
+                </button>
+              </div>
+            </div>
+
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              Mỗi câu sau khi trả lời sẽ chấm ngay và khóa hoàn tác; hoàn thành hết bài để xem tổng kết.
+            </p>
+          </div>
+
+          <!-- Bảng điều hướng số câu -->
+          <div class="bg-white rounded-3xl border border-slate-200/90 p-5 shadow-2xs space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <h3 class="text-sm font-extrabold text-slate-900">Bảng điều hướng số câu</h3>
+              <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full">
+                ${mode === 'flashcard' ? `Đã thuộc ${answeredCount}/${totalInMode}` : `Đã làm ${answeredCount}/${totalInMode}`}
+              </span>
+            </div>
+
+            <div class="grid grid-cols-5 gap-2">
+              ${items.map((item, idx) => {
+                const domId = `q-card-${mode}-${item.id}`;
+                return `
+                  <button
+                    type="button"
+                    onclick="scrollToQuestionCard('${domId}', ${idx})"
+                    class="h-10 rounded-xl border text-xs font-bold transition cursor-pointer flex items-center justify-center ${getNavTileClass(mode, item, idx)}"
+                  >
+                    ${idx + 1}
+                  </button>
+                `;
+              }).join('')}
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 text-[11px] text-slate-500 pt-1 border-t border-slate-100">
+              <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-xs bg-emerald-400 inline-block"></span> Đúng / Chuẩn</span>
+              <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-xs bg-rose-400 inline-block"></span> Sai</span>
+              <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-xs bg-slate-200 inline-block"></span> Chưa làm</span>
+            </div>
+
+            ${allCompleted ? `
+              <div class="rounded-2xl bg-emerald-50 border border-emerald-200 p-3.5 text-xs text-emerald-900 space-y-1">
+                <div class="font-extrabold">🎉 Bạn đã hoàn thành toàn bộ ${totalInMode} câu của phần này!</div>
+                <div>Xem điểm tổng kết ở thanh thống kê phía trên hoặc bấm <strong>Ôn lại câu làm sai</strong> để củng cố thêm.</div>
+              </div>
+            ` : ''}
+          </div>
+        </aside>
+      `;
+    }
+
+    function toggleTimerRunning() {
+      if (appState.timerExpired) {
+        appState.timerRemainingSec = EXAM_DURATION_SEC;
+        appState.timerExpired = false;
+      }
+      appState.timerRunning = !appState.timerRunning;
+      saveState();
+      renderWorkspace();
+    }
+
+    function resetExamTimer() {
+      appState.timerRemainingSec = EXAM_DURATION_SEC;
+      appState.timerRunning = true;
+      appState.timerExpired = false;
+      saveState();
+      renderWorkspace();
+    }
+
+    function applyRoleVisibility() {
+      const isTeacher = appState.userRole === 'teacher';
+      document.querySelectorAll('.teacher-only').forEach((el) => {
+        el.classList.toggle('hidden', !isTeacher);
+      });
+
+      const studentBtn = document.getElementById('roleStudentBtn');
+      const teacherBtn = document.getElementById('roleTeacherBtn');
+      const statusBadge = document.getElementById('roleStatusBadge');
+
+      if (studentBtn && teacherBtn) {
+        studentBtn.className = `px-2.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+          !isTeacher ? 'bg-indigo-600 text-white shadow-2xs' : 'text-slate-600 hover:text-slate-900'
+        }`;
+        teacherBtn.className = `px-2.5 py-1.5 rounded-lg text-xs font-bold transition cursor-pointer ${
+          isTeacher ? 'bg-indigo-600 text-white shadow-2xs' : 'text-slate-600 hover:text-slate-900'
+        }`;
+      }
+
+      if (statusBadge) {
+        statusBadge.textContent = isTeacher
+          ? 'Đang ở Chế độ Giáo viên: có thể thêm, sửa, xóa và chia sẻ bộ câu hỏi.'
+          : 'Đang ở Chế độ Học sinh: tập trung làm bài, trả lời xong không thể hoàn tác.';
+      }
+
+      const allBtn = document.getElementById('filterAllItemsBtn');
+      const mistakesBtn = document.getElementById('filterMistakesBtn');
+      if (allBtn && mistakesBtn) {
+        allBtn.className = `px-3 py-1.5 rounded-xl text-xs font-bold border transition cursor-pointer ${
+          !appState.mistakesOnly
+            ? 'bg-indigo-600 text-white border-indigo-600'
+            : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50'
+        }`;
+        mistakesBtn.className = `px-3 py-1.5 rounded-xl text-xs font-bold border transition cursor-pointer ${
+          appState.mistakesOnly
+            ? 'bg-amber-500 text-white border-amber-500'
+            : 'bg-white text-amber-800 border-amber-200 bg-amber-50/50 hover:bg-amber-100/70'
+        }`;
+      }
+    }
+<!-- ... existing code ... -->
+    function renderWorkspace() {
+      updateTabStyles();
+      applyRoleVisibility();
+      updateStats();
+
+      const container = document.getElementById('workspaceContainer');
+      const mode = appState.currentMode;
+
+      if (mode === 'mcq') {
+        renderMcqMode(container);
+      } else if (mode === 'flashcard') {
+        renderFlashcardMode(container);
+      } else if (mode === 'listing') {
+        renderListingMode(container);
+      } else if (mode === 'tf') {
+        renderTfMode(container);
+      }
+    }
+
+    /**
+     * --- CHẾ ĐỘ 1: TRẮC NGHIỆM (MULTIPLE CHOICE) ---
+     */
+    function renderMcqMode(container) {
+      const questions = getItemsByMode('mcq');
+      if (questions.length === 0) {
+        container.innerHTML = renderEmptyTopicState('trắc nghiệm');
+        return;
+      }
+
+      const letters = ['A', 'B', 'C', 'D'];
+      const html = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <div class="lg:col-span-8 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h2 class="text-lg font-extrabold text-slate-900">Chế độ Trắc nghiệm</h2>
+              <p class="text-xs sm:text-sm text-slate-500">Chọn một đáp án để chấm ngay (sau khi trả lời không thể hoàn tác).</p>
+            </div>
+            <span class="text-xs font-bold bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-full border border-indigo-100">
+              ${questions.length} câu hỏi
+            </span>
+          </div>
+
+          ${questions.map((q, idx) => {
+            const ans = appState.mcqAnswers[q.id];
+            const isAnswered = Boolean(ans);
+
+            return `
+              <article id="q-card-mcq-${q.id}" class="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-6 shadow-2xs space-y-4 scroll-mt-24">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-indigo-100 text-indigo-700">Câu ${idx + 1}</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600">${renderMathHtml(q.topic)}</span>
+                    <span class="text-xs font-semibold text-slate-400">+${q.points || 10} điểm</span>
+                  </div>
+                  ${isAnswered ? `
+                    <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">
+                      Đã chốt đáp án (không thể hoàn tác)
+                    </span>
+                  ` : ''}
+                </div>
+
+                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-relaxed math-expr">
+                  ${renderMathHtml(q.question)}
+                </h3>
+
+                ${!isAnswered ? renderHintBox('mcq', q) : ''}
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  ${q.options.map((opt, optIdx) => {
+                    let btnStyle = 'bg-slate-50 hover:bg-indigo-50/70 border-slate-200 text-slate-800';
+                    let badgeStyle = 'bg-white border-slate-300 text-slate-700';
+
+                    if (isAnswered) {
+                      if (optIdx === q.correctIndex) {
+                        btnStyle = 'bg-emerald-50 border-emerald-500 text-emerald-950 ring-1 ring-emerald-500';
+                        badgeStyle = 'bg-emerald-600 border-emerald-600 text-white';
+                      } else if (optIdx === ans.selectedIndex && !ans.isCorrect) {
+                        btnStyle = 'bg-rose-50 border-rose-500 text-rose-950 ring-1 ring-rose-500';
+                        badgeStyle = 'bg-rose-600 border-rose-600 text-white';
+                      } else {
+                        btnStyle = 'bg-slate-50/60 border-slate-200 text-slate-400 opacity-80';
+                      }
+                    }
+
+                    return `
+                      <button
+                        type="button"
+                        ${isAnswered ? 'disabled' : `onclick="selectMcqOption('${q.id}', ${optIdx})"`}
+                        class="w-full text-left p-3.5 sm:p-4 rounded-2xl border transition flex items-center gap-3 ${btnStyle} ${isAnswered ? 'cursor-default' : 'cursor-pointer'}"
+                      >
+                        <span class="w-8 h-8 rounded-xl border font-extrabold text-xs flex items-center justify-center shrink-0 ${badgeStyle}">
+                          ${letters[optIdx] || optIdx + 1}
+                        </span>
+                        <span class="text-sm sm:text-base font-medium math-expr flex-1">${renderMathHtml(opt)}</span>
+                      </button>
+                    `;
+                  }).join('')}
+                </div>
+
+                ${isAnswered ? `
+                  <div class="rounded-2xl p-4 border ${ans.isCorrect ? 'bg-emerald-50/80 border-emerald-200 text-emerald-950' : 'bg-amber-50/90 border-amber-200 text-amber-950'} space-y-1.5">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="text-sm font-extrabold">
+                        ${ans.isCorrect ? `✓ Đúng (+${ans.earnedPoints} điểm)` : `✕ Sai — Đáp án đúng là ${letters[q.correctIndex]} (${renderMathHtml(q.options[q.correctIndex])})`}
+                      </span>
+                    </div>
+                    <p class="text-xs sm:text-sm leading-relaxed text-slate-700">
+                      <strong>Vì sao đúng / vì sao sai:</strong> ${renderMathHtml(q.explanation)}
+                    </p>
+                  </div>
+                ` : ''}
+              </article>
+            `;
+          }).join('')}
+          </div>
+          ${renderExamSidebar('mcq', questions)}
+        </div>
+      `;
+
+      container.innerHTML = html;
+    }
+
+    function selectMcqOption(questionId, optionIndex) {
+      if (appState.mcqAnswers[questionId]) return; // Đã trả lời thì không thể hoàn tác/đổi lại
+      const allMcq = getAllItemsByMode('mcq');
+      const q = allMcq.find((item) => item.id === questionId);
+      if (!q) return;
+
+      const isCorrect = optionIndex === q.correctIndex;
+      const earnedPoints = isCorrect ? (q.points || 10) : 0;
+
+      appState.mcqAnswers[questionId] = {
+        selectedIndex: optionIndex,
+        isCorrect,
+        earnedPoints
+      };
+      saveState();
+      renderWorkspace();
+    }
+<!-- ... existing code ... -->
+    function renderFlashcardMode(container) {
+      const cards = getItemsByMode('flashcard');
+      if (cards.length === 0) {
+        container.innerHTML = renderEmptyTopicState('dạng thẻ');
+        return;
+      }
+
+      if (appState.flashcardState.index >= cards.length) {
+        appState.flashcardState.index = 0;
+      }
+      const currentIdx = appState.flashcardState.index;
+      const card = cards[currentIdx];
+      const isFlipped = appState.flashcardState.flipped;
+      const status = appState.flashcardState.statuses[card.id] || null;
+      const masteredInView = cards.filter((c) => appState.flashcardState.statuses[c.id] === 'mastered').length;
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <div class="lg:col-span-8 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h2 class="text-lg font-extrabold text-slate-900">Chế độ Dạng thẻ ghi nhớ</h2>
+              <p class="text-xs sm:text-sm text-slate-500">Chạm vào thẻ để lật xem công thức, quy tắc và ví dụ minh họa.</p>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-bold">
+              <span class="bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1.5 rounded-full">
+                Đã thuộc: ${masteredInView}/${cards.length}
+              </span>
+              <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-full">
+                Thẻ ${currentIdx + 1} / ${cards.length}
+              </span>
+            </div>
+          </div>
+
+          ${renderHintBox('flashcard', card)}
+
+          <!-- Thẻ 3D có thể lật -->
+<!-- ... existing code ... -->
+            <button
+              type="button"
+              onclick="navigateFlashcard(1)"
+              class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-xs cursor-pointer"
+            >
+              Thẻ tiếp →
+            </button>
+          </div>
+          </div>
+          ${renderExamSidebar('flashcard', cards)}
+        </div>
+      `;
+    }
+<!-- ... existing code ... -->
+    function renderListingMode(container) {
+      const items = getItemsByMode('listing');
+      if (items.length === 0) {
+        container.innerHTML = renderEmptyTopicState('liệt kê');
+        return;
+      }
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <div class="lg:col-span-8 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h2 class="text-lg font-extrabold text-slate-900">Chế độ Liệt kê</h2>
+              <p class="text-xs sm:text-sm text-slate-500">Nhập các mục rồi bấm Kiểm tra để chấm ngay (sau khi nộp không thể hoàn tác).</p>
+            </div>
+            <span class="text-xs font-bold bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-full border border-emerald-200">
+              ${items.length} bài liệt kê
+            </span>
+          </div>
+
+          ${items.map((q, idx) => {
+            const savedResult = appState.listingAnswers[q.id];
+            const isSubmitted = Boolean(savedResult && savedResult.submitted);
+            const currentChips = isSubmitted
+              ? savedResult.items
+              : (draftListingInputs[q.id] || []);
+
+            return `
+              <article id="q-card-listing-${q.id}" class="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-6 shadow-2xs space-y-4 scroll-mt-24">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-emerald-100 text-emerald-800">Bài ${idx + 1}</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600">${renderMathHtml(q.topic)}</span>
+                    <span class="text-xs font-semibold text-slate-500">Cần liệt kê ${q.expected.length} mục • Tối đa ${q.points || 15} điểm</span>
+                  </div>
+                  ${isSubmitted ? `
+                    <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">
+                      Đã chấm (không thể hoàn tác)
+                    </span>
+                  ` : ''}
+                </div>
+
+                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-relaxed math-expr">
+                  ${renderMathHtml(q.prompt)}
+                </h3>
+
+                ${!isSubmitted ? renderHintBox('listing', q) : ''}
+
+                <!-- Ô nhập thêm mục hoặc nhiều mục cách nhau bởi dấu phẩy -->
+<!-- ... existing code ... -->
+                      <p class="pt-1 text-slate-600"><strong>Vì sao đúng / vì sao sai:</strong> ${renderMathHtml(q.explanation)}</p>
+                    </div>
+                  </div>
+                `}
+              </article>
+            `;
+          }).join('')}
+          </div>
+          ${renderExamSidebar('listing', items)}
+        </div>
+      `;
+    }
+<!-- ... existing code ... -->
+    function submitListing(questionId) {
+      if (appState.listingAnswers[questionId] && appState.listingAnswers[questionId].submitted) return;
+      // Nếu người dùng còn chữ gõ dở trong input mà chưa bấm Thêm, tự động gộp vào
+      const inputEl = document.getElementById(`listingInput-${questionId}`);
+      if (inputEl && inputEl.value.trim()) {
+        addListingDraft(questionId);
+      }
+
+      const allListing = getAllItemsByMode('listing');
+      const q = allListing.find((item) => item.id === questionId);
+      if (!q) return;
+
+      const userItems = draftListingInputs[questionId] || [];
+      if (userItems.length === 0) {
+        showToast('Hãy nhập ít nhất một mục trước khi kiểm tra danh sách nhé!', 'warning');
+        return;
+      }
+
+      const expectedNormSet = new Set(q.expected.map((e) => normalizeToken(e)));
+      const seenMatchedNorm = new Set();
+
+      const matched = [];
+      const extra = [];
+
+      userItems.forEach((item) => {
+        const norm = normalizeToken(item);
+        if (expectedNormSet.has(norm) && !seenMatchedNorm.has(norm)) {
+          seenMatchedNorm.add(norm);
+          matched.push(item);
+        } else {
+          extra.push(item);
+        }
+      });
+
+      const missing = q.expected.filter((exp) => !seenMatchedNorm.has(normalizeToken(exp)));
+
+      // Tính điểm theo tỉ lệ mục đúng trừ nhẹ nếu có mục sai dư thừa
+      const totalPts = q.points || 15;
+      const rawRatio = q.expected.length > 0 ? matched.length / q.expected.length : 0;
+      const penalty = extra.length * 0.15;
+      const scoreRatio = Math.max(0, Math.min(1, rawRatio - penalty));
+      const earnedPoints = Math.round(totalPts * scoreRatio);
+
+      appState.listingAnswers[questionId] = {
+        items: userItems,
+        submitted: true,
+        matched,
+        missing,
+        extra,
+        earnedPoints
+      };
+
+      delete draftListingInputs[questionId];
+      hideToast();
+      saveState();
+      renderWorkspace();
+    }
+
+    /**
+     * --- CHẾ ĐỘ 4: TÍCH ĐÚNG SAI (TRUE / FALSE STATEMENTS) ---
+     */
+    function renderTfMode(container) {
+      const problems = getItemsByMode('tf');
+      if (problems.length === 0) {
+        container.innerHTML = renderEmptyTopicState('tích đúng sai');
+        return;
+      }
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <div class="lg:col-span-8 space-y-5">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div>
+              <h2 class="text-lg font-extrabold text-slate-900">Chế độ Tích đúng sai</h2>
+              <p class="text-xs sm:text-sm text-slate-500">Chọn Đúng/Sai cho cả 4 ý rồi nộp bài để chấm ngay (không thể hoàn tác).</p>
+            </div>
+            <span class="text-xs font-bold bg-violet-50 text-violet-700 px-3 py-1.5 rounded-full border border-violet-200">
+              ${problems.length} bài tập
+            </span>
+          </div>
+
+          ${problems.map((prob, pIdx) => {
+            const ans = appState.tfAnswers[prob.id];
+            const isSubmitted = Boolean(ans && ans.submitted);
+            const selections = (ans && ans.selections) || {};
+
+            return `
+              <article id="q-card-tf-${prob.id}" class="bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-6 shadow-2xs space-y-4 scroll-mt-24">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-center gap-2 flex-wrap">
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-violet-100 text-violet-800">Bài ${pIdx + 1}</span>
+                    <span class="px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-100 text-slate-600">${renderMathHtml(prob.topic)}</span>
+                    <span class="text-xs font-semibold text-slate-500">${prob.statements.length} ý • ${prob.pointsPerStatement || 5} điểm/ý</span>
+                  </div>
+                  ${isSubmitted ? `
+                    <span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">
+                      Đã chấm (không thể hoàn tác)
+                    </span>
+                  ` : ''}
+                </div>
+
+                <h3 class="text-base sm:text-lg font-bold text-slate-900 leading-relaxed math-expr">
+                  ${renderMathHtml(prob.prompt)}
+                </h3>
+
+                ${!isSubmitted ? renderHintBox('tf', prob) : ''}
+
+                <div class="divide-y divide-slate-100 border border-slate-200 rounded-2xl overflow-hidden">
+<!-- ... existing code ... -->
+                    <div class="text-sm font-extrabold text-slate-900">
+                      Kết quả: Đúng ${ans.correctCount}/${prob.statements.length} nhận định (+${ans.earnedPoints} điểm)
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                      <strong>Vì sao đúng / vì sao sai:</strong> ${renderMathHtml(prob.explanation)}
+                    </p>
+                  </div>
+                `}
+              </article>
+            `;
+          }).join('')}
+          </div>
+          ${renderExamSidebar('tf', problems)}
+        </div>
+      `;
+    }
+
+    function chooseTfOption(problemId, label, value) {
+      if (appState.tfAnswers[problemId] && appState.tfAnswers[problemId].submitted) return;
+      if (!appState.tfAnswers[problemId]) {
+        appState.tfAnswers[problemId] = { selections: {}, submitted: false, earnedPoints: 0, correctCount: 0 };
+      }
+      appState.tfAnswers[problemId].selections[label] = value;
+      saveState();
+      renderWorkspace();
+    }
+
+    function submitTf(problemId) {
+      if (appState.tfAnswers[problemId] && appState.tfAnswers[problemId].submitted) return;
+      const allTf = getAllItemsByMode('tf');
+      const prob = allTf.find((p) => p.id === problemId);
+      if (!prob) return;
+
+      const currentEntry = appState.tfAnswers[problemId] || { selections: {} };
+      const selections = currentEntry.selections || {};
+
+      // Kiểm tra xem học sinh đã chọn đủ cả 4 nhận định chưa
+      const missingLabels = prob.statements
+        .filter((s) => typeof selections[s.label] !== 'boolean')
+        .map((s) => `${s.label})`);
+
+      if (missingLabels.length > 0) {
+        showToast(`Bạn chưa chọn Đúng/Sai cho nhận định: ${missingLabels.join(', ')}.`, 'warning');
+        return;
+      }
+
+      let correctCount = 0;
+      prob.statements.forEach((s) => {
+        if (selections[s.label] === s.answer) {
+          correctCount += 1;
+        }
+      });
+
+      const earnedPoints = correctCount * (prob.pointsPerStatement || 5);
+      appState.tfAnswers[problemId] = {
+        selections,
+        submitted: true,
+        earnedPoints,
+        correctCount
+      };
+
+      hideToast();
+      saveState();
+      renderWorkspace();
+    }
+
+    function renderEmptyTopicState(modeLabel) {
+      const filterDesc = appState.mistakesOnly
+        ? 'Không có câu sai / chưa thuộc nào'
+        : `Chưa có nội dung ${escapeHtml(modeLabel)} cho chủ đề "${escapeHtml(appState.topicFilter)}"`;
+      return `
+        <div class="bg-white rounded-3xl border border-slate-200 p-10 text-center space-y-3">
+          <div class="text-3xl">📐</div>
+          <h3 class="text-base font-extrabold text-slate-800">${filterDesc}</h3>
+          <p class="text-xs sm:text-sm text-slate-500 max-w-md mx-auto">
+            Bạn có thể chuyển sang <strong>Tất cả câu hỏi</strong> hoặc chọn <strong>Tất cả chủ đề</strong> ở thanh bộ lọc phía trên.
+          </p>
+        </div>
+      `;
+    }
+<!-- ... existing code ... -->
+          if (editMode === 'mcq') {
+            document.getElementById('mcqQuestion').value = item.question || '';
+            (item.options || ['', '', '', '']).forEach((opt, i) => {
+              const el = document.getElementById(`mcqOpt${i}`);
+              if (el) el.value = opt;
+            });
+            document.getElementById('mcqCorrect').value = String(item.correctIndex ?? 0);
+            document.getElementById('mcqExplain').value = item.explanation || '';
+            const hEl = document.getElementById('mcqHint');
+            if (hEl) hEl.value = item.hint || '';
+          } else if (editMode === 'flashcard') {
+            document.getElementById('fcFront').value = item.front || '';
+            document.getElementById('fcBack').value = item.back || '';
+            const hEl = document.getElementById('fcHint');
+            if (hEl) hEl.value = item.hint || '';
+          } else if (editMode === 'listing') {
+            document.getElementById('listPrompt').value = item.prompt || '';
+            document.getElementById('listExpected').value = (item.expected || []).join(', ');
+            document.getElementById('listExplain').value = item.explanation || '';
+            const hEl = document.getElementById('listHint');
+            if (hEl) hEl.value = item.hint || '';
+          } else if (editMode === 'tf') {
+            document.getElementById('tfPrompt').value = item.prompt || '';
+            (item.statements || []).slice(0, 4).forEach((stmt, i) => {
+              const sEl = document.getElementById(`tfStmt${i}`);
+              const aEl = document.getElementById(`tfAns${i}`);
+              if (sEl) sEl.value = stmt.text || '';
+              if (aEl) aEl.value = stmt.answer ? 'true' : 'false';
+            });
+            document.getElementById('tfExplain').value = item.explanation || '';
+            const hEl = document.getElementById('tfHint');
+            if (hEl) hEl.value = item.hint || '';
+          }
+<!-- ... existing code ... -->
+        builtItem = {
+          id: itemId,
+          topic,
+          points: 10,
+          question,
+          options: [opt0, opt1, opt2, opt3],
+          correctIndex,
+          explanation,
+          hint: document.getElementById('mcqHint')?.value.trim() || ''
+        };
+      } else if (targetMode === 'flashcard') {
+        const front = document.getElementById('fcFront').value.trim();
+        const back = document.getElementById('fcBack').value.trim();
+        if (!front || !back) {
+          showErr('Vui lòng nhập đầy đủ nội dung mặt trước và mặt sau của thẻ.');
+          return;
+        }
+        builtItem = {
+          id: itemId,
+          topic,
+          front,
+          back,
+          hint: document.getElementById('fcHint')?.value.trim() || ''
+        };
+      } else if (targetMode === 'listing') {
+        const prompt = document.getElementById('listPrompt').value.trim();
+        const expectedRaw = document.getElementById('listExpected').value.trim();
+        const explanation = document.getElementById('listExplain').value.trim() || 'Kiểm tra từng mục theo yêu cầu bài toán.';
+        const expected = expectedRaw.split(/[,;]+/).map((s) => s.trim()).filter(Boolean);
+
+        if (!prompt || expected.length === 0) {
+          showErr('Vui lòng nhập yêu cầu liệt kê và ít nhất một đáp án chuẩn.');
+          return;
+        }
+        builtItem = {
+          id: itemId,
+          topic,
+          points: 15,
+          prompt,
+          expected,
+          explanation,
+          hint: document.getElementById('listHint')?.value.trim() || ''
+        };
+      } else if (targetMode === 'tf') {
+        const prompt = document.getElementById('tfPrompt').value.trim();
+        const labels = ['a', 'b', 'c', 'd'];
+        const statements = [];
+
+        for (let i = 0; i < 4; i++) {
+          const text = document.getElementById(`tfStmt${i}`).value.trim();
+          const answer = document.getElementById(`tfAns${i}`).value === 'true';
+          if (!text) {
+            showErr(`Vui lòng nhập nội dung nhận định ${labels[i]}).`);
+            return;
+          }
+          statements.push({ label: labels[i], text, answer });
+        }
+
+        if (!prompt) {
+          showErr('Vui lòng nhập đề bài chung cho bài Tích đúng sai.');
+          return;
+        }
+
+        const explanation = document.getElementById('tfExplain').value.trim() || 'Đối chiếu từng nhận định với tính chất toán học.';
+        builtItem = {
+          id: itemId,
+          topic,
+          pointsPerStatement: 5,
+          prompt,
+          statements,
+          explanation,
+          hint: document.getElementById('tfHint')?.value.trim() || ''
+        };
+      }
+<!-- ... existing code ... -->
+      // Nút làm lại tiến độ
+      document.getElementById('resetProgressBtn').addEventListener('click', () => {
+        const preservedMode = appState.currentMode;
+        const preservedBank = cloneDeep(appState.questionBank);
+        const preservedRole = appState.userRole;
+        appState = createInitialState();
+        appState.currentMode = preservedMode;
+        appState.questionBank = preservedBank;
+        appState.userRole = preservedRole;
+        Object.keys(draftListingInputs).forEach((k) => delete draftListingInputs[k]);
+        saveState();
+        renderWorkspace();
+        showToast('Đã đặt lại điểm số, đồng hồ và tiến độ làm bài.', 'info');
+      });
+
+      // Chuyển đổi Học sinh / Giáo viên
+      document.getElementById('roleStudentBtn').addEventListener('click', () => {
+        appState.userRole = 'student';
+        saveState();
+        applyRoleVisibility();
+      });
+      document.getElementById('roleTeacherBtn').addEventListener('click', () => {
+        appState.userRole = 'teacher';
+        saveState();
+        applyRoleVisibility();
+      });
+
+      // Bộ lọc Tất cả / Ôn lại câu làm sai
+      document.getElementById('filterAllItemsBtn').addEventListener('click', () => {
+        appState.mistakesOnly = false;
+        appState.flashcardState.index = 0;
+        saveState();
+        renderWorkspace();
+      });
+      document.getElementById('filterMistakesBtn').addEventListener('click', () => {
+        appState.mistakesOnly = true;
+        appState.flashcardState.index = 0;
+        saveState();
+        renderWorkspace();
+      });
+
+      // Đồng hồ đếm ngược mỗi giây
+      setInterval(() => {
+        if (!appState.timerRunning || appState.timerExpired) return;
+        const nextSec = (Number(appState.timerRemainingSec) || 0) - 1;
+        if (nextSec <= 0) {
+          appState.timerRemainingSec = 0;
+          appState.timerRunning = false;
+          appState.timerExpired = true;
+          saveState();
+          renderWorkspace();
+          showToast('Đã hết thời gian làm bài! Bạn vẫn có thể xem kết quả và giải thích chi tiết.', 'warning');
+          return;
+        }
+        appState.timerRemainingSec = nextSec;
+        const timerEl = document.getElementById('examTimerDisplay');
+        if (timerEl) {
+          timerEl.textContent = formatCountdown(nextSec);
+          timerEl.classList.toggle('text-rose-600', nextSec <= 60);
+          timerEl.classList.toggle('text-indigo-700', nextSec > 60);
+        }
+      }, 1000);
+<!-- ... existing code ... -->
