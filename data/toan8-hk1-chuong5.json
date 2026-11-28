@@ -1,0 +1,572 @@
+[
+  {
+    "id": "t8_c5_m01",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Hoạt động thu thập dữ liệu nào sau đây là thu thập dữ liệu gián tiếp?",
+    "hint": "Thu thập dữ liệu gián tiếp là việc lấy dữ liệu từ những nguồn có sẵn như sách, báo, mạng Internet...",
+    "options": [
+      "Đứng ở cổng trường đếm số học sinh đi xe đạp điện đến trường",
+      "Truy cập website của Tổng cục Thống kê để ghi lại dân số các tỉnh năm 2022",
+      "Phát phiếu hỏi cho học sinh lớp 8A về môn thể thao yêu thích",
+      "Cân và ghi lại khối lượng của $30$ con cá chép sau $2$ tháng nuôi"
+    ],
+    "answer": 1,
+    "explanation": "Truy cập website có sẵn để ghi lại số liệu là thu thập dữ liệu gián tiếp; các phương án còn lại là thu thập dữ liệu trực tiếp qua quan sát, lập bảng hỏi và làm thí nghiệm."
+  },
+  {
+    "id": "t8_c5_m02",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Thầy giáo dạy Giáo dục thể chất đo và ghi lại thời gian chạy cự li $1000\\text{ m}$ của các bạn học sinh khối 8. Phương pháp thu thập dữ liệu mà thầy giáo đã sử dụng là:",
+    "hint": "Việc trực tiếp đo đạc, thực nghiệm để ghi lại kết quả thuộc nhóm thu thập dữ liệu trực tiếp.",
+    "options": [
+      "Thu thập dữ liệu gián tiếp từ nguồn có sẵn",
+      "Thu thập dữ liệu trực tiếp thông qua quan sát, làm thí nghiệm",
+      "Thu thập dữ liệu trực tiếp thông qua phỏng vấn",
+      "Thu thập dữ liệu gián tiếp qua mạng Internet"
+    ],
+    "answer": 1,
+    "explanation": "Thầy giáo trực tiếp đo và ghi nhận thời gian chạy của từng học sinh nên đây là phương pháp thu thập dữ liệu trực tiếp thông qua quan sát, thực nghiệm."
+  },
+  {
+    "id": "t8_c5_m03",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Trong các dãy dữ liệu sau đây, dãy dữ liệu nào là **số liệu liên tục**?",
+    "hint": "Số liệu liên tục thường thu được từ các phép đo như chiều cao, cân nặng, nhiệt độ, thời gian...",
+    "options": [
+      "Số bài tập toán mà các bạn trong tổ làm ở nhà trong tuần: $8; 5; 3; 10; 6$",
+      "Số học sinh vắng mặt của lớp 8B trong các ngày trong tuần: $1; 0; 2; 1; 0$",
+      "Chiều cao (đơn vị $\\text{cm}$) của $5$ học sinh: $148,1; 152,9; 145,7; 151,3; 153,6$",
+      "Số mặt trăng của các hành tinh trong Hệ Mặt Trời: $0; 0; 1; 2; 79; 82$"
+    ],
+    "answer": 2,
+    "explanation": "Chiều cao thu được từ phép đo và có thể nhận giá trị tùy ý trong một khoảng nên là số liệu liên tục; các dãy còn lại là số đếm (số nguyên) nên là số liệu rời rạc."
+  },
+  {
+    "id": "t8_c5_m04",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Trong các dãy dữ liệu sau đây, dãy dữ liệu nào là **số liệu rời rạc**?",
+    "hint": "Số liệu rời rạc thường là số liệu đếm số phần tử của một tập hợp nào đó.",
+    "options": [
+      "Nhiệt độ trung bình (đơn vị $^\\circ\\text{C}$) tại Hà Nội trong $4$ ngày: $22,1; 23,6; 21,4; 18,7$",
+      "Cân nặng (đơn vị $\\text{g}$) của $5$ con cá chép giống: $8,8; 10,1; 9,3; 9,7; 8,2$",
+      "Số sản phẩm công nhân làm được trong $5$ ngày: $24; 26; 25; 28; 27$",
+      "Thời gian (đơn vị giờ) hoàn thành bài tập về nhà: $1,5; 2,3; 1,9; 1,2$"
+    ],
+    "answer": 2,
+    "explanation": "Số sản phẩm làm được trong ngày là số liệu đếm số phần tử (chỉ nhận giá trị tự nhiên) nên là số liệu rời rạc; các dãy còn lại là số liệu liên tục."
+  },
+  {
+    "id": "t8_c5_m05",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Dữ liệu về \"Kết quả xếp loại học lực của học sinh lớp 8A gồm các mức: Tốt, Khá, Đạt, Chưa đạt\" thuộc loại dữ liệu nào?",
+    "hint": "Kiểm tra xem dữ liệu có phải là số hay không và có thể sắp xếp theo thứ tự từ cao xuống thấp hay không.",
+    "options": [
+      "Số liệu rời rạc",
+      "Số liệu liên tục",
+      "Dữ liệu không là số, có thể sắp thứ tự",
+      "Dữ liệu không là số, không thể sắp thứ tự"
+    ],
+    "answer": 2,
+    "explanation": "Các mức Tốt, Khá, Đạt, Chưa đạt không phải là số nhưng có thể sắp xếp thứ tự từ cao xuống thấp nên thuộc loại dữ liệu không là số, có thể sắp thứ tự."
+  },
+  {
+    "id": "t8_c5_m06",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Dữ liệu về \"Tên các môn thể thao yêu thích nhất của các bạn trong tổ: Bóng đá, Cầu lông, Cờ vua, Bóng bàn\" thuộc loại dữ liệu nào?",
+    "hint": "Tên các môn thể thao không phải là số và không có thứ tự hơn kém.",
+    "options": [
+      "Số liệu rời rạc",
+      "Số liệu liên tục",
+      "Dữ liệu không là số, có thể sắp thứ tự",
+      "Dữ liệu không là số, không thể sắp thứ tự"
+    ],
+    "answer": 3,
+    "explanation": "Tên các môn thể thao là dữ liệu chữ (không là số) và không có sự phân cấp thứ tự nên thuộc loại dữ liệu không là số, không thể sắp thứ tự."
+  },
+  {
+    "id": "t8_c5_m07",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Với câu hỏi \"Nhà bạn có bao nhiêu chiếc ti vi?\", Quỳnh hỏi bốn bạn và ghi lại kết quả: $2; 1; 52; 3$. Giá trị không hợp lí trong dãy dữ liệu trên là:",
+    "hint": "Xét tính thực tế của số lượng ti vi trong một hộ gia đình.",
+    "options": [
+      "$2$",
+      "$1$",
+      "$52$",
+      "$3$"
+    ],
+    "answer": 2,
+    "explanation": "Một hộ gia đình thông thường chỉ có từ $1$ đến $3$ chiếc ti vi, giá trị $52$ chiếc ti vi là bất hợp lí trong thực tế."
+  },
+  {
+    "id": "t8_c5_m08",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Để biểu diễn **tỉ lệ các phần trong tổng thể**, loại biểu đồ nào sau đây là phù hợp nhất?",
+    "hint": "Nhớ lại công dụng đặc trưng của từng loại biểu đồ trong Bài 19.",
+    "options": [
+      "Biểu đồ đoạn thẳng",
+      "Biểu đồ hình quạt tròn",
+      "Biểu đồ tranh",
+      "Biểu đồ cột kép"
+    ],
+    "answer": 1,
+    "explanation": "Khi muốn biểu diễn tỉ lệ phần trăm của các phần trong một tổng thể ($100\\%$), ta dùng biểu đồ hình quạt tròn."
+  },
+  {
+    "id": "t8_c5_m09",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Để biểu diễn **sự thay đổi của một đại lượng theo thời gian** qua nhiều mốc năm liên tiếp (ví dụ: dân số Việt Nam từ năm 1975 đến nay), loại biểu đồ nào phù hợp nhất?",
+    "hint": "Loại biểu đồ nối các điểm dữ liệu theo trục thời gian bằng các đoạn thẳng.",
+    "options": [
+      "Biểu đồ đoạn thẳng",
+      "Biểu đồ hình quạt tròn",
+      "Biểu đồ tranh",
+      "Biểu đồ cột kép"
+    ],
+    "answer": 0,
+    "explanation": "Để biểu diễn sự thay đổi (xu thế tăng, giảm) của một đại lượng theo thời gian với nhiều mốc quan sát, biểu đồ đoạn thẳng là lựa chọn phù hợp nhất."
+  },
+  {
+    "id": "t8_c5_m10",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Để **so sánh hai tập dữ liệu** với nhau (ví dụ: tỉ lệ đi học đúng tuổi ở các cấp học giữa Đồng bằng sông Hồng và Đồng bằng sông Cửu Long), ta nên dùng loại biểu đồ nào?",
+    "hint": "Hai cột đặt cạnh nhau trong cùng một nhóm đối tượng giúp so sánh trực quan.",
+    "options": [
+      "Biểu đồ hình quạt tròn",
+      "Biểu đồ cột kép",
+      "Biểu đồ tranh",
+      "Biểu đồ đoạn thẳng đơn"
+    ],
+    "answer": 1,
+    "explanation": "Khi muốn so sánh hai tập dữ liệu theo từng hạng mục đối tượng, ta dùng biểu đồ cột kép."
+  },
+  {
+    "id": "t8_c5_m11",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Bảng thống kê số lượng di sản thế giới của 5 quốc gia đứng đầu tính đến tháng 8 năm 2021 gồm: Ý ($58$), Trung Quốc ($56$), Đức ($51$), Tây Ban Nha ($49$), Pháp ($49$). Vì sao KHÔNG nên dùng biểu đồ tranh để biểu diễn bảng thống kê này?",
+    "hint": "Tìm $\\text{ƯCLN}(58, 56, 51, 49)$ để xem nếu dùng biểu đồ tranh thì phải vẽ bao nhiêu biểu tượng.",
+    "options": [
+      "Vì các số liệu không phải là số tự nhiên",
+      "Vì $\\text{ƯCLN}(58, 56, 51, 49) = 1$ nên nếu dùng biểu đồ tranh sẽ phải vẽ rất nhiều biểu tượng",
+      "Vì biểu đồ tranh chỉ dùng để biểu diễn tỉ lệ phần trăm",
+      "Vì số lượng quốc gia quá ít"
+    ],
+    "answer": 1,
+    "explanation": "Do $\\text{ƯCLN}(58, 56, 51, 49) = 1$, mỗi biểu tượng chỉ ứng với $1$ di sản nên phải vẽ tới $58 + 56 + 51 + 49 + 49 = 263$ biểu tượng, rất mất thời gian và không trực quan; nên dùng biểu đồ cột."
+  },
+  {
+    "id": "t8_c5_m12",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Biểu đồ tranh dưới đây biểu diễn số học sinh lớp 8A tham gia các câu lạc bộ (mỗi biểu tượng 😊 ứng với $3$ học sinh). Tổng số lượt học sinh tham gia ba câu lạc bộ trên là:<br><div style='text-align:center;margin:10px 0'><svg width='300' height='115' viewBox='0 0 300 115' xmlns='http://www.w3.org/2000/svg'><rect x='10' y='8' width='280' height='98' rx='6' fill='#f8fafc' stroke='#cbd5e1'/><line x1='10' y1='40' x2='290' y2='40' stroke='#cbd5e1'/><line x1='10' y1='73' x2='290' y2='73' stroke='#cbd5e1'/><line x1='115' y1='8' x2='115' y2='106' stroke='#cbd5e1'/><text x='22' y='28' font-size='12' fill='#1e293b' font-weight='bold'>Tiếng Anh</text><text x='130' y='30' font-size='18'>😊  😊</text><text x='22' y='61' font-size='12' fill='#1e293b' font-weight='bold'>Võ thuật</text><text x='130' y='63' font-size='18'>😊  😊  😊</text><text x='22' y='94' font-size='12' fill='#1e293b' font-weight='bold'>Nghệ thuật</text><text x='130' y='96' font-size='18'>😊  😊</text></svg></div>",
+    "hint": "Đếm tổng số biểu tượng mặt cười trên bảng rồi nhân với $3$.",
+    "options": [
+      "$7$ học sinh",
+      "$21$ học sinh",
+      "$14$ học sinh",
+      "$18$ học sinh"
+    ],
+    "answer": 1,
+    "explanation": "Tổng số biểu tượng là $2 + 3 + 2 = 7$ biểu tượng. Mỗi biểu tượng ứng với $3$ học sinh nên tổng số lượt tham gia là $7 \\cdot 3 = 21$ (học sinh)."
+  },
+  {
+    "id": "t8_c5_m13",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Một cuộc khảo sát $1000$ người trẻ tuổi về số cuốn sách đã đọc trong tháng trước cho kết quả: $350$ người không đọc cuốn nào, $500$ người đọc $1 - 2$ cuốn và $150$ người đọc trên $2$ cuốn. Khi biểu diễn bằng biểu đồ hình quạt tròn, hình quạt biểu diễn nhóm người đọc $1 - 2$ cuốn chiếm tỉ lệ:",
+    "hint": "Tính tỉ số $\\dfrac{500}{1000}$ rồi đổi ra phần trăm.",
+    "options": [
+      "$35\\%$",
+      "$50\\%$",
+      "$15\\%$",
+      "$25\\%$"
+    ],
+    "answer": 1,
+    "explanation": "Tỉ lệ người đọc $1 - 2$ cuốn sách là $\\dfrac{500}{1000} = 0,5 = 50\\%$."
+  },
+  {
+    "id": "t8_c5_m14",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Trong một biểu đồ cột, khi **gốc của trục đứng khác $0$** thì khẳng định nào sau đây **không đúng**?",
+    "hint": "Nhớ lại nhận xét về biểu đồ cột có gốc trục đứng không bắt đầu từ $0$ ở Bài 20.",
+    "options": [
+      "Cột cao hơn vẫn biểu diễn số liệu lớn hơn",
+      "Hai cột cao bằng nhau vẫn biểu diễn hai số liệu bằng nhau",
+      "Cột thấp hơn vẫn biểu diễn số liệu bé hơn",
+      "Tỉ lệ chiều cao của hai cột bằng tỉ lệ hai số liệu được biểu diễn"
+    ],
+    "answer": 3,
+    "explanation": "Khi gốc của trục đứng khác $0$, chiều cao các cột bị cắt bớt một đoạn nên tỉ lệ chiều cao của hai cột không còn bằng tỉ lệ của hai số liệu mà chúng biểu diễn."
+  },
+  {
+    "id": "t8_c5_m15",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Quan sát biểu đồ cột dưới đây về tỉ lệ học sinh khá, giỏi của một trường. Nhận định nào sau đây đúng?<br><div style='text-align:center;margin:10px 0'><svg width='310' height='185' viewBox='0 0 310 185' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='300' height='175' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='155' y='22' text-anchor='middle' font-size='12' font-weight='bold' fill='#0f172a'>Tỉ lệ học sinh khá, giỏi (%)</text><line x1='55' y1='145' x2='275' y2='145' stroke='#64748b'/><line x1='55' y1='40' x2='55' y2='145' stroke='#64748b'/><line x1='55' y1='105' x2='275' y2='105' stroke='#e2e8f0'/><line x1='55' y1='65' x2='275' y2='65' stroke='#e2e8f0'/><text x='48' y='149' text-anchor='end' font-size='10' fill='#475569'>80</text><text x='48' y='109' text-anchor='end' font-size='10' fill='#475569'>81</text><text x='48' y='69' text-anchor='end' font-size='10' fill='#475569'>82</text><rect x='90' y='105' width='45' height='40' fill='#f59e0b'/><text x='112' y='99' text-anchor='middle' font-size='11' font-weight='bold' fill='#0f172a'>81%</text><text x='112' y='162' text-anchor='middle' font-size='10' fill='#334155'>2019–2020</text><rect x='190' y='65' width='45' height='80' fill='#0284c7'/><text x='212' y='59' text-anchor='middle' font-size='11' font-weight='bold' fill='#0f172a'>82%</text><text x='212' y='162' text-anchor='middle' font-size='10' fill='#334155'>2020–2021</text></svg></div>",
+    "hint": "So sánh chiều cao trực quan của hai cột với giá trị số liệu thực tế ghi trên đỉnh mỗi cột.",
+    "options": [
+      "Tỉ lệ học sinh khá, giỏi năm học 2020–2021 tăng gấp đôi so với năm học 2019–2020",
+      "Cột năm học 2020–2021 cao gấp đôi cột năm học 2019–2020 nhưng tỉ lệ thực tế chỉ tăng từ $81\\%$ lên $82\\%$",
+      "Biểu đồ trên biểu diễn sai số liệu",
+      "Hai năm học có tỉ lệ học sinh khá, giỏi bằng nhau"
+    ],
+    "answer": 1,
+    "explanation": "Do gốc trục đứng là $80\\%$ (khác $0$) nên cột $82\\%$ cao gấp đôi cột $81\\%$ về mặt hình ảnh, nhưng thực tế tỉ lệ học sinh khá, giỏi chỉ tăng $1\\%$ (từ $81\\%$ lên $82\\%$)."
+  },
+  {
+    "id": "t8_c5_m16",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Trong biểu đồ đoạn thẳng, khi nào ta **không thể** chỉ dựa vào độ dốc của các đoạn thẳng để kết luận về tốc độ tăng, giảm của đại lượng được biểu diễn?",
+    "hint": "Xem xét cách chia khoảng cách giữa các mốc thời gian trên trục ngang hoặc tỉ lệ trên trục đứng.",
+    "options": [
+      "Khi các điểm quan sát trên trục ngang được chia tỉ lệ không đều nhau",
+      "Khi đại lượng có xu hướng tăng dần theo thời gian",
+      "Khi biểu đồ có từ $5$ mốc thời gian trở lên",
+      "Khi gốc của trục đứng bắt đầu từ $0$"
+    ],
+    "answer": 0,
+    "explanation": "Trong biểu đồ đoạn thẳng, nếu các điểm quan sát trên trục ngang không đều nhau (hoặc đơn vị trên trục đứng khác nhau khi so sánh hai biểu đồ) thì độ dốc của đoạn thẳng sẽ gây hiểu lầm về tốc độ tăng, giảm."
+  },
+  {
+    "id": "t8_c5_m17",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Bình vẽ biểu đồ hình quạt tròn dưới đây để biểu diễn tỉ lệ học sinh trong lớp tham gia các câu lạc bộ ngoại ngữ. Điểm không hợp lí của biểu đồ này là:<br><div style='text-align:center;margin:10px 0'><svg width='315' height='155' viewBox='0 0 315 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='305' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><circle cx='80' cy='80' r='58' fill='#e2e8f0'/><path d='M80,80 L80,22 A58,58 0 0,1 124,117 Z' fill='#0369a1'/><path d='M80,80 L124,117 A58,58 0 0,1 26,102 Z' fill='#38bdf8'/><path d='M80,80 L26,102 A58,58 0 0,1 80,22 Z' fill='#cbd5e1'/><text x='100' y='72' font-size='11' font-weight='bold' fill='#fff'>70%</text><text x='70' y='124' font-size='11' font-weight='bold' fill='#0f172a'>63%</text><text x='38' y='66' font-size='11' font-weight='bold' fill='#0f172a'>60%</text><rect x='165' y='40' width='12' height='12' fill='#0369a1'/><text x='183' y='50' font-size='11' fill='#334155'>CLB tiếng Anh</text><rect x='165' y='68' width='12' height='12' fill='#38bdf8'/><text x='183' y='78' font-size='11' fill='#334155'>CLB tiếng Pháp</text><rect x='165' y='96' width='12' height='12' fill='#cbd5e1'/><text x='183' y='106' font-size='11' fill='#334155'>CLB tiếng Trung</text></svg></div>",
+    "hint": "Tính tổng các tỉ lệ phần trăm ghi trên biểu đồ hình quạt tròn.",
+    "options": [
+      "Các số liệu không được sắp xếp theo thứ tự tăng dần",
+      "Tổng các tỉ lệ phần trăm bằng $193\\% > 100\\%$, không phù hợp để dùng biểu đồ hình quạt tròn",
+      "Biểu đồ hình quạt tròn chỉ dùng được cho $2$ đối tượng",
+      "Tỉ lệ của CLB tiếng Anh quá lớn"
+    ],
+    "answer": 1,
+    "explanation": "Cả hình tròn trong biểu đồ hình quạt tròn biểu diễn $100\\%$ tổng thể. Ở đây mỗi học sinh có thể tham gia nhiều CLB nên tổng tỉ lệ là $70\\% + 63\\% + 60\\% = 193\\% \\ne 100\\%$, không thể dùng biểu đồ hình quạt tròn (phải dùng biểu đồ cột)."
+  },
+  {
+    "id": "t8_c5_m18",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Biểu đồ hình quạt tròn dưới đây cho biết tỉ lệ các loại quả bán được của một cửa hàng. Giả sử cửa hàng bán được tất cả $200\\text{ kg}$ quả các loại thì khối lượng Táo bán được là:<br><div style='text-align:center;margin:10px 0'><svg width='300' height='160' viewBox='0 0 300 160' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='290' height='150' rx='6' fill='#ffffff' stroke='#e2e8f0'/><circle cx='80' cy='80' r='62' fill='#f8fafc' stroke='#cbd5e1'/><path d='M80,80 L80,18 A62,62 0 0,1 139,61 Z' fill='#0ea5e9'/><path d='M80,80 L139,61 A62,62 0 0,1 80,142 Z' fill='#f43f5e'/><path d='M80,80 L80,142 A62,62 0 0,1 43.6,29.8 Z' fill='#84cc16'/><path d='M80,80 L43.6,29.8 A62,62 0 0,1 80,18 Z' fill='#a855f7'/><text x='96' y='50' font-size='11' fill='#fff' font-weight='bold'>20%</text><text x='102' y='104' font-size='11' fill='#fff' font-weight='bold'>30%</text><text x='35' y='92' font-size='11' fill='#fff' font-weight='bold'>40%</text><text x='57' y='42' font-size='10' fill='#fff' font-weight='bold'>10%</text><rect x='170' y='30' width='12' height='12' fill='#0ea5e9'/><text x='188' y='40' font-size='12' fill='#334155'>Lê</text><rect x='170' y='55' width='12' height='12' fill='#f43f5e'/><text x='188' y='65' font-size='12' fill='#334155'>Táo</text><rect x='170' y='80' width='12' height='12' fill='#84cc16'/><text x='188' y='90' font-size='12' fill='#334155'>Nhãn</text><rect x='170' y='105' width='12' height='12' fill='#a855f7'/><text x='188' y='115' font-size='12' fill='#334155'>Nho</text></svg></div>",
+    "hint": "Lấy tổng khối lượng quả bán được nhân với tỉ lệ phần trăm của Táo trên biểu đồ.",
+    "options": [
+      "$40\\text{ kg}$",
+      "$60\\text{ kg}$",
+      "$80\\text{ kg}$",
+      "$20\\text{ kg}$"
+    ],
+    "answer": 1,
+    "explanation": "Khối lượng Táo cửa hàng bán được là $200 \\cdot 30\\% = 200 \\cdot 0,3 = 60\\text{ (kg)}$."
+  },
+  {
+    "id": "t8_c5_m19",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Quan sát biểu đồ dưới đây về thời gian ngủ trung bình trong ngày theo độ tuổi. Xu thế thời gian ngủ trung bình trong ngày khi độ tuổi tăng là:<br><div style='text-align:center;margin:10px 0'><svg width='360' height='185' viewBox='0 0 360 185' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='350' height='175' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='180' y='21' text-anchor='middle' font-size='11' font-weight='bold' fill='#0f172a'>Thời gian ngủ trung bình trong ngày (giờ)</text><line x1='35' y1='140' x2='345' y2='140' stroke='#64748b'/><line x1='35' y1='35' x2='35' y2='140' stroke='#64748b'/><text x='30' y='143' text-anchor='end' font-size='9' fill='#475569'>0</text><text x='30' y='93' text-anchor='end' font-size='9' fill='#475569'>10</text><text x='30' y='43' text-anchor='end' font-size='9' fill='#475569'>20</text><rect x='45' y='62.5' width='24' height='77.5' fill='#0f766e'/><text x='57' y='58' text-anchor='middle' font-size='9' font-weight='bold'>15,5</text><text x='57' y='153' text-anchor='middle' font-size='8'>0-3th</text><rect x='88' y='72.5' width='24' height='67.5' fill='#0f766e'/><text x='100' y='68' text-anchor='middle' font-size='9' font-weight='bold'>13,5</text><text x='100' y='153' text-anchor='middle' font-size='8'>4-24th</text><rect x='131' y='82.5' width='24' height='57.5' fill='#0f766e'/><text x='143' y='78' text-anchor='middle' font-size='9' font-weight='bold'>11,5</text><text x='143' y='153' text-anchor='middle' font-size='8'>3-5n</text><rect x='174' y='87.5' width='24' height='52.5' fill='#0f766e'/><text x='186' y='83' text-anchor='middle' font-size='9' font-weight='bold'>10,5</text><text x='186' y='153' text-anchor='middle' font-size='8'>6-13n</text><rect x='217' y='95' width='24' height='45' fill='#0f766e'/><text x='229' y='91' text-anchor='middle' font-size='9' font-weight='bold'>9</text><text x='229' y='153' text-anchor='middle' font-size='8'>14-17n</text><rect x='260' y='100' width='24' height='40' fill='#0f766e'/><text x='272' y='96' text-anchor='middle' font-size='9' font-weight='bold'>8</text><text x='272' y='153' text-anchor='middle' font-size='8'>18-64n</text><rect x='303' y='102.5' width='24' height='37.5' fill='#0f766e'/><text x='315' y='98' text-anchor='middle' font-size='9' font-weight='bold'>7,5</text><text x='315' y='153' text-anchor='middle' font-size='8'>65+n</text></svg></div>",
+    "hint": "Quan sát chiều cao các cột từ nhóm tuổi nhỏ nhất ($0-3$ tháng) đến nhóm tuổi lớn nhất ($65+$ năm).",
+    "options": [
+      "Tăng dần",
+      "Giảm dần",
+      "Không thay đổi",
+      "Giảm rồi lại tăng"
+    ],
+    "answer": 1,
+    "explanation": "Khi độ tuổi tăng từ $0 - 3$ tháng đến $65$ năm trở lên, thời gian ngủ trung bình giảm liên tục từ $15,5$ giờ xuống còn $7,5$ giờ."
+  },
+  {
+    "id": "t8_c5_m20",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Biểu đồ dưới đây cho biết cấu trúc dân số Việt Nam năm 2020. Biết dân số Việt Nam năm 2020 là $97,41$ triệu người ($97\\,410\\,000$ người). Số người thuộc nhóm trên $64$ tuổi năm 2020 là:<br><div style='text-align:center;margin:10px 0'><svg width='325' height='155' viewBox='0 0 325 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='315' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><circle cx='80' cy='80' r='58' fill='#ef4444'/><path d='M80,80 L80,22 A58,58 0 0,1 137.6,86.7 Z' fill='#3b82f6'/><path d='M80,80 L52.5,29.0 A58,58 0 0,1 80,22 Z' fill='#84cc16'/><text x='98' y='64' font-size='10' fill='#fff' font-weight='bold'>23,19%</text><text x='62' y='112' font-size='11' fill='#fff' font-weight='bold'>68,94%</text><text x='42' y='20' font-size='10' fill='#3f6212' font-weight='bold'>7,87%</text><rect x='165' y='40' width='12' height='12' fill='#3b82f6'/><text x='183' y='50' font-size='11' fill='#334155'>0 – 14 tuổi</text><rect x='165' y='68' width='12' height='12' fill='#ef4444'/><text x='183' y='78' font-size='11' fill='#334155'>15 – 64 tuổi</text><rect x='165' y='96' width='12' height='12' fill='#84cc16'/><text x='183' y='106' font-size='11' fill='#334155'>Trên 64 tuổi</text></svg></div>",
+    "hint": "Nhân tổng dân số $97\\,410\\,000$ với $7,87\\%$.",
+    "options": [
+      "$7\\,666\\,167$ người",
+      "$22\\,589\\,379$ người",
+      "$67\\,154\\,454$ người",
+      "$76\\,661\\,670$ người"
+    ],
+    "answer": 0,
+    "explanation": "Số người thuộc nhóm trên $64$ tuổi là $97\\,410\\,000 \\cdot 7,87\\% = 7\\,666\\,167$ (người)."
+  },
+  {
+    "id": "t8_c5_m21",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Biểu đồ cột kép dưới đây biểu diễn số lượng huy chương của đoàn thể thao Mỹ và Nhật Bản tại Olympic Tokyo 2020. Tổng số huy chương của đoàn thể thao Mỹ nhiều hơn đoàn thể thao Nhật Bản bao nhiêu huy chương?<br><div style='text-align:center;margin:10px 0'><svg width='335' height='185' viewBox='0 0 335 185' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='325' height='175' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='165' y='21' text-anchor='middle' font-size='11' font-weight='bold' fill='#0f172a'>Huy chương Olympic Tokyo 2020</text><line x1='35' y1='145' x2='245' y2='145' stroke='#64748b'/><line x1='35' y1='35' x2='35' y2='145' stroke='#64748b'/><text x='30' y='148' text-anchor='end' font-size='9'>0</text><text x='30' y='98' text-anchor='end' font-size='9'>25</text><text x='30' y='48' text-anchor='end' font-size='9'>50</text><rect x='48' y='67' width='20' height='78' fill='#2563eb'/><text x='58' y='62' text-anchor='middle' font-size='9' font-weight='bold'>39</text><rect x='70' y='91' width='20' height='54' fill='#ef4444'/><text x='80' y='86' text-anchor='middle' font-size='9' font-weight='bold'>27</text><text x='69' y='160' text-anchor='middle' font-size='10'>Vàng</text><rect x='115' y='63' width='20' height='82' fill='#2563eb'/><text x='125' y='58' text-anchor='middle' font-size='9' font-weight='bold'>41</text><rect x='137' y='117' width='20' height='28' fill='#ef4444'/><text x='147' y='112' text-anchor='middle' font-size='9' font-weight='bold'>14</text><text x='136' y='160' text-anchor='middle' font-size='10'>Bạc</text><rect x='182' y='79' width='20' height='66' fill='#2563eb'/><text x='192' y='74' text-anchor='middle' font-size='9' font-weight='bold'>33</text><rect x='204' y='111' width='20' height='34' fill='#ef4444'/><text x='214' y='106' text-anchor='middle' font-size='9' font-weight='bold'>17</text><text x='203' y='160' text-anchor='middle' font-size='10'>Đồng</text><rect x='255' y='65' width='11' height='11' fill='#2563eb'/><text x='270' y='74' font-size='10'>Mỹ</text><rect x='255' y='88' width='11' height='11' fill='#ef4444'/><text x='270' y='97' font-size='10'>Nhật Bản</text></svg></div>",
+    "hint": "Tính tổng số huy chương của Mỹ, tổng số huy chương của Nhật Bản rồi lấy hiệu hai kết quả.",
+    "options": [
+      "$55$ huy chương",
+      "$113$ huy chương",
+      "$58$ huy chương",
+      "$12$ huy chương"
+    ],
+    "answer": 0,
+    "explanation": "Tổng số huy chương của Mỹ là $39 + 41 + 33 = 113$. Tổng số huy chương của Nhật Bản là $27 + 14 + 17 = 58$. Đoàn Mỹ nhiều hơn đoàn Nhật Bản $113 - 58 = 55$ huy chương."
+  },
+  {
+    "id": "t8_c5_h01",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Năm 2019 tổng lượng khí thải $\\text{CO}_2$ của Việt Nam là $336\\,490$ nghìn tấn với cơ cấu các nguồn sinh khí thải cho trong biểu đồ hình quạt tròn dưới đây. Lượng khí thải $\\text{CO}_2$ sinh bởi nguồn \"Điện và chất đốt\" nhiều hơn nguồn \"Sản xuất và xây dựng\" bao nhiêu nghìn tấn?<br><div style='text-align:center;margin:10px 0'><svg width='335' height='165' viewBox='0 0 335 165' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='325' height='155' rx='6' fill='#ffffff' stroke='#e2e8f0'/><circle cx='80' cy='85' r='58' fill='#f1f5f9'/><path d='M80,85 L80,27 A58,58 0 0,1 94.4,141.2 Z' fill='#0f4c81'/><path d='M80,85 L94.4,141.2 A58,58 0 0,1 27.5,109.7 Z' fill='#64748b'/><path d='M80,85 L27.5,109.7 A58,58 0 0,1 33.1,50.9 Z' fill='#7dd3fc'/><path d='M80,85 L33.1,50.9 A58,58 0 0,1 65.6,28.8 Z' fill='#e2e8f0'/><path d='M80,85 L65.6,28.8 A58,58 0 0,1 80,27 Z' fill='#cbd5e1'/><text x='104' y='88' font-size='10' fill='#fff' font-weight='bold'>46%</text><text x='54' y='125' font-size='10' fill='#fff' font-weight='bold'>22%</text><text x='32' y='84' font-size='10' fill='#0f172a' font-weight='bold'>16%</text><text x='46' y='52' font-size='9' fill='#0f172a' font-weight='bold'>12%</text><text x='66' y='22' font-size='9' fill='#475569' font-weight='bold'>4%</text><rect x='160' y='28' width='10' height='10' fill='#0f4c81'/><text x='175' y='37' font-size='10' fill='#334155'>Điện và chất đốt</text><rect x='160' y='50' width='10' height='10' fill='#64748b'/><text x='175' y='59' font-size='10' fill='#334155'>Sản xuất và xây dựng</text><rect x='160' y='72' width='10' height='10' fill='#7dd3fc'/><text x='175' y='81' font-size='10' fill='#334155'>Công nghiệp</text><rect x='160' y='94' width='10' height='10' fill='#e2e8f0'/><text x='175' y='103' font-size='10' fill='#334155'>Giao thông</text><rect x='160' y='116' width='10' height='10' fill='#cbd5e1'/><text x='175' y='125' font-size='10' fill='#334155'>Khác</text></svg></div>",
+    "hint": "Tính phần trăm chênh lệch ($46\\% - 22\\% = 24\\%$) rồi nhân với tổng lượng khí thải $336\\,490$ nghìn tấn.",
+    "options": [
+      "$80\\,757,6$ nghìn tấn",
+      "$154\\,785,4$ nghìn tấn",
+      "$74\\,027,8$ nghìn tấn",
+      "$228\\,813,2$ nghìn tấn"
+    ],
+    "answer": 0,
+    "explanation": "Tỉ lệ chênh lệch giữa hai nguồn là $46\\% - 22\\% = 24\\%$. Lượng khí thải chênh lệch là $336\\,490 \\cdot 24\\% = 80\\,757,6$ (nghìn tấn)."
+  },
+  {
+    "id": "t8_c5_h02",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Cơ cấu năng lượng khai thác, sản xuất trong nước năm 2019 (đơn vị: $\\text{KTOE}$) gồm: Than ($26\\,408,48$), Dầu thô ($11\\,263,8$), Khí thiên nhiên ($9\\,180$), Nhiên liệu sinh học ($7\\,840$). Tỉ lệ phần trăm của năng lượng \"Than\" trong tổng cơ cấu năng lượng năm 2019 (làm tròn đến hàng phần trăm) là:",
+    "hint": "Tính tổng sản lượng của cả $4$ nguồn năng lượng rồi lấy sản lượng Than chia cho tổng đó.",
+    "options": [
+      "$48,29\\%$",
+      "$45,02\\%$",
+      "$20,60\\%$",
+      "$16,79\\%$"
+    ],
+    "answer": 0,
+    "explanation": "Tổng năng lượng năm 2019 là $26\\,408,48 + 11\\,263,8 + 9\\,180 + 7\\,840 = 54\\,692,28\\text{ (KTOE)}$. Tỉ lệ của Than là $\\dfrac{26\\,408,48}{54\\,692,28} \\approx 0,4828557 \\approx 48,29\\%$."
+  },
+  {
+    "id": "t8_c5_h03",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "An phát phiếu khảo sát cho $200$ bạn trong trường với câu hỏi \"Bạn lo lắng điều gì về Covid-19?\" (cho phép mỗi bạn chọn nhiều phương án). Kết quả có $96$ lượt chọn \"Bản thân bị nhiễm\", $136$ lượt chọn \"Người thân bị nhiễm\" và $124$ lượt chọn \"Ảnh hưởng đến việc học\". Tỉ lệ học sinh được hỏi đã lựa chọn phương án \"Người thân bị nhiễm\" là:",
+    "hint": "Chia số lượt chọn \"Người thân bị nhiễm\" cho tổng số $200$ học sinh được khảo sát.",
+    "options": [
+      "$68\\%$",
+      "$38,2\\%$",
+      "$48\\%$",
+      "$62\\%$"
+    ],
+    "answer": 0,
+    "explanation": "Trong $200$ học sinh được hỏi, có $136$ học sinh chọn phương án \"Người thân bị nhiễm\" nên tỉ lệ là $\\dfrac{136}{200} = 0,68 = 68\\%$."
+  },
+  {
+    "id": "t8_c5_a01",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Một người sử dụng ứng dụng đếm số bước chân trên điện thoại và xem biểu đồ cột thống kê dưới đây. Số thích hợp điền vào dấu $?$ trong khuyến cáo của ứng dụng: *\"Bạn đi ít hơn $?$ bước so với trung bình của những người dùng có cùng độ tuổi với bạn\"* là:<br><div style='text-align:center;margin:10px 0'><svg width='335' height='185' viewBox='0 0 335 185' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='325' height='175' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='167' y='21' text-anchor='middle' font-size='11' font-weight='bold' fill='#0f172a'>Số bước trung bình trong ngày</text><line x1='45' y1='145' x2='315' y2='145' stroke='#64748b'/><line x1='45' y1='35' x2='45' y2='145' stroke='#64748b'/><text x='40' y='148' text-anchor='end' font-size='9'>0</text><text x='40' y='93' text-anchor='end' font-size='9'>3000</text><text x='40' y='38' text-anchor='end' font-size='9'>6000</text><rect x='65' y='81.7' width='38' height='63.3' fill='#0284c7'/><text x='84' y='76' text-anchor='middle' font-size='9' font-weight='bold'>3 455</text><text x='84' y='160' text-anchor='middle' font-size='9'>Cá nhân</text><rect x='155' y='48.1' width='38' height='96.9' fill='#0284c7'/><text x='174' y='43' text-anchor='middle' font-size='9' font-weight='bold'>5 285</text><text x='174' y='160' text-anchor='middle' font-size='9'>Cùng độ tuổi</text><rect x='245' y='64.4' width='38' height='80.6' fill='#0284c7'/><text x='264' y='59' text-anchor='middle' font-size='9' font-weight='bold'>4 399</text><text x='264' y='160' text-anchor='middle' font-size='9'>Tất cả</text></svg></div>",
+    "hint": "Lấy số bước trung bình của nhóm \"Cùng độ tuổi\" trừ đi số bước trung bình của \"Cá nhân\".",
+    "options": [
+      "$1\\,830$",
+      "$944$",
+      "$886$",
+      "$1\\,730$"
+    ],
+    "answer": 0,
+    "explanation": "Số bước người dùng này đi ít hơn trung bình của những người cùng độ tuổi là $5\\,285 - 3\\,455 = 1\\,830$ (bước)."
+  },
+  {
+    "id": "t8_c5_a02",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Biểu đồ hình quạt tròn dưới đây cho biết tỉ lệ độc giả bình chọn các phương án thiết kế cầu Trần Hưng Đạo (Hà Nội). Biết có $7\\,754$ lượt độc giả tham gia bình chọn, số lượt bình chọn ủng hộ phương án 3 (làm tròn đến hàng đơn vị) là:<br><div style='text-align:center;margin:10px 0'><svg width='335' height='160' viewBox='0 0 335 160' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='325' height='150' rx='6' fill='#ffffff' stroke='#e2e8f0'/><circle cx='80' cy='80' r='58' fill='#e2e8f0'/><path d='M80,80 L80,22 A58,58 0 0,1 104.7,27.5 Z' fill='#0369a1'/><path d='M80,80 L104.7,27.5 A58,58 0 0,1 135.2,62.1 Z' fill='#7dd3fc'/><path d='M80,80 L135.2,62.1 A58,58 0 0,1 35.3,116.9 Z' fill='#64748b'/><text x='86' y='42' font-size='9' fill='#fff' font-weight='bold'>7%</text><text x='108' y='56' font-size='9' fill='#0f172a' font-weight='bold'>13%</text><text x='92' y='118' font-size='10' fill='#fff' font-weight='bold'>44%</text><text x='36' y='74' font-size='10' fill='#334155' font-weight='bold'>36%</text><rect x='160' y='32' width='10' height='10' fill='#0369a1'/><text x='175' y='41' font-size='10' fill='#334155'>Ủng hộ phương án 1</text><rect x='160' y='56' width='10' height='10' fill='#7dd3fc'/><text x='175' y='65' font-size='10' fill='#334155'>Ủng hộ phương án 2</text><rect x='160' y='80' width='10' height='10' fill='#64748b'/><text x='175' y='89' font-size='10' fill='#334155'>Ủng hộ phương án 3</text><rect x='160' y='104' width='10' height='10' fill='#e2e8f0'/><text x='175' y='113' font-size='10' fill='#334155'>Không ủng hộ</text></svg></div>",
+    "hint": "Nhân tổng số lượt độc giả $7\\,754$ với tỉ lệ của phương án 3 ($44\\%$).",
+    "options": [
+      "$3\\,412$ lượt",
+      "$1\\,008$ lượt",
+      "$543$ lượt",
+      "$2\\,791$ lượt"
+    ],
+    "answer": 0,
+    "explanation": "Số lượt độc giả ủng hộ phương án 3 là $7\\,754 \\cdot 44\\% = 3\\,411,76 \\approx 3\\,412$ (lượt)."
+  },
+  {
+    "id": "t8_c5_a03",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Biểu đồ đoạn thẳng dưới đây cho biết kinh phí chính phủ Mỹ, Anh chi cho chăm sóc sức khỏe (% GDP) từ năm 1960 đến 2020. Biết GDP của Mỹ năm 2020 là $20\\,890$ tỉ đô la. Số tiền Mỹ chi cho chăm sóc sức khỏe năm 2020 bằng:<br><div style='text-align:center;margin:10px 0'><svg width='355' height='185' viewBox='0 0 355 185' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='345' height='175' rx='6' fill='#ffffff' stroke='#e2e8f0'/><text x='177' y='21' text-anchor='middle' font-size='11' font-weight='bold' fill='#0f172a'>Kinh phí chi cho chăm sóc sức khỏe (% GDP)</text><line x1='35' y1='145' x2='290' y2='145' stroke='#64748b'/><line x1='35' y1='35' x2='35' y2='145' stroke='#64748b'/><text x='30' y='148' text-anchor='end' font-size='9'>0</text><text x='30' y='93' text-anchor='end' font-size='9'>10</text><text x='30' y='38' text-anchor='end' font-size='9'>20</text><polyline fill='none' stroke='#0284c7' stroke-width='2' points='50,128.9 90,126.1 130,120.1 170,121.4 210,114.9 250,100.9 280,90.4'/><polyline fill='none' stroke='#64748b' stroke-width='2' points='50,139.0 90,132.2 130,126.0 170,120.0 210,114.5 250,101.6 280,57.3'/><circle cx='280' cy='57.3' r='3' fill='#64748b'/><text x='272' y='48' text-anchor='middle' font-size='9' font-weight='bold' fill='#334155'>15,95</text><circle cx='280' cy='90.4' r='3' fill='#0284c7'/><text x='278' y='103' text-anchor='middle' font-size='9' font-weight='bold' fill='#0284c7'>9,92</text><text x='50' y='160' text-anchor='middle' font-size='8'>1960</text><text x='130' y='160' text-anchor='middle' font-size='8'>1980</text><text x='210' y='160' text-anchor='middle' font-size='8'>2000</text><text x='280' y='160' text-anchor='middle' font-size='8'>2020</text><line x1='298' y1='68' x2='313' y2='68' stroke='#64748b' stroke-width='2'/><text x='317' y='71' font-size='10'>Mỹ</text><line x1='298' y1='88' x2='313' y2='88' stroke='#0284c7' stroke-width='2'/><text x='317' y='91' font-size='10'>Anh</text></svg></div>",
+    "hint": "Đọc tỉ lệ chi của Mỹ năm 2020 trên đường biểu diễn ($15,95\\%$ GDP) rồi nhân với $20\\,890$ tỉ đô la.",
+    "options": [
+      "$3\\,331,955$ tỉ đô la",
+      "$333,1955$ tỉ đô la",
+      "$2\\,072,288$ tỉ đô la",
+      "$3\\,500,125$ tỉ đô la"
+    ],
+    "answer": 0,
+    "explanation": "Số tiền chính phủ Mỹ chi cho chăm sóc sức khỏe năm 2020 là $20\\,890 \\cdot 15,95\\% = 3\\,331,955$ (tỉ đô la)."
+  },
+  {
+    "id": "t8_c5_tf01",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "tf",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về thu thập và phân loại dữ liệu:",
+    "hint": "Dựa vào kiến thức về phương pháp thu thập dữ liệu và sơ đồ phân loại dữ liệu trong Bài 18.",
+    "statements": [
+      {
+        "text": "Thu thập dữ liệu trực tiếp là việc thu thập dữ liệu thông qua quan sát, làm thí nghiệm, lập bảng hỏi, phỏng vấn...",
+        "answer": true
+      },
+      {
+        "text": "Để có thể đưa ra các kết luận hợp lí, dữ liệu thu thập được phải đảm bảo tính đại diện cho toàn bộ đối tượng đang được quan tâm.",
+        "answer": true
+      },
+      {
+        "text": "Số liệu có thể nhận giá trị tùy ý trong một khoảng nào đó được gọi là số liệu rời rạc.",
+        "answer": false
+      },
+      {
+        "text": "Dữ liệu không là số được chia thành hai loại: có thể sắp thứ tự và không thể sắp thứ tự.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a đúng theo định nghĩa thu thập dữ liệu trực tiếp. Ý b đúng theo nguyên tắc đảm bảo tính đại diện của dữ liệu. Ý c sai vì số liệu có thể nhận giá trị tùy ý trong một khoảng nào đó được gọi là số liệu liên tục. Ý d đúng theo phân loại dữ liệu trong SGK."
+  },
+  {
+    "id": "t8_c5_tf02",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "tf",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về lựa chọn biểu đồ biểu diễn dữ liệu:",
+    "hint": "Đối chiếu mục đích sử dụng của biểu đồ cột, biểu đồ đoạn thẳng, biểu đồ cột kép và biểu đồ hình quạt tròn.",
+    "statements": [
+      {
+        "text": "Khi muốn biểu diễn tỉ lệ các phần trong tổng thể ta dùng biểu đồ hình quạt tròn.",
+        "answer": true
+      },
+      {
+        "text": "Khi muốn so sánh hai tập dữ liệu với nhau theo từng hạng mục ta dùng biểu đồ cột kép.",
+        "answer": true
+      },
+      {
+        "text": "Nếu muốn biểu diễn sự thay đổi của một đại lượng theo thời gian qua nhiều năm ta nên dùng biểu đồ đoạn thẳng.",
+        "answer": true
+      },
+      {
+        "text": "Mọi bảng số liệu thống kê đều có thể biểu diễn bằng biểu đồ hình quạt tròn.",
+        "answer": false
+      }
+    ],
+    "explanation": "Ý a, b, c đúng theo hướng dẫn lựa chọn biểu đồ ở Bài 19 SGK. Ý d sai vì biểu đồ hình quạt tròn chỉ dùng được khi các dữ liệu là các phần rời nhau của một tổng thể (tổng các tỉ lệ phần trăm bằng $100\\%$)."
+  },
+  {
+    "id": "t8_c5_tf03",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "tf",
+    "topic": "Chương V — Dữ liệu và biểu đồ",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về đọc và phân tích số liệu thống kê dựa vào biểu đồ:",
+    "hint": "Nhớ lại các lưu ý khi đọc biểu đồ cột và biểu đồ đoạn thẳng ở Bài 20.",
+    "statements": [
+      {
+        "text": "Trong biểu đồ cột, khi gốc của trục đứng khác $0$ thì tỉ lệ chiều cao của các cột không bằng tỉ lệ số liệu mà chúng biểu diễn.",
+        "answer": true
+      },
+      {
+        "text": "Trong biểu đồ đoạn thẳng, khi các điểm quan sát trên trục ngang không đều nhau, ta không thể dựa vào độ dốc để kết luận về tốc độ tăng, giảm của đại lượng được biểu diễn.",
+        "answer": true
+      },
+      {
+        "text": "Khi phân tích số liệu, ta không được phép kết hợp thông tin từ hai biểu đồ khác nhau.",
+        "answer": false
+      },
+      {
+        "text": "Để so sánh sự thay đổi theo thời gian của hai đại lượng, người ta thường biểu diễn hai đường gấp khúc của chúng trên cùng một biểu đồ.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a và ý b đúng theo các lưu ý phân tích biểu đồ ở Bài 20 SGK. Ý c sai vì khi phân tích số liệu, ta hoàn toàn có thể kết hợp thông tin từ hai hay nhiều biểu đồ liên quan (như biểu đồ tổng lượng và biểu đồ cơ cấu phần trăm). Ý d đúng theo phương pháp so sánh hai dãy số liệu theo thời gian."
+  }
+]
