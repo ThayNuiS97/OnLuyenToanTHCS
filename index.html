@@ -9,27 +9,28 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
   <style>
     :root {
-      --bg: #f4f7fb;
+      --bg: linear-gradient(135deg, #f3f7fc 0%, #f8f6fc 50%, #f1fbfb 100%);
       --card: #ffffff;
-      --text: #162033;
-      --muted: #5b6880;
-      --primary: #1d4ed8;
-      --primary-hover: #1e40af;
-      --primary-soft: #eff6ff;
-      --success: #15803d;
+      --text: #0f172a;
+      --muted: #475569;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-soft: #dbeafe;
+      --success: #16a34a;
       --success-soft: #dcfce7;
-      --danger: #b91c1c;
+      --danger: #dc2626;
       --danger-soft: #fee2e2;
-      --warn: #b45309;
+      --warn: #d97706;
       --warn-soft: #fef3c7;
-      --border: #dbe3ef;
-      --radius: 14px;
-      --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      --border: #cbd5e1;
+      --radius: 18px;
+      --shadow: 0 10px 28px rgba(37, 99, 235, 0.07);
     }
 
     * { box-sizing: border-box; }
     body {
       margin: 0;
+      min-height: 100vh;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
@@ -37,8 +38,9 @@
     }
 
     .topbar {
-      background: var(--card);
-      border-bottom: 1px solid var(--border);
+      background: linear-gradient(90deg, #1e40af 0%, #3730a3 55%, #0369a1 100%);
+      color: #fff;
+      box-shadow: 0 6px 20px rgba(30, 64, 175, 0.18);
       position: sticky;
       top: 0;
       z-index: 30;
@@ -58,31 +60,32 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     .brand-badge {
-      width: 38px;
-      height: 38px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, #1d4ed8, #0ea5e9);
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.35);
       color: #fff;
       display: grid;
       place-items: center;
-      font-weight: 700;
-      font-size: 18px;
+      font-weight: 800;
+      font-size: 20px;
     }
 
     .brand h1 {
       margin: 0;
-      font-size: 18px;
-      font-weight: 700;
+      font-size: 19px;
+      font-weight: 800;
     }
 
     .brand p {
       margin: 0;
-      font-size: 12px;
-      color: var(--muted);
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, 0.9);
     }
 
     .top-actions {
@@ -93,20 +96,20 @@
     }
 
     .student-tag {
-      background: var(--primary-soft);
-      color: var(--primary);
-      border: 1px solid #bfdbfe;
-      padding: 6px 12px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      padding: 6px 13px;
       border-radius: 999px;
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .role-switch {
       display: inline-flex;
-      background: #eef2f7;
+      background: rgba(15, 23, 42, 0.25);
       padding: 4px;
-      border-radius: 10px;
+      border-radius: 11px;
       gap: 4px;
     }
 
@@ -115,143 +118,239 @@
       background: transparent;
       padding: 7px 14px;
       border-radius: 8px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 13px;
       cursor: pointer;
-      color: var(--muted);
+      color: rgba(255, 255, 255, 0.88);
       transition: 0.15s;
     }
 
     .role-btn.active {
-      background: var(--card);
-      color: var(--primary);
-      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+      background: #ffffff;
+      color: #1e40af;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.14);
     }
 
     .container {
       max-width: 1220px;
-      margin: 22px auto;
-      padding: 0 18px 44px;
+      margin: 26px auto;
+      padding: 0 18px 48px;
     }
 
     .card {
       background: var(--card);
-      border: 1px solid var(--border);
+      border: 1.5px solid #e2e8f0;
       border-radius: var(--radius);
-      padding: 22px;
+      padding: 26px;
       box-shadow: var(--shadow);
     }
 
     .step-header {
       text-align: center;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
 
     .step-header h2 {
-      margin: 0 0 6px;
-      font-size: 22px;
+      margin: 0 0 8px;
+      font-size: 27px;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.3px;
     }
 
     .step-header p {
       margin: 0;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 15.5px;
+      font-weight: 600;
     }
 
     .grade-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      gap: 18px;
     }
 
-    @media (max-width: 860px) {
+    @media (max-width: 900px) {
       .grade-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 500px) {
       .grade-grid { grid-template-columns: 1fr; }
     }
 
     .grade-card {
-      border: 1.5px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 16px;
+      border-radius: 20px;
+      padding: 28px 18px;
       text-align: center;
       cursor: pointer;
-      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-      transition: 0.18s;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      border: 2px solid transparent;
     }
 
     .grade-card:hover {
-      border-color: var(--primary);
-      transform: translateY(-3px);
-      box-shadow: 0 12px 24px rgba(29, 78, 216, 0.12);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.1);
     }
 
+    .grade-card.g6 {
+      background: linear-gradient(160deg, #eff6ff 0%, #dbeafe 100%);
+      border-color: #93c5fd;
+    }
+    .grade-card.g6:hover { border-color: #2563eb; }
+    .grade-card.g6 .grade-icon { background: #bfdbfe; color: #1d4ed8; }
+    .grade-card.g6 h3 { color: #1e3a8a; }
+
+    .grade-card.g7 {
+      background: linear-gradient(160deg, #ecfdf5 0%, #d1fae5 100%);
+      border-color: #6ee7b7;
+    }
+    .grade-card.g7:hover { border-color: #059669; }
+    .grade-card.g7 .grade-icon { background: #a7f3d0; color: #047857; }
+    .grade-card.g7 h3 { color: #064e3b; }
+
+    .grade-card.g8 {
+      background: linear-gradient(160deg, #f5f3ff 0%, #ede9fe 100%);
+      border-color: #c4b5fd;
+    }
+    .grade-card.g8:hover { border-color: #7c3aed; }
+    .grade-card.g8 .grade-icon { background: #ddd6fe; color: #5b21b6; }
+    .grade-card.g8 h3 { color: #4c1d95; }
+
+    .grade-card.g9 {
+      background: linear-gradient(160deg, #fffbeb 0%, #fef3c7 100%);
+      border-color: #fcd34d;
+    }
+    .grade-card.g9:hover { border-color: #d97706; }
+    .grade-card.g9 .grade-icon { background: #fde68a; color: #b45309; }
+    .grade-card.g9 h3 { color: #78350f; }
+
     .grade-icon {
-      width: 54px;
-      height: 54px;
-      margin: 0 auto 12px;
-      border-radius: 14px;
-      background: var(--primary-soft);
-      color: var(--primary);
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 16px;
+      border-radius: 18px;
       display: grid;
       place-items: center;
-      font-size: 22px;
-      font-weight: 800;
+      font-size: 30px;
+      font-weight: 900;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.65);
     }
 
     .grade-card h3 {
-      margin: 0 0 4px;
-      font-size: 19px;
+      margin: 0 0 8px;
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -0.2px;
     }
 
     .grade-card span {
-      font-size: 13px;
-      color: var(--muted);
+      display: inline-block;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #334155;
     }
 
     .term-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      max-width: 860px;
+      gap: 18px;
+      max-width: 960px;
       margin: 0 auto;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 760px) {
       .term-grid { grid-template-columns: 1fr; }
     }
 
     .term-card {
-      border: 1.5px solid var(--border);
-      border-radius: 14px;
-      padding: 22px 16px;
+      border: 2px solid transparent;
+      border-radius: 20px;
+      padding: 28px 20px;
       text-align: center;
       cursor: pointer;
-      background: #fff;
-      transition: 0.18s;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
     }
 
     .term-card:hover {
-      border-color: var(--primary);
-      background: var(--primary-soft);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 28px rgba(15, 23, 42, 0.09);
+    }
+
+    .term-card.t1 {
+      background: linear-gradient(160deg, #eff6ff 0%, #e0f2fe 100%);
+      border-color: #93c5fd;
+    }
+    .term-card.t1:hover { border-color: #2563eb; }
+    .term-card.t1 .term-badge { background: #bfdbfe; color: #1d4ed8; }
+    .term-card.t1 h3 { color: #1e3a8a; }
+
+    .term-card.t2 {
+      background: linear-gradient(160deg, #f5f3ff 0%, #ede9fe 100%);
+      border-color: #c4b5fd;
+    }
+    .term-card.t2:hover { border-color: #7c3aed; }
+    .term-card.t2 .term-badge { background: #ddd6fe; color: #5b21b6; }
+    .term-card.t2 h3 { color: #4c1d95; }
+
+    .term-card.t3 {
+      background: linear-gradient(160deg, #ecfdf5 0%, #ccfbf1 100%);
+      border-color: #5eead4;
+    }
+    .term-card.t3:hover { border-color: #0d9488; }
+    .term-card.t3 .term-badge { background: #99f6e4; color: #0f766e; }
+    .term-card.t3 h3 { color: #134e4a; }
+
+    .term-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
     }
 
     .term-card h3 {
-      margin: 0 0 6px;
-      font-size: 18px;
+      margin: 0 0 8px;
+      font-size: 23px;
+      font-weight: 900;
     }
 
     .term-card p {
       margin: 0;
-      font-size: 13px;
-      color: var(--muted);
+      font-size: 15px;
+      font-weight: 700;
+      color: #334155;
     }
+
+    .name-gate-card {
+      max-width: 560px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, #ffffff 0%, #f0f9ff 100%);
+      border: 2px solid #93c5fd;
+    }
+
+    .form-row {
+      display: grid;
+      gap: 14px;
+      margin: 16px 0;
+    }
+
+    .form-label {
+      display: block;
+      font-weight: 800;
+      font-size: 15px;
+      margin-bottom: 6px;
+      color: #1e293b;
+    }
+
+    .req-star { color: var(--danger); }
 
     .exam-topbar {
       background: var(--card);
-      border: 1px solid var(--border);
+      border: 1.5px solid #dbeafe;
       border-radius: var(--radius);
       padding: 14px 16px;
       box-shadow: var(--shadow);
@@ -271,13 +370,20 @@
     }
 
     select, input[type="text"], textarea {
-      border: 1px solid var(--border);
-      border-radius: 9px;
-      padding: 8px 11px;
-      font-size: 14px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 10px 13px;
+      font-size: 15px;
+      font-weight: 600;
       color: var(--text);
       background: #fff;
       font-family: inherit;
+    }
+
+    select:focus, input[type="text"]:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
     }
 
     textarea {
@@ -289,13 +395,13 @@
     }
 
     .btn {
-      border: 1px solid var(--border);
-      background: var(--card);
+      border: 1.5px solid #cbd5e1;
+      background: #fff;
       color: var(--text);
-      padding: 8px 14px;
-      border-radius: 9px;
-      font-weight: 600;
-      font-size: 13px;
+      padding: 9px 15px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
@@ -303,27 +409,34 @@
       transition: 0.15s;
     }
 
-    .btn:hover:not(:disabled) { background: #f8fafc; }
+    .btn:hover:not(:disabled) { background: #f1f5f9; }
     .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
     .btn-primary {
-      background: var(--primary);
-      border-color: var(--primary);
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      border-color: #1d4ed8;
       color: #fff;
     }
-    .btn-primary:hover:not(:disabled) { background: var(--primary-hover); }
+    .btn-primary:hover:not(:disabled) { filter: brightness(1.06); }
 
     .btn-success {
-      background: var(--success);
-      border-color: var(--success);
+      background: linear-gradient(135deg, #16a34a, #15803d);
+      border-color: #15803d;
       color: #fff;
     }
 
     .btn-soft {
-      background: var(--primary-soft);
-      border-color: #bfdbfe;
-      color: var(--primary);
+      background: #eff6ff;
+      border-color: #93c5fd;
+      color: #1d4ed8;
     }
+
+    .btn-hint {
+      background: linear-gradient(135deg, #fef3c7, #fde68a);
+      border-color: #f59e0b;
+      color: #78350f;
+    }
+    .btn-hint:hover:not(:disabled) { filter: brightness(0.98); }
 
     .layout-grid {
       display: grid;
@@ -336,30 +449,41 @@
       .layout-grid { grid-template-columns: 1fr; }
     }
 
-    .q-meta {
+    .q-header-row {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 12px;
-      font-size: 12.5px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1.5px dashed #e2e8f0;
+    }
+
+    .q-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      font-size: 13px;
       color: var(--muted);
     }
 
     .pill {
-      background: #eef2ff;
-      color: #1e3a8a;
-      padding: 3px 10px;
+      padding: 4px 11px;
       border-radius: 999px;
-      font-weight: 600;
-      font-size: 12px;
+      font-weight: 700;
+      font-size: 12.5px;
     }
+
+    .pill-type { background: #ede9fe; color: #5b21b6; }
+    .pill-topic { background: #e0f2fe; color: #0369a1; }
 
     .q-prompt {
       font-size: 17px;
       font-weight: 600;
-      margin: 10px 0 16px;
+      margin: 12px 0 16px;
+      color: #0f172a;
     }
 
     .q-prompt svg, #qImageArea svg {
@@ -368,11 +492,11 @@
     }
 
     .hint-box {
-      background: var(--warn-soft);
-      border: 1px solid #fcd34d;
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      border: 1.5px solid #f59e0b;
       color: #78350f;
-      border-radius: 10px;
-      padding: 12px 14px;
+      border-radius: 12px;
+      padding: 13px 15px;
       margin-bottom: 16px;
       font-size: 14px;
     }
@@ -384,59 +508,126 @@
     }
 
     .option-item {
-      border: 1.5px solid var(--border);
-      border-radius: 11px;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
       padding: 12px 14px;
       cursor: pointer;
       display: flex;
       align-items: flex-start;
       gap: 10px;
+      background: #ffffff;
       transition: 0.15s;
     }
 
-    .option-item:hover { border-color: #93c5fd; background: #f8fbff; }
-    .option-item.selected { border-color: var(--primary); background: var(--primary-soft); }
-    .option-item.correct { border-color: var(--success); background: var(--success-soft); }
-    .option-item.wrong { border-color: var(--danger); background: var(--danger-soft); }
+    .option-item:hover { border-color: #60a5fa; background: #f0f9ff; }
+    .option-item.selected { border-color: #2563eb; background: #eff6ff; box-shadow: 0 0 0 2px rgba(37,99,235,0.14); }
+    .option-item.correct { border-color: #16a34a; background: #dcfce7; }
+    .option-item.wrong { border-color: #dc2626; background: #fee2e2; }
 
-    .tf-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 10px 12px;
-      margin-bottom: 8px;
+    /* Câu hỏi Đúng / Sai xếp cột dọc thẳng hàng */
+    .tf-table-wrap {
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #ffffff;
+      margin-bottom: 16px;
     }
 
-    .tf-btns { display: flex; gap: 6px; }
+    .tf-head-row, .tf-grid-row {
+      display: grid;
+      grid-template-columns: 1fr 78px 78px;
+      align-items: center;
+    }
+
+    .tf-head-row {
+      background: #eff6ff;
+      border-bottom: 1.5px solid #cbd5e1;
+      font-weight: 800;
+      font-size: 13px;
+      color: #1e3a8a;
+    }
+
+    .tf-head-cell {
+      padding: 10px 12px;
+      text-align: center;
+      border-left: 1px solid #cbd5e1;
+    }
+
+    .tf-head-cell:first-child {
+      text-align: left;
+      border-left: none;
+    }
+
+    .tf-grid-row {
+      border-bottom: 1px solid #e2e8f0;
+      background: #ffffff;
+    }
+
+    .tf-grid-row:nth-child(odd) {
+      background: #f8fafc;
+    }
+
+    .tf-grid-row:last-child {
+      border-bottom: none;
+    }
+
+    .tf-statement-cell {
+      padding: 11px 14px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .tf-choice-cell {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 6px;
+      border-left: 1px solid #e2e8f0;
+    }
+
     .tf-btn {
-      padding: 5px 12px;
-      border-radius: 7px;
-      border: 1px solid var(--border);
+      width: 60px;
+      height: 34px;
+      border-radius: 8px;
+      border: 1.5px solid #cbd5e1;
       background: #fff;
       font-weight: 700;
-      font-size: 12px;
+      font-size: 12.5px;
       cursor: pointer;
+      transition: 0.15s;
     }
-    .tf-btn.active-true { background: var(--success); color: #fff; border-color: var(--success); }
-    .tf-btn.active-false { background: var(--danger); color: #fff; border-color: var(--danger); }
+
+    .tf-btn:hover:not(:disabled) {
+      border-color: #94a3b8;
+      background: #f1f5f9;
+    }
+
+    .tf-btn.active-true {
+      background: #16a34a;
+      color: #fff;
+      border-color: #16a34a;
+    }
+
+    .tf-btn.active-false {
+      background: #dc2626;
+      color: #fff;
+      border-color: #dc2626;
+    }
 
     .feedback-box {
-      border-radius: 11px;
+      border-radius: 12px;
       padding: 14px 16px;
       margin-top: 14px;
       font-size: 14px;
     }
-    .feedback-box.ok { background: var(--success-soft); border: 1px solid #86efac; color: #14532d; }
-    .feedback-box.bad { background: var(--danger-soft); border: 1px solid #fca5a5; color: #7f1d1d; }
-    .feedback-box.info { background: var(--primary-soft); border: 1px solid #93c5fd; color: #1e3a8a; }
+    .feedback-box.ok { background: #dcfce7; border: 1.5px solid #4ade80; color: #14532d; }
+    .feedback-box.bad { background: #fee2e2; border: 1.5px solid #f87171; color: #7f1d1d; }
+    .feedback-box.info { background: #e0f2fe; border: 1.5px solid #38bdf8; color: #0c4a6e; }
 
     .sidebar-card {
       background: var(--card);
-      border: 1px solid var(--border);
+      border: 1.5px solid #e2e8f0;
       border-radius: var(--radius);
       padding: 16px;
       box-shadow: var(--shadow);
@@ -445,14 +636,20 @@
 
     .timer-display {
       font-size: 28px;
-      font-weight: 800;
+      font-weight: 900;
       font-variant-numeric: tabular-nums;
-      color: var(--primary);
+      color: #2563eb;
       text-align: center;
-      padding: 6px 0;
+      padding: 8px 0;
+      background: #eff6ff;
+      border-radius: 12px;
+      margin-top: 8px;
     }
 
-    .timer-display.urgent { color: var(--danger); }
+    .timer-display.urgent {
+      color: #dc2626;
+      background: #fee2e2;
+    }
 
     .nav-grid {
       display: grid;
@@ -463,17 +660,17 @@
 
     .nav-num {
       height: 36px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
+      border-radius: 9px;
+      border: 1.5px solid #cbd5e1;
       background: #fff;
       font-weight: 700;
       font-size: 13px;
       cursor: pointer;
     }
 
-    .nav-num.current { outline: 2.5px solid var(--primary); border-color: var(--primary); }
-    .nav-num.done-ok { background: var(--success-soft); border-color: #4ade80; color: #14532d; }
-    .nav-num.done-bad { background: var(--danger-soft); border-color: #f87171; color: #7f1d1d; }
+    .nav-num.current { outline: 2.5px solid #2563eb; border-color: #2563eb; background: #eff6ff; }
+    .nav-num.done-ok { background: #dcfce7; border-color: #22c55e; color: #14532d; }
+    .nav-num.done-bad { background: #fee2e2; border-color: #ef4444; color: #7f1d1d; }
 
     .footer-actions {
       display: flex;
@@ -482,36 +679,64 @@
       gap: 10px;
       margin-top: 18px;
       padding-top: 14px;
-      border-top: 1px solid var(--border);
+      border-top: 1.5px solid #e2e8f0;
     }
 
-    .student-setup {
+    /* Cửa sổ Bảng kết quả bật nổi chính giữa màn hình */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.55);
+      backdrop-filter: blur(4px);
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
       align-items: center;
       justify-content: center;
-      margin-bottom: 16px;
-      padding: 14px;
-      background: #f8fafc;
-      border: 1px solid var(--border);
-      border-radius: 12px;
+      padding: 18px;
+      z-index: 100;
+    }
+
+    .modal-dialog {
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 18px;
+      width: 100%;
+      max-width: 820px;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.28);
+      overflow: hidden;
+    }
+
+    .modal-header {
+      padding: 16px 20px;
+      background: linear-gradient(90deg, #eff6ff 0%, #f5f3ff 100%);
+      border-bottom: 1.5px solid #dbeafe;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .modal-body {
+      padding: 18px 20px;
+      overflow-y: auto;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
       font-size: 13.5px;
-      margin-top: 10px;
     }
 
     th, td {
-      border: 1px solid var(--border);
-      padding: 8px 10px;
+      border: 1px solid #cbd5e1;
+      padding: 9px 11px;
       text-align: left;
     }
 
-    th { background: #f1f5f9; }
+    th { background: #eff6ff; color: #1e3a8a; font-weight: 800; }
 
     .teacher-panel { margin-top: 20px; }
     .hidden { display: none !important; }
@@ -524,7 +749,7 @@
         <div class="brand-badge">$\pi$</div>
         <div>
           <h1>Ôn Luyện Toán Thông Minh</h1>
-          <p>Hệ thống luyện tập & kiểm tra Toán THCS</p>
+          <p>Luyện tập & kiểm tra tương tác Toán THCS</p>
         </div>
       </div>
 
@@ -544,25 +769,25 @@
     <section id="stepGrade" class="card">
       <div class="step-header">
         <h2>Chọn Khối Lớp Ôn Luyện</h2>
-        <p>Chọn lớp học của bạn để mở chương trình Toán tương ứng</p>
+        <p>Chọn khối lớp của bạn để mở chương trình Toán tương ứng</p>
       </div>
       <div class="grade-grid">
-        <div class="grade-card" onclick="selectGrade(6)">
+        <div class="grade-card g6" onclick="selectGrade(6)">
           <div class="grade-icon">6</div>
           <h3>Toán Lớp 6</h3>
           <span>Chương trình THCS</span>
         </div>
-        <div class="grade-card" onclick="selectGrade(7)">
+        <div class="grade-card g7" onclick="selectGrade(7)">
           <div class="grade-icon">7</div>
           <h3>Toán Lớp 7</h3>
           <span>Chương trình THCS</span>
         </div>
-        <div class="grade-card" onclick="selectGrade(8)">
+        <div class="grade-card g8" onclick="selectGrade(8)">
           <div class="grade-icon">8</div>
           <h3>Toán Lớp 8</h3>
           <span>Chương trình THCS</span>
         </div>
-        <div class="grade-card" onclick="selectGrade(9)">
+        <div class="grade-card g9" onclick="selectGrade(9)">
           <div class="grade-icon">9</div>
           <h3>Toán Lớp 9</h3>
           <span>Chương trình THCS</span>
@@ -573,66 +798,94 @@
     <!-- BƯỚC 2: CHỌN HỌC KÌ -->
     <section id="stepTerm" class="card hidden">
       <div class="step-header">
-        <h2 id="selectedGradeTitle">Toán Lớp 8 — Chọn Giai Đoạn</h2>
+        <h2 id="selectedGradeTitle">Toán Lớp 8 — Chọn Học Kì</h2>
         <p>Chọn học kì hoặc ôn tập tổng hợp cuối năm</p>
       </div>
       <div class="term-grid">
-        <div class="term-card" onclick="selectTerm('HK1')">
+        <div class="term-card t1" onclick="selectTerm('HK1')">
+          <span class="term-badge">Giai đoạn 1</span>
           <h3>Học kì I</h3>
           <p>Các chương trọng tâm Học kì I</p>
         </div>
-        <div class="term-card" onclick="selectTerm('HK2')">
+        <div class="term-card t2" onclick="selectTerm('HK2')">
+          <span class="term-badge">Giai đoạn 2</span>
           <h3>Học kì II</h3>
           <p>Các chương trọng tâm Học kì II</p>
         </div>
-        <div class="term-card" onclick="selectTerm('FINAL')">
+        <div class="term-card t3" onclick="selectTerm('FINAL')">
+          <span class="term-badge">Tổng hợp</span>
           <h3>Ôn tập cuối năm</h3>
           <p>Tổng hợp kiến thức cả năm học</p>
         </div>
       </div>
-      <div style="text-align:center; margin-top:20px;">
+      <div style="text-align:center; margin-top:24px;">
         <button class="btn" type="button" onclick="backToGrade()">← Quay lại chọn lớp</button>
       </div>
     </section>
 
-    <!-- BƯỚC 3: LÀM BÀI KIỂM TRA -->
-    <section id="stepExam" class="hidden">
-      <div class="exam-topbar">
-        <div class="filter-group">
-          <button class="btn" type="button" onclick="backToTerm()">← Đổi lớp / học kì</button>
-          <select id="topicSelect" onchange="handleTopicChange()"></select>
-          <button class="btn btn-soft" type="button" onclick="generateNewExam()">Tạo đề mới</button>
-        </div>
+    <!-- BƯỚC 3: BẮT BUỘC NHẬP HỌ VÀ TÊN SAU KHI CHỌN HỌC KÌ -->
+    <section id="stepStudentName" class="card name-gate-card hidden">
+      <div class="step-header" style="margin-bottom:14px;">
+        <h2 id="nameGateTitle" style="font-size:23px;">Nhập Họ và Tên Học Sinh</h2>
+        <p>Vui lòng nhập họ và tên trước khi vào làm bài kiểm tra</p>
+      </div>
 
-        <div class="filter-group">
-          <button class="btn btn-soft" type="button" onclick="toggleHint()">Gợi ý kiến thức</button>
-          <button id="startExamBtn" class="btn btn-primary" type="button" onclick="startExam()">Bắt đầu làm bài</button>
-          <button id="finishExamBtn" class="btn btn-success" type="button" onclick="finishExam()">Nộp bài</button>
+      <div class="form-row">
+        <div>
+          <label class="form-label" for="gateNameInput">Họ và tên học sinh <span class="req-star">*</span></label>
+          <input type="text" id="gateNameInput" placeholder="Ví dụ: Nguyễn Minh Anh" style="width:100%;"
+            onkeydown="if(event.key==='Enter') confirmStudentAndEnterExam()" />
+        </div>
+        <div>
+          <label class="form-label" for="gateClassInput">Lớp</label>
+          <input type="text" id="gateClassInput" placeholder="Ví dụ: 8A1" style="width:100%;"
+            onkeydown="if(event.key==='Enter') confirmStudentAndEnterExam()" />
         </div>
       </div>
 
-      <!-- Khung nhập tên học sinh trước khi làm bài -->
-      <div id="studentSetupBox" class="student-setup">
-        <input type="text" id="studentNameInput" placeholder="Nhập họ và tên học sinh..." style="min-width:230px;" />
-        <input type="text" id="studentClassInput" placeholder="Lớp (VD: 8A1)" style="width:130px;" />
-        <button class="btn btn-primary" type="button" onclick="startExam()">Vào làm bài ngay</button>
+      <div id="nameErrorMsg" class="feedback-box bad hidden" style="margin-top:8px; margin-bottom:12px;">
+        Bạn cần nhập <strong>Họ và tên</strong> trước khi bắt đầu làm bài.
+      </div>
+
+      <div style="display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-top:18px;">
+        <button class="btn" type="button" onclick="backToTermFromName()">← Đổi học kì</button>
+        <button class="btn btn-primary" type="button" onclick="confirmStudentAndEnterExam()">Vào làm bài kiểm tra →</button>
+      </div>
+    </section>
+
+    <!-- BƯỚC 4: LÀM BÀI KIỂM TRA -->
+    <section id="stepExam" class="hidden">
+      <div class="exam-topbar">
+        <div class="filter-group">
+          <button class="btn" type="button" onclick="backToGrade()">← Đổi lớp / học kì</button>
+          <select id="topicSelect" onchange="handleTopicChange()"></select>
+          <button class="btn btn-soft" type="button" onclick="generateNewExam(true)">Tạo đề mới</button>
+        </div>
+
+        <div class="filter-group">
+          <button id="finishExamBtn" class="btn btn-success" type="button" onclick="finishExam()">Nộp bài</button>
+        </div>
       </div>
 
       <div id="examSummaryBox" class="card hidden" style="margin-bottom:18px;"></div>
 
       <div class="layout-grid">
         <section class="card" id="questionCard">
-          <div class="q-meta">
-            <div>
-              <span class="pill" id="qTypeBadge">Trắc nghiệm</span>
-              <span class="pill" id="qTopicLabel">Chương I</span>
-              <span id="qIndexLabel">Câu 1 / 10</span>
+          <div class="q-header-row">
+            <div class="q-badges">
+              <span class="pill pill-type" id="qTypeBadge">Trắc nghiệm</span>
+              <span class="pill pill-topic" id="qTopicLabel">Chương I</span>
+              <strong id="qIndexLabel">Câu 1 / 10</strong>
+              <span id="qStatusBadge">Đang làm bài</span>
             </div>
-            <div id="qStatusBadge">Sẵn sàng</div>
+
+            <button id="hintToggleBtn" class="btn btn-hint" type="button" onclick="toggleCurrentQuestionHint()">
+              Gợi ý kiến thức
+            </button>
           </div>
 
           <div id="hintBox" class="hint-box hidden"></div>
-          <div class="q-prompt" id="qPrompt">Chọn chủ đề và bấm "Bắt đầu làm bài" để mở đề.</div>
+          <div class="q-prompt" id="qPrompt">Đang tải câu hỏi...</div>
           <div id="qImageArea" style="text-align:center; margin-bottom:14px;"></div>
           <div id="qInteractiveArea"></div>
           <div id="qFeedbackArea"></div>
@@ -650,7 +903,7 @@
           <div class="sidebar-card">
             <div style="display:flex; justify-content:space-between; align-items:center;">
               <strong>Thời gian làm bài</strong>
-              <span id="examModeText" style="font-size:12px; color:var(--muted);">15 phút</span>
+              <span id="examModeText" style="font-size:12px; font-weight:700; color:#7c3aed;">15 phút</span>
             </div>
             <div id="timerDisplay" class="timer-display">15:00</div>
           </div>
@@ -658,7 +911,7 @@
           <div class="sidebar-card">
             <div style="display:flex; justify-content:space-between; align-items:center;">
               <strong>Danh sách câu hỏi</strong>
-              <span id="scoreSummary" style="font-size:13px; color:var(--muted);">0/0</span>
+              <span id="scoreSummary" style="font-size:13px; font-weight:700; color:#0284c7;">0/0</span>
             </div>
             <div id="navGrid" class="nav-grid"></div>
           </div>
@@ -666,23 +919,11 @@
       </div>
     </section>
 
-    <!-- BẢNG KẾT QUẢ LỊCH SỬ -->
-    <section id="scoreboardCard" class="card hidden" style="margin-top:20px;">
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
-        <h2 style="margin:0; font-size:18px;">Lịch sử kết quả kiểm tra</h2>
-        <div style="display:flex; gap:8px;">
-          <button class="btn btn-soft" type="button" onclick="exportHistoryCsv()">Xuất Excel (CSV)</button>
-          <button class="btn" type="button" onclick="toggleScoreboardModal()">Đóng</button>
-        </div>
-      </div>
-      <div id="scoreboardTableWrap"></div>
-    </section>
-
     <!-- KHU VỰC GIÁO VIÊN -->
     <section id="teacherPanel" class="card teacher-panel hidden">
       <h2 style="margin-top:0; font-size:18px;">Khu vực Giáo viên — Ngân hàng câu hỏi</h2>
       <p style="color:var(--muted); font-size:14px;">
-        Ngân hàng câu hỏi gốc được đồng bộ tự động từ thư mục <code>data/</code> trên GitHub. Bạn cũng có thể kiểm tra nhanh JSON tại đây.
+        Ngân hàng câu hỏi gốc được đồng bộ tự động từ thư mục <code>data/</code> trên GitHub.
       </p>
       <textarea id="jsonEditor" spellcheck="false"></textarea>
       <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;">
@@ -695,11 +936,25 @@
     </section>
   </main>
 
+  <!-- CỬA SỔ BẢNG KẾT QUẢ BẬT NỔI CHÍNH GIỮA MÀN HÌNH -->
+  <div id="scoreboardModal" class="modal-backdrop hidden" onclick="if(event.target===this) toggleScoreboardModal(false)">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="scoreboardModalTitle">
+      <div class="modal-header">
+        <h2 id="scoreboardModalTitle" style="margin:0; font-size:19px; color:#1e3a8a;">Lịch sử kết quả kiểm tra</h2>
+        <div style="display:flex; gap:8px;">
+          <button class="btn btn-soft" type="button" onclick="exportHistoryCsv()">Xuất Excel (CSV)</button>
+          <button class="btn" type="button" onclick="toggleScoreboardModal(false)">Đóng</button>
+        </div>
+      </div>
+      <div class="modal-body" id="scoreboardTableWrap"></div>
+    </div>
+  </div>
+
   <script>
 /*__QUESTIONS_START__*/
 const DEFAULT_QUESTIONS = [
   {
-    "id": "t8_c1_m01",
+    "id": "t8_c1_sample_01",
     "grade": 8,
     "term": "HK1",
     "mode": "mcq",
@@ -708,221 +963,29 @@ const DEFAULT_QUESTIONS = [
     "prompt": "Biểu thức nào sau đây là một đơn thức?",
     "hint": "Đơn thức là biểu thức đại số chỉ gồm một số, hoặc một biến, hoặc một tích giữa các số và các biến.",
     "options": [
-      "$x + 3y$",
-      "$-2x^2y^3$",
-      "$\\dfrac{1}{x} + 2y$",
-      "$x^2 - y$"
+      "$x + 2y$",
+      "$-3x^2y$",
+      "$\\dfrac{2}{x} + 1$",
+      "$x^2 - 1$"
     ],
     "answer": 1,
-    "explanation": "Biểu thức $-2x^2y^3$ là tích của số $-2$ với các biến $x, y$ nên là đơn thức. Các biểu thức còn lại có phép cộng/trừ các hạng tử hoặc biến ở mẫu nên không phải đơn thức."
+    "explanation": "$-3x^2y$ là tích giữa số $-3$ và các biến $x, y$ với số mũ nguyên dương nên là đơn thức."
   },
   {
-    "id": "t8_c1_m02",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "medium",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Bậc của đơn thức thu gọn $4x^3y^2z$ là:",
-    "hint": "Bậc của đơn thức (khác $0$) là tổng số mũ của tất cả các biến có trong đơn thức đó.",
-    "options": [
-      "$3$",
-      "$5$",
-      "$6$",
-      "$9$"
-    ],
-    "answer": 2,
-    "explanation": "Đơn thức $4x^3y^2z$ có các biến $x, y, z$ với số mũ lần lượt là $3, 2, 1$. Tổng số mũ là $3 + 2 + 1 = 6$, nên bậc của đơn thức là $6$."
-  },
-  {
-    "id": "t8_c1_m03",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "medium",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Đơn thức nào sau đây đồng dạng với đơn thức $-5x^2y$?",
-    "hint": "Hai đơn thức đồng dạng là hai đơn thức có hệ số khác $0$ và có cùng phần biến.",
-    "options": [
-      "$3xy^2$",
-      "$\\dfrac{1}{2}x^2y$",
-      "$0x^2y$",
-      "$-5x^2y^2$"
-    ],
-    "answer": 1,
-    "explanation": "Đơn thức $-5x^2y$ có phần biến là $x^2y$. Đơn thức $\\dfrac{1}{2}x^2y$ có hệ số khác $0$ và cùng phần biến $x^2y$ nên đồng dạng với $-5x^2y$."
-  },
-  {
-    "id": "t8_c1_m04",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "medium",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Thu gọn đa thức $A = 3x^2 - 5xy + 2x^2 + 8xy - 4$ ta được:",
-    "hint": "Để thu gọn đa thức, ta nhóm các hạng tử đồng dạng với nhau rồi cộng (hoặc trừ) các hệ số của chúng.",
-    "options": [
-      "$5x^2 + 3xy - 4$",
-      "$x^2 + 3xy - 4$",
-      "$5x^2 - 13xy - 4$",
-      "$6x^4 - 3xy - 4$"
-    ],
-    "answer": 0,
-    "explanation": "Nhóm các hạng tử đồng dạng: $A = (3x^2 + 2x^2) + (-5xy + 8xy) - 4 = 5x^2 + 3xy - 4$."
-  },
-  {
-    "id": "t8_c1_m05",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "medium",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Tìm bậc của đa thức $B = 2x^4y - 3x^2y^5 + x^4y - 7$ sau khi đã thu gọn.",
-    "hint": "Thu gọn đa thức trước, sau đó tìm bậc của từng hạng tử; bậc của đa thức là bậc cao nhất của các hạng tử trong dạng thu gọn.",
-    "options": [
-      "$5$",
-      "$6$",
-      "$7$",
-      "$8$"
-    ],
-    "answer": 2,
-    "explanation": "Thu gọn đa thức: $B = (2x^4y + x^4y) - 3x^2y^5 - 7 = 3x^4y - 3x^2y^5 - 7$. Các hạng tử có bậc lần lượt là $5, 7, 0$. Bậc cao nhất là $7$ nên bậc của đa thức là $7$."
-  },
-  {
-    "id": "t8_c1_m06",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "medium",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Cho hai đa thức $P = x^2 - 2xy + y^2$ và $Q = 2x^2 + xy - y^2$. Tổng $P + Q$ bằng:",
-    "hint": "Cộng hai đa thức bằng cách viết tổng của chúng rồi thu gọn các hạng tử đồng dạng.",
-    "options": [
-      "$3x^2 - xy$",
-      "$3x^2 + xy$",
-      "$x^2 - 3xy + 2y^2$",
-      "$3x^2 - xy + 2y^2$"
-    ],
-    "answer": 0,
-    "explanation": "$P + Q = (x^2 - 2xy + y^2) + (2x^2 + xy - y^2) = (x^2 + 2x^2) + (-2xy + xy) + (y^2 - y^2) = 3x^2 - xy$."
-  },
-  {
-    "id": "t8_c1_m07",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "medium",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Cho hai đa thức $M = 4x^2 - 3y + 5$ và $N = x^2 - 5y + 2$. Hiệu $M - N$ bằng:",
-    "hint": "Khi bỏ dấu ngoặc có dấu trừ đứng trước, ta phải đổi dấu tất cả các số hạng bên trong ngoặc rồi thu gọn hạng tử đồng dạng.",
-    "options": [
-      "$3x^2 - 8y + 7$",
-      "$3x^2 + 2y + 3$",
-      "$5x^2 - 8y + 3$",
-      "$3x^2 - 2y + 7$"
-    ],
-    "answer": 1,
-    "explanation": "$M - N = (4x^2 - 3y + 5) - (x^2 - 5y + 2) = 4x^2 - 3y + 5 - x^2 + 5y - 2 = 3x^2 + 2y + 3$."
-  },
-  {
-    "id": "t8_c1_m08",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "medium",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Tích của đơn thức $2x$ và đa thức $(3x^2 - 4x + 1)$ là:",
-    "hint": "Nhân đơn thức với từng hạng tử của đa thức theo quy tắc $A(B + C) = AB + AC$ và $x^m \\cdot x^n = x^{m+n}$.",
-    "options": [
-      "$6x^3 - 8x^2 + 2x$",
-      "$6x^3 - 8x^2 + 1$",
-      "$5x^3 - 8x^2 + 2x$",
-      "$6x^2 - 8x + 2$"
-    ],
-    "answer": 0,
-    "explanation": "$2x(3x^2 - 4x + 1) = 2x \\cdot 3x^2 - 2x \\cdot 4x + 2x \\cdot 1 = 6x^3 - 8x^2 + 2x$."
-  },
-  {
-    "id": "t8_c1_m09",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "medium",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Khai triển và thu gọn tích $(x - 2)(x + 5)$ ta được:",
-    "hint": "Nhân mỗi hạng tử của đa thức thứ nhất với từng hạng tử của đa thức thứ hai rồi thu gọn các hạng tử đồng dạng.",
-    "options": [
-      "$x^2 + 3x - 10$",
-      "$x^2 - 3x - 10$",
-      "$x^2 + 7x - 10$",
-      "$x^2 + 3x + 10$"
-    ],
-    "answer": 0,
-    "explanation": "$(x - 2)(x + 5) = x^2 + 5x - 2x - 10 = x^2 + 3x - 10$."
-  },
-  {
-    "id": "t8_c1_m10",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "medium",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Kết quả phép chia đơn thức $12x^4y^3$ cho đơn thức $-3x^2y$ là:",
-    "hint": "Chia hệ số cho hệ số và chia lũy thừa của từng biến theo quy tắc $x^m : x^n = x^{m-n}$ ($m \\ge n$).",
-    "options": [
-      "$-4x^2y^2$",
-      "$4x^2y^2$",
-      "$-4x^2y^3$",
-      "$-9x^2y^2$"
-    ],
-    "answer": 0,
-    "explanation": "$12x^4y^3 : (-3x^2y) = (12 : (-3)) \\cdot (x^4 : x^2) \\cdot (y^3 : y) = -4x^2y^2$."
-  },
-  {
-    "id": "t8_c1_a01",
-    "grade": 8,
-    "term": "HK1",
-    "mode": "mcq",
-    "difficulty": "application",
-    "topic": "Chương I — Đa thức",
-    "prompt": "Một khu vườn hình chữ nhật có chiều dài là $(3x + 4)\\text{ m}$ và chiều rộng là $(2x - 1)\\text{ m}$ (với $x > 0,5$). Biểu thức đại số biểu thị diện tích khu vườn theo $x$ là:",
-    "hint": "Diện tích hình chữ nhật bằng chiều dài nhân chiều rộng: $S = (3x + 4)(2x - 1)$.",
-    "options": [
-      "$(6x^2 + 5x - 4)\\text{ m}^2$",
-      "$(6x^2 + 11x - 4)\\text{ m}^2$",
-      "$(6x^2 - 5x - 4)\\text{ m}^2$",
-      "$(5x + 3)\\text{ m}^2$"
-    ],
-    "answer": 0,
-    "explanation": "Diện tích khu vườn là $(3x + 4)(2x - 1) = 6x^2 - 3x + 8x - 4 = 6x^2 + 5x - 4\\text{ (m}^2)$."
-  },
-  {
-    "id": "t8_c1_tf01",
+    "id": "t8_c1_sample_tf01",
     "grade": 8,
     "term": "HK1",
     "mode": "tf",
     "topic": "Chương I — Đa thức",
-    "prompt": "Xét tính đúng/sai của các nhận định sau về đơn thức và đa thức:",
-    "hint": "Vận dụng khái niệm đơn thức, đa thức, bậc của đơn thức/đa thức và quy tắc cộng, trừ đa thức.",
+    "prompt": "Xét tính đúng/sai của các khẳng định sau về đơn thức và đa thức:",
+    "hint": "Dựa vào khái niệm đơn thức thu gọn, bậc của đơn thức và đa thức.",
     "statements": [
-      {
-        "text": "Mỗi đơn thức đều là một đa thức.",
-        "answer": true
-      },
-      {
-        "text": "Bậc của đơn thức $7x^2y^4$ bằng $8$.",
-        "answer": false
-      },
-      {
-        "text": "Khi cộng hai đa thức, ta thu gọn các hạng tử đồng dạng của tổng.",
-        "answer": true
-      },
-      {
-        "text": "Đa thức $-3x^2 + 5x^2 - 2x^2$ thu gọn bằng $0$, gọi là đa thức không và không có bậc.",
-        "answer": true
-      }
+      { "text": "Số $0$ được gọi là đơn thức không và không có bậc.", "answer": true },
+      { "text": "Hai đơn thức đồng dạng thì có cùng phần biến và cùng hệ số.", "answer": false },
+      { "text": "Bậc của đa thức là bậc của hạng tử có bậc cao nhất trong dạng thu gọn của đa thức đó.", "answer": true },
+      { "text": "Biểu thức $\\dfrac{x+1}{2}$ là một đa thức.", "answer": true }
     ],
-    "explanation": "Ý a đúng vì theo định nghĩa, đa thức là một tổng của những đơn thức nên mỗi đơn thức là một đa thức. Ý b sai vì bậc của $7x^2y^4$ là $2 + 4 = 6$ (không phải $8$). Ý c đúng theo quy tắc cộng hai đa thức. Ý d đúng vì đa thức thu gọn thành $0$ là đa thức không và không có bậc."
+    "explanation": "Ý a, c, d đúng. Ý b sai vì hai đơn thức đồng dạng chỉ cần có hệ số khác $0$ và có cùng phần biến (hệ số có thể khác nhau)."
   }
 ];
 /*__QUESTIONS_END__*/
@@ -1005,7 +1068,7 @@ const DEFAULT_QUESTIONS = [
       currentIndex: 0,
       selections: {},
       results: {},
-      showHint: false,
+      hintShownById: {},
       examStarted: false,
       examFinished: false,
       remainingSec: 900,
@@ -1013,10 +1076,12 @@ const DEFAULT_QUESTIONS = [
     };
 
     function initApp() {
-      // Ưu tiên dữ liệu gốc mới nhất trên GitHub; chỉ giữ bổ sung cục bộ nếu có
       state.questions = JSON.parse(JSON.stringify(DEFAULT_QUESTIONS));
       try {
-        localStorage.setItem("math_bank_github_sync_v2", JSON.stringify(state.questions));
+        const savedName = localStorage.getItem("math_student_name_v1") || "";
+        const savedClass = localStorage.getItem("math_student_class_v1") || "";
+        document.getElementById("gateNameInput").value = savedName;
+        document.getElementById("gateClassInput").value = savedClass;
       } catch (e) {}
       syncJsonEditor();
       renderMath();
@@ -1030,31 +1095,71 @@ const DEFAULT_QUESTIONS = [
       if (role === "teacher") syncJsonEditor();
     }
 
-    function selectGrade(grade) {
-      state.grade = grade;
-      document.getElementById("selectedGradeTitle").textContent = `Toán Lớp ${grade} — Chọn Giai Đoạn`;
+    function hideAllSteps() {
       document.getElementById("stepGrade").classList.add("hidden");
+      document.getElementById("stepTerm").classList.add("hidden");
+      document.getElementById("stepStudentName").classList.add("hidden");
+      document.getElementById("stepExam").classList.add("hidden");
+    }
+
+    function selectGrade(grade) {
+      stopTimer();
+      state.grade = grade;
+      document.getElementById("selectedGradeTitle").textContent = `Toán Lớp ${grade} — Chọn Học Kì`;
+      hideAllSteps();
       document.getElementById("stepTerm").classList.remove("hidden");
     }
 
     function backToGrade() {
       stopTimer();
-      document.getElementById("stepTerm").classList.add("hidden");
+      hideAllSteps();
       document.getElementById("stepGrade").classList.remove("hidden");
     }
 
     function selectTerm(term) {
+      stopTimer();
       state.term = term;
-      populateTopicsForSelection();
-      document.getElementById("stepTerm").classList.add("hidden");
-      document.getElementById("stepExam").classList.remove("hidden");
-      generateNewExam();
+      const termLabel = term === "HK1" ? "Học kì I" : term === "HK2" ? "Học kì II" : "Ôn tập cuối năm";
+      document.getElementById("nameGateTitle").textContent = `Toán Lớp ${state.grade} · ${termLabel} — Nhập Họ và Tên`;
+      document.getElementById("nameErrorMsg").classList.add("hidden");
+      hideAllSteps();
+      document.getElementById("stepStudentName").classList.remove("hidden");
+      setTimeout(() => document.getElementById("gateNameInput").focus(), 50);
     }
 
-    function backToTerm() {
-      stopTimer();
-      document.getElementById("stepExam").classList.add("hidden");
+    function backToTermFromName() {
+      hideAllSteps();
       document.getElementById("stepTerm").classList.remove("hidden");
+    }
+
+    function confirmStudentAndEnterExam() {
+      const nameVal = document.getElementById("gateNameInput").value.trim();
+      const classVal = document.getElementById("gateClassInput").value.trim();
+      const errEl = document.getElementById("nameErrorMsg");
+
+      if (!nameVal) {
+        errEl.classList.remove("hidden");
+        document.getElementById("gateNameInput").focus();
+        return;
+      }
+
+      errEl.classList.add("hidden");
+      state.studentName = nameVal;
+      state.studentClass = classVal;
+
+      try {
+        localStorage.setItem("math_student_name_v1", nameVal);
+        localStorage.setItem("math_student_class_v1", classVal);
+      } catch (e) {}
+
+      const badge = document.getElementById("headerStudentBadge");
+      badge.textContent = `HS: ${state.studentName}${state.studentClass ? ` (${state.studentClass})` : ""}`;
+      badge.classList.remove("hidden");
+
+      populateTopicsForSelection();
+      hideAllSteps();
+      document.getElementById("stepExam").classList.remove("hidden");
+      generateNewExam(true);
     }
 
     function populateTopicsForSelection() {
@@ -1077,7 +1182,7 @@ const DEFAULT_QUESTIONS = [
 
     function handleTopicChange() {
       state.topic = document.getElementById("topicSelect").value;
-      generateNewExam();
+      generateNewExam(true);
     }
 
     function shuffleArray(arr) {
@@ -1089,15 +1194,14 @@ const DEFAULT_QUESTIONS = [
       return copy;
     }
 
-    function generateNewExam() {
+    function generateNewExam(autoStartCountdown = false) {
       stopTimer();
-      state.examStarted = false;
       state.examFinished = false;
       state.selections = {};
       state.results = {};
+      state.hintShownById = {};
       state.currentIndex = 0;
       document.getElementById("examSummaryBox").classList.add("hidden");
-      document.getElementById("studentSetupBox").classList.remove("hidden");
 
       const isReviewAll = state.topic === "Ôn tập tổng hợp";
       const targetTotal = isReviewAll ? 30 : 10;
@@ -1114,6 +1218,7 @@ const DEFAULT_QUESTIONS = [
 
       if (pool.length === 0) {
         state.examQuestions = [];
+        state.examStarted = false;
         renderExamScreen();
         return;
       }
@@ -1139,28 +1244,9 @@ const DEFAULT_QUESTIONS = [
       }
 
       state.examQuestions = shuffleArray(chosen);
-      renderExamScreen();
-    }
-
-    function startExam() {
-      const nameInput = document.getElementById("studentNameInput").value.trim();
-      const classInput = document.getElementById("studentClassInput").value.trim();
-      if (nameInput) {
-        state.studentName = nameInput;
-        state.studentClass = classInput;
-      }
-      if (!state.studentName) {
-        state.studentName = "Học sinh";
-      }
-
-      const badge = document.getElementById("headerStudentBadge");
-      badge.textContent = `HS: ${state.studentName}${state.studentClass ? ` (${state.studentClass})` : ""}`;
-      badge.classList.remove("hidden");
-
-      document.getElementById("studentSetupBox").classList.add("hidden");
       state.examStarted = true;
 
-      if (!state.timerId && !state.examFinished) {
+      if (autoStartCountdown) {
         state.timerId = setInterval(() => {
           if (state.remainingSec > 0) {
             state.remainingSec -= 1;
@@ -1170,6 +1256,7 @@ const DEFAULT_QUESTIONS = [
           }
         }, 1000);
       }
+
       renderExamScreen();
     }
 
@@ -1188,8 +1275,10 @@ const DEFAULT_QUESTIONS = [
       el.classList.toggle("urgent", state.remainingSec > 0 && state.remainingSec <= 60);
     }
 
-    function toggleHint() {
-      state.showHint = !state.showHint;
+    function toggleCurrentQuestionHint() {
+      const q = state.examQuestions[state.currentIndex];
+      if (!q) return;
+      state.hintShownById[q.id] = !Boolean(state.hintShownById[q.id]);
       renderExamScreen();
     }
 
@@ -1199,6 +1288,7 @@ const DEFAULT_QUESTIONS = [
       const fbArea = document.getElementById("qFeedbackArea");
       const imgArea = document.getElementById("qImageArea");
       const hintBox = document.getElementById("hintBox");
+      const hintBtn = document.getElementById("hintToggleBtn");
       const submitBtn = document.getElementById("submitOneBtn");
 
       if (!list.length) {
@@ -1211,12 +1301,14 @@ const DEFAULT_QUESTIONS = [
         area.innerHTML = "";
         fbArea.innerHTML = "";
         hintBox.classList.add("hidden");
+        hintBtn.disabled = true;
         submitBtn.disabled = true;
         renderNavGrid();
         renderMath();
         return;
       }
 
+      hintBtn.disabled = false;
       const q = list[state.currentIndex];
       const locked = Boolean(state.results[q.id]) || state.examFinished;
       submitBtn.disabled = locked;
@@ -1238,9 +1330,11 @@ const DEFAULT_QUESTIONS = [
         imgArea.innerHTML = "";
       }
 
-      if (state.showHint && q.hint) {
+      const showHintForCurrent = Boolean(state.hintShownById[q.id]);
+      hintBtn.textContent = showHintForCurrent ? "Ẩn gợi ý câu này" : "Gợi ý kiến thức";
+      if (showHintForCurrent && q.hint) {
         hintBox.classList.remove("hidden");
-        hintBox.innerHTML = `<strong>Gợi ý kiến thức:</strong> ${q.hint}`;
+        hintBox.innerHTML = `<strong>Gợi ý kiến thức (câu hiện tại):</strong> ${q.hint}`;
       } else {
         hintBox.classList.add("hidden");
         hintBox.innerHTML = "";
@@ -1256,7 +1350,7 @@ const DEFAULT_QUESTIONS = [
           </div>
         `;
       } else {
-        document.getElementById("qStatusBadge").textContent = state.examStarted ? "Đang làm bài" : "Chưa bắt đầu";
+        document.getElementById("qStatusBadge").textContent = "Đang làm bài";
         fbArea.innerHTML = "";
       }
 
@@ -1279,20 +1373,31 @@ const DEFAULT_QUESTIONS = [
         }).join("") + `</div>`;
       } else if (q.mode === "tf") {
         const pickedArr = state.selections[q.id] || [];
-        area.innerHTML = (q.statements || []).map((st, idx) => {
-          const val = pickedArr[idx];
-          return `
-            <div class="tf-row">
-              <div><strong>${String.fromCharCode(97 + idx)})</strong> ${st.text}</div>
-              <div class="tf-btns">
-                <button type="button" class="tf-btn ${val === true ? "active-true" : ""}"
-                  ${locked ? "disabled" : ""} onclick="selectTf('${q.id}', ${idx}, true)">Đúng</button>
-                <button type="button" class="tf-btn ${val === false ? "active-false" : ""}"
-                  ${locked ? "disabled" : ""} onclick="selectTf('${q.id}', ${idx}, false)">Sai</button>
-              </div>
+        area.innerHTML = `
+          <div class="tf-table-wrap">
+            <div class="tf-head-row">
+              <div class="tf-head-cell">Khẳng định</div>
+              <div class="tf-head-cell">Đúng</div>
+              <div class="tf-head-cell">Sai</div>
             </div>
-          `;
-        }).join("");
+            ${(q.statements || []).map((st, idx) => {
+              const val = pickedArr[idx];
+              return `
+                <div class="tf-grid-row">
+                  <div class="tf-statement-cell"><strong>${String.fromCharCode(97 + idx)})</strong> ${st.text}</div>
+                  <div class="tf-choice-cell">
+                    <button type="button" class="tf-btn ${val === true ? "active-true" : ""}"
+                      ${locked ? "disabled" : ""} onclick="selectTf('${q.id}', ${idx}, true)">Đúng</button>
+                  </div>
+                  <div class="tf-choice-cell">
+                    <button type="button" class="tf-btn ${val === false ? "active-false" : ""}"
+                      ${locked ? "disabled" : ""} onclick="selectTf('${q.id}', ${idx}, false)">Sai</button>
+                  </div>
+                </div>
+              `;
+            }).join("")}
+          </div>
+        `;
       }
 
       renderNavGrid();
@@ -1300,13 +1405,13 @@ const DEFAULT_QUESTIONS = [
     }
 
     function selectMcq(qid, idx) {
-      if (!state.examStarted) startExam();
+      if (state.examFinished || state.results[qid]) return;
       state.selections[qid] = idx;
       renderExamScreen();
     }
 
     function selectTf(qid, idx, val) {
-      if (!state.examStarted) startExam();
+      if (state.examFinished || state.results[qid]) return;
       if (!Array.isArray(state.selections[qid])) state.selections[qid] = [];
       state.selections[qid][idx] = val;
       renderExamScreen();
@@ -1342,7 +1447,6 @@ const DEFAULT_QUESTIONS = [
         }
       }
 
-      if (!state.examStarted) startExam();
       state.results[q.id] = { correct: evaluateQuestion(q) };
       renderExamScreen();
     }
@@ -1378,9 +1482,9 @@ const DEFAULT_QUESTIONS = [
       summary.classList.remove("hidden");
       summary.innerHTML = `
         <h3 style="margin:0 0 8px;">Phiếu Kết Quả Bài Làm ${isAuto ? "(Hết giờ tự động nộp)" : ""}</h3>
-        <p style="margin:4px 0;"><strong>Học sinh:</strong> ${escapeHtml(state.studentName || "Học sinh")} ${state.studentClass ? `— Lớp ${escapeHtml(state.studentClass)}` : ""}</p>
+        <p style="margin:4px 0;"><strong>Học sinh:</strong> ${escapeHtml(state.studentName)} ${state.studentClass ? `— Lớp ${escapeHtml(state.studentClass)}` : ""}</p>
         <p style="margin:4px 0;"><strong>Nội dung:</strong> Toán ${state.grade} · ${escapeHtml(state.topic)}</p>
-        <p style="margin:4px 0; font-size:17px; color:var(--primary);"><strong>Điểm số: ${score} / 10</strong> (${correctCount}/${total} câu đúng)</p>
+        <p style="margin:4px 0; font-size:17px; color:#1d4ed8;"><strong>Điểm số: ${score} / 10</strong> (${correctCount}/${total} câu đúng)</p>
       `;
 
       renderExamScreen();
@@ -1429,11 +1533,11 @@ const DEFAULT_QUESTIONS = [
       } catch (e) {}
     }
 
-    function toggleScoreboardModal() {
-      const card = document.getElementById("scoreboardCard");
-      const opening = card.classList.contains("hidden");
-      card.classList.toggle("hidden");
-      if (opening) renderScoreboard();
+    function toggleScoreboardModal(forceState) {
+      const modal = document.getElementById("scoreboardModal");
+      const shouldOpen = typeof forceState === "boolean" ? forceState : modal.classList.contains("hidden");
+      modal.classList.toggle("hidden", !shouldOpen);
+      if (shouldOpen) renderScoreboard();
     }
 
     function renderScoreboard() {
@@ -1443,7 +1547,7 @@ const DEFAULT_QUESTIONS = [
       } catch (e) {}
       const wrap = document.getElementById("scoreboardTableWrap");
       if (!arr.length) {
-        wrap.innerHTML = `<p style="color:var(--muted);">Chưa có bài kiểm tra nào được lưu trên thiết bị này.</p>`;
+        wrap.innerHTML = `<p style="color:var(--muted); text-align:center; padding:18px 0;">Chưa có bài kiểm tra nào được lưu trên thiết bị này.</p>`;
         return;
       }
       wrap.innerHTML = `
@@ -1521,7 +1625,7 @@ const DEFAULT_QUESTIONS = [
           state.questions = parsed;
         }
         syncJsonEditor();
-        generateNewExam();
+        generateNewExam(true);
         msg.classList.add("ok");
         msg.textContent = `Đã cập nhật ${state.questions.length} câu hỏi trên phiên làm việc hiện tại.`;
       } catch (err) {
@@ -1533,7 +1637,7 @@ const DEFAULT_QUESTIONS = [
     function resetToBuiltInQuestions() {
       state.questions = JSON.parse(JSON.stringify(DEFAULT_QUESTIONS));
       syncJsonEditor();
-      generateNewExam();
+      generateNewExam(true);
       const msg = document.getElementById("teacherMsg");
       msg.classList.remove("hidden", "bad");
       msg.classList.add("ok");
@@ -1567,6 +1671,12 @@ const DEFAULT_QUESTIONS = [
         });
       }
     }
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        toggleScoreboardModal(false);
+      }
+    });
 
     window.addEventListener("DOMContentLoaded", () => {
       initApp();
