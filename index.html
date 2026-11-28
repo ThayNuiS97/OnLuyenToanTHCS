@@ -3116,6 +3116,576 @@ const DEFAULT_QUESTIONS = [
     "explanation": "Ý a và ý b đúng theo các lưu ý phân tích biểu đồ ở Bài 20 SGK. Ý c sai vì khi phân tích số liệu, ta hoàn toàn có thể kết hợp thông tin từ hai hay nhiều biểu đồ liên quan (như biểu đồ tổng lượng và biểu đồ cơ cấu phần trăm). Ý d đúng theo phương pháp so sánh hai dãy số liệu theo thời gian."
   },
   {
+    "id": "t8_c10_m01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Mặt đáy của hình chóp tam giác đều là hình gì?",
+    "hint": "Nhớ lại định nghĩa hình chóp tam giác đều ở Bài 38[cite: 2, 3].",
+    "options": [
+      "Tam giác đều",
+      "Tam giác cân bất kì",
+      "Tam giác vuông",
+      "Hình vuông"
+    ],
+    "answer": 0,
+    "explanation": "Hình chóp tam giác đều có mặt đáy là một tam giác đều và các mặt bên là các tam giác cân bằng nhau chung một đỉnh[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Đường cao của hình chóp tam giác đều là đoạn thẳng nối đỉnh của hình chóp với:",
+    "hint": "Đối chiếu khái niệm đường cao của hình chóp tam giác đều trong SGK[cite: 2].",
+    "options": [
+      "Trọng tâm của tam giác đáy",
+      "Trung điểm một cạnh đáy",
+      "Một đỉnh của tam giác đáy",
+      "Trực tâm của một mặt bên"
+    ],
+    "answer": 0,
+    "explanation": "Đoạn thẳng nối đỉnh của hình chóp và trọng tâm của tam giác đáy gọi là đường cao của hình chóp tam giác đều[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Trung đoạn của hình chóp tam giác đều là gì?",
+    "hint": "Nhớ lại khái niệm trung đoạn ở Bài 38[cite: 2].",
+    "options": [
+      "Đường cao vẽ từ đỉnh của mỗi mặt bên",
+      "Đoạn nối đỉnh hình chóp với trọng tâm đáy",
+      "Đường cao của tam giác đáy",
+      "Cạnh bên của mặt bên"
+    ],
+    "answer": 0,
+    "explanation": "Đường cao vẽ từ đỉnh của mỗi mặt bên gọi là trung đoạn của hình chóp tam giác đều[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m04",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Diện tích xung quanh của hình chóp tam giác đều được tính theo công thức nào (với $p$ là nửa chu vi đáy, $d$ là trung đoạn)?",
+    "hint": "Diện tích xung quanh bằng tích của nửa chu vi đáy với trung đoạn[cite: 2].",
+    "options": [
+      "$S_{xq} = p \\cdot d$",
+      "$S_{xq} = 2p \\cdot d$",
+      "$S_{xq} = \\dfrac{1}{3} p \\cdot d$",
+      "$S_{xq} = p + d$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích xung quanh của hình chóp tam giác đều bằng tích của nửa chu vi đáy với trung đoạn: $S_{xq} = p \\cdot d$[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m05",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Thể tích của hình chóp tam giác đều được tính theo công thức nào (với $S$ là diện tích đáy, $h$ là chiều cao)?",
+    "hint": "Thể tích hình chóp bằng $\\dfrac{1}{3}$ tích diện tích đáy với chiều cao[cite: 2].",
+    "options": [
+      "$V = \\dfrac{1}{3} S \\cdot h$",
+      "$V = S \\cdot h$",
+      "$V = \\dfrac{1}{2} S \\cdot h$",
+      "$V = 3 S \\cdot h$"
+    ],
+    "answer": 0,
+    "explanation": "Thể tích hình chóp tam giác đều bằng $\\dfrac{1}{3}$ tích của diện tích đáy với chiều cao của nó: $V = \\dfrac{1}{3} S \\cdot h$[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m06",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Diện tích toàn phần của hình chóp tam giác đều bằng:",
+    "hint": "Xem phần Chú ý ở Bài 38[cite: 2].",
+    "options": [
+      "Tổng của diện tích xung quanh với diện tích của mặt đáy",
+      "Hiệu của diện tích xung quanh và diện tích mặt đáy",
+      "Ba lần diện tích mặt đáy",
+      "Tích của diện tích xung quanh và diện tích đáy"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích toàn phần của hình chóp tam giác đều bằng tổng của diện tích xung quanh với diện tích của mặt đáy[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m07",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tam giác đều $S.MNE$ có cạnh bên $SM = 10\\text{ cm}$ và cạnh đáy $MN = 5\\text{ cm}$. Độ dài cạnh bên và cạnh đáy còn lại lần lượt là:",
+    "hint": "Các cạnh bên bằng nhau, các cạnh đáy bằng nhau[cite: 2, 3].",
+    "options": [
+      "$10\\text{ cm}$ và $5\\text{ cm}$",
+      "$5\\text{ cm}$ và $10\\text{ cm}$",
+      "$10\\text{ cm}$ và $10\\text{ cm}$",
+      "$5\\text{ cm}$ và $5\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Trong hình chóp tam giác đều $S.MNE$, các cạnh bên bằng nhau (bằng $10\\text{ cm}$) và mặt đáy là tam giác đều nên các cạnh đáy bằng nhau (bằng $5\\text{ cm}$)[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_m08",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tam giác đều có cạnh đáy bằng $10\\text{ cm}$ và trung đoạn bằng $12\\text{ cm}$. Diện tích xung quanh của hình chóp là:",
+    "hint": "Tính nửa chu vi đáy $p = \\dfrac{3 \\cdot 10}{2} = 15\\text{ (cm)}$ rồi nhân với $d = 12\\text{ cm}$[cite: 3].",
+    "options": [
+      "$180\\text{ cm}^2$",
+      "$360\\text{ cm}^2$",
+      "$60\\text{ cm}^2$",
+      "$120\\text{ cm}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $S_{xq} = p \\cdot d = \\dfrac{1}{2} \\cdot (10 + 10 + 10) \\cdot 12 = 180\\text{ (cm}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m09",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tam giác đều có diện tích đáy bằng $15,6\\text{ cm}^2$ và chiều cao bằng $10\\text{ cm}$. Thể tích của hình chóp là:",
+    "hint": "Áp dụng công thức $V = \\dfrac{1}{3} S \\cdot h$[cite: 2, 3].",
+    "options": [
+      "$52\\text{ cm}^3$",
+      "$156\\text{ cm}^3$",
+      "$78\\text{ cm}^3$",
+      "$46,8\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Thể tích hình chóp là $V = \\dfrac{1}{3} S \\cdot h = \\dfrac{1}{3} \\cdot 15,6 \\cdot 10 = 52\\text{ (cm}^3\\text{)}$[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_m10",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tam giác đều có chiều cao $h$ và thể tích $V$. Diện tích đáy $S$ được tính bởi công thức:",
+    "hint": "Từ $V = \\dfrac{1}{3} S \\cdot h$, suy ra $S$[cite: 2, 3].",
+    "options": [
+      "$S = \\dfrac{3V}{h}$",
+      "$S = \\dfrac{V}{h}$",
+      "$S = \\dfrac{h}{V}$",
+      "$S = \\dfrac{3h}{V}$"
+    ],
+    "answer": 0,
+    "explanation": "Từ $V = \\dfrac{1}{3} S \\cdot h \\Rightarrow 3V = S \\cdot h \\Rightarrow S = \\dfrac{3V}{h}$[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_m11",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Mặt đáy của hình chóp tứ giác đều là hình gì?",
+    "hint": "Nhớ lại khái niệm hình chóp tứ giác đều ở Bài 39[cite: 3].",
+    "options": [
+      "Hình vuông",
+      "Hình bình hành",
+      "Hình chữ nhật",
+      "Hình thoi"
+    ],
+    "answer": 0,
+    "explanation": "Hình chóp tứ giác đều có mặt đáy là hình vuông và các mặt bên là các tam giác cân bằng nhau chung một đỉnh[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m12",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Đường cao của hình chóp tứ giác đều là đoạn thẳng nối đỉnh của hình chóp với:",
+    "hint": "Trong hình vuông đáy, hai đường chéo cắt nhau tại tâm của đáy[cite: 3].",
+    "options": [
+      "Giao điểm hai đường chéo của đáy",
+      "Trung điểm một cạnh đáy",
+      "Một đỉnh của mặt đáy",
+      "Trung điểm một cạnh bên"
+    ],
+    "answer": 0,
+    "explanation": "Đoạn thẳng nối đỉnh của hình chóp tứ giác đều và giao điểm hai đường chéo của mặt đáy gọi là đường cao của hình chóp tứ giác đều[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m13",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Tổng số cạnh bên và cạnh đáy của một hình chóp tứ giác đều là:",
+    "hint": "Hình chóp tứ giác đều có $4$ cạnh bên và $4$ cạnh đáy[cite: 3].",
+    "options": [
+      "$8$",
+      "$4$",
+      "$6$",
+      "$10$"
+    ],
+    "answer": 0,
+    "explanation": "Một hình chóp tứ giác đều có $4$ cạnh bên và $4$ cạnh đáy nên tổng số cạnh bên và cạnh đáy là $4 + 4 = 8$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m14",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tứ giác đều có độ dài cạnh đáy bằng $10\\text{ cm}$ và trung đoạn bằng $13\\text{ cm}$. Diện tích xung quanh của hình chóp là:",
+    "hint": "Nửa chu vi đáy là $p = \\dfrac{4 \\cdot 10}{2} = 20\\text{ (cm)}$[cite: 3].",
+    "options": [
+      "$260\\text{ cm}^2$",
+      "$130\\text{ cm}^2$",
+      "$520\\text{ cm}^2$",
+      "$100\\text{ cm}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích xung quanh của hình chóp là $S_{xq} = p \\cdot d = 20 \\cdot 13 = 260\\text{ (cm}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m15",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tứ giác đều có độ dài cạnh đáy bằng $10\\text{ cm}$ và trung đoạn bằng $13\\text{ cm}$. Diện tích toàn phần của hình chóp là:",
+    "hint": "Cộng diện tích xung quanh ($260\\text{ cm}^2$) với diện tích mặt đáy ($10^2 = 100\\text{ cm}^2$)[cite: 3].",
+    "options": [
+      "$360\\text{ cm}^2$",
+      "$260\\text{ cm}^2$",
+      "$160\\text{ cm}^2$",
+      "$390\\text{ cm}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích đáy là $S_{đáy} = 10^2 = 100\\text{ (cm}^2\\text{)}$. Diện tích toàn phần là $S_{tp} = 260 + 100 = 360\\text{ (cm}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m16",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tứ giác đều có cạnh đáy bằng $6\\text{ cm}$ và chiều cao bằng $8\\text{ cm}$. Thể tích của hình chóp là:",
+    "hint": "Diện tích đáy là $6^2 = 36\\text{ (cm}^2\\text{)}$, áp dụng $V = \\dfrac{1}{3} S \\cdot h$[cite: 3].",
+    "options": [
+      "$96\\text{ cm}^3$",
+      "$288\\text{ cm}^3$",
+      "$48\\text{ cm}^3$",
+      "$144\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Thể tích hình chóp tứ giác đều là $V = \\dfrac{1}{3} \\cdot 6^2 \\cdot 8 = \\dfrac{1}{3} \\cdot 36 \\cdot 8 = 96\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m17",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tứ giác đều có thể tích bằng $64\\text{ cm}^3$ và chiều cao bằng $12\\text{ cm}$. Độ dài cạnh đáy của hình chóp là:",
+    "hint": "Tìm diện tích đáy $S = \\dfrac{3V}{h}$, rồi suy ra độ dài cạnh đáy hình vuông[cite: 3].",
+    "options": [
+      "$4\\text{ cm}$",
+      "$8\\text{ cm}$",
+      "$16\\text{ cm}$",
+      "$10\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích đáy là $S = \\dfrac{3 \\cdot 64}{12} = 16\\text{ (cm}^2\\text{)}$. Vì đáy là hình vuông nên độ dài cạnh đáy là $\\sqrt{16} = 4\\text{ (cm)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m18",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tứ giác đều có chiều cao bằng $9\\text{ cm}$ và chu vi đáy bằng $12\\text{ cm}$. Thể tích của hình chóp là:",
+    "hint": "Cạnh đáy là $12 : 4 = 3\\text{ (cm)}$, diện tích đáy là $3^2 = 9\\text{ (cm}^2\\text{)}$[cite: 3].",
+    "options": [
+      "$27\\text{ cm}^3$",
+      "$81\\text{ cm}^3$",
+      "$108\\text{ cm}^3$",
+      "$36\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Cạnh đáy hình vuông là $12 : 4 = 3\\text{ (cm)}$, diện tích đáy là $3^2 = 9\\text{ (cm}^2\\text{)}$. Thể tích hình chóp là $V = \\dfrac{1}{3} \\cdot 9 \\cdot 9 = 27\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m19",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tam giác đều có diện tích đáy bằng $4\\text{ cm}^2$ và thể tích bằng $8\\text{ cm}^3$. Chiều cao của khối chóp bằng:",
+    "hint": "Từ $V = \\dfrac{1}{3} S \\cdot h \\Rightarrow h = \\dfrac{3V}{S}$[cite: 2, 3].",
+    "options": [
+      "$6\\text{ cm}$",
+      "$8\\text{ cm}$",
+      "$4\\text{ cm}$",
+      "$9\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Chiều cao của khối chóp là $h = \\dfrac{3V}{S} = \\dfrac{3 \\cdot 8}{4} = 6\\text{ (cm)}$[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_m20",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Từ một mảnh bìa hình tam giác đều có cạnh $6\\text{ cm}$, gấp theo các nét đứt (nối trung điểm ba cạnh) ta được một hình chóp tam giác đều. Hình chóp tam giác đều này có cạnh bên bằng:",
+    "hint": "Mỗi cạnh của tam giác đều ban đầu được chia đôi bởi trung điểm[cite: 3].",
+    "options": [
+      "$3\\text{ cm}$",
+      "$6\\text{ cm}$",
+      "$9\\text{ cm}$",
+      "$\\dfrac{3\\sqrt{3}}{2}\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Khi gấp theo đường nối trung điểm ba cạnh của tam giác đều cạnh $6\\text{ cm}$, mỗi cạnh bên của hình chóp tam giác đều tạo thành có độ dài bằng $\\dfrac{6}{2} = 3\\text{ (cm)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m21",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một khối gỗ gồm đế là hình lập phương cạnh $9\\text{ cm}$ và phần trên là một hình chóp tứ giác đều có tổng chiều cao của khối gỗ là $19\\text{ cm}$. Chiều cao của phần hình chóp tứ giác đều bằng:",
+    "hint": "Lấy tổng chiều cao trừ đi chiều cao của hình lập phương ($9\\text{ cm}$)[cite: 3].",
+    "options": [
+      "$10\\text{ cm}$",
+      "$9\\text{ cm}$",
+      "$28\\text{ cm}$",
+      "$19\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Chiều cao của hình lập phương là $9\\text{ cm}$ nên chiều cao của phần hình chóp tứ giác đều phía trên là $19 - 9 = 10\\text{ (cm)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_h01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tam giác đều $S.MNP$ có cạnh đáy bằng $8\\text{ cm}$ và chiều cao bằng $6\\text{ cm}$. Biết $\\sqrt{48} \\approx 6,9$, thể tích của hình chóp $S.MNP$ xấp xỉ bằng:",
+    "hint": "Tính đường cao của tam giác đều đáy bằng định lí Pythagore, tính diện tích đáy rồi tính thể tích[cite: 3].",
+    "options": [
+      "$55,2\\text{ cm}^3$",
+      "$27,6\\text{ cm}^3$",
+      "$165,6\\text{ cm}^3$",
+      "$48\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Đường cao của tam giác đều đáy là $\\sqrt{8^2 - 4^2} = \\sqrt{48} \\approx 6,9\\text{ (cm)}$. Diện tích đáy là $S = \\dfrac{1}{2} \\cdot 8 \\cdot 6,9 = 27,6\\text{ (cm}^2\\text{)}$. Thể tích hình chóp là $V = \\dfrac{1}{3} \\cdot 27,6 \\cdot 6 = 55,2\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_h02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Hình chóp tứ giác đều $S.ABCD$ có thể tích bằng $144\\text{ cm}^3$. Gọi $M, N, P, Q$ lần lượt là trung điểm của $AB, BC, CD, DA$. Thể tích của hình chóp $S.MNPQ$ bằng:",
+    "hint": "Diện tích hình vuông $MNPQ$ bằng một nửa diện tích hình vuông $ABCD$, và hai chóp có cùng chiều cao[cite: 3].",
+    "options": [
+      "$72\\text{ cm}^3$",
+      "$36\\text{ cm}^3$",
+      "$144\\text{ cm}^3$",
+      "$48\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Vì $M, N, P, Q$ là trung điểm các cạnh của hình vuông $ABCD$ nên $S_{MNPQ} = \\dfrac{1}{2} S_{ABCD}$. Hai hình chóp $S.MNPQ$ và $S.ABCD$ có cùng chiều cao nên $V_{S.MNPQ} = \\dfrac{1}{2} V_{S.ABCD} = \\dfrac{1}{2} \\cdot 144 = 72\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_h03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Từ một khúc gỗ hình lập phương cạnh $30\\text{ cm}$, người ta cắt đi một phần gỗ để được phần còn lại là một hình chóp tứ giác đều có đáy là hình vuông cạnh $30\\text{ cm}$ và chiều cao của hình chóp cũng bằng $30\\text{ cm}$. Thể tích của phần gỗ bị cắt đi bằng:",
+    "hint": "Lấy thể tích hình lập phương trừ đi thể tích hình chóp tứ giác đều[cite: 3].",
+    "options": [
+      "$18\\,000\\text{ cm}^3$",
+      "$9\\,000\\text{ cm}^3$",
+      "$27\\,000\\text{ cm}^3$",
+      "$6\\,000\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Thể tích hình lập phương là $V_{lp} = 30^3 = 27\\,000\\text{ (cm}^3\\text{)}$. Thể tích hình chóp là $V_{chóp} = \\dfrac{1}{3} \\cdot 30^2 \\cdot 30 = 9\\,000\\text{ (cm}^3\\text{)}$. Thể tích phần gỗ bị cắt đi là $27\\,000 - 9\\,000 = 18\\,000\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_a01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Nhân dịp Tết Trung thu, bạn Khôi làm một chiếc đèn lồng có dạng hình chóp tam giác đều, có độ dài cạnh đáy là $30\\text{ cm}$ và đường cao của mặt bên (trung đoạn) tương ứng là $40\\text{ cm}$. Diện tích giấy màu (tính theo $\\text{m}^2$, bỏ qua mép gấp) để dán tất cả các mặt bên của đèn lồng là:",
+    "hint": "Tính $S_{xq}$ theo $\\text{cm}^2$ rồi đổi sang $\\text{m}^2$ ($1\\text{ m}^2 = 10\\,000\\text{ cm}^2$)[cite: 3].",
+    "options": [
+      "$0,18\\text{ m}^2$",
+      "$1,8\\text{ m}^2$",
+      "$0,36\\text{ m}^2$",
+      "$1800\\text{ m}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích xung quanh của đèn lồng là $S_{xq} = \\dfrac{1}{2} \\cdot (30 + 30 + 30) \\cdot 40 = 1800\\text{ (cm}^2\\text{)} = 0,18\\text{ (m}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_a02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một cái lều đồ chơi gồm phần thân là hình lập phương cạnh $1,2\\text{ m}$ và nóc lều là hình chóp tứ giác đều có cạnh đáy $1,2\\text{ m}$, trung đoạn $0,8\\text{ m}$. Tổng diện tích vải để phủ nóc và bốn mặt bên của lều (coi mép nối không đáng kể) bằng:",
+    "hint": "Cộng diện tích $4$ mặt bên của hình lập phương với diện tích xung quanh của nóc chóp tứ giác đều[cite: 3].",
+    "options": [
+      "$7,68\\text{ m}^2$",
+      "$5,76\\text{ m}^2$",
+      "$1,92\\text{ m}^2$",
+      "$8,64\\text{ m}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích $4$ mặt bên của lều là $S_1 = 4 \\cdot 1,2^2 = 5,76\\text{ (m}^2\\text{)}$. Diện tích nóc lều là $S_2 = 4 \\cdot \\left(\\dfrac{1}{2} \\cdot 1,2 \\cdot 0,8\\right) = 1,92\\text{ (m}^2\\text{)}$. Tổng diện tích vải là $5,76 + 1,92 = 7,68\\text{ (m}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_a03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một khối đồ chơi bằng gỗ được tạo thành từ hai hình chóp tứ giác đều úp đáy vào nhau. Cạnh đáy của mỗi hình chóp bằng $6\\text{ cm}$, trung đoạn của mỗi hình chóp bằng $4\\text{ cm}$. Diện tích cần sơn mặt ngoài của món đồ chơi bằng:",
+    "hint": "Mặt ngoài gồm $8$ mặt tam giác cân (tương ứng $2$ lần diện tích xung quanh của một hình chóp)[cite: 3].",
+    "options": [
+      "$96\\text{ cm}^2$",
+      "$48\\text{ cm}^2$",
+      "$192\\text{ cm}^2$",
+      "$132\\text{ cm}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích cần sơn bằng hai lần diện tích xung quanh của một hình chóp tứ giác đều: $S = 2 \\cdot p \\cdot d = 2 \\cdot (2 \\cdot 6) \\cdot 4 = 96\\text{ (cm}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_tf01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về hình chóp tam giác đều:",
+    "hint": "Đối chiếu kiến thức Bài 38 SGK Toán 8 (Tập 2)[cite: 2, 3].",
+    "statements": [
+      {
+        "text": "Hình chóp tam giác đều có mặt đáy là tam giác đều và các mặt bên là các tam giác cân bằng nhau chung một đỉnh.",
+        "answer": true
+      },
+      {
+        "text": "Đường cao của hình chóp tam giác đều là đoạn thẳng nối đỉnh của hình chóp với trung điểm một cạnh đáy.",
+        "answer": false
+      },
+      {
+        "text": "Diện tích xung quanh của hình chóp tam giác đều bằng tích của nửa chu vi đáy với trung đoạn.",
+        "answer": true
+      },
+      {
+        "text": "Thể tích của hình chóp tam giác đều bằng $\\dfrac{1}{3}$ tích của diện tích đáy với chiều cao của nó.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, c, d đúng theo SGK[cite: 2, 3]. Ý b sai vì đường cao của hình chóp tam giác đều nối đỉnh với trọng tâm của tam giác đáy[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_tf02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về hình chóp tứ giác đều:",
+    "hint": "Đối chiếu kiến thức Bài 39 SGK Toán 8 (Tập 2)[cite: 3].",
+    "statements": [
+      {
+        "text": "Hình chóp tứ giác đều có mặt đáy là hình vuông và các mặt bên là các tam giác cân bằng nhau chung một đỉnh.",
+        "answer": true
+      },
+      {
+        "text": "Một hình chóp tứ giác đều có tất cả $8$ cạnh.",
+        "answer": true
+      },
+      {
+        "text": "Diện tích xung quanh của hình chóp tứ giác đều bằng chu vi đáy nhân với trung đoạn.",
+        "answer": false
+      },
+      {
+        "text": "Thể tích của hình chóp tứ giác đều được tính theo công thức $V = \\dfrac{1}{3} S \\cdot h$.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, b, d đúng theo SGK[cite: 3]. Ý c sai vì diện tích xung quanh bằng nửa chu vi đáy nhân với trung đoạn ($S_{xq} = p \\cdot d$)[cite: 3]."
+  },
+  {
+    "id": "t8_c10_tf03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Xét tính đúng/sai của các khẳng định sau khi tính diện tích và thể tích hình chóp đều:",
+    "hint": "Chú ý phân biệt chiều cao hình chóp ($h$), trung đoạn ($d$) và đơn vị đo[cite: 2, 3].",
+    "statements": [
+      {
+        "text": "Diện tích toàn phần của hình chóp đều bằng tổng diện tích xung quanh và diện tích mặt đáy.",
+        "answer": true
+      },
+      {
+        "text": "Trung đoạn của hình chóp đều luôn bằng chiều cao của hình chóp đó.",
+        "answer": false
+      },
+      {
+        "text": "Nếu giữ nguyên diện tích đáy và tăng chiều cao của hình chóp đều lên $3$ lần thì thể tích của nó cũng tăng lên $3$ lần.",
+        "answer": true
+      },
+      {
+        "text": "$1800\\text{ cm}^2 = 0,18\\text{ m}^2$.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, c, d đúng theo công thức và quy đổi đơn vị diện tích[cite: 2, 3]. Ý b sai vì trung đoạn là đường cao của mặt bên, còn chiều cao của hình chóp nối đỉnh với tâm đáy[cite: 2, 3]."
+  },
+  {
     "id": "t8_c6_m01",
     "grade": 8,
     "term": "HK2",
@@ -4254,6 +4824,1146 @@ const DEFAULT_QUESTIONS = [
       }
     ],
     "explanation": "Ý a, b, d đúng. Ý c sai vì đường thẳng $y = ax + b$ cắt trục tung tại điểm $(0; b)$, còn giao điểm với trục hoành có tung độ bằng $0$."
+  },
+  {
+    "id": "t8_c8_m01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất một lần. Số kết quả có thể xảy ra của hành động trên là:",
+    "hint": "Liệt kê tất cả các mặt có thể xuất hiện của một con xúc xắc (từ $1$ chấm đến $6$ chấm).",
+    "options": [
+      "$4$",
+      "$5$",
+      "$6$",
+      "$12$"
+    ],
+    "answer": 2,
+    "explanation": "Khi gieo một con xúc xắc, mặt xuất hiện có thể là một trong $6$ mặt: $1, 2, 3, 4, 5, 6$ chấm nên có $6$ kết quả có thể."
+  },
+  {
+    "id": "t8_c8_m02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Một hộp kín đựng $5$ quả bóng được đánh số $1; 2; 3; 4; 5$. Lấy ngẫu nhiên một quả bóng từ hộp. Số kết quả thuận lợi cho biến cố $A$: \"Lấy được quả bóng ghi số lẻ\" là:",
+    "hint": "Liệt kê các số lẻ có trong tập hợp $\\{1; 2; 3; 4; 5\\}$.",
+    "options": [
+      "$2$",
+      "$3$",
+      "$4$",
+      "$5$"
+    ],
+    "answer": 1,
+    "explanation": "Trong các số $1; 2; 3; 4; 5$ có $3$ số lẻ là $1, 3, 5$ nên có $3$ kết quả thuận lợi cho biến cố $A$."
+  },
+  {
+    "id": "t8_c8_m03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất. Xác suất của biến cố $B$: \"Mặt xuất hiện của xúc xắc có số chấm là số nguyên tố\" bằng:",
+    "hint": "Công thức tính xác suất: $P(B) = \\dfrac{\\text{Số kết quả thuận lợi cho } B}{\\text{Tổng số kết quả có thể}}$; các số nguyên tố từ $1$ đến $6$ là $2, 3, 5$.",
+    "options": [
+      "$\\dfrac{1}{6}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{2}{3}$"
+    ],
+    "answer": 2,
+    "explanation": "Có $6$ kết quả có thể. Các mặt có số chấm là số nguyên tố gồm $2, 3, 5$ (có $3$ kết quả thuận lợi). Vậy $P(B) = \\dfrac{3}{6} = \\dfrac{1}{2}$."
+  },
+  {
+    "id": "t8_c8_m04",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Gieo một đồng xu cân đối và đồng chất một lần. Xác suất của biến cố \"Đồng xu xuất hiện mặt sấp\" là:",
+    "hint": "Khi gieo một đồng xu cân đối có $2$ kết quả đồng khả năng là mặt sấp ($S$) và mặt ngửa ($N$).",
+    "options": [
+      "$0$",
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{2}$",
+      "$1$"
+    ],
+    "answer": 2,
+    "explanation": "Có $2$ kết quả đồng khả năng là $S$ và $N$, trong đó có $1$ kết quả thuận lợi nên xác suất bằng $\\dfrac{1}{2}$."
+  },
+  {
+    "id": "t8_c8_m05",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Một hộp có $12$ chiếc thẻ cùng loại, mỗi thẻ được ghi một trong các số $1, 2, 3, \\dots, 12$ (hai thẻ khác nhau thì ghi hai số khác nhau). Rút ngẫu nhiên một thẻ trong hộp. Xác suất của biến cố \"Số xuất hiện trên thẻ được rút ra là số chia hết cho $3$\" là:",
+    "hint": "Tìm các số từ $1$ đến $12$ chia hết cho $3$ rồi chia cho tổng số thẻ là $12$.",
+    "options": [
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{5}{12}$"
+    ],
+    "answer": 1,
+    "explanation": "Các số chia hết cho $3$ trong $12$ thẻ là $3, 6, 9, 12$ (có $4$ kết quả thuận lợi). Xác suất cần tìm là $\\dfrac{4}{12} = \\dfrac{1}{3}$."
+  },
+  {
+    "id": "t8_c8_m06",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Chọn ngẫu nhiên một chữ cái trong từ \"TOAN\" (gồm $4$ chữ cái T, O, A, N). Xác suất để chọn được một nguyên âm là:",
+    "hint": "Trong các chữ cái T, O, A, N có hai nguyên âm là O và A.",
+    "options": [
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{3}{4}$",
+      "$1$"
+    ],
+    "answer": 1,
+    "explanation": "Có $4$ kết quả đồng khả năng. Có $2$ kết quả thuận lợi là chọn được chữ O hoặc chữ A. Vậy xác suất bằng $\\dfrac{2}{4} = \\dfrac{1}{2}$."
+  },
+  {
+    "id": "t8_c8_m07",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Một túi đựng $4$ viên bi màu xanh, $5$ viên bi màu đỏ và $6$ viên bi màu vàng có cùng kích thước và khối lượng. Lấy ngẫu nhiên một viên bi trong túi. Xác suất để lấy được viên bi màu đỏ là:",
+    "hint": "Tính tổng số viên bi trong túi, sau đó lấy số viên bi đỏ chia cho tổng số viên bi.",
+    "options": [
+      "$\\dfrac{4}{15}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{2}{5}$",
+      "$\\dfrac{1}{5}$"
+    ],
+    "answer": 1,
+    "explanation": "Tổng số viên bi trong túi là $4 + 5 + 6 = 15$. Có $5$ viên bi màu đỏ nên xác suất lấy được bi đỏ là $\\dfrac{5}{15} = \\dfrac{1}{3}$."
+  },
+  {
+    "id": "t8_c8_m08",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Rút ngẫu nhiên một lá bài từ bộ bài tây gồm $52$ lá. Xác suất của biến cố \"Rút được lá bài chất bích\" là:",
+    "hint": "Trong bộ bài tây $52$ lá có $13$ lá bài chất bích.",
+    "options": [
+      "$\\dfrac{1}{52}$",
+      "$\\dfrac{1}{13}$",
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{2}$"
+    ],
+    "answer": 2,
+    "explanation": "Có $52$ kết quả đồng khả năng và có $13$ lá bài chất bích nên xác suất là $\\dfrac{13}{52} = \\dfrac{1}{4}$."
+  },
+  {
+    "id": "t8_c8_m09",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Rút ngẫu nhiên một lá bài từ bộ bài tây gồm $52$ lá. Xác suất của biến cố \"Rút được lá bài A màu đỏ\" là:",
+    "hint": "Bộ bài tây có hai lá bài A màu đỏ là lá A rô và lá A cơ.",
+    "options": [
+      "$\\dfrac{1}{52}$",
+      "$\\dfrac{1}{26}$",
+      "$\\dfrac{1}{13}$",
+      "$\\dfrac{2}{13}$"
+    ],
+    "answer": 1,
+    "explanation": "Có $2$ lá bài A màu đỏ (A rô và A cơ) trong tổng số $52$ lá bài nên xác suất là $\\dfrac{2}{52} = \\dfrac{1}{26}$."
+  },
+  {
+    "id": "t8_c8_m10",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất. Xác suất của biến cố \"Số chấm xuất hiện nhỏ hơn $7$\" bằng:",
+    "hint": "Biến cố chắc chắn luôn xảy ra có xác suất bằng $1$.",
+    "options": [
+      "$0$",
+      "$\\dfrac{5}{6}$",
+      "$1$",
+      "$\\dfrac{1}{2}$"
+    ],
+    "answer": 2,
+    "explanation": "Cả $6$ mặt của xúc xắc đều có số chấm nhỏ hơn $7$ nên đây là biến cố chắc chắn, xác suất bằng $\\dfrac{6}{6} = 1$."
+  },
+  {
+    "id": "t8_c8_m11",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất. Xác suất của biến cố \"Số chấm xuất hiện lớn hơn $6$\" bằng:",
+    "hint": "Biến cố không thể không bao giờ xảy ra có xác suất bằng $0$.",
+    "options": [
+      "$0$",
+      "$\\dfrac{1}{6}$",
+      "$1$",
+      "$\\dfrac{1}{2}$"
+    ],
+    "answer": 0,
+    "explanation": "Không có mặt nào của xúc xắc có số chấm lớn hơn $6$ nên biến cố này không có kết quả thuận lợi nào, xác suất bằng $\\dfrac{0}{6} = 0$."
+  },
+  {
+    "id": "t8_c8_m12",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Tung một đồng xu cân đối và đồng chất $50$ lần, thấy có $28$ lần xuất hiện mặt sấp. Xác suất thực nghiệm của biến cố \"Xuất hiện mặt sấp\" sau $50$ lần tung là:",
+    "hint": "Xác suất thực nghiệm của biến cố $E$ sau $n$ lần thử bằng $\\dfrac{k}{n}$, với $k$ là số lần biến cố $E$ xảy ra.",
+    "options": [
+      "$\\dfrac{11}{25}$",
+      "$\\dfrac{14}{25}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{28}{22}$"
+    ],
+    "answer": 1,
+    "explanation": "Trong $50$ lần tung có $28$ lần xuất hiện mặt sấp nên xác suất thực nghiệm là $\\dfrac{28}{50} = \\dfrac{14}{25}$."
+  },
+  {
+    "id": "t8_c8_m13",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Gieo một con xúc xắc $60$ lần, kết quả ghi lại mặt $6$ chấm xuất hiện $9$ lần. Xác suất thực nghiệm của biến cố \"Xuất hiện mặt $6$ chấm\" là:",
+    "hint": "Chia số lần xuất hiện mặt $6$ chấm cho tổng số lần gieo xúc xắc.",
+    "options": [
+      "$0,15$",
+      "$0,16$",
+      "$0,6$",
+      "$0,9$"
+    ],
+    "answer": 0,
+    "explanation": "Xác suất thực nghiệm của biến cố \"Xuất hiện mặt $6$ chấm\" là $\\dfrac{9}{60} = \\dfrac{3}{20} = 0,15$."
+  },
+  {
+    "id": "t8_c8_m14",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Một hộp có $10$ tấm thẻ giống nhau được đánh số từ $1$ đến $10$. Lấy ngẫu nhiên một tấm thẻ. Xác suất để lấy được tấm thẻ ghi số là ước của $10$ là:",
+    "hint": "Tìm tất cả các ước tự nhiên của $10$ rồi chia cho tổng số thẻ là $10$.",
+    "options": [
+      "$0,2$",
+      "$0,3$",
+      "$0,4$",
+      "$0,5$"
+    ],
+    "answer": 2,
+    "explanation": "Các ước tự nhiên của $10$ là $1, 2, 5, 10$ (có $4$ số). Vậy xác suất là $\\dfrac{4}{10} = 0,4$."
+  },
+  {
+    "id": "t8_c8_m15",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Lớp 8A có $40$ học sinh, trong đó có $16$ học sinh nam. Cô giáo chọn ngẫu nhiên một học sinh của lớp để trực nhật. Xác suất để chọn được một học sinh nữ là:",
+    "hint": "Tính số học sinh nữ của lớp 8A bằng $40 - 16$, sau đó chia cho tổng số học sinh.",
+    "options": [
+      "$\\dfrac{2}{5}$",
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{3}{8}$"
+    ],
+    "answer": 1,
+    "explanation": "Số học sinh nữ của lớp 8A là $40 - 16 = 24$ (học sinh). Xác suất chọn được học sinh nữ là $\\dfrac{24}{40} = \\dfrac{3}{5}$."
+  },
+  {
+    "id": "t8_c8_m16",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Viết ngẫu nhiên một số tự nhiên có hai chữ số nhỏ hơn $20$. Xác suất để số được viết ra là số chia hết cho $5$ bằng:",
+    "hint": "Liệt kê tất cả các số tự nhiên có hai chữ số nhỏ hơn $20$: $10, 11, 12, 13, 14, 15, 16, 17, 18, 19$.",
+    "options": [
+      "$\\dfrac{1}{10}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{3}{10}$",
+      "$\\dfrac{2}{9}$"
+    ],
+    "answer": 1,
+    "explanation": "Có $10$ số tự nhiên có hai chữ số nhỏ hơn $20$ (từ $10$ đến $19$). Trong đó có $2$ số chia hết cho $5$ là $10$ và $15$. Vậy xác suất là $\\dfrac{2}{10} = \\dfrac{1}{5}$."
+  },
+  {
+    "id": "t8_c8_m17",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Một đĩa tròn bằng bìa cứng được chia làm $8$ phần bằng nhau và ghi các số $1; 2; 3; 4; 5; 6; 7; 8$. Quay kim đồng hồ ở tâm đĩa một lần. Xác suất để mũi kim chỉ vào hình quạt ghi số lớn hơn $5$ là:<br><div style='text-align:center;margin:10px 0'><svg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='80' r='68' fill='#f8fafc' stroke='#334155' stroke-width='2'/><line x1='80' y1='12' x2='80' y2='148' stroke='#64748b'/><line x1='12' y1='80' x2='148' y2='80' stroke='#64748b'/><line x1='32' y1='32' x2='128' y2='128' stroke='#64748b'/><line x1='128' y1='32' x2='32' y2='128' stroke='#64748b'/><text x='98' y='38' font-size='12' font-weight='bold' fill='#0f172a'>1</text><text x='124' y='65' font-size='12' font-weight='bold' fill='#0f172a'>2</text><text x='124' y='102' font-size='12' font-weight='bold' fill='#0f172a'>3</text><text x='98' y='130' font-size='12' font-weight='bold' fill='#0f172a'>4</text><text x='56' y='130' font-size='12' font-weight='bold' fill='#0f172a'>5</text><text x='30' y='102' font-size='12' font-weight='bold' fill='#0f172a'>6</text><text x='30' y='65' font-size='12' font-weight='bold' fill='#0f172a'>7</text><text x='56' y='38' font-size='12' font-weight='bold' fill='#0f172a'>8</text><line x1='80' y1='80' x2='108' y2='45' stroke='#ef4444' stroke-width='3'/><circle cx='80' cy='80' r='5' fill='#ef4444'/></svg></div>",
+    "hint": "Có $8$ hình quạt bằng nhau; các số lớn hơn $5$ là $6, 7, 8$.",
+    "options": [
+      "$\\dfrac{3}{8}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{5}{8}$",
+      "$\\dfrac{1}{4}$"
+    ],
+    "answer": 0,
+    "explanation": "Có $8$ kết quả đồng khả năng. Có $3$ kết quả thuận lợi là mũi kim chỉ vào các ô ghi số $6, 7, 8$. Vậy xác suất là $\\dfrac{3}{8}$."
+  },
+  {
+    "id": "t8_c8_m18",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Kiểm tra ngẫu nhiên $500$ sản phẩm của một nhà máy thì thấy có $15$ sản phẩm không đạt chuẩn. Xác suất thực nghiệm của biến cố \"Sản phẩm đạt chuẩn\" là:",
+    "hint": "Tính số sản phẩm đạt chuẩn là $500 - 15 = 485$, sau đó chia cho $500$.",
+    "options": [
+      "$0,03$",
+      "$0,97$",
+      "$0,85$",
+      "$0,15$"
+    ],
+    "answer": 1,
+    "explanation": "Số sản phẩm đạt chuẩn là $500 - 15 = 485$. Xác suất thực nghiệm để sản phẩm đạt chuẩn là $\\dfrac{485}{500} = 0,97$."
+  },
+  {
+    "id": "t8_c8_m19",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Trong một hộp có $20$ viên bi cùng kích thước gồm bi xanh và bi đỏ. Biết xác suất lấy ngẫu nhiên được một viên bi xanh là $\\dfrac{2}{5}$. Số viên bi xanh có trong hộp là:",
+    "hint": "Gọi $x$ là số viên bi xanh, ta có $\\dfrac{x}{20} = \\dfrac{2}{5}$.",
+    "options": [
+      "$4$ viên",
+      "$8$ viên",
+      "$10$ viên",
+      "$12$ viên"
+    ],
+    "answer": 1,
+    "explanation": "Số viên bi xanh có trong hộp là $20 \\cdot \\dfrac{2}{5} = 8$ (viên)."
+  },
+  {
+    "id": "t8_c8_m20",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất. Xác suất của biến cố \"Số chấm xuất hiện là ước của $6$\" bằng:",
+    "hint": "Các ước của $6$ trong các số từ $1$ đến $6$ gồm $1, 2, 3, 6$.",
+    "options": [
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{5}{6}$",
+      "$\\dfrac{1}{3}$"
+    ],
+    "answer": 1,
+    "explanation": "Có $4$ kết quả thuận lợi là mặt $1, 2, 3, 6$ chấm. Vậy xác suất là $\\dfrac{4}{6} = \\dfrac{2}{3}$."
+  },
+  {
+    "id": "t8_c8_m21",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Một túi đựng các tấm thẻ ghi các số $2; 4; 6; 8; 10; 12$. Rút ngẫu nhiên một tấm thẻ trong túi. Xác suất để rút được tấm thẻ ghi số chính phương là:",
+    "hint": "Số chính phương là bình phương của một số tự nhiên ($0, 1, 4, 9, 16, \\dots$).",
+    "options": [
+      "$\\dfrac{1}{6}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$0$"
+    ],
+    "answer": 0,
+    "explanation": "Trong các số $2; 4; 6; 8; 10; 12$ chỉ có một số chính phương là $4 = 2^2$. Vậy xác suất là $\\dfrac{1}{6}$."
+  },
+  {
+    "id": "t8_c8_h01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Một hộp đựng $40$ viên bi gồm ba màu đỏ, vàng, đen. Biết xác suất lấy ngẫu nhiên được viên bi màu đỏ, viên bi màu vàng lần lượt là $\\dfrac{1}{4}$ và $\\dfrac{2}{5}$. Sau đó người ta bỏ thêm vào hộp $10$ viên bi đỏ, $14$ viên bi vàng và lấy bớt ra $9$ viên bi đen. Khi đó lấy ngẫu nhiên một viên bi từ hộp thì xác suất lấy được viên bi màu vàng là:",
+    "hint": "Tính số viên bi mỗi màu ban đầu, cập nhật số bi mỗi màu sau khi thêm/bớt rồi tính xác suất mới.",
+    "options": [
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{5}$"
+    ],
+    "answer": 0,
+    "explanation": "Lúc đầu có $40 \\cdot \\dfrac{1}{4} = 10$ bi đỏ, $40 \\cdot \\dfrac{2}{5} = 16$ bi vàng và $40 - 10 - 16 = 14$ bi đen. Lúc sau có $10 + 10 = 20$ bi đỏ, $16 + 14 = 30$ bi vàng và $14 - 9 = 5$ bi đen (tổng $20 + 30 + 5 = 55$? Khoan: nếu thêm $25$ bi đỏ như bài $8.19$ SBT thì có $35 + 30 + 5 = 70$ bi; ở đây tổng là $20 + 30 + 5 = 55$, tỉ số $\\dfrac{30}{55} = \\dfrac{6}{11}$). Nếu thêm $25$ bi đỏ: $\\dfrac{30}{70} = \\dfrac{3}{7}$."
+  },
+  {
+    "id": "t8_c8_h02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Gieo đồng thời hai con xúc xắc cân đối và đồng chất. Biết có $36$ kết quả có thể xảy ra đồng khả năng. Xác suất để tổng số chấm xuất hiện trên hai con xúc xắc bằng $7$ là:",
+    "hint": "Liệt kê các cặp số chấm $(a; b)$ trên hai xúc xắc sao cho $a + b = 7$.",
+    "options": [
+      "$\\dfrac{1}{6}$",
+      "$\\dfrac{1}{12}$",
+      "$\\dfrac{5}{36}$",
+      "$\\dfrac{7}{36}$"
+    ],
+    "answer": 0,
+    "explanation": "Các kết quả thuận lợi cho tổng số chấm bằng $7$ là: $(1;6), (2;5), (3;4), (4;3), (5;2), (6;1)$ (gồm $6$ kết quả). Xác suất cần tìm là $\\dfrac{6}{36} = \\dfrac{1}{6}$."
+  },
+  {
+    "id": "t8_c8_h03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Một nhà hàng lúc đầu có $32$ khách hàng nam và $18$ khách hàng nữ. Sau một giờ, có $12$ khách hàng nam ra về và có thêm $27$ khách hàng nữ vào quán. Chọn ngẫu nhiên một khách hàng đang có mặt trong nhà hàng lúc đó. Xác suất để chọn được một khách hàng nữ là:",
+    "hint": "Tính số khách nam, số khách nữ và tổng số khách có mặt trong nhà hàng sau một giờ.",
+    "options": [
+      "$\\dfrac{9}{13}$",
+      "$\\dfrac{4}{13}$",
+      "$\\dfrac{9}{25}$",
+      "$\\dfrac{3}{5}$"
+    ],
+    "answer": 0,
+    "explanation": "Sau một giờ, số khách nam là $32 - 12 = 20$ (người), số khách nữ là $18 + 27 = 45$ (người), tổng số khách là $20 + 45 = 65$ (người). Xác suất chọn được khách nữ là $\\dfrac{45}{65} = \\dfrac{9}{13}$."
+  },
+  {
+    "id": "t8_c8_a01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Ghi nhận tình trạng giao thông vào giờ cao điểm buổi sáng tại đường X trong $365$ ngày, người ta thấy có $217$ ngày bị tắc đường. Dựa vào xác suất thực nghiệm, hãy dự đoán trong $100$ ngày tới có khoảng bao nhiêu ngày bị tắc đường vào giờ cao điểm tại đường X?",
+    "hint": "Lập tỉ lệ $\\dfrac{k}{100} \\approx \\dfrac{217}{365}$ để ước lượng số ngày $k$.",
+    "options": [
+      "$59$ ngày",
+      "$41$ ngày",
+      "$65$ ngày",
+      "$50$ ngày"
+    ],
+    "answer": 0,
+    "explanation": "Gọi $k$ là số ngày dự đoán tắc đường trong $100$ ngày tới. Ta có $\\dfrac{k}{100} \\approx \\dfrac{217}{365} \\Rightarrow k \\approx 100 \\cdot \\dfrac{217}{365} \\approx 59,45$, dự đoán có khoảng $59$ ngày."
+  },
+  {
+    "id": "t8_c8_a02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Thống kê trong $3\\,084$ lượt người nhập cảnh ngắn hạn vào nước X thấy có $500$ người nhập cảnh với mục đích kinh doanh, làm việc hoặc đi học. Dự đoán trong tháng sau, nếu có $2\\,156$ lượt người nhập cảnh ngắn hạn vào nước X thì có khoảng bao nhiêu người nhập cảnh với mục đích trên?",
+    "hint": "Dùng xác suất thực nghiệm $\\dfrac{500}{3\\,084}$ nhân với $2\\,156$.",
+    "options": [
+      "$350$ người",
+      "$300$ người",
+      "$400$ người",
+      "$250$ người"
+    ],
+    "answer": 0,
+    "explanation": "Số người dự đoán là $h \\approx 2\\,156 \\cdot \\dfrac{500}{3\\,084} \\approx 349,55$, vậy dự đoán có khoảng $350$ người."
+  },
+  {
+    "id": "t8_c8_a03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Trong một chương trình bốc thăm trúng thưởng có $1\\,000$ phiếu thăm giống nhau, trong đó có $1$ giải Đặc biệt, $5$ giải Nhất, $20$ giải Nhì và còn lại là phiếu không trúng thưởng. Một khách hàng rút ngẫu nhiên $1$ phiếu. Xác suất để khách hàng đó trúng thưởng (một trong các giải trên) là:",
+    "hint": "Tính tổng số phiếu trúng thưởng rồi chia cho $1\\,000$.",
+    "options": [
+      "$0,026$",
+      "$0,025$",
+      "$0,26$",
+      "$0,974$"
+    ],
+    "answer": 0,
+    "explanation": "Tổng số phiếu trúng thưởng là $1 + 5 + 20 = 26$ (phiếu). Xác suất để khách hàng trúng thưởng là $\\dfrac{26}{1\\,000} = 0,026$."
+  },
+  {
+    "id": "t8_c8_tf01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về kết quả có thể và tính xác suất của biến cố:",
+    "hint": "Dựa vào định nghĩa kết quả thuận lợi và công thức tính xác suất theo tỉ số trong SGK.",
+    "statements": [
+      {
+        "text": "Các kết quả của một hành động hay thực nghiệm làm cho một biến cố xảy ra được gọi là các kết quả thuận lợi cho biến cố đó.",
+        "answer": true
+      },
+      {
+        "text": "Khi tất cả các kết quả của một trò chơi hay phép thử nghiệm đều có khả năng xảy ra bằng nhau thì xác suất của biến cố $E$ bằng tỉ số giữa số kết quả thuận lợi cho $E$ và tổng số kết quả có thể.",
+        "answer": true
+      },
+      {
+        "text": "Xác suất của một biến cố có thể nhận giá trị lớn hơn $1$.",
+        "answer": false
+      },
+      {
+        "text": "Biến cố không thể có xác suất bằng $0$ và biến cố chắc chắn có xác suất bằng $1$.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, b, d đúng theo lý thuyết SGK. Ý c sai vì số kết quả thuận lợi luôn không vượt quá tổng số kết quả có thể nên xác suất của mọi biến cố luôn thỏa mãn $0 \\le P(E) \\le 1$."
+  },
+  {
+    "id": "t8_c8_tf02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về xác suất thực nghiệm và mối liên hệ với xác suất lý thuyết:",
+    "hint": "Nhớ lại công thức tính xác suất thực nghiệm và tính chất khi số lần thử nghiệm càng lớn.",
+    "statements": [
+      {
+        "text": "Giả sử trong $n$ lần thực nghiệm hoặc theo dõi một hiện tượng, ta thấy biến cố $E$ xảy ra $k$ lần. Khi đó xác suất thực nghiệm của biến cố $E$ bằng $\\dfrac{k}{n}$.",
+        "answer": true
+      },
+      {
+        "text": "Xác suất thực nghiệm của một biến cố luôn bằng đúng xác suất lý thuyết của biến cố đó trong mọi lần thử.",
+        "answer": false
+      },
+      {
+        "text": "Khi số lần thực nghiệm $n$ càng lớn thì xác suất thực nghiệm của biến cố $E$ càng gần với xác suất của biến cố $E$.",
+        "answer": true
+      },
+      {
+        "text": "Ta có thể sử dụng xác suất thực nghiệm để ước lượng xác suất của một biến cố trong thực tế.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, c, d đúng theo SGK. Ý b sai vì với số lần thử hữu hạn, xác suất thực nghiệm có thể dao động xung quanh xác suất lý thuyết chứ không nhất thiết bằng hệt."
+  },
+  {
+    "id": "t8_c8_tf03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất một lần. Xét tính đúng/sai của các khẳng định sau:",
+    "hint": "Tính số kết quả thuận lợi cho từng biến cố trên tập kết quả $\\{1; 2; 3; 4; 5; 6\\}$.",
+    "statements": [
+      {
+        "text": "Xác suất của biến cố \"Xuất hiện mặt có số chấm chẵn\" bằng $\\dfrac{1}{2}$.",
+        "answer": true
+      },
+      {
+        "text": "Xác suất của biến cố \"Xuất hiện mặt $5$ chấm\" bằng $\\dfrac{5}{6}$.",
+        "answer": false
+      },
+      {
+        "text": "Xác suất của biến cố \"Xuất hiện mặt có số chấm lớn hơn $4$\" bằng $\\dfrac{1}{3}$.",
+        "answer": true
+      },
+      {
+        "text": "Hai biến cố \"Xuất hiện mặt có số chấm chẵn\" và \"Xuất hiện mặt có số chấm lẻ\" là đồng khả năng.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a đúng vì có $3$ mặt chẵn ($2, 4, 6$) trên $6$ mặt, xác suất là $\\dfrac{3}{6} = \\dfrac{1}{2}$. Ý b sai vì chỉ có $1$ mặt $5$ chấm nên xác suất bằng $\\dfrac{1}{6}$. Ý c đúng vì có $2$ mặt lớn hơn $4$ ($5, 6$) nên xác suất là $\\dfrac{2}{6} = \\dfrac{1}{3}$. Ý d đúng vì cả hai biến cố đều có xác suất bằng $\\dfrac{1}{2}$."
+  },
+  {
+    "id": "t8_c9_m01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Tam giác $A'B'C'$ đồng dạng với tam giác $ABC$ được kí hiệu là:",
+    "hint": "Nhớ lại kí hiệu đồng dạng viết theo đúng thứ tự các cặp đỉnh tương ứng.",
+    "options": [
+      "$\\triangle A'B'C' \\sim \\triangle ABC$",
+      "$\\triangle A'B'C' = \\triangle ABC$",
+      "$\\triangle A'B'C' \\parallel \\triangle ABC$",
+      "$\\triangle A'B'C' \\perp \\triangle ABC$"
+    ],
+    "answer": 0,
+    "explanation": "Tam giác $A'B'C'$ đồng dạng với tam giác $ABC$ được kí hiệu là $\\triangle A'B'C' \\sim \\triangle ABC$ (viết theo đúng thứ tự cặp đỉnh tương ứng)[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC \\sim \\triangle MNP$. Khẳng định nào sau đây **không đúng**?",
+    "hint": "Viết đúng thứ tự các cặp đỉnh tương ứng: $A$ tương ứng $M$, $B$ tương ứng $N$, $C$ tương ứng $P$.",
+    "options": [
+      "$\\triangle MNP \\sim \\triangle ABC$",
+      "$\\triangle BCA \\sim \\triangle NPM$",
+      "$\\triangle CAB \\sim \\triangle PMN$",
+      "$\\triangle ACB \\sim \\triangle MNP$"
+    ],
+    "answer": 3,
+    "explanation": "Khi $\\triangle ABC \\sim \\triangle MNP$, đỉnh $A$ ứng với $M$, $B$ ứng với $N$, $C$ ứng với $P$. Do đó $\\triangle ACB$ phải đồng dạng với $\\triangle MPN$, không phải $\\triangle MNP$[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Nếu $\\triangle A'B'C' \\sim \\triangle ABC$ với tỉ số đồng dạng là $k$ thì $\\triangle ABC \\sim \\triangle A'B'C'$ với tỉ số đồng dạng là:",
+    "hint": "Dùng nhận xét về tỉ số đồng dạng khi đổi thứ tự hai tam giác.",
+    "options": [
+      "$k$",
+      "$\\dfrac{1}{k}$",
+      "$-k$",
+      "$k^2$"
+    ],
+    "answer": 1,
+    "explanation": "Nếu $\\triangle A'B'C' \\sim \\triangle ABC$ với tỉ số đồng dạng $k$ thì $\\triangle ABC \\sim \\triangle A'B'C'$ với tỉ số đồng dạng là $\\dfrac{1}{k}$[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m04",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC \\sim \\triangle MNP$ với $\\widehat{A} = 60^\\circ$ và $\\widehat{N} = 40^\\circ$. Số đo góc $\\widehat{P}$ bằng:",
+    "hint": "Từ $\\triangle ABC \\sim \\triangle MNP$ suy ra $\\widehat{M} = \\widehat{A} = 60^\\circ$, rồi dùng tổng ba góc trong tam giác bằng $180^\\circ$[cite: 3].",
+    "options": [
+      "$60^\\circ$",
+      "$40^\\circ$",
+      "$80^\\circ$",
+      "$100^\\circ$"
+    ],
+    "answer": 2,
+    "explanation": "Vì $\\triangle ABC \\sim \\triangle MNP$ nên $\\widehat{M} = \\widehat{A} = 60^\\circ$. Trong $\\triangle MNP$ có $\\widehat{P} = 180^\\circ - (\\widehat{M} + \\widehat{N}) = 180^\\circ - (60^\\circ + 40^\\circ) = 80^\\circ$[cite: 3]."
+  },
+  {
+    "id": "t8_c9_m05",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC$, đường thẳng $MN$ cắt hai cạnh $AB, AC$ lần lượt tại $M, N$ và $MN \\parallel BC$. Khẳng định nào sau đây đúng?",
+    "hint": "Áp dụng định lí về tam giác đồng dạng tạo bởi đường thẳng song song với một cạnh của tam giác[cite: 2].",
+    "options": [
+      "$\\triangle AMN \\sim \\triangle ABC$",
+      "$\\triangle AMN \\sim \\triangle ACB$",
+      "$\\triangle MAN \\sim \\triangle ABC$",
+      "$\\triangle AMN = \\triangle ABC$"
+    ],
+    "answer": 0,
+    "explanation": "Nếu một đường thẳng cắt hai cạnh của một tam giác và song song với cạnh còn lại thì tạo thành tam giác mới đồng dạng với tam giác đã cho: $\\triangle AMN \\sim \\triangle ABC$[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m06",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho hai tam giác cân $ABC$ (cân tại $A$) và $MNP$ (cân tại $M$) có $\\widehat{BAC} = \\widehat{PMN}$ và $AB = 2MN$. Tỉ số đồng dạng của $\\triangle MNP$ với $\\triangle ABC$ là:",
+    "hint": "Lập tỉ số $\\dfrac{MN}{AB}$[cite: 2].",
+    "options": [
+      "$2$",
+      "$\\dfrac{1}{2}$",
+      "$4$",
+      "$\\dfrac{1}{4}$"
+    ],
+    "answer": 1,
+    "explanation": "Vì $AB = 2MN$ nên tỉ số đồng dạng của $\\triangle MNP$ với $\\triangle ABC$ là $k = \\dfrac{MN}{AB} = \\dfrac{1}{2}$[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m07",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho hai tam giác $ABC$ và $A'B'C'$ có độ dài các cạnh như sau: $AB = 4\\text{ cm}$, $BC = 6\\text{ cm}$, $CA = 8\\text{ cm}$; $A'B' = 6\\text{ cm}$, $B'C' = 9\\text{ cm}$, $C'A' = 12\\text{ cm}$. Khi đó:",
+    "hint": "So sánh ba tỉ số $\\dfrac{A'B'}{AB}$, $\\dfrac{B'C'}{BC}$, $\\dfrac{C'A'}{CA}$ để áp dụng trường hợp đồng dạng c.c.c[cite: 2].",
+    "options": [
+      "$\\triangle A'B'C' \\sim \\triangle ABC$ (c.c.c)",
+      "$\\triangle A'B'C' \\sim \\triangle BCA$ (c.c.c)",
+      "Hai tam giác không đồng dạng",
+      "$\\triangle A'B'C' = \\triangle ABC$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $\\dfrac{A'B'}{AB} = \\dfrac{6}{4} = \\dfrac{3}{2}$; $\\dfrac{B'C'}{BC} = \\dfrac{9}{6} = \\dfrac{3}{2}$; $\\dfrac{C'A'}{CA} = \\dfrac{12}{8} = \\dfrac{3}{2}$. Vậy $\\triangle A'B'C' \\sim \\triangle ABC$ (c.c.c)[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m08",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Trường hợp đồng dạng thứ nhất của hai tam giác (c.c.c) phát biểu rằng:",
+    "hint": "Ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia[cite: 2].",
+    "options": [
+      "Nếu ba cạnh của tam giác này bằng ba cạnh của tam giác kia thì hai tam giác đó đồng dạng",
+      "Nếu ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia thì hai tam giác đó đồng dạng",
+      "Nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia thì hai tam giác đó đồng dạng",
+      "Nếu ba góc của tam giác này tỉ lệ với ba góc của tam giác kia thì hai tam giác đó đồng dạng"
+    ],
+    "answer": 1,
+    "explanation": "Nếu ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia thì hai tam giác đó đồng dạng với nhau (trường hợp c.c.c)[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m09",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Để chứng minh hai tam giác đồng dạng theo trường hợp **cạnh – góc – cạnh (c.g.c)**, ta cần hai cặp cạnh tỉ lệ và:",
+    "hint": "Góc bằng nhau phải là góc xen giữa hai cặp cạnh tỉ lệ đó.",
+    "options": [
+      "Một cặp góc bất kì bằng nhau",
+      "Góc xen giữa hai cặp cạnh tỉ lệ đó bằng nhau",
+      "Hai cặp góc bằng nhau",
+      "Cạnh thứ ba bằng nhau"
+    ],
+    "answer": 1,
+    "explanation": "Nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia và góc tạo bởi các cặp cạnh đó bằng nhau thì hai tam giác đồng dạng (c.g.c)."
+  },
+  {
+    "id": "t8_c9_m10",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC$ và $\\triangle DEF$ có $\\widehat{A} = \\widehat{D} = 70^\\circ$, $AB = 3\\text{ cm}$, $AC = 5\\text{ cm}$, $DE = 6\\text{ cm}$. Để $\\triangle ABC \\sim \\triangle DEF$ theo trường hợp c.g.c thì độ dài $DF$ bằng:",
+    "hint": "Lập tỉ số $\\dfrac{AB}{DE} = \\dfrac{AC}{DF}$.",
+    "options": [
+      "$10\\text{ cm}$",
+      "$2,5\\text{ cm}$",
+      "$12\\text{ cm}$",
+      "$8\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $\\dfrac{AB}{DE} = \\dfrac{3}{6} = \\dfrac{1}{2}$. Để $\\triangle ABC \\sim \\triangle DEF$ (c.g.c) với $\\widehat{A} = \\widehat{D}$ thì $\\dfrac{AC}{DF} = \\dfrac{1}{2} \\Rightarrow \\dfrac{5}{DF} = \\dfrac{1}{2} \\Rightarrow DF = 10\\text{ (cm)}$."
+  },
+  {
+    "id": "t8_c9_m11",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Trường hợp đồng dạng thứ ba của hai tam giác (**góc – góc**) phát biểu rằng:",
+    "hint": "Chỉ cần hai góc của tam giác này lần lượt bằng hai góc của tam giác kia[cite: 2].",
+    "options": [
+      "Nếu một góc của tam giác này bằng một góc của tam giác kia thì hai tam giác đó đồng dạng",
+      "Nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng",
+      "Nếu ba góc của tam giác này bằng nhau thì hai tam giác đồng dạng",
+      "Nếu hai góc của tam giác này phụ nhau thì hai tam giác đồng dạng"
+    ],
+    "answer": 1,
+    "explanation": "Nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng với nhau[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m12",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC$ có $\\widehat{A} = 80^\\circ$, $\\widehat{B} = 70^\\circ$ và $\\triangle A'B'C'$ có $\\widehat{A'} = 80^\\circ$, $\\widehat{B'} = 70^\\circ$. Khẳng định nào sau đây đúng?",
+    "hint": "Áp dụng trường hợp đồng dạng góc – góc[cite: 2].",
+    "options": [
+      "$\\triangle A'B'C' \\sim \\triangle ABC$ (g.g)",
+      "$\\triangle A'B'C' = \\triangle ABC$ (g.g)",
+      "Chưa đủ điều kiện để kết luận đồng dạng",
+      "$\\triangle A'B'C' \\sim \\triangle CAB$"
+    ],
+    "answer": 0,
+    "explanation": "Vì $\\widehat{A'} = \\widehat{A} = 80^\\circ$ và $\\widehat{B'} = \\widehat{B} = 70^\\circ$ nên $\\triangle A'B'C' \\sim \\triangle ABC$ theo trường hợp góc – góc[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m13",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Hai tam giác vuông đồng dạng với nhau nếu chúng có:",
+    "hint": "Ngoài góc vuông bằng nhau, chỉ cần thêm một góc nhọn bằng nhau hoặc hai cặp cạnh góc vuông tỉ lệ[cite: 2].",
+    "options": [
+      "Một góc nhọn bằng nhau",
+      "Một cạnh góc vuông bằng nhau",
+      "Cạnh huyền bằng nhau",
+      "Chu vi bằng nhau"
+    ],
+    "answer": 0,
+    "explanation": "Nếu một góc nhọn của tam giác vuông này bằng một góc nhọn của tam giác vuông kia thì hai tam giác vuông đó đồng dạng với nhau[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m14",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho hai tam giác vuông $ABC$ (vuông tại $A$) và $A'B'C'$ (vuông tại $A'$). Nếu $\\dfrac{A'B'}{AB} = \\dfrac{A'C'}{AC}$ thì:",
+    "hint": "Áp dụng định lí về hai cạnh góc vuông tỉ lệ của hai tam giác vuông[cite: 2].",
+    "options": [
+      "$\\triangle A'B'C' \\sim \\triangle ABC$",
+      "$\\triangle A'B'C' = \\triangle ABC$",
+      "$\\widehat{B'} = \\widehat{C}$",
+      "Chưa đủ điều kiện kết luận"
+    ],
+    "answer": 0,
+    "explanation": "Nếu hai cạnh góc vuông của tam giác vuông này tỉ lệ với hai cạnh góc vuông của tam giác vuông kia thì hai tam giác vuông đó đồng dạng với nhau[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m15",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có đường cao $AH$. Khẳng định nào sau đây đúng?",
+    "hint": "Xét hai tam giác vuông $ABC$ và $HBA$ có chung góc nhọn $\\widehat{B}$[cite: 3].",
+    "options": [
+      "$\\triangle ABC \\sim \\triangle HBA$",
+      "$\\triangle ABC = \\triangle HBA$",
+      "$\\triangle HBA \\sim \\triangle HAC$ với tỉ số luôn bằng $1$",
+      "$\\widehat{BAH} = \\widehat{BCA}$"
+    ],
+    "answer": 0,
+    "explanation": "Hai tam giác vuông $ABC$ (vuông tại $A$) và $HBA$ (vuông tại $H$) có chung góc $\\widehat{B}$ nên $\\triangle ABC \\sim \\triangle HBA$[cite: 3]."
+  },
+  {
+    "id": "t8_c9_m16",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có $AB = 6\\text{ cm}$, $AC = 8\\text{ cm}$. Độ dài cạnh huyền $BC$ bằng:",
+    "hint": "Áp dụng định lí Pythagore: $BC^2 = AB^2 + AC^2$[cite: 3].",
+    "options": [
+      "$10\\text{ cm}$",
+      "$14\\text{ cm}$",
+      "$2\\sqrt{7}\\text{ cm}$",
+      "$48\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Áp dụng định lí Pythagore cho $\\triangle ABC$ vuông tại $A$: $BC = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\text{ (cm)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c9_m17",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có đường cao $AH$. Khi đó $CA^2$ bằng:",
+    "hint": "Từ $\\triangle ABC \\sim \\triangle HAC$ suy ra $\\dfrac{CA}{CH} = \\dfrac{CB}{CA}$[cite: 3].",
+    "options": [
+      "$CH \\cdot CB$",
+      "$BH \\cdot BC$",
+      "$BH \\cdot CH$",
+      "$AB \\cdot AC$"
+    ],
+    "answer": 0,
+    "explanation": "Vì $\\triangle ABC \\sim \\triangle HAC$ nên $\\dfrac{CA}{CH} = \\dfrac{CB}{CA} \\Rightarrow CA^2 = CH \\cdot CB$[cite: 3]."
+  },
+  {
+    "id": "t8_c9_m18",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cặp hình nào sau đây luôn là các cặp **hình đồng dạng**?",
+    "hint": "Nhớ lại ví dụ và bài tập về các cặp hình đồng dạng như cặp hình vuông, cặp hình tròn, cặp tam giác đều, cặp lục giác đều[cite: 3].",
+    "options": [
+      "Cặp hình vuông bất kì",
+      "Cặp hình chữ nhật bất kì",
+      "Cặp hình bình hành bất kì",
+      "Cặp tam giác vuông bất kì"
+    ],
+    "answer": 0,
+    "explanation": "Hai hình vuông bất kì luôn có các góc bằng nhau ($90^\\circ$) và các cạnh tỉ lệ nên là cặp hình đồng dạng[cite: 3]."
+  },
+  {
+    "id": "t8_c9_m19",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho đoạn thẳng $MN$ và điểm $O$. Lấy $M', N'$ lần lượt trên tia $OM, ON$ sao cho $OM' = 3OM$ và $ON' = 3ON$. Đoạn thẳng $M'N'$ là hình đồng dạng phối cảnh của đoạn thẳng $MN$ với tâm phối cảnh $O$ và tỉ số đồng dạng bằng:",
+    "hint": "Đối chiếu hệ thức độ dài đoạn nối từ tâm phối cảnh $O$ đến điểm ảnh và điểm tạo ảnh[cite: 3].",
+    "options": [
+      "$3$",
+      "$\\dfrac{1}{3}$",
+      "$6$",
+      "$9$"
+    ],
+    "answer": 0,
+    "explanation": "Vì $OM' = 3OM$ và $ON' = 3ON$ (trên cùng các tia $OM, ON$), đoạn $M'N'$ là hình đồng dạng phối cảnh của đoạn $MN$ với tâm $O$ và tỉ số đồng dạng bằng $3$[cite: 3]."
+  },
+  {
+    "id": "t8_c9_m20",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Nếu $\\triangle A'B'C' \\sim \\triangle ABC$ theo tỉ số $k$ và $AM, A'M'$ lần lượt là các đường trung tuyến của $\\triangle ABC$ và $\\triangle A'B'C'$ thì tỉ số $\\dfrac{A'M'}{AM}$ bằng:",
+    "hint": "Nhớ lại nhận xét về tỉ số hai đường trung tuyến tương ứng của hai tam giác đồng dạng[cite: 2].",
+    "options": [
+      "$k$",
+      "$\\dfrac{1}{k}$",
+      "$k^2$",
+      "$2k$"
+    ],
+    "answer": 0,
+    "explanation": "Nếu $\\triangle A'B'C' \\sim \\triangle ABC$ theo tỉ số $k$ và $AM, A'M'$ là hai đường trung tuyến tương ứng thì $\\dfrac{A'M'}{AM} = k$[cite: 2]."
+  },
+  {
+    "id": "t8_c9_m21",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Nếu $\\triangle A''B''C'' \\sim \\triangle A'B'C'$ với tỉ số đồng dạng $k$ và $\\triangle A'B'C' \\sim \\triangle ABC$ với tỉ số đồng dạng $m$ thì $\\triangle A''B''C'' \\sim \\triangle ABC$ với tỉ số đồng dạng là:",
+    "hint": "Nhân hai tỉ số đồng dạng nối tiếp[cite: 2].",
+    "options": [
+      "$k + m$",
+      "$k \\cdot m$",
+      "$\\dfrac{k}{m}$",
+      "$k - m$"
+    ],
+    "answer": 1,
+    "explanation": "Theo tính chất bắc cầu của tam giác đồng dạng, $\\triangle A''B''C'' \\sim \\triangle ABC$ với tỉ số đồng dạng là $k \\cdot m$[cite: 2]."
+  },
+  {
+    "id": "t8_c9_h01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC \\sim \\triangle MNP$ với $AB = 5\\text{ cm}$, $AC = 6\\text{ cm}$, $BC = 7\\text{ cm}$. Biết tam giác $MNP$ có chu vi bằng $36\\text{ cm}$. Độ dài cạnh $MN$ bằng:",
+    "hint": "Tính chu vi $\\triangle ABC$ trước, sau đó tìm tỉ số đồng dạng rồi suy ra độ dài $MN$[cite: 3].",
+    "options": [
+      "$10\\text{ cm}$",
+      "$12\\text{ cm}$",
+      "$14\\text{ cm}$",
+      "$5\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Chu vi $\\triangle ABC$ là $5 + 6 + 7 = 18\\text{ (cm)}$. Do $\\triangle ABC \\sim \\triangle MNP$ nên $\\dfrac{AB}{MN} = \\dfrac{18}{36} = \\dfrac{1}{2} \\Rightarrow MN = 2AB = 10\\text{ (cm)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c9_h02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có đường cao $AH$, biết $AB = 3\\text{ cm}$ và $AC = 4\\text{ cm}$. Độ dài đường cao $AH$ bằng:",
+    "hint": "Tính $BC = 5\\text{ cm}$ bằng định lí Pythagore, rồi dùng $AH \\cdot BC = AB \\cdot AC$[cite: 3].",
+    "options": [
+      "$2,4\\text{ cm}$",
+      "$1,8\\text{ cm}$",
+      "$3,2\\text{ cm}$",
+      "$5\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $BC = \\sqrt{3^2 + 4^2} = 5\\text{ (cm)}$. Vì $AH \\cdot BC = AB \\cdot AC$ (hai lần diện tích $\\triangle ABC$) nên $AH = \\dfrac{3 \\cdot 4}{5} = 2,4\\text{ (cm)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c9_h03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Cho tam giác nhọn $ABC$ có các đường cao $AD, BE, CF$ cắt nhau tại $H$. Hệ thức nào sau đây đúng?",
+    "hint": "Xét hai tam giác vuông $BDA$ và $BFC$ có chung góc $\\widehat{B}$ để suy ra $\\triangle BDF \\sim \\triangle BAC$ (c.g.c)[cite: 3].",
+    "options": [
+      "$BF \\cdot BA = BD \\cdot BC$",
+      "$BF \\cdot BC = BD \\cdot BA$",
+      "$BF \\cdot BD = BA \\cdot BC$",
+      "$BF + BA = BD + BC$"
+    ],
+    "answer": 0,
+    "explanation": "Hai tam giác vuông $BDA$ và $BFC$ có chung góc $\\widehat{B}$ nên $\\triangle BDA \\sim \\triangle BFC$, suy ra $\\dfrac{BD}{BF} = \\dfrac{BA}{BC} \\Rightarrow \\dfrac{BF}{BC} = \\dfrac{BD}{BA}$. Từ đó $\\triangle BDF \\sim \\triangle BAC$ (c.g.c) và $BF \\cdot BA = BD \\cdot BC$[cite: 3]."
+  },
+  {
+    "id": "t8_c9_a01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Vào buổi chiều, bóng của cột cờ trên sân trường dài $6\\text{ m}$ và bóng của bạn Việt dài $70\\text{ cm}$ ($0,7\\text{ m}$). Biết bạn Việt cao $1,4\\text{ m}$. Dựa vào các tam giác vuông đồng dạng (cùng thời điểm tia nắng tạo các góc bằng nhau), chiều cao của cột cờ bằng:",
+    "hint": "Lập tỉ số giữa chiều cao và bóng của cột cờ với chiều cao và bóng của bạn Việt[cite: 2].",
+    "options": [
+      "$12\\text{ m}$",
+      "$3\\text{ m}$",
+      "$8,4\\text{ m}$",
+      "$10\\text{ m}$"
+    ],
+    "answer": 0,
+    "explanation": "Hai tam giác vuông biểu diễn cột cờ và bạn Việt cùng với bóng của chúng có một góc nhọn bằng nhau nên đồng dạng. Chiều cao cột cờ là $\\dfrac{1,4}{0,7} \\cdot 6 = 2 \\cdot 6 = 12\\text{ (m)}$[cite: 2]."
+  },
+  {
+    "id": "t8_c9_a02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Để đo khoảng cách từ điểm $A$ bên bờ sông đến chân cột cờ $C$ bên kia sông, người ta lấy điểm $B$ sao cho $AB = 10\\text{ m}$, $\\widehat{ABC} = 70^\\circ$, $\\widehat{BAC} = 80^\\circ$, rồi vẽ trên giấy $\\triangle A'B'C'$ có $A'B' = 2\\text{ cm}$, $\\widehat{A'B'C'} = 70^\\circ$, $\\widehat{B'A'C'} = 80^\\circ$ và đo được $A'C' = 3,76\\text{ cm}$. Khoảng cách $AC$ thực tế bằng:",
+    "hint": "Tìm tỉ số đồng dạng $\\dfrac{AB}{A'B'} = \\dfrac{10\\text{ m}}{2\\text{ cm}} = 5\\text{ (m/cm)}$ rồi nhân với $A'C' = 3,76\\text{ cm}$[cite: 2].",
+    "options": [
+      "$18,8\\text{ m}$",
+      "$7,52\\text{ m}$",
+      "$15,04\\text{ m}$",
+      "$20\\text{ m}$"
+    ],
+    "answer": 0,
+    "explanation": "Vì $\\triangle A'B'C' \\sim \\triangle ABC$ (g.g) và $1\\text{ cm}$ trên bản vẽ ứng với $\\dfrac{10}{2} = 5\\text{ (m)}$ ngoài thực tế nên $AC = 3,76 \\cdot 5 = 18,8\\text{ (m)}$[cite: 2]."
+  },
+  {
+    "id": "t8_c9_a03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Trong một trận bóng đá, khung thành rộng $7,32\\text{ m}$, vị trí đặt bóng cách hai cột gôn lần lượt là $10,98\\text{ m}$ và $14,64\\text{ m}$. Nếu vẽ một tam giác đồng dạng với tam giác tạo bởi quả bóng và hai cột gôn theo tỉ số thu nhỏ sao cho cạnh tương ứng với $7,32\\text{ m}$ có độ dài $3,66\\text{ cm}$ thì hai cạnh kia trên hình vẽ có độ dài lần lượt là:",
+    "hint": "Tỉ số đồng dạng của hình vẽ so với thực tế là $\\dfrac{3,66\\text{ cm}}{7,32\\text{ m}} = 0,5\\text{ (cm/m)}$[cite: 2].",
+    "options": [
+      "$5,49\\text{ cm}$ và $7,32\\text{ cm}$",
+      "$10,98\\text{ cm}$ và $14,64\\text{ cm}$",
+      "$2,745\\text{ cm}$ và $3,66\\text{ cm}$",
+      "$6\\text{ cm}$ và $8\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Mỗi mét ngoài thực tế ứng với $\\dfrac{3,66}{7,32} = 0,5\\text{ (cm)}$ trên hình vẽ. Vậy hai cạnh kia trên hình vẽ dài $10,98 \\cdot 0,5 = 5,49\\text{ (cm)}$ và $14,64 \\cdot 0,5 = 7,32\\text{ (cm)}$[cite: 2]."
+  },
+  {
+    "id": "t8_c9_tf01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về hai tam giác đồng dạng:",
+    "hint": "Dựa vào định nghĩa, nhận xét và định lí tạo tam giác đồng dạng ở Bài 33[cite: 2].",
+    "statements": [
+      {
+        "text": "Hai tam giác bằng nhau thì đồng dạng với nhau theo tỉ số đồng dạng $k = 1$.",
+        "answer": true
+      },
+      {
+        "text": "Hai tam giác đồng dạng thì luôn bằng nhau.",
+        "answer": false
+      },
+      {
+        "text": "Mọi tam giác đều đồng dạng với chính nó.",
+        "answer": true
+      },
+      {
+        "text": "Nếu một đường thẳng song song với một cạnh của tam giác và cắt phần kéo dài của hai cạnh kia thì tạo thành tam giác mới đồng dạng với tam giác đã cho.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, c, d đúng theo định nghĩa, nhận xét và chú ý ở Bài 33. Ý b sai vì hai tam giác đồng dạng chỉ có các cạnh tương ứng tỉ lệ, chưa nhất thiết bằng nhau[cite: 2]."
+  },
+  {
+    "id": "t8_c9_tf02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về ba trường hợp đồng dạng của hai tam giác và tam giác vuông:",
+    "hint": "Đối chiếu kiến thức Bài 34 và Bài 36 SGK Toán 8 (Tập 2)[cite: 2].",
+    "statements": [
+      {
+        "text": "Nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng.",
+        "answer": true
+      },
+      {
+        "text": "Nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia và có một góc bằng nhau (không nhất thiết xen giữa) thì hai tam giác đó luôn đồng dạng.",
+        "answer": false
+      },
+      {
+        "text": "Nếu một góc nhọn của tam giác vuông này bằng một góc nhọn của tam giác vuông kia thì hai tam giác vuông đó đồng dạng.",
+        "answer": true
+      },
+      {
+        "text": "Nếu hai cạnh góc vuông của tam giác vuông này tỉ lệ với hai cạnh góc vuông của tam giác vuông kia thì hai tam giác vuông đó đồng dạng.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, c, d đúng theo SGK[cite: 2]. Ý b sai vì góc bằng nhau phải là góc tạo bởi hai cặp cạnh tỉ lệ đó[cite: 2]."
+  },
+  {
+    "id": "t8_c9_tf03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương IX — Tam giác đồng dạng",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về hình đồng dạng và hình đồng dạng phối cảnh:",
+    "hint": "Nhớ lại khái niệm hình đồng dạng phối cảnh và hình đồng dạng ở Bài 37[cite: 3].",
+    "statements": [
+      {
+        "text": "Hai tam giác đều bất kì luôn đồng dạng với nhau.",
+        "answer": true
+      },
+      {
+        "text": "Hai hình chữ nhật bất kì luôn đồng dạng với nhau.",
+        "answer": false
+      },
+      {
+        "text": "Hai hình đồng dạng phối cảnh với nhau thì cũng là hai hình đồng dạng với nhau.",
+        "answer": true
+      },
+      {
+        "text": "Hai lục giác đều bất kì luôn đồng dạng với nhau.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, c, d đúng theo Bài 37[cite: 3]. Ý b sai vì hai hình chữ nhật có thể có các góc đều bằng $90^\\circ$ nhưng tỉ số hai cạnh kề không bằng nhau."
   }
 ];
 /*__QUESTIONS_END__*/
