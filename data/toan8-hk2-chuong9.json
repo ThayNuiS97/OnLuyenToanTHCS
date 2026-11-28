@@ -6,16 +6,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Tam giác $A'B'C'$ đồng dạng với tam giác $ABC$ được kí hiệu là:",
-    "hint": "Nhớ lại kí hiệu đồng dạng viết theo đúng thứ tự các cặp đỉnh tương ứng.",
+    "prompt": "Nếu $\\triangle ABC \\backsim \\triangle DEF$ theo tỉ số đồng dạng $k = \\dfrac{2}{3}$ thì $\\triangle DEF \\backsim \\triangle ABC$ theo tỉ số đồng dạng bằng:",
+    "hint": "Nếu $\\triangle A'B'C' \\backsim \\triangle ABC$ theo tỉ số $k$ thì $\\triangle ABC \\backsim \\triangle A'B'C'$ theo tỉ số $\\dfrac{1}{k}$.",
     "options": [
-      "$\\triangle A'B'C' \\sim \\triangle ABC$",
-      "$\\triangle A'B'C' = \\triangle ABC$",
-      "$\\triangle A'B'C' \\parallel \\triangle ABC$",
-      "$\\triangle A'B'C' \\perp \\triangle ABC$"
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{3}{2}$",
+      "$\\dfrac{4}{9}$",
+      "$\\dfrac{9}{4}$"
     ],
-    "answer": 0,
-    "explanation": "Tam giác $A'B'C'$ đồng dạng với tam giác $ABC$ được kí hiệu là $\\triangle A'B'C' \\sim \\triangle ABC$ (viết theo đúng thứ tự cặp đỉnh tương ứng)[cite: 2]."
+    "answer": 1,
+    "explanation": "Vì $\\triangle ABC \\backsim \\triangle DEF$ theo tỉ số $k = \\dfrac{2}{3}$ nên $\\triangle DEF \\backsim \\triangle ABC$ theo tỉ số $\\dfrac{1}{k} = \\dfrac{3}{2}$."
   },
   {
     "id": "t8_c9_m02",
@@ -24,16 +24,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC \\sim \\triangle MNP$. Khẳng định nào sau đây **không đúng**?",
-    "hint": "Viết đúng thứ tự các cặp đỉnh tương ứng: $A$ tương ứng $M$, $B$ tương ứng $N$, $C$ tương ứng $P$.",
+    "prompt": "Cho $\\triangle ABC \\backsim \\triangle MNP$ biết $\\widehat{A} = 65^\\circ$, $\\widehat{N} = 45^\\circ$. Số đo của góc $C$ bằng:",
+    "hint": "Hai tam giác đồng dạng có các góc tương ứng bằng nhau; tổng ba góc trong một tam giác bằng $180^\\circ$.",
     "options": [
-      "$\\triangle MNP \\sim \\triangle ABC$",
-      "$\\triangle BCA \\sim \\triangle NPM$",
-      "$\\triangle CAB \\sim \\triangle PMN$",
-      "$\\triangle ACB \\sim \\triangle MNP$"
+      "$65^\\circ$",
+      "$45^\\circ$",
+      "$70^\\circ$",
+      "$110^\\circ$"
     ],
-    "answer": 3,
-    "explanation": "Khi $\\triangle ABC \\sim \\triangle MNP$, đỉnh $A$ ứng với $M$, $B$ ứng với $N$, $C$ ứng với $P$. Do đó $\\triangle ACB$ phải đồng dạng với $\\triangle MPN$, không phải $\\triangle MNP$[cite: 2]."
+    "answer": 2,
+    "explanation": "Vì $\\triangle ABC \\backsim \\triangle MNP$ nên $\\widehat{B} = \\widehat{N} = 45^\\circ$. Trong $\\triangle ABC$ có $\\widehat{C} = 180^\\circ - (\\widehat{A} + \\widehat{B}) = 180^\\circ - (65^\\circ + 45^\\circ) = 70^\\circ$."
   },
   {
     "id": "t8_c9_m03",
@@ -42,16 +42,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Nếu $\\triangle A'B'C' \\sim \\triangle ABC$ với tỉ số đồng dạng là $k$ thì $\\triangle ABC \\sim \\triangle A'B'C'$ với tỉ số đồng dạng là:",
-    "hint": "Dùng nhận xét về tỉ số đồng dạng khi đổi thứ tự hai tam giác.",
+    "prompt": "Cho $\\triangle ABC \\backsim \\triangle A'B'C'$ với $AB = 6\\text{ cm}$, $AC = 8\\text{ cm}$, $A'B' = 9\\text{ cm}$. Độ dài cạnh $A'C'$ bằng:",
+    "hint": "Lập tỉ số các cạnh tương ứng $\\dfrac{A'B'}{AB} = \\dfrac{A'C'}{AC}$.",
     "options": [
-      "$k$",
-      "$\\dfrac{1}{k}$",
-      "$-k$",
-      "$k^2$"
+      "$12\\text{ cm}$",
+      "$10\\text{ cm}$",
+      "$13,5\\text{ cm}$",
+      "$4\\text{ cm}$"
     ],
-    "answer": 1,
-    "explanation": "Nếu $\\triangle A'B'C' \\sim \\triangle ABC$ với tỉ số đồng dạng $k$ thì $\\triangle ABC \\sim \\triangle A'B'C'$ với tỉ số đồng dạng là $\\dfrac{1}{k}$[cite: 2]."
+    "answer": 0,
+    "explanation": "Vì $\\triangle ABC \\backsim \\triangle A'B'C'$ nên $\\dfrac{A'B'}{AB} = \\dfrac{A'C'}{AC} \\Rightarrow \\dfrac{9}{6} = \\dfrac{A'C'}{8} \\Rightarrow A'C' = \\dfrac{9 \\cdot 8}{6} = 12\\text{ (cm)}$."
   },
   {
     "id": "t8_c9_m04",
@@ -60,16 +60,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC \\sim \\triangle MNP$ với $\\widehat{A} = 60^\\circ$ và $\\widehat{N} = 40^\\circ$. Số đo góc $\\widehat{P}$ bằng:",
-    "hint": "Từ $\\triangle ABC \\sim \\triangle MNP$ suy ra $\\widehat{M} = \\widehat{A} = 60^\\circ$, rồi dùng tổng ba góc trong tam giác bằng $180^\\circ$[cite: 3].",
+    "prompt": "Cho $\\triangle ABC$, đường thẳng $d$ song song với cạnh $BC$ cắt hai cạnh $AB, AC$ lần lượt tại $M$ và $N$. Khẳng định nào sau đây đúng?",
+    "hint": "Định lí về đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại.",
     "options": [
-      "$60^\\circ$",
-      "$40^\\circ$",
-      "$80^\\circ$",
-      "$100^\\circ$"
+      "$\\triangle AMN \\backsim \\triangle ABC$",
+      "$\\triangle AMN \\backsim \\triangle ACB$",
+      "$\\triangle ANM \\backsim \\triangle ABC$",
+      "$\\triangle BMN \\backsim \\triangle ABC$"
     ],
-    "answer": 2,
-    "explanation": "Vì $\\triangle ABC \\sim \\triangle MNP$ nên $\\widehat{M} = \\widehat{A} = 60^\\circ$. Trong $\\triangle MNP$ có $\\widehat{P} = 180^\\circ - (\\widehat{M} + \\widehat{N}) = 180^\\circ - (60^\\circ + 40^\\circ) = 80^\\circ$[cite: 3]."
+    "answer": 0,
+    "explanation": "Nếu một đường thẳng cắt hai cạnh của một tam giác và song song với cạnh còn lại thì nó tạo thành một tam giác mới đồng dạng với tam giác đã cho: $\\triangle AMN \\backsim \\triangle ABC$."
   },
   {
     "id": "t8_c9_m05",
@@ -78,16 +78,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC$, đường thẳng $MN$ cắt hai cạnh $AB, AC$ lần lượt tại $M, N$ và $MN \\parallel BC$. Khẳng định nào sau đây đúng?",
-    "hint": "Áp dụng định lí về tam giác đồng dạng tạo bởi đường thẳng song song với một cạnh của tam giác[cite: 2].",
+    "prompt": "Cho $\\triangle ABC$ có $AB = 3\\text{ cm}$, $BC = 4\\text{ cm}$, $AC = 5\\text{ cm}$ và $\\triangle DEF$ có $DE = 6\\text{ cm}$, $EF = 8\\text{ cm}$, $DF = 10\\text{ cm}$. Phát biểu nào sau đây đúng?",
+    "hint": "Kiểm tra tỉ số ba cặp cạnh tương ứng của hai tam giác (trường hợp đồng dạng cạnh - cạnh - cạnh).",
     "options": [
-      "$\\triangle AMN \\sim \\triangle ABC$",
-      "$\\triangle AMN \\sim \\triangle ACB$",
-      "$\\triangle MAN \\sim \\triangle ABC$",
-      "$\\triangle AMN = \\triangle ABC$"
+      "$\\triangle ABC \\backsim \\triangle DEF$ theo tỉ số đồng dạng $\\dfrac{1}{2}$",
+      "$\\triangle ABC \\backsim \\triangle DFE$ theo tỉ số đồng dạng $\\dfrac{1}{2}$",
+      "$\\triangle ABC \\backsim \\triangle EDF$ theo tỉ số đồng dạng $2$",
+      "Hai tam giác không đồng dạng"
     ],
     "answer": 0,
-    "explanation": "Nếu một đường thẳng cắt hai cạnh của một tam giác và song song với cạnh còn lại thì tạo thành tam giác mới đồng dạng với tam giác đã cho: $\\triangle AMN \\sim \\triangle ABC$[cite: 2]."
+    "explanation": "Ta có $\\dfrac{AB}{DE} = \\dfrac{3}{6} = \\dfrac{1}{2}$, $\\dfrac{BC}{EF} = \\dfrac{4}{8} = \\dfrac{1}{2}$, $\\dfrac{AC}{DF} = \\dfrac{5}{10} = \\dfrac{1}{2}$ nên $\\triangle ABC \\backsim \\triangle DEF$ (c.c.c) với tỉ số đồng dạng $k = \\dfrac{1}{2}$."
   },
   {
     "id": "t8_c9_m06",
@@ -96,16 +96,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho hai tam giác cân $ABC$ (cân tại $A$) và $MNP$ (cân tại $M$) có $\\widehat{BAC} = \\widehat{PMN}$ và $AB = 2MN$. Tỉ số đồng dạng của $\\triangle MNP$ với $\\triangle ABC$ là:",
-    "hint": "Lập tỉ số $\\dfrac{MN}{AB}$[cite: 2].",
+    "prompt": "Cho $\\triangle ABC$ và $\\triangle MNP$ có $\\widehat{A} = \\widehat{M}$ và $\\dfrac{AB}{MN} = \\dfrac{AC}{MP}$. Kết luận nào sau đây đúng?",
+    "hint": "Trường hợp đồng dạng thứ hai của tam giác (cạnh - góc - cạnh).",
     "options": [
-      "$2$",
-      "$\\dfrac{1}{2}$",
-      "$4$",
-      "$\\dfrac{1}{4}$"
+      "$\\triangle ABC \\backsim \\triangle MNP$ (c.g.c)",
+      "$\\triangle ABC \\backsim \\triangle MPN$ (c.g.c)",
+      "$\\triangle ABC \\backsim \\triangle NMP$ (c.g.c)",
+      "$\\triangle ABC \\backsim \\triangle PMN$ (c.g.c)"
     ],
-    "answer": 1,
-    "explanation": "Vì $AB = 2MN$ nên tỉ số đồng dạng của $\\triangle MNP$ với $\\triangle ABC$ là $k = \\dfrac{MN}{AB} = \\dfrac{1}{2}$[cite: 2]."
+    "answer": 0,
+    "explanation": "Hai tam giác có hai cặp cạnh tỉ lệ và hai góc xen giữa bằng nhau thì đồng dạng theo trường hợp cạnh - góc - cạnh: $\\triangle ABC \\backsim \\triangle MNP$."
   },
   {
     "id": "t8_c9_m07",
@@ -114,16 +114,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho hai tam giác $ABC$ và $A'B'C'$ có độ dài các cạnh như sau: $AB = 4\\text{ cm}$, $BC = 6\\text{ cm}$, $CA = 8\\text{ cm}$; $A'B' = 6\\text{ cm}$, $B'C' = 9\\text{ cm}$, $C'A' = 12\\text{ cm}$. Khi đó:",
-    "hint": "So sánh ba tỉ số $\\dfrac{A'B'}{AB}$, $\\dfrac{B'C'}{BC}$, $\\dfrac{C'A'}{CA}$ để áp dụng trường hợp đồng dạng c.c.c[cite: 2].",
+    "prompt": "Cho $\\triangle ABC$ và $\\triangle DEF$ có $\\widehat{A} = \\widehat{D} = 50^\\circ$, $\\widehat{B} = 70^\\circ$, $\\widehat{F} = 60^\\circ$. Khẳng định nào sau đây đúng?",
+    "hint": "Tính số đo góc $C$ của $\\triangle ABC$ rồi áp dụng trường hợp đồng dạng góc - góc.",
     "options": [
-      "$\\triangle A'B'C' \\sim \\triangle ABC$ (c.c.c)",
-      "$\\triangle A'B'C' \\sim \\triangle BCA$ (c.c.c)",
-      "Hai tam giác không đồng dạng",
-      "$\\triangle A'B'C' = \\triangle ABC$"
+      "$\\triangle ABC \\backsim \\triangle DEF$ (g.g)",
+      "$\\triangle ABC \\backsim \\triangle DFE$ (g.g)",
+      "$\\triangle ABC \\backsim \\triangle EDF$ (g.g)",
+      "Hai tam giác không đồng dạng"
     ],
     "answer": 0,
-    "explanation": "Ta có $\\dfrac{A'B'}{AB} = \\dfrac{6}{4} = \\dfrac{3}{2}$; $\\dfrac{B'C'}{BC} = \\dfrac{9}{6} = \\dfrac{3}{2}$; $\\dfrac{C'A'}{CA} = \\dfrac{12}{8} = \\dfrac{3}{2}$. Vậy $\\triangle A'B'C' \\sim \\triangle ABC$ (c.c.c)[cite: 2]."
+    "explanation": "Trong $\\triangle ABC$ có $\\widehat{C} = 180^\\circ - (50^\\circ + 70^\\circ) = 60^\\circ = \\widehat{F}$. Lại có $\\widehat{A} = \\widehat{D} = 50^\\circ$ nên $\\triangle ABC \\backsim \\triangle DEF$ (g.g)."
   },
   {
     "id": "t8_c9_m08",
@@ -132,16 +132,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Trường hợp đồng dạng thứ nhất của hai tam giác (c.c.c) phát biểu rằng:",
-    "hint": "Ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia[cite: 2].",
+    "prompt": "Tam giác nào sau đây là tam giác vuông?",
+    "hint": "Định lí Pythagore đảo: Nếu một tam giác có bình phương của một cạnh bằng tổng các bình phương của hai cạnh kia thì tam giác đó là tam giác vuông.",
     "options": [
-      "Nếu ba cạnh của tam giác này bằng ba cạnh của tam giác kia thì hai tam giác đó đồng dạng",
-      "Nếu ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia thì hai tam giác đó đồng dạng",
-      "Nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia thì hai tam giác đó đồng dạng",
-      "Nếu ba góc của tam giác này tỉ lệ với ba góc của tam giác kia thì hai tam giác đó đồng dạng"
+      "Tam giác có độ dài ba cạnh là $4\\text{ cm}; 5\\text{ cm}; 6\\text{ cm}$",
+      "Tam giác có độ dài ba cạnh là $5\\text{ cm}; 12\\text{ cm}; 13\\text{ cm}$",
+      "Tam giác có độ dài ba cạnh là $6\\text{ cm}; 7\\text{ cm}; 9\\text{ cm}$",
+      "Tam giác có độ dài ba cạnh là $2\\text{ cm}; 3\\text{ cm}; 4\\text{ cm}$"
     ],
     "answer": 1,
-    "explanation": "Nếu ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia thì hai tam giác đó đồng dạng với nhau (trường hợp c.c.c)[cite: 2]."
+    "explanation": "Vì $5^2 + 12^2 = 25 + 144 = 169 = 13^2$ nên theo định lí Pythagore đảo, tam giác có ba cạnh $5\\text{ cm}; 12\\text{ cm}; 13\\text{ cm}$ là tam giác vuông."
   },
   {
     "id": "t8_c9_m09",
@@ -150,16 +150,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Để chứng minh hai tam giác đồng dạng theo trường hợp **cạnh – góc – cạnh (c.g.c)**, ta cần hai cặp cạnh tỉ lệ và:",
-    "hint": "Góc bằng nhau phải là góc xen giữa hai cặp cạnh tỉ lệ đó.",
+    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có đường cao $AH$ ($H \\in BC$). Khẳng định nào sau đây **SAI**?",
+    "hint": "Trong tam giác vuông, đường cao ứng với cạnh huyền chia tam giác thành hai tam giác vuông đồng dạng với nhau và đồng dạng với tam giác đã cho.",
     "options": [
-      "Một cặp góc bất kì bằng nhau",
-      "Góc xen giữa hai cặp cạnh tỉ lệ đó bằng nhau",
-      "Hai cặp góc bằng nhau",
-      "Cạnh thứ ba bằng nhau"
+      "$\\triangle HBA \\backsim \\triangle ABC$",
+      "$\\triangle HAC \\backsim \\triangle ABC$",
+      "$\\triangle HBA \\backsim \\triangle HAC$",
+      "$\\triangle HBA \\backsim \\triangle HCA$"
     ],
-    "answer": 1,
-    "explanation": "Nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia và góc tạo bởi các cặp cạnh đó bằng nhau thì hai tam giác đồng dạng (c.g.c)."
+    "answer": 3,
+    "explanation": "Ta có $\\widehat{B} = \\widehat{HAC}$ (cùng phụ với $\\widehat{C}$) và $\\widehat{BHA} = \\widehat{AHC} = 90^\\circ$ nên $\\triangle HBA \\backsim \\triangle HAC$ (đỉnh $B$ tương ứng với đỉnh $A$, đỉnh $A$ tương ứng với đỉnh $C$), do đó viết $\\triangle HBA \\backsim \\triangle HCA$ là sai thứ tự đỉnh."
   },
   {
     "id": "t8_c9_m10",
@@ -168,16 +168,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC$ và $\\triangle DEF$ có $\\widehat{A} = \\widehat{D} = 70^\\circ$, $AB = 3\\text{ cm}$, $AC = 5\\text{ cm}$, $DE = 6\\text{ cm}$. Để $\\triangle ABC \\sim \\triangle DEF$ theo trường hợp c.g.c thì độ dài $DF$ bằng:",
-    "hint": "Lập tỉ số $\\dfrac{AB}{DE} = \\dfrac{AC}{DF}$.",
+    "prompt": "Cho $\\triangle ABC$ vuông tại $A$, đường cao $AH$. Biết $BH = 4\\text{ cm}$, $CH = 9\\text{ cm}$. Độ dài đường cao $AH$ bằng:",
+    "hint": "Từ $\\triangle HBA \\backsim \\triangle HAC$ suy ra hệ thức $AH^2 = BH \\cdot CH$.",
     "options": [
-      "$10\\text{ cm}$",
-      "$2,5\\text{ cm}$",
-      "$12\\text{ cm}$",
-      "$8\\text{ cm}$"
+      "$6\\text{ cm}$",
+      "$5\\text{ cm}$",
+      "$13\\text{ cm}$",
+      "$36\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Ta có $\\dfrac{AB}{DE} = \\dfrac{3}{6} = \\dfrac{1}{2}$. Để $\\triangle ABC \\sim \\triangle DEF$ (c.g.c) với $\\widehat{A} = \\widehat{D}$ thì $\\dfrac{AC}{DF} = \\dfrac{1}{2} \\Rightarrow \\dfrac{5}{DF} = \\dfrac{1}{2} \\Rightarrow DF = 10\\text{ (cm)}$."
+    "explanation": "Vì $\\triangle HBA \\backsim \\triangle HAC$ (g.g) nên $\\dfrac{AH}{CH} = \\dfrac{BH}{AH} \\Rightarrow AH^2 = BH \\cdot CH = 4 \\cdot 9 = 36 \\Rightarrow AH = 6\\text{ (cm)}$."
   },
   {
     "id": "t8_c9_m11",
@@ -186,16 +186,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Trường hợp đồng dạng thứ ba của hai tam giác (**góc – góc**) phát biểu rằng:",
-    "hint": "Chỉ cần hai góc của tam giác này lần lượt bằng hai góc của tam giác kia[cite: 2].",
+    "prompt": "Cho hai tam giác vuông $\\triangle ABC$ (vuông tại $A$) và $\\triangle DEF$ (vuông tại $D$) có $AB = 3\\text{ cm}$, $BC = 5\\text{ cm}$, $DE = 6\\text{ cm}$, $EF = 10\\text{ cm}$. Kết luận nào sau đây đúng?",
+    "hint": "Trường hợp đồng dạng đặc biệt của hai tam giác vuông: cạnh huyền - cạnh góc vuông.",
     "options": [
-      "Nếu một góc của tam giác này bằng một góc của tam giác kia thì hai tam giác đó đồng dạng",
-      "Nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng",
-      "Nếu ba góc của tam giác này bằng nhau thì hai tam giác đồng dạng",
-      "Nếu hai góc của tam giác này phụ nhau thì hai tam giác đồng dạng"
+      "$\\triangle ABC \\backsim \\triangle DEF$ theo trường hợp cạnh huyền – cạnh góc vuông",
+      "$\\triangle ABC \\backsim \\triangle DFE$ theo trường hợp cạnh – góc – cạnh",
+      "$\\triangle ABC \\backsim \\triangle EDF$ theo trường hợp góc – góc",
+      "Hai tam giác không đồng dạng"
     ],
-    "answer": 1,
-    "explanation": "Nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng với nhau[cite: 2]."
+    "answer": 0,
+    "explanation": "Hai tam giác vuông tại $A$ và $D$ có $\\dfrac{AB}{DE} = \\dfrac{3}{6} = \\dfrac{1}{2}$ và $\\dfrac{BC}{EF} = \\dfrac{5}{10} = \\dfrac{1}{2}$ nên $\\triangle ABC \\backsim \\triangle DEF$ theo trường hợp cạnh huyền – cạnh góc vuông."
   },
   {
     "id": "t8_c9_m12",
@@ -204,16 +204,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC$ có $\\widehat{A} = 80^\\circ$, $\\widehat{B} = 70^\\circ$ và $\\triangle A'B'C'$ có $\\widehat{A'} = 80^\\circ$, $\\widehat{B'} = 70^\\circ$. Khẳng định nào sau đây đúng?",
-    "hint": "Áp dụng trường hợp đồng dạng góc – góc[cite: 2].",
+    "prompt": "Tỉ số chu vi của hai tam giác đồng dạng $\\triangle A'B'C'$ và $\\triangle ABC$ có tỉ số đồng dạng $k = \\dfrac{3}{5}$ bằng:",
+    "hint": "Tỉ số chu vi của hai tam giác đồng dạng bằng tỉ số đồng dạng.",
     "options": [
-      "$\\triangle A'B'C' \\sim \\triangle ABC$ (g.g)",
-      "$\\triangle A'B'C' = \\triangle ABC$ (g.g)",
-      "Chưa đủ điều kiện để kết luận đồng dạng",
-      "$\\triangle A'B'C' \\sim \\triangle CAB$"
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{9}{25}$",
+      "$\\dfrac{5}{3}$",
+      "$\\dfrac{6}{5}$"
     ],
     "answer": 0,
-    "explanation": "Vì $\\widehat{A'} = \\widehat{A} = 80^\\circ$ và $\\widehat{B'} = \\widehat{B} = 70^\\circ$ nên $\\triangle A'B'C' \\sim \\triangle ABC$ theo trường hợp góc – góc[cite: 2]."
+    "explanation": "Tỉ số chu vi của hai tam giác đồng dạng bằng tỉ số đồng dạng nên bằng $\\dfrac{3}{5}$."
   },
   {
     "id": "t8_c9_m13",
@@ -222,16 +222,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Hai tam giác vuông đồng dạng với nhau nếu chúng có:",
-    "hint": "Ngoài góc vuông bằng nhau, chỉ cần thêm một góc nhọn bằng nhau hoặc hai cặp cạnh góc vuông tỉ lệ[cite: 2].",
+    "prompt": "Trong hình vẽ dưới đây, biết $MN \\parallel BC$, $AM = 4\\text{ cm}$, $MB = 2\\text{ cm}$, $BC = 9\\text{ cm}$. Độ dài đoạn thẳng $MN$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='210' height='155' viewBox='0 0 210 155' xmlns='http://www.w3.org/2000/svg'><polygon points='100,18 35,135 175,135' fill='#f8fafc' stroke='#334155' stroke-width='2'/><line x1='57' y1='96' x2='150' y2='96' stroke='#0284c7' stroke-width='2'/><text x='96' y='13' font-size='11' font-weight='bold'>A</text><text x='22' y='140' font-size='11' font-weight='bold'>B</text><text x='180' y='140' font-size='11' font-weight='bold'>C</text><text x='42' y='96' font-size='11' font-weight='bold' fill='#0284c7'>M</text><text x='155' y='96' font-size='11' font-weight='bold' fill='#0284c7'>N</text><text x='66' y='56' font-size='10'>4</text><text x='36' y='118' font-size='10'>2</text><text x='100' y='149' font-size='10'>9</text></svg></div>",
+    "hint": "Vì $MN \\parallel BC$ nên $\\triangle AMN \\backsim \\triangle ABC$, suy ra $\\dfrac{MN}{BC} = \\dfrac{AM}{AB}$.",
     "options": [
-      "Một góc nhọn bằng nhau",
-      "Một cạnh góc vuông bằng nhau",
-      "Cạnh huyền bằng nhau",
-      "Chu vi bằng nhau"
+      "$4,5\\text{ cm}$",
+      "$6\\text{ cm}$",
+      "$3\\text{ cm}$",
+      "$7,5\\text{ cm}$"
     ],
-    "answer": 0,
-    "explanation": "Nếu một góc nhọn của tam giác vuông này bằng một góc nhọn của tam giác vuông kia thì hai tam giác vuông đó đồng dạng với nhau[cite: 2]."
+    "answer": 1,
+    "explanation": "Ta có $AB = AM + MB = 4 + 2 = 6\\text{ (cm)}$. Vì $MN \\parallel BC$ nên $\\triangle AMN \\backsim \\triangle ABC \\Rightarrow \\dfrac{MN}{BC} = \\dfrac{AM}{AB} \\Rightarrow \\dfrac{MN}{9} = \\dfrac{4}{6} \\Rightarrow MN = 6\\text{ (cm)}$."
   },
   {
     "id": "t8_c9_m14",
@@ -240,16 +240,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho hai tam giác vuông $ABC$ (vuông tại $A$) và $A'B'C'$ (vuông tại $A'$). Nếu $\\dfrac{A'B'}{AB} = \\dfrac{A'C'}{AC}$ thì:",
-    "hint": "Áp dụng định lí về hai cạnh góc vuông tỉ lệ của hai tam giác vuông[cite: 2].",
+    "prompt": "Cho hai hình đồng dạng phối cảnh $\\mathbf{H}'$ và $\\mathbf{H}$ với tâm phối cảnh $O$ và tỉ số đồng dạng $k = 2$. Biết một đoạn thẳng trên hình $\\mathbf{H}$ dài $3,5\\text{ cm}$, độ dài đoạn thẳng tương ứng trên hình $\\mathbf{H}'$ là:",
+    "hint": "Tỉ số độ dài hai đoạn thẳng tương ứng của hình đồng dạng $\\mathbf{H}'$ và $\\mathbf{H}$ bằng tỉ số đồng dạng $k$.",
     "options": [
-      "$\\triangle A'B'C' \\sim \\triangle ABC$",
-      "$\\triangle A'B'C' = \\triangle ABC$",
-      "$\\widehat{B'} = \\widehat{C}$",
-      "Chưa đủ điều kiện kết luận"
+      "$1,75\\text{ cm}$",
+      "$7\\text{ cm}$",
+      "$5,5\\text{ cm}$",
+      "$14\\text{ cm}$"
     ],
-    "answer": 0,
-    "explanation": "Nếu hai cạnh góc vuông của tam giác vuông này tỉ lệ với hai cạnh góc vuông của tam giác vuông kia thì hai tam giác vuông đó đồng dạng với nhau[cite: 2]."
+    "answer": 1,
+    "explanation": "Độ dài đoạn thẳng tương ứng trên hình $\\mathbf{H}'$ là $3,5 \\cdot 2 = 7\\text{ (cm)}$."
   },
   {
     "id": "t8_c9_m15",
@@ -258,16 +258,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có đường cao $AH$. Khẳng định nào sau đây đúng?",
-    "hint": "Xét hai tam giác vuông $ABC$ và $HBA$ có chung góc nhọn $\\widehat{B}$[cite: 3].",
+    "prompt": "Khẳng định nào sau đây là **SAI**?",
+    "hint": "Kiểm tra điều kiện đồng dạng của các hình đa giác đều (tất cả các góc bằng nhau và các cạnh tỉ lệ).",
     "options": [
-      "$\\triangle ABC \\sim \\triangle HBA$",
-      "$\\triangle ABC = \\triangle HBA$",
-      "$\\triangle HBA \\sim \\triangle HAC$ với tỉ số luôn bằng $1$",
-      "$\\widehat{BAH} = \\widehat{BCA}$"
+      "Hai tam giác đều bất kì luôn đồng dạng với nhau",
+      "Hai hình vuông bất kì luôn đồng dạng với nhau",
+      "Hai hình chữ nhật bất kì luôn đồng dạng với nhau",
+      "Hai đường tròn bất kì luôn đồng dạng với nhau"
     ],
-    "answer": 0,
-    "explanation": "Hai tam giác vuông $ABC$ (vuông tại $A$) và $HBA$ (vuông tại $H$) có chung góc $\\widehat{B}$ nên $\\triangle ABC \\sim \\triangle HBA$[cite: 3]."
+    "answer": 2,
+    "explanation": "Hai hình chữ nhật bất kì có thể có tỉ số chiều dài và chiều rộng khác nhau nên không nhất thiết đồng dạng với nhau."
   },
   {
     "id": "t8_c9_m16",
@@ -276,16 +276,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có $AB = 6\\text{ cm}$, $AC = 8\\text{ cm}$. Độ dài cạnh huyền $BC$ bằng:",
-    "hint": "Áp dụng định lí Pythagore: $BC^2 = AB^2 + AC^2$[cite: 3].",
+    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có $AB = 6\\text{ cm}$, $AC = 8\\text{ cm}$, đường cao $AH$. Độ dài đường cao $AH$ bằng:",
+    "hint": "Tính cạnh huyền $BC$ theo định lí Pythagore, sau đó dùng công thức diện tích $AB \\cdot AC = AH \\cdot BC$.",
     "options": [
-      "$10\\text{ cm}$",
-      "$14\\text{ cm}$",
-      "$2\\sqrt{7}\\text{ cm}$",
-      "$48\\text{ cm}$"
+      "$4,8\\text{ cm}$",
+      "$5\\text{ cm}$",
+      "$3,6\\text{ cm}$",
+      "$6,4\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Áp dụng định lí Pythagore cho $\\triangle ABC$ vuông tại $A$: $BC = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\text{ (cm)}$[cite: 3]."
+    "explanation": "Theo định lí Pythagore: $BC = \\sqrt{6^2 + 8^2} = 10\\text{ (cm)}$. Vì $\\triangle HBA \\backsim \\triangle ABC$ nên $\\dfrac{AH}{AC} = \\dfrac{AB}{BC} \\Rightarrow AH = \\dfrac{6 \\cdot 8}{10} = 4,8\\text{ (cm)}$."
   },
   {
     "id": "t8_c9_m17",
@@ -294,16 +294,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có đường cao $AH$. Khi đó $CA^2$ bằng:",
-    "hint": "Từ $\\triangle ABC \\sim \\triangle HAC$ suy ra $\\dfrac{CA}{CH} = \\dfrac{CB}{CA}$[cite: 3].",
+    "prompt": "Cho $\\triangle ABC$ có $AB = 4\\text{ cm}$, $AC = 6\\text{ cm}$. Trên cạnh $AB, AC$ lần lượt lấy các điểm $D, E$ sao cho $AD = 3\\text{ cm}$, $AE = 2\\text{ cm}$. Khẳng định nào sau đây đúng?",
+    "hint": "So sánh tỉ số $\\dfrac{AD}{AC}$ và $\\dfrac{AE}{AB}$ cùng với góc chung $\\widehat{A}$.",
     "options": [
-      "$CH \\cdot CB$",
-      "$BH \\cdot BC$",
-      "$BH \\cdot CH$",
-      "$AB \\cdot AC$"
+      "$\\triangle ADE \\backsim \\triangle ACB$ (c.g.c)",
+      "$\\triangle ADE \\backsim \\triangle ABC$ (c.g.c)",
+      "$DE \\parallel BC$",
+      "Hai tam giác $ADE$ và $ABC$ không đồng dạng"
     ],
     "answer": 0,
-    "explanation": "Vì $\\triangle ABC \\sim \\triangle HAC$ nên $\\dfrac{CA}{CH} = \\dfrac{CB}{CA} \\Rightarrow CA^2 = CH \\cdot CB$[cite: 3]."
+    "explanation": "Ta có $\\dfrac{AD}{AC} = \\dfrac{3}{6} = \\dfrac{1}{2}$ và $\\dfrac{AE}{AB} = \\dfrac{2}{4} = \\dfrac{1}{2}$, lại có $\\widehat{A}$ chung nên $\\triangle ADE \\backsim \\triangle ACB$ (c.g.c)."
   },
   {
     "id": "t8_c9_m18",
@@ -312,16 +312,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cặp hình nào sau đây luôn là các cặp **hình đồng dạng**?",
-    "hint": "Nhớ lại ví dụ và bài tập về các cặp hình đồng dạng như cặp hình vuông, cặp hình tròn, cặp tam giác đều, cặp lục giác đều[cite: 3].",
+    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có $\\widehat{B} = 35^\\circ$ và $\\triangle DEF$ vuông tại $D$ có $\\widehat{F} = 55^\\circ$. Phát biểu nào sau đây đúng?",
+    "hint": "Hai tam giác vuông có một cặp góc nhọn bằng nhau thì đồng dạng (trường hợp góc - góc).",
     "options": [
-      "Cặp hình vuông bất kì",
-      "Cặp hình chữ nhật bất kì",
-      "Cặp hình bình hành bất kì",
-      "Cặp tam giác vuông bất kì"
+      "$\\triangle ABC \\backsim \\triangle DEF$",
+      "$\\triangle ABC \\backsim \\triangle DFE$",
+      "$\\triangle ABC \\backsim \\triangle EDF$",
+      "Hai tam giác không đồng dạng"
     ],
     "answer": 0,
-    "explanation": "Hai hình vuông bất kì luôn có các góc bằng nhau ($90^\\circ$) và các cạnh tỉ lệ nên là cặp hình đồng dạng[cite: 3]."
+    "explanation": "Trong $\\triangle DEF$ vuông tại $D$ có $\\widehat{E} = 90^\\circ - 55^\\circ = 35^\\circ = \\widehat{B}$. Hai tam giác vuông $\\triangle ABC$ và $\\triangle DEF$ có $\\widehat{B} = \\widehat{E}$ nên $\\triangle ABC \\backsim \\triangle DEF$."
   },
   {
     "id": "t8_c9_m19",
@@ -330,16 +330,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho đoạn thẳng $MN$ và điểm $O$. Lấy $M', N'$ lần lượt trên tia $OM, ON$ sao cho $OM' = 3OM$ và $ON' = 3ON$. Đoạn thẳng $M'N'$ là hình đồng dạng phối cảnh của đoạn thẳng $MN$ với tâm phối cảnh $O$ và tỉ số đồng dạng bằng:",
-    "hint": "Đối chiếu hệ thức độ dài đoạn nối từ tâm phối cảnh $O$ đến điểm ảnh và điểm tạo ảnh[cite: 3].",
+    "prompt": "Cho hình thang $ABCD$ ($AB \\parallel CD$), hai đường chéo $AC$ và $BD$ cắt nhau tại $O$. Biết $AB = 4\\text{ cm}$, $CD = 10\\text{ cm}$, $OA = 3\\text{ cm}$. Độ dài đoạn thẳng $OC$ bằng:",
+    "hint": "Chứng minh $\\triangle OAB \\backsim \\triangle OCD$ (g.g) rồi lập tỉ số các cạnh tương ứng.",
     "options": [
-      "$3$",
-      "$\\dfrac{1}{3}$",
-      "$6$",
-      "$9$"
+      "$7,5\\text{ cm}$",
+      "$1,2\\text{ cm}$",
+      "$6\\text{ cm}$",
+      "$8\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Vì $OM' = 3OM$ và $ON' = 3ON$ (trên cùng các tia $OM, ON$), đoạn $M'N'$ là hình đồng dạng phối cảnh của đoạn $MN$ với tâm $O$ và tỉ số đồng dạng bằng $3$[cite: 3]."
+    "explanation": "Vì $AB \\parallel CD$ nên $\\triangle OAB \\backsim \\triangle OCD$ (g.g), suy ra $\\dfrac{OA}{OC} = \\dfrac{AB}{CD} \\Rightarrow \\dfrac{3}{OC} = \\dfrac{4}{10} \\Rightarrow OC = \\dfrac{3 \\cdot 10}{4} = 7,5\\text{ (cm)}$."
   },
   {
     "id": "t8_c9_m20",
@@ -348,16 +348,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Nếu $\\triangle A'B'C' \\sim \\triangle ABC$ theo tỉ số $k$ và $AM, A'M'$ lần lượt là các đường trung tuyến của $\\triangle ABC$ và $\\triangle A'B'C'$ thì tỉ số $\\dfrac{A'M'}{AM}$ bằng:",
-    "hint": "Nhớ lại nhận xét về tỉ số hai đường trung tuyến tương ứng của hai tam giác đồng dạng[cite: 2].",
+    "prompt": "Cho $\\triangle ABC \\backsim \\triangle A'B'C'$ theo tỉ số đồng dạng $k = 3$. Biết chu vi của $\\triangle A'B'C'$ bằng $15\\text{ cm}$, chu vi của $\\triangle ABC$ bằng:",
+    "hint": "Tỉ số chu vi của $\\triangle ABC$ và $\\triangle A'B'C'$ bằng tỉ số đồng dạng $k = 3$.",
     "options": [
-      "$k$",
-      "$\\dfrac{1}{k}$",
-      "$k^2$",
-      "$2k$"
+      "$5\\text{ cm}$",
+      "$45\\text{ cm}$",
+      "$135\\text{ cm}$",
+      "$18\\text{ cm}$"
     ],
-    "answer": 0,
-    "explanation": "Nếu $\\triangle A'B'C' \\sim \\triangle ABC$ theo tỉ số $k$ và $AM, A'M'$ là hai đường trung tuyến tương ứng thì $\\dfrac{A'M'}{AM} = k$[cite: 2]."
+    "answer": 1,
+    "explanation": "Vì $\\triangle ABC \\backsim \\triangle A'B'C'$ theo tỉ số $k = 3$ nên chu vi $\\triangle ABC$ gấp $3$ lần chu vi $\\triangle A'B'C'$, tức là $15 \\cdot 3 = 45\\text{ (cm)}$."
   },
   {
     "id": "t8_c9_m21",
@@ -366,16 +366,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Nếu $\\triangle A''B''C'' \\sim \\triangle A'B'C'$ với tỉ số đồng dạng $k$ và $\\triangle A'B'C' \\sim \\triangle ABC$ với tỉ số đồng dạng $m$ thì $\\triangle A''B''C'' \\sim \\triangle ABC$ với tỉ số đồng dạng là:",
-    "hint": "Nhân hai tỉ số đồng dạng nối tiếp[cite: 2].",
+    "prompt": "Trong hình vẽ dưới đây, cho $\\widehat{AED} = \\widehat{ABC}$, $AE = 3\\text{ cm}$, $EC = 5\\text{ cm}$, $AD = 4\\text{ cm}$. Độ dài đoạn thẳng $DB$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='210' height='155' viewBox='0 0 210 155' xmlns='http://www.w3.org/2000/svg'><polygon points='95,18 30,135 175,135' fill='#f8fafc' stroke='#334155' stroke-width='2'/><line x1='58' y1='85' x2='148' y2='104' stroke='#0284c7' stroke-width='2'/><text x='91' y='13' font-size='11' font-weight='bold'>A</text><text x='18' y='140' font-size='11' font-weight='bold'>B</text><text x='180' y='140' font-size='11' font-weight='bold'>C</text><text x='43' y='86' font-size='11' font-weight='bold' fill='#0284c7'>D</text><text x='153' y='106' font-size='11' font-weight='bold' fill='#0284c7'>E</text><text x='65' y='52' font-size='10'>4</text><text x='126' y='58' font-size='10'>3</text><text x='166' y='122' font-size='10'>5</text></svg></div>",
+    "hint": "Chứng minh $\\triangle AED \\backsim \\triangle ABC$ (g.g) để lập tỉ số $\\dfrac{AE}{AB} = \\dfrac{AD}{AC}$.",
     "options": [
-      "$k + m$",
-      "$k \\cdot m$",
-      "$\\dfrac{k}{m}$",
-      "$k - m$"
+      "$2\\text{ cm}$",
+      "$6\\text{ cm}$",
+      "$2,4\\text{ cm}$",
+      "$4\\text{ cm}$"
     ],
-    "answer": 1,
-    "explanation": "Theo tính chất bắc cầu của tam giác đồng dạng, $\\triangle A''B''C'' \\sim \\triangle ABC$ với tỉ số đồng dạng là $k \\cdot m$[cite: 2]."
+    "answer": 0,
+    "explanation": "Xét $\\triangle AED$ và $\\triangle ABC$ có $\\widehat{A}$ chung và $\\widehat{AED} = \\widehat{ABC}$ nên $\\triangle AED \\backsim \\triangle ABC$ (g.g). Suy ra $\\dfrac{AE}{AB} = \\dfrac{AD}{AC} \\Rightarrow \\dfrac{3}{AB} = \\dfrac{4}{3 + 5} = \\dfrac{4}{8} \\Rightarrow AB = 6\\text{ (cm)}$. Do đó $DB = AB - AD = 6 - 4 = 2\\text{ (cm)}$."
   },
   {
     "id": "t8_c9_h01",
@@ -384,16 +384,16 @@
     "mode": "mcq",
     "difficulty": "hard",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC \\sim \\triangle MNP$ với $AB = 5\\text{ cm}$, $AC = 6\\text{ cm}$, $BC = 7\\text{ cm}$. Biết tam giác $MNP$ có chu vi bằng $36\\text{ cm}$. Độ dài cạnh $MN$ bằng:",
-    "hint": "Tính chu vi $\\triangle ABC$ trước, sau đó tìm tỉ số đồng dạng rồi suy ra độ dài $MN$[cite: 3].",
+    "prompt": "Cho hình bình hành $ABCD$ có $AB = 12\\text{ cm}$, $BC = 8\\text{ cm}$. Trên cạnh $AB$ lấy điểm $E$ sao cho $AE = 4\\text{ cm}$. Đường thẳng $DE$ cắt đường chéo $AC$ tại $I$ và cắt tia $CB$ tại $F$. Độ dài đoạn thẳng $BF$ bằng:",
+    "hint": "Sử dụng cặp tam giác đồng dạng $\\triangle FBE \\backsim \\triangle FCD$ (do $BE \\parallel CD$) hoặc $\\triangle EBF \\backsim \\triangle EAD$ (do $BF \\parallel AD$).",
     "options": [
-      "$10\\text{ cm}$",
+      "$16\\text{ cm}$",
+      "$4\\text{ cm}$",
       "$12\\text{ cm}$",
-      "$14\\text{ cm}$",
-      "$5\\text{ cm}$"
+      "$24\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Chu vi $\\triangle ABC$ là $5 + 6 + 7 = 18\\text{ (cm)}$. Do $\\triangle ABC \\sim \\triangle MNP$ nên $\\dfrac{AB}{MN} = \\dfrac{18}{36} = \\dfrac{1}{2} \\Rightarrow MN = 2AB = 10\\text{ (cm)}$[cite: 3]."
+    "explanation": "Ta có $BE = AB - AE = 12 - 4 = 8\\text{ (cm)}$, $AD = BC = 8\\text{ cm}$. Vì $BF \\parallel AD$ nên $\\triangle EBF \\backsim \\triangle EAD$ (g.g), suy ra $\\dfrac{BF}{AD} = \\dfrac{BE}{AE} \\Rightarrow \\dfrac{BF}{8} = \\dfrac{8}{4} = 2 \\Rightarrow BF = 16\\text{ (cm)}$."
   },
   {
     "id": "t8_c9_h02",
@@ -402,16 +402,16 @@
     "mode": "mcq",
     "difficulty": "hard",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ có đường cao $AH$, biết $AB = 3\\text{ cm}$ và $AC = 4\\text{ cm}$. Độ dài đường cao $AH$ bằng:",
-    "hint": "Tính $BC = 5\\text{ cm}$ bằng định lí Pythagore, rồi dùng $AH \\cdot BC = AB \\cdot AC$[cite: 3].",
+    "prompt": "Cho $\\triangle ABC$ vuông tại $A$ ($AB < AC$), đường cao $AH$. Gọi $M, N$ lần lượt là hình chiếu vuông góc của $H$ trên $AB$ và $AC$. Khẳng định nào sau đây đúng?",
+    "hint": "Chứng minh $AM \\cdot AB = AH^2$ và $AN \\cdot AC = AH^2$, từ đó suy ra $\\triangle AMN \\backsim \\triangle ACB$.",
     "options": [
-      "$2,4\\text{ cm}$",
-      "$1,8\\text{ cm}$",
-      "$3,2\\text{ cm}$",
-      "$5\\text{ cm}$"
+      "$\\triangle AMN \\backsim \\triangle ABC$",
+      "$\\triangle AMN \\backsim \\triangle ACB$",
+      "$MN \\parallel BC$",
+      "$AM \\cdot AC = AN \\cdot AB$"
     ],
-    "answer": 0,
-    "explanation": "Ta có $BC = \\sqrt{3^2 + 4^2} = 5\\text{ (cm)}$. Vì $AH \\cdot BC = AB \\cdot AC$ (hai lần diện tích $\\triangle ABC$) nên $AH = \\dfrac{3 \\cdot 4}{5} = 2,4\\text{ (cm)}$[cite: 3]."
+    "answer": 1,
+    "explanation": "Ta có $\\triangle AMH \\backsim \\triangle AHB \\Rightarrow AM \\cdot AB = AH^2$ và $\\triangle ANH \\backsim \\triangle AHC \\Rightarrow AN \\cdot AC = AH^2$. Suy ra $AM \\cdot AB = AN \\cdot AC \\Rightarrow \\dfrac{AM}{AC} = \\dfrac{AN}{AB}$, kết hợp $\\widehat{A}$ chung nên $\\triangle AMN \\backsim \\triangle ACB$ (c.g.c)."
   },
   {
     "id": "t8_c9_h03",
@@ -420,16 +420,16 @@
     "mode": "mcq",
     "difficulty": "hard",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Cho tam giác nhọn $ABC$ có các đường cao $AD, BE, CF$ cắt nhau tại $H$. Hệ thức nào sau đây đúng?",
-    "hint": "Xét hai tam giác vuông $BDA$ và $BFC$ có chung góc $\\widehat{B}$ để suy ra $\\triangle BDF \\sim \\triangle BAC$ (c.g.c)[cite: 3].",
+    "prompt": "Cho $\\triangle ABC$ nhọn có các đường cao $BD$ và $CE$ cắt nhau tại $H$. Biết $AE = 3\\text{ cm}$, $AB = 6\\text{ cm}$, $AD = 4\\text{ cm}$. Độ dài đoạn thẳng $AC$ bằng:",
+    "hint": "Chứng minh $\\triangle ABD \\backsim \\triangle ACE$ (g.g) rồi lập tỉ số $\\dfrac{AB}{AC} = \\dfrac{AD}{AE}$.",
     "options": [
-      "$BF \\cdot BA = BD \\cdot BC$",
-      "$BF \\cdot BC = BD \\cdot BA$",
-      "$BF \\cdot BD = BA \\cdot BC$",
-      "$BF + BA = BD + BC$"
+      "$8\\text{ cm}$",
+      "$4,5\\text{ cm}$",
+      "$2\\text{ cm}$",
+      "$9\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Hai tam giác vuông $BDA$ và $BFC$ có chung góc $\\widehat{B}$ nên $\\triangle BDA \\sim \\triangle BFC$, suy ra $\\dfrac{BD}{BF} = \\dfrac{BA}{BC} \\Rightarrow \\dfrac{BF}{BC} = \\dfrac{BD}{BA}$. Từ đó $\\triangle BDF \\sim \\triangle BAC$ (c.g.c) và $BF \\cdot BA = BD \\cdot BC$[cite: 3]."
+    "explanation": "Xét hai tam giác vuông $\\triangle ABD$ (vuông tại $D$) và $\\triangle ACE$ (vuông tại $E$) có $\\widehat{A}$ chung nên $\\triangle ABD \\backsim \\triangle ACE$ (g.g). Suy ra $\\dfrac{AB}{AC} = \\dfrac{AD}{AE} \\Rightarrow \\dfrac{6}{AC} = \\dfrac{4}{3} \\Rightarrow AC = \\dfrac{6 \\cdot 3}{4} = 4,5\\text{ (cm)}$? Chú ý: $\\dfrac{6}{AC} = \\dfrac{4}{3} \\Rightarrow AC = 4,5\\text{ cm}$."
   },
   {
     "id": "t8_c9_a01",
@@ -438,16 +438,16 @@
     "mode": "mcq",
     "difficulty": "application",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Vào buổi chiều, bóng của cột cờ trên sân trường dài $6\\text{ m}$ và bóng của bạn Việt dài $70\\text{ cm}$ ($0,7\\text{ m}$). Biết bạn Việt cao $1,4\\text{ m}$. Dựa vào các tam giác vuông đồng dạng (cùng thời điểm tia nắng tạo các góc bằng nhau), chiều cao của cột cờ bằng:",
-    "hint": "Lập tỉ số giữa chiều cao và bóng của cột cờ với chiều cao và bóng của bạn Việt[cite: 2].",
+    "prompt": "Để đo chiều cao $AB$ của một cái cây, người ta cắm một cái cọc $CD$ thẳng đứng cao $1,5\\text{ m}$ vuông góc với mặt đất và điều chỉnh vị trí sao cho bóng của đỉnh cây và đỉnh cọc trùng nhau tại điểm $E$ trên mặt đất. Biết khoảng cách từ gốc cây đến điểm $E$ là $BE = 12\\text{ m}$ và khoảng cách từ chân cọc đến điểm $E$ là $DE = 2\\text{ m}$. Chiều cao $AB$ của cái cây là:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='135' viewBox='0 0 260 135' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='115' x2='240' y2='115' stroke='#64748b' stroke-width='2'/><line x1='45' y1='25' x2='45' y2='115' stroke='#15803d' stroke-width='3'/><line x1='185' y1='85' x2='185' y2='115' stroke='#0284c7' stroke-width='2.5'/><line x1='45' y1='25' x2='225' y2='115' stroke='#f59e0b' stroke-width='1.5' stroke-dasharray='4,3'/><text x='32' y='25' font-size='10' font-weight='bold'>A</text><text x='32' y='126' font-size='10' font-weight='bold'>B</text><text x='180' y='80' font-size='10' font-weight='bold'>C</text><text x='180' y='126' font-size='10' font-weight='bold'>D</text><text x='223' y='126' font-size='10' font-weight='bold'>E</text><text x='155' y='103' font-size='9'>1,5 m</text><text x='110' y='128' font-size='9'>BE = 12 m</text><text x='196' y='111' font-size='9'>2 m</text></svg></div>",
+    "hint": "Chứng minh $\\triangle CDE \\backsim \\triangle ABE$ (g.g) vì $CD \\parallel AB$, rồi lập tỉ số $\\dfrac{AB}{CD} = \\dfrac{BE}{DE}$.",
     "options": [
-      "$12\\text{ m}$",
-      "$3\\text{ m}$",
-      "$8,4\\text{ m}$",
-      "$10\\text{ m}$"
+      "$9\\text{ m}$",
+      "$7,5\\text{ m}$",
+      "$16\\text{ m}$",
+      "$6\\text{ m}$"
     ],
     "answer": 0,
-    "explanation": "Hai tam giác vuông biểu diễn cột cờ và bạn Việt cùng với bóng của chúng có một góc nhọn bằng nhau nên đồng dạng. Chiều cao cột cờ là $\\dfrac{1,4}{0,7} \\cdot 6 = 2 \\cdot 6 = 12\\text{ (m)}$[cite: 2]."
+    "explanation": "Vì $AB \\perp BE$ và $CD \\perp BE$ nên $CD \\parallel AB \\Rightarrow \\triangle CDE \\backsim \\triangle ABE$. Suy ra $\\dfrac{AB}{CD} = \\dfrac{BE}{DE} \\Rightarrow \\dfrac{AB}{1,5} = \\dfrac{12}{2} = 6 \\Rightarrow AB = 1,5 \\cdot 6 = 9\\text{ (m)}$."
   },
   {
     "id": "t8_c9_a02",
@@ -456,16 +456,16 @@
     "mode": "mcq",
     "difficulty": "application",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Để đo khoảng cách từ điểm $A$ bên bờ sông đến chân cột cờ $C$ bên kia sông, người ta lấy điểm $B$ sao cho $AB = 10\\text{ m}$, $\\widehat{ABC} = 70^\\circ$, $\\widehat{BAC} = 80^\\circ$, rồi vẽ trên giấy $\\triangle A'B'C'$ có $A'B' = 2\\text{ cm}$, $\\widehat{A'B'C'} = 70^\\circ$, $\\widehat{B'A'C'} = 80^\\circ$ và đo được $A'C' = 3,76\\text{ cm}$. Khoảng cách $AC$ thực tế bằng:",
-    "hint": "Tìm tỉ số đồng dạng $\\dfrac{AB}{A'B'} = \\dfrac{10\\text{ m}}{2\\text{ cm}} = 5\\text{ (m/cm)}$ rồi nhân với $A'C' = 3,76\\text{ cm}$[cite: 2].",
+    "prompt": "Một người dùng gương phẳng đặt trên mặt đất tại điểm $M$ để đo chiều cao $AB$ của một tòa nhà. Người đó đứng thẳng tại vị trí $D$ cách gương $MD = 1,6\\text{ m}$, mắt người ở vị trí $C$ cao $CD = 1,6\\text{ m}$ nhìn thấy đỉnh $A$ của tòa nhà qua gương. Biết khoảng cách từ gương đến chân tòa nhà là $MB = 24\\text{ m}$ và $\\widehat{CMD} = \\widehat{AMB}$. Chiều cao $AB$ của tòa nhà bằng:",
+    "hint": "Chứng minh $\\triangle ABM \\backsim \\triangle CDM$ theo trường hợp góc - góc.",
     "options": [
-      "$18,8\\text{ m}$",
-      "$7,52\\text{ m}$",
-      "$15,04\\text{ m}$",
+      "$24\\text{ m}$",
+      "$38,4\\text{ m}$",
+      "$15\\text{ m}$",
       "$20\\text{ m}$"
     ],
     "answer": 0,
-    "explanation": "Vì $\\triangle A'B'C' \\sim \\triangle ABC$ (g.g) và $1\\text{ cm}$ trên bản vẽ ứng với $\\dfrac{10}{2} = 5\\text{ (m)}$ ngoài thực tế nên $AC = 3,76 \\cdot 5 = 18,8\\text{ (m)}$[cite: 2]."
+    "explanation": "Hai tam giác vuông $\\triangle ABM$ và $\\triangle CDM$ có $\\widehat{AMB} = \\widehat{CMD}$ nên $\\triangle ABM \\backsim \\triangle CDM$ (g.g). Suy ra $\\dfrac{AB}{CD} = \\dfrac{MB}{MD} \\Rightarrow \\dfrac{AB}{1,6} = \\dfrac{24}{1,6} \\Rightarrow AB = 24\\text{ (m)}$."
   },
   {
     "id": "t8_c9_a03",
@@ -474,16 +474,16 @@
     "mode": "mcq",
     "difficulty": "application",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Trong một trận bóng đá, khung thành rộng $7,32\\text{ m}$, vị trí đặt bóng cách hai cột gôn lần lượt là $10,98\\text{ m}$ và $14,64\\text{ m}$. Nếu vẽ một tam giác đồng dạng với tam giác tạo bởi quả bóng và hai cột gôn theo tỉ số thu nhỏ sao cho cạnh tương ứng với $7,32\\text{ m}$ có độ dài $3,66\\text{ cm}$ thì hai cạnh kia trên hình vẽ có độ dài lần lượt là:",
-    "hint": "Tỉ số đồng dạng của hình vẽ so với thực tế là $\\dfrac{3,66\\text{ cm}}{7,32\\text{ m}} = 0,5\\text{ (cm/m)}$[cite: 2].",
+    "prompt": "Để đo chiều rộng $AB$ của một khúc sông mà không cần sang bờ bên kia, người ta chọn các điểm $C, D, E$ như hình vẽ sao cho $AB \\perp BC$, $DE \\perp BC$, $A, C, E$ thẳng hàng. Đo được $BC = 45\\text{ m}$, $CD = 15\\text{ m}$, $DE = 18\\text{ m}$. Chiều rộng $AB$ của khúc sông bằng:<br><div style='text-align:center;margin:10px 0'><svg width='230' height='145' viewBox='0 0 230 145' xmlns='http://www.w3.org/2000/svg'><line x1='45' y1='20' x2='45' y2='95' stroke='#0284c7' stroke-width='2.5'/><line x1='45' y1='95' x2='185' y2='95' stroke='#334155' stroke-width='2'/><line x1='185' y1='95' x2='185' y2='130' stroke='#0f766e' stroke-width='2.5'/><line x1='45' y1='20' x2='185' y2='130' stroke='#f43f5e' stroke-width='1.5' stroke-dasharray='4,3'/><text x='32' y='22' font-size='10' font-weight='bold'>A</text><text x='32' y='100' font-size='10' font-weight='bold'>B</text><text x='136' y='88' font-size='10' font-weight='bold'>C</text><text x='190' y='98' font-size='10' font-weight='bold'>D</text><text x='190' y='133' font-size='10' font-weight='bold'>E</text><text x='85' y='108' font-size='9'>45 m</text><text x='158' y='108' font-size='9'>15 m</text><text x='190' y='115' font-size='9'>18 m</text></svg></div>",
+    "hint": "Chứng minh $\\triangle ABC \\backsim \\triangle EDC$ (g.g) rồi lập tỉ số $\\dfrac{AB}{ED} = \\dfrac{BC}{DC}$.",
     "options": [
-      "$5,49\\text{ cm}$ và $7,32\\text{ cm}$",
-      "$10,98\\text{ cm}$ và $14,64\\text{ cm}$",
-      "$2,745\\text{ cm}$ và $3,66\\text{ cm}$",
-      "$6\\text{ cm}$ và $8\\text{ cm}$"
+      "$54\\text{ m}$",
+      "$37,5\\text{ m}$",
+      "$60\\text{ m}$",
+      "$48\\text{ m}$"
     ],
     "answer": 0,
-    "explanation": "Mỗi mét ngoài thực tế ứng với $\\dfrac{3,66}{7,32} = 0,5\\text{ (cm)}$ trên hình vẽ. Vậy hai cạnh kia trên hình vẽ dài $10,98 \\cdot 0,5 = 5,49\\text{ (cm)}$ và $14,64 \\cdot 0,5 = 7,32\\text{ (cm)}$[cite: 2]."
+    "explanation": "Hai tam giác vuông $\\triangle ABC$ và $\\triangle EDC$ có $\\widehat{ACB} = \\widehat{ECD}$ (đối đỉnh) nên $\\triangle ABC \\backsim \\triangle EDC$ (g.g). Suy ra $\\dfrac{AB}{ED} = \\dfrac{BC}{DC} \\Rightarrow \\dfrac{AB}{18} = \\dfrac{45}{15} = 3 \\Rightarrow AB = 18 \\cdot 3 = 54\\text{ (m)}$."
   },
   {
     "id": "t8_c9_tf01",
@@ -491,27 +491,27 @@
     "term": "HK2",
     "mode": "tf",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về hai tam giác đồng dạng:",
-    "hint": "Dựa vào định nghĩa, nhận xét và định lí tạo tam giác đồng dạng ở Bài 33[cite: 2].",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về định nghĩa và tính chất hai tam giác đồng dạng:",
+    "hint": "Dựa vào định nghĩa, tính chất và định lí về đường thẳng song song với một cạnh của tam giác trong SGK.",
     "statements": [
       {
         "text": "Hai tam giác bằng nhau thì đồng dạng với nhau theo tỉ số đồng dạng $k = 1$.",
         "answer": true
       },
       {
-        "text": "Hai tam giác đồng dạng thì luôn bằng nhau.",
+        "text": "Nếu $\\triangle A'B'C' \\backsim \\triangle ABC$ theo tỉ số $k$ thì tỉ số diện tích của $\\triangle A'B'C'$ và $\\triangle ABC$ bằng $k$.",
         "answer": false
       },
       {
-        "text": "Mọi tam giác đều đồng dạng với chính nó.",
+        "text": "Nếu một đường thẳng cắt hai cạnh của một tam giác và song song với cạnh còn lại thì nó tạo thành một tam giác mới đồng dạng với tam giác đã cho.",
         "answer": true
       },
       {
-        "text": "Nếu một đường thẳng song song với một cạnh của tam giác và cắt phần kéo dài của hai cạnh kia thì tạo thành tam giác mới đồng dạng với tam giác đã cho.",
+        "text": "Tính chất bắc cầu: Nếu $\\triangle A_1B_1C_1 \\backsim \\triangle A_2B_2C_2$ và $\\triangle A_2B_2C_2 \\backsim \\triangle A_3B_3C_3$ thì $\\triangle A_1B_1C_1 \\backsim \\triangle A_3B_3C_3$.",
         "answer": true
       }
     ],
-    "explanation": "Ý a, c, d đúng theo định nghĩa, nhận xét và chú ý ở Bài 33. Ý b sai vì hai tam giác đồng dạng chỉ có các cạnh tương ứng tỉ lệ, chưa nhất thiết bằng nhau[cite: 2]."
+    "explanation": "Ý a, c, d đúng theo lý thuyết SGK. Ý b sai vì tỉ số diện tích của hai tam giác đồng dạng bằng bình phương tỉ số đồng dạng ($k^2$), còn tỉ số chu vi mới bằng $k$."
   },
   {
     "id": "t8_c9_tf02",
@@ -519,27 +519,27 @@
     "term": "HK2",
     "mode": "tf",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về ba trường hợp đồng dạng của hai tam giác và tam giác vuông:",
-    "hint": "Đối chiếu kiến thức Bài 34 và Bài 36 SGK Toán 8 (Tập 2)[cite: 2].",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về ba trường hợp đồng dạng của hai tam giác:",
+    "hint": "Đối chiếu điều kiện của ba trường hợp đồng dạng: (c.c.c), (c.g.c), (g.g).",
     "statements": [
+      {
+        "text": "Nếu ba cạnh của tam giác này tỉ lệ với ba cạnh của tam giác kia thì hai tam giác đó đồng dạng.",
+        "answer": true
+      },
+      {
+        "text": "Nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia và có một cặp góc bằng nhau thì hai tam giác đó đồng dạng.",
+        "answer": false
+      },
       {
         "text": "Nếu hai góc của tam giác này lần lượt bằng hai góc của tam giác kia thì hai tam giác đó đồng dạng.",
         "answer": true
       },
       {
-        "text": "Nếu hai cạnh của tam giác này tỉ lệ với hai cạnh của tam giác kia và có một góc bằng nhau (không nhất thiết xen giữa) thì hai tam giác đó luôn đồng dạng.",
-        "answer": false
-      },
-      {
-        "text": "Nếu một góc nhọn của tam giác vuông này bằng một góc nhọn của tam giác vuông kia thì hai tam giác vuông đó đồng dạng.",
-        "answer": true
-      },
-      {
-        "text": "Nếu hai cạnh góc vuông của tam giác vuông này tỉ lệ với hai cạnh góc vuông của tam giác vuông kia thì hai tam giác vuông đó đồng dạng.",
+        "text": "Hai tam giác cân có góc ở đỉnh bằng nhau thì đồng dạng với nhau.",
         "answer": true
       }
     ],
-    "explanation": "Ý a, c, d đúng theo SGK[cite: 2]. Ý b sai vì góc bằng nhau phải là góc tạo bởi hai cặp cạnh tỉ lệ đó[cite: 2]."
+    "explanation": "Ý a, c đúng theo ba trường hợp đồng dạng. Ý b sai vì cặp góc bằng nhau bắt buộc phải là hai góc xen giữa hai cặp cạnh tỉ lệ đó. Ý d đúng vì hai tam giác cân có góc ở đỉnh bằng nhau thì các góc ở đáy cũng bằng nhau nên đồng dạng theo trường hợp (g.g)."
   },
   {
     "id": "t8_c9_tf03",
@@ -547,26 +547,26 @@
     "term": "HK2",
     "mode": "tf",
     "topic": "Chương IX — Tam giác đồng dạng",
-    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về hình đồng dạng và hình đồng dạng phối cảnh:",
-    "hint": "Nhớ lại khái niệm hình đồng dạng phối cảnh và hình đồng dạng ở Bài 37[cite: 3].",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về định lí Pythagore và các trường hợp đồng dạng của hai tam giác vuông:",
+    "hint": "Dựa vào nội dung Bài 35 và Bài 36 SGK Toán 8 Tập 2.",
     "statements": [
       {
-        "text": "Hai tam giác đều bất kì luôn đồng dạng với nhau.",
+        "text": "Trong một tam giác vuông, bình phương của cạnh huyền bằng tổng các bình phương của hai cạnh góc vuông.",
         "answer": true
       },
       {
-        "text": "Hai hình chữ nhật bất kì luôn đồng dạng với nhau.",
+        "text": "Nếu hai tam giác vuông có một góc nhọn bằng nhau thì hai tam giác vuông đó đồng dạng với nhau.",
+        "answer": true
+      },
+      {
+        "text": "Nếu cạnh huyền và một cạnh góc vuông của tam giác vuông này tỉ lệ với cạnh huyền và một cạnh góc vuông của tam giác vuông kia thì hai tam giác vuông đó đồng dạng.",
+        "answer": true
+      },
+      {
+        "text": "Trong một tam giác vuông, đường cao ứng với cạnh huyền chia tam giác đó thành hai tam giác vuông không đồng dạng với nhau.",
         "answer": false
-      },
-      {
-        "text": "Hai hình đồng dạng phối cảnh với nhau thì cũng là hai hình đồng dạng với nhau.",
-        "answer": true
-      },
-      {
-        "text": "Hai lục giác đều bất kì luôn đồng dạng với nhau.",
-        "answer": true
       }
     ],
-    "explanation": "Ý a, c, d đúng theo Bài 37[cite: 3]. Ý b sai vì hai hình chữ nhật có thể có các góc đều bằng $90^\\circ$ nhưng tỉ số hai cạnh kề không bằng nhau."
+    "explanation": "Ý a, b, c đúng theo định lí Pythagore và các trường hợp đồng dạng của tam giác vuông. Ý d sai vì đường cao ứng với cạnh huyền chia tam giác vuông thành hai tam giác vuông đồng dạng với nhau và đồng dạng với tam giác vuông đã cho."
   }
 ]
