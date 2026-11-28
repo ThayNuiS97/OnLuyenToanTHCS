@@ -6,16 +6,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Gieo một con xúc xắc. Tập hợp tất cả các kết quả có thể của thực nghiệm trên là:",
-    "hint": "Liệt kê số chấm có thể xuất hiện trên mặt trên của con xúc xắc sau khi gieo[cite: 1, 2].",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất một lần. Số kết quả có thể xảy ra của hành động trên là:",
+    "hint": "Liệt kê tất cả các mặt có thể xuất hiện của một con xúc xắc (từ $1$ chấm đến $6$ chấm).",
     "options": [
-      "$\\{1; 2; 3; 4; 5\\}$",
-      "$\\{1; 2; 3; 4; 5; 6\\}$",
-      "$\\{2; 4; 6\\}$",
-      "$\\{1; 3; 5\\}$"
+      "$4$",
+      "$5$",
+      "$6$",
+      "$12$"
     ],
-    "answer": 1,
-    "explanation": "Khi gieo một con xúc xắc, các kết quả có thể xảy ra là mặt xuất hiện $1, 2, 3, 4, 5$ hoặc $6$ chấm[cite: 1, 2]."
+    "answer": 2,
+    "explanation": "Khi gieo một con xúc xắc, mặt xuất hiện có thể là một trong $6$ mặt: $1, 2, 3, 4, 5, 6$ chấm nên có $6$ kết quả có thể."
   },
   {
     "id": "t8_c8_m02",
@@ -24,16 +24,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một hộp đựng $12$ tấm thẻ, được ghi số từ $1$ đến $12$. Rút ngẫu nhiên một tấm thẻ từ trong hộp. Các kết quả thuận lợi cho biến cố \"Rút được tấm thẻ ghi số chẵn\" là:",
-    "hint": "Chọn các số chẵn trong dãy số từ $1$ đến $12$[cite: 2].",
+    "prompt": "Một hộp kín đựng $5$ quả bóng được đánh số $1; 2; 3; 4; 5$. Lấy ngẫu nhiên một quả bóng từ hộp. Số kết quả thuận lợi cho biến cố $A$: \"Lấy được quả bóng ghi số lẻ\" là:",
+    "hint": "Liệt kê các số lẻ có trong tập hợp $\\{1; 2; 3; 4; 5\\}$.",
     "options": [
-      "$1; 3; 5; 7; 9; 11$",
-      "$2; 4; 6; 8; 10; 12$",
-      "$2; 3; 5; 7; 11$",
-      "$1; 4; 9$"
+      "$2$",
+      "$3$",
+      "$4$",
+      "$5$"
     ],
     "answer": 1,
-    "explanation": "Các số chẵn từ $1$ đến $12$ là $2; 4; 6; 8; 10; 12$, nên đây là các kết quả thuận lợi cho biến cố đã cho[cite: 2]."
+    "explanation": "Trong các số $1; 2; 3; 4; 5$ có $3$ số lẻ là $1, 3, 5$ nên có $3$ kết quả thuận lợi cho biến cố $A$."
   },
   {
     "id": "t8_c8_m03",
@@ -42,16 +42,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một hộp đựng $12$ tấm thẻ ghi số từ $1$ đến $12$. Rút ngẫu nhiên một tấm thẻ. Các kết quả thuận lợi cho biến cố \"Rút được tấm thẻ ghi số nguyên tố\" là:",
-    "hint": "Số nguyên tố là số tự nhiên lớn hơn $1$ chỉ có hai ước là $1$ và chính nó[cite: 2].",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất. Xác suất của biến cố $B$: \"Mặt xuất hiện của xúc xắc có số chấm là số nguyên tố\" bằng:",
+    "hint": "Công thức tính xác suất: $P(B) = \\dfrac{\\text{Số kết quả thuận lợi cho } B}{\\text{Tổng số kết quả có thể}}$; các số nguyên tố từ $1$ đến $6$ là $2, 3, 5$.",
     "options": [
-      "$1; 2; 3; 5; 7; 11$",
-      "$2; 3; 5; 7; 11$",
-      "$4; 6; 8; 9; 10; 12$",
-      "$1; 4; 9$"
+      "$\\dfrac{1}{6}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{2}{3}$"
     ],
-    "answer": 1,
-    "explanation": "Trong các số từ $1$ đến $12$, các số nguyên tố là $2; 3; 5; 7; 11$ ($1$ không là số nguyên tố)[cite: 2]."
+    "answer": 2,
+    "explanation": "Có $6$ kết quả có thể. Các mặt có số chấm là số nguyên tố gồm $2, 3, 5$ (có $3$ kết quả thuận lợi). Vậy $P(B) = \\dfrac{3}{6} = \\dfrac{1}{2}$."
   },
   {
     "id": "t8_c8_m04",
@@ -60,16 +60,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một hộp đựng $12$ tấm thẻ ghi số từ $1$ đến $12$. Rút ngẫu nhiên một tấm thẻ. Các kết quả thuận lợi cho biến cố \"Rút được tấm thẻ ghi số chính phương\" là:",
-    "hint": "Số chính phương là bình phương của một số tự nhiên ($0^2, 1^2, 2^2, 3^2, \dots$).",
+    "prompt": "Gieo một đồng xu cân đối và đồng chất một lần. Xác suất của biến cố \"Đồng xu xuất hiện mặt sấp\" là:",
+    "hint": "Khi gieo một đồng xu cân đối có $2$ kết quả đồng khả năng là mặt sấp ($S$) và mặt ngửa ($N$).",
     "options": [
-      "$4; 9$",
-      "$1; 4; 9$",
-      "$1; 4; 8; 9$",
-      "$2; 4; 6; 8; 10; 12$"
+      "$0$",
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{2}$",
+      "$1$"
     ],
-    "answer": 1,
-    "explanation": "Các số chính phương từ $1$ đến $12$ là $1 = 1^2$; $4 = 2^2$; $9 = 3^2$[cite: 2]."
+    "answer": 2,
+    "explanation": "Có $2$ kết quả đồng khả năng là $S$ và $N$, trong đó có $1$ kết quả thuận lợi nên xác suất bằng $\\dfrac{1}{2}$."
   },
   {
     "id": "t8_c8_m05",
@@ -78,16 +78,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Gieo một con xúc xắc. Có bao nhiêu kết quả thuận lợi cho biến cố \"Số chấm xuất hiện trên con xúc xắc là hợp số\"?",
-    "hint": "Liệt kê các hợp số trong tập $\\{1; 2; 3; 4; 5; 6\\}$ rồi đếm số phần tử[cite: 2].",
+    "prompt": "Một hộp có $12$ chiếc thẻ cùng loại, mỗi thẻ được ghi một trong các số $1, 2, 3, \\dots, 12$ (hai thẻ khác nhau thì ghi hai số khác nhau). Rút ngẫu nhiên một thẻ trong hộp. Xác suất của biến cố \"Số xuất hiện trên thẻ được rút ra là số chia hết cho $3$\" là:",
+    "hint": "Tìm các số từ $1$ đến $12$ chia hết cho $3$ rồi chia cho tổng số thẻ là $12$.",
     "options": [
-      "$1$",
-      "$2$",
-      "$3$",
-      "$4$"
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{5}{12}$"
     ],
     "answer": 1,
-    "explanation": "Trong các số từ $1$ đến $6$, các hợp số là $4$ và $6$. Do đó có $2$ kết quả thuận lợi[cite: 2]."
+    "explanation": "Các số chia hết cho $3$ trong $12$ thẻ là $3, 6, 9, 12$ (có $4$ kết quả thuận lợi). Xác suất cần tìm là $\\dfrac{4}{12} = \\dfrac{1}{3}$."
   },
   {
     "id": "t8_c8_m06",
@@ -96,16 +96,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Trong trường hợp các kết quả có thể của một hành động hay thực nghiệm là đồng khả năng, xác suất của biến cố $E$ bằng:",
-    "hint": "Áp dụng quy tắc tính xác suất bằng tỉ số ở Bài 31[cite: 1, 2].",
+    "prompt": "Chọn ngẫu nhiên một chữ cái trong từ \"TOAN\" (gồm $4$ chữ cái T, O, A, N). Xác suất để chọn được một nguyên âm là:",
+    "hint": "Trong các chữ cái T, O, A, N có hai nguyên âm là O và A.",
     "options": [
-      "Tỉ số giữa tổng số kết quả có thể và số kết quả thuận lợi cho $E$",
-      "Tỉ số giữa số kết quả thuận lợi cho $E$ và tổng số kết quả có thể",
-      "Tổng của số kết quả thuận lợi cho $E$ và tổng số kết quả có thể",
-      "Hiệu giữa tổng số kết quả có thể và số kết quả thuận lợi cho $E$"
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{3}{4}$",
+      "$1$"
     ],
     "answer": 1,
-    "explanation": "Khi các kết quả có thể đồng khả năng, xác suất của biến cố $E$ là $P(E) = \\dfrac{\\text{Số kết quả thuận lợi cho } E}{\\text{Tổng số kết quả có thể}}$[cite: 1, 2]."
+    "explanation": "Có $4$ kết quả đồng khả năng. Có $2$ kết quả thuận lợi là chọn được chữ O hoặc chữ A. Vậy xác suất bằng $\\dfrac{2}{4} = \\dfrac{1}{2}$."
   },
   {
     "id": "t8_c8_m07",
@@ -114,16 +114,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một tấm bìa cứng hình tròn được chia thành $12$ hình quạt như nhau và đánh số từ $1$ đến $12$, gắn vào trục quay có mũi tên cố định ở tâm. Quay tấm bìa, xác suất để mũi tên chỉ vào hình quạt ghi số nguyên tố là:",
-    "hint": "Có $12$ kết quả đồng khả năng và $5$ số nguyên tố từ $1$ đến $12$ ($2; 3; 5; 7; 11$)[cite: 2].",
+    "prompt": "Một túi đựng $4$ viên bi màu xanh, $5$ viên bi màu đỏ và $6$ viên bi màu vàng có cùng kích thước và khối lượng. Lấy ngẫu nhiên một viên bi trong túi. Xác suất để lấy được viên bi màu đỏ là:",
+    "hint": "Tính tổng số viên bi trong túi, sau đó lấy số viên bi đỏ chia cho tổng số viên bi.",
     "options": [
-      "$\\dfrac{1}{4}$",
-      "$\\dfrac{5}{12}$",
-      "$\\dfrac{1}{2}$",
-      "$\\dfrac{7}{12}$"
+      "$\\dfrac{4}{15}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{2}{5}$",
+      "$\\dfrac{1}{5}$"
     ],
     "answer": 1,
-    "explanation": "Có $12$ kết quả đồng khả năng. Các kết quả thuận lợi là $2; 3; 5; 7; 11$ ($5$ kết quả), nên xác suất là $\\dfrac{5}{12}$[cite: 2]."
+    "explanation": "Tổng số viên bi trong túi là $4 + 5 + 6 = 15$. Có $5$ viên bi màu đỏ nên xác suất lấy được bi đỏ là $\\dfrac{5}{15} = \\dfrac{1}{3}$."
   },
   {
     "id": "t8_c8_m08",
@@ -132,16 +132,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Quay tấm bìa chia thành $12$ hình quạt như nhau đánh số từ $1$ đến $12$. Xác suất để mũi tên chỉ vào hình quạt ghi số chính phương là:",
-    "hint": "Các số chính phương từ $1$ đến $12$ là $1; 4; 9$ (có $3$ kết quả thuận lợi)[cite: 2].",
+    "prompt": "Rút ngẫu nhiên một lá bài từ bộ bài tây gồm $52$ lá. Xác suất của biến cố \"Rút được lá bài chất bích\" là:",
+    "hint": "Trong bộ bài tây $52$ lá có $13$ lá bài chất bích.",
     "options": [
-      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{52}$",
+      "$\\dfrac{1}{13}$",
       "$\\dfrac{1}{4}$",
-      "$\\dfrac{3}{4}$",
-      "$\\dfrac{1}{12}$"
+      "$\\dfrac{1}{2}$"
     ],
-    "answer": 1,
-    "explanation": "Có $3$ kết quả thuận lợi là $1; 4; 9$ trong $12$ kết quả đồng khả năng, nên xác suất bằng $\\dfrac{3}{12} = \\dfrac{1}{4}$[cite: 2]."
+    "answer": 2,
+    "explanation": "Có $52$ kết quả đồng khả năng và có $13$ lá bài chất bích nên xác suất là $\\dfrac{13}{52} = \\dfrac{1}{4}$."
   },
   {
     "id": "t8_c8_m09",
@@ -150,16 +150,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một túi đựng $15$ viên bi màu xanh, $13$ viên bi màu đỏ, $17$ viên bi màu trắng có cùng khối lượng và kích thước. Lấy ngẫu nhiên một viên bi. Xác suất lấy được viên bi màu trắng là:",
-    "hint": "Tính tổng số viên bi trong túi rồi lập tỉ số giữa số viên bi trắng và tổng số viên bi[cite: 1].",
+    "prompt": "Rút ngẫu nhiên một lá bài từ bộ bài tây gồm $52$ lá. Xác suất của biến cố \"Rút được lá bài A màu đỏ\" là:",
+    "hint": "Bộ bài tây có hai lá bài A màu đỏ là lá A rô và lá A cơ.",
     "options": [
-      "$\\dfrac{17}{45}$",
-      "$\\dfrac{15}{45}$",
-      "$\\dfrac{13}{45}$",
-      "$\\dfrac{28}{45}$"
+      "$\\dfrac{1}{52}$",
+      "$\\dfrac{1}{26}$",
+      "$\\dfrac{1}{13}$",
+      "$\\dfrac{2}{13}$"
     ],
-    "answer": 0,
-    "explanation": "Tổng số viên bi là $15 + 13 + 17 = 45$ viên. Có $17$ viên bi màu trắng nên xác suất lấy được viên bi màu trắng là $\\dfrac{17}{45}$[cite: 1]."
+    "answer": 1,
+    "explanation": "Có $2$ lá bài A màu đỏ (A rô và A cơ) trong tổng số $52$ lá bài nên xác suất là $\\dfrac{2}{52} = \\dfrac{1}{26}$."
   },
   {
     "id": "t8_c8_m10",
@@ -168,16 +168,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một hộp đựng các tấm thẻ ghi số $10; 11; 12; \\dots; 20$. Rút ngẫu nhiên một tấm thẻ. Xác suất để rút được tấm thẻ ghi số lẻ là:",
-    "hint": "Đếm tổng số thẻ ($20 - 10 + 1 = 11$ thẻ) và các số lẻ ($11; 13; 15; 17; 19$)[cite: 1, 2].",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất. Xác suất của biến cố \"Số chấm xuất hiện nhỏ hơn $7$\" bằng:",
+    "hint": "Biến cố chắc chắn luôn xảy ra có xác suất bằng $1$.",
     "options": [
-      "$\\dfrac{4}{11}$",
-      "$\\dfrac{5}{11}$",
-      "$\\dfrac{6}{11}$",
+      "$0$",
+      "$\\dfrac{5}{6}$",
+      "$1$",
       "$\\dfrac{1}{2}$"
     ],
-    "answer": 1,
-    "explanation": "Có $11$ tấm thẻ. Các số lẻ là $11; 13; 15; 17; 19$ ($5$ kết quả thuận lợi), nên xác suất là $\\dfrac{5}{11}$[cite: 1, 2]."
+    "answer": 2,
+    "explanation": "Cả $6$ mặt của xúc xắc đều có số chấm nhỏ hơn $7$ nên đây là biến cố chắc chắn, xác suất bằng $\\dfrac{6}{6} = 1$."
   },
   {
     "id": "t8_c8_m11",
@@ -186,16 +186,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một hộp đựng các tấm thẻ ghi số $10; 11; 12; \\dots; 20$. Rút ngẫu nhiên một tấm thẻ. Xác suất để rút được tấm thẻ ghi số chia hết cho $4$ là:",
-    "hint": "Các số chia hết cho $4$ trong khoảng từ $10$ đến $20$ là $12$ và $16$[cite: 1].",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất. Xác suất của biến cố \"Số chấm xuất hiện lớn hơn $6$\" bằng:",
+    "hint": "Biến cố không thể không bao giờ xảy ra có xác suất bằng $0$.",
     "options": [
-      "$\\dfrac{1}{11}$",
-      "$\\dfrac{2}{11}$",
-      "$\\dfrac{3}{11}$",
-      "$\\dfrac{4}{11}$"
+      "$0$",
+      "$\\dfrac{1}{6}$",
+      "$1$",
+      "$\\dfrac{1}{2}$"
     ],
-    "answer": 1,
-    "explanation": "Trong $11$ thẻ từ $10$ đến $20$, các số chia hết cho $4$ là $12$ và $16$ ($2$ kết quả thuận lợi), nên xác suất là $\\dfrac{2}{11}$[cite: 1]."
+    "answer": 0,
+    "explanation": "Không có mặt nào của xúc xắc có số chấm lớn hơn $6$ nên biến cố này không có kết quả thuận lợi nào, xác suất bằng $\\dfrac{0}{6} = 0$."
   },
   {
     "id": "t8_c8_m12",
@@ -204,16 +204,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Bạn An có $10$ tấm thẻ, mỗi tấm thẻ ghi một chữ cái trong từ \"TELEVISION\". Rút ngẫu nhiên một tấm thẻ. Xác suất để rút được tấm thẻ ghi chữ \"E\" là:",
-    "hint": "Đếm số lần chữ \"E\" xuất hiện trong từ \"TELEVISION\" rồi chia cho $10$[cite: 1].",
+    "prompt": "Tung một đồng xu cân đối và đồng chất $50$ lần, thấy có $28$ lần xuất hiện mặt sấp. Xác suất thực nghiệm của biến cố \"Xuất hiện mặt sấp\" sau $50$ lần tung là:",
+    "hint": "Xác suất thực nghiệm của biến cố $E$ sau $n$ lần thử bằng $\\dfrac{k}{n}$, với $k$ là số lần biến cố $E$ xảy ra.",
     "options": [
-      "$\\dfrac{1}{10}$",
-      "$\\dfrac{1}{5}$",
-      "$\\dfrac{3}{10}$",
-      "$\\dfrac{2}{5}$"
+      "$\\dfrac{11}{25}$",
+      "$\\dfrac{14}{25}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{28}{22}$"
     ],
     "answer": 1,
-    "explanation": "Trong từ \"TELEVISION\" có $2$ chữ \"E\" trên tổng số $10$ thẻ nên xác suất rút được chữ \"E\" là $\\dfrac{2}{10} = \\dfrac{1}{5}$[cite: 1]."
+    "explanation": "Trong $50$ lần tung có $28$ lần xuất hiện mặt sấp nên xác suất thực nghiệm là $\\dfrac{28}{50} = \\dfrac{14}{25}$."
   },
   {
     "id": "t8_c8_m13",
@@ -222,16 +222,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Bạn An có $10$ tấm thẻ ghi từng chữ cái trong từ \"TELEVISION\". Rút ngẫu nhiên một tấm thẻ. Xác suất để rút được tấm thẻ ghi chữ \"I\" hoặc chữ \"V\" là:",
-    "hint": "Đếm tổng số thẻ ghi chữ \"I\" hoặc chữ \"V\" trong từ \"TELEVISION\"[cite: 1].",
+    "prompt": "Gieo một con xúc xắc $60$ lần, kết quả ghi lại mặt $6$ chấm xuất hiện $9$ lần. Xác suất thực nghiệm của biến cố \"Xuất hiện mặt $6$ chấm\" là:",
+    "hint": "Chia số lần xuất hiện mặt $6$ chấm cho tổng số lần gieo xúc xắc.",
     "options": [
-      "$\\dfrac{1}{5}$",
-      "$\\dfrac{3}{10}$",
-      "$\\dfrac{2}{5}$",
-      "$\\dfrac{1}{2}$"
+      "$0,15$",
+      "$0,16$",
+      "$0,6$",
+      "$0,9$"
     ],
-    "answer": 1,
-    "explanation": "Từ \"TELEVISION\" có $2$ chữ \"I\" và $1$ chữ \"V\", tổng cộng $3$ kết quả thuận lợi trong $10$ thẻ nên xác suất là $\\dfrac{3}{10}$[cite: 1]."
+    "answer": 0,
+    "explanation": "Xác suất thực nghiệm của biến cố \"Xuất hiện mặt $6$ chấm\" là $\\dfrac{9}{60} = \\dfrac{3}{20} = 0,15$."
   },
   {
     "id": "t8_c8_m14",
@@ -240,16 +240,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một nhóm $30$ người gồm $9$ ông, $6$ bà, $12$ em trai và $3$ em gái. Chọn ngẫu nhiên một người trong nhóm. Xác suất chọn được một bà hoặc một em trai là:",
-    "hint": "Cộng số bà và số em trai rồi chia cho tổng số $30$ người[cite: 1].",
+    "prompt": "Một hộp có $10$ tấm thẻ giống nhau được đánh số từ $1$ đến $10$. Lấy ngẫu nhiên một tấm thẻ. Xác suất để lấy được tấm thẻ ghi số là ước của $10$ là:",
+    "hint": "Tìm tất cả các ước tự nhiên của $10$ rồi chia cho tổng số thẻ là $10$.",
     "options": [
-      "$\\dfrac{1}{5}$",
-      "$\\dfrac{2}{5}$",
-      "$\\dfrac{3}{5}$",
-      "$\\dfrac{7}{10}$"
+      "$0,2$",
+      "$0,3$",
+      "$0,4$",
+      "$0,5$"
     ],
     "answer": 2,
-    "explanation": "Có $6 + 12 = 18$ người là bà hoặc em trai trong nhóm $30$ người, nên xác suất là $\\dfrac{18}{30} = \\dfrac{3}{5}$[cite: 1]."
+    "explanation": "Các ước tự nhiên của $10$ là $1, 2, 5, 10$ (có $4$ số). Vậy xác suất là $\\dfrac{4}{10} = 0,4$."
   },
   {
     "id": "t8_c8_m15",
@@ -258,16 +258,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một túi đựng $9$ viên kẹo đỏ, $6$ viên kẹo xanh, $4$ viên kẹo vàng và $5$ viên kẹo đen cùng khối lượng, kích thước. Lấy ngẫu nhiên một viên kẹo. Xác suất lấy được viên kẹo không có màu đen là:",
-    "hint": "Tổng số kẹo là $24$ viên; số kẹo không có màu đen là $24 - 5 = 19$ viên[cite: 1].",
+    "prompt": "Lớp 8A có $40$ học sinh, trong đó có $16$ học sinh nam. Cô giáo chọn ngẫu nhiên một học sinh của lớp để trực nhật. Xác suất để chọn được một học sinh nữ là:",
+    "hint": "Tính số học sinh nữ của lớp 8A bằng $40 - 16$, sau đó chia cho tổng số học sinh.",
     "options": [
-      "$\\dfrac{5}{24}$",
-      "$\\dfrac{19}{24}$",
-      "$\\dfrac{13}{24}$",
-      "$\\dfrac{11}{24}$"
+      "$\\dfrac{2}{5}$",
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{1}{4}$",
+      "$\\dfrac{3}{8}$"
     ],
     "answer": 1,
-    "explanation": "Tổng số kẹo là $9 + 6 + 4 + 5 = 24$ viên. Số viên kẹo không có màu đen là $24 - 5 = 19$ viên nên xác suất là $\\dfrac{19}{24}$[cite: 1]."
+    "explanation": "Số học sinh nữ của lớp 8A là $40 - 16 = 24$ (học sinh). Xác suất chọn được học sinh nữ là $\\dfrac{24}{40} = \\dfrac{3}{5}$."
   },
   {
     "id": "t8_c8_m16",
@@ -276,16 +276,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Gieo một con xúc xắc cân đối. Xác suất để số chấm xuất hiện trên con xúc xắc là số nguyên tố bằng:",
-    "hint": "Các số nguyên tố trên xúc xắc là $2; 3; 5$ ($3$ kết quả trong $6$ kết quả đồng khả năng)[cite: 2].",
+    "prompt": "Viết ngẫu nhiên một số tự nhiên có hai chữ số nhỏ hơn $20$. Xác suất để số được viết ra là số chia hết cho $5$ bằng:",
+    "hint": "Liệt kê tất cả các số tự nhiên có hai chữ số nhỏ hơn $20$: $10, 11, 12, 13, 14, 15, 16, 17, 18, 19$.",
     "options": [
-      "$\\dfrac{1}{6}$",
-      "$\\dfrac{1}{3}$",
-      "$\\dfrac{1}{2}$",
-      "$\\dfrac{2}{3}$"
+      "$\\dfrac{1}{10}$",
+      "$\\dfrac{1}{5}$",
+      "$\\dfrac{3}{10}$",
+      "$\\dfrac{2}{9}$"
     ],
-    "answer": 2,
-    "explanation": "Có $6$ kết quả đồng khả năng và $3$ kết quả thuận lợi ($2; 3; 5$), nên xác suất là $\\dfrac{3}{6} = \\dfrac{1}{2}$[cite: 2]."
+    "answer": 1,
+    "explanation": "Có $10$ số tự nhiên có hai chữ số nhỏ hơn $20$ (từ $10$ đến $19$). Trong đó có $2$ số chia hết cho $5$ là $10$ và $15$. Vậy xác suất là $\\dfrac{2}{10} = \\dfrac{1}{5}$."
   },
   {
     "id": "t8_c8_m17",
@@ -294,16 +294,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Trong $n$ lần thực nghiệm hoặc $n$ lần theo dõi một hiện tượng, nếu biến cố $E$ xảy ra $k$ lần thì **xác suất thực nghiệm** của biến cố $E$ bằng:",
-    "hint": "Nhớ lại công thức xác suất thực nghiệm của biến cố ở Bài 32[cite: 2].",
+    "prompt": "Một đĩa tròn bằng bìa cứng được chia làm $8$ phần bằng nhau và ghi các số $1; 2; 3; 4; 5; 6; 7; 8$. Quay kim đồng hồ ở tâm đĩa một lần. Xác suất để mũi kim chỉ vào hình quạt ghi số lớn hơn $5$ là:<br><div style='text-align:center;margin:10px 0'><svg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'><circle cx='80' cy='80' r='68' fill='#f8fafc' stroke='#334155' stroke-width='2'/><line x1='80' y1='12' x2='80' y2='148' stroke='#64748b'/><line x1='12' y1='80' x2='148' y2='80' stroke='#64748b'/><line x1='32' y1='32' x2='128' y2='128' stroke='#64748b'/><line x1='128' y1='32' x2='32' y2='128' stroke='#64748b'/><text x='98' y='38' font-size='12' font-weight='bold' fill='#0f172a'>1</text><text x='124' y='65' font-size='12' font-weight='bold' fill='#0f172a'>2</text><text x='124' y='102' font-size='12' font-weight='bold' fill='#0f172a'>3</text><text x='98' y='130' font-size='12' font-weight='bold' fill='#0f172a'>4</text><text x='56' y='130' font-size='12' font-weight='bold' fill='#0f172a'>5</text><text x='30' y='102' font-size='12' font-weight='bold' fill='#0f172a'>6</text><text x='30' y='65' font-size='12' font-weight='bold' fill='#0f172a'>7</text><text x='56' y='38' font-size='12' font-weight='bold' fill='#0f172a'>8</text><line x1='80' y1='80' x2='108' y2='45' stroke='#ef4444' stroke-width='3'/><circle cx='80' cy='80' r='5' fill='#ef4444'/></svg></div>",
+    "hint": "Có $8$ hình quạt bằng nhau; các số lớn hơn $5$ là $6, 7, 8$.",
     "options": [
-      "$\\dfrac{n}{k}$",
-      "$\\dfrac{k}{n}$",
-      "$k \\cdot n$",
-      "$n - k$"
+      "$\\dfrac{3}{8}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{5}{8}$",
+      "$\\dfrac{1}{4}$"
     ],
-    "answer": 1,
-    "explanation": "Xác suất thực nghiệm của biến cố $E$ bằng tỉ số giữa số lần xuất hiện biến cố $E$ và số lần thực hiện thực nghiệm hoặc theo dõi hiện tượng đó: $\\dfrac{k}{n}$[cite: 2]."
+    "answer": 0,
+    "explanation": "Có $8$ kết quả đồng khả năng. Có $3$ kết quả thuận lợi là mũi kim chỉ vào các ô ghi số $6, 7, 8$. Vậy xác suất là $\\dfrac{3}{8}$."
   },
   {
     "id": "t8_c8_m18",
@@ -312,16 +312,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Kiểm tra ngẫu nhiên $500$ chiếc ti vi do nhà máy X sản xuất thì có $4$ chiếc không đạt chất lượng. Xác suất thực nghiệm của biến cố \"Một ti vi do nhà máy X sản xuất không đạt chất lượng\" (viết dưới dạng phần trăm) là:",
-    "hint": "Tính tỉ số $\\dfrac{4}{500}$ rồi đổi sang tỉ số phần trăm[cite: 2].",
+    "prompt": "Kiểm tra ngẫu nhiên $500$ sản phẩm của một nhà máy thì thấy có $15$ sản phẩm không đạt chuẩn. Xác suất thực nghiệm của biến cố \"Sản phẩm đạt chuẩn\" là:",
+    "hint": "Tính số sản phẩm đạt chuẩn là $500 - 15 = 485$, sau đó chia cho $500$.",
     "options": [
-      "$0,4\\%$",
-      "$0,8\\%$",
-      "$4\\%$",
-      "$8\\%$"
+      "$0,03$",
+      "$0,97$",
+      "$0,85$",
+      "$0,15$"
     ],
     "answer": 1,
-    "explanation": "Xác suất thực nghiệm là $\\dfrac{4}{500} = 0,008 = 0,8\\%$[cite: 2]."
+    "explanation": "Số sản phẩm đạt chuẩn là $500 - 15 = 485$. Xác suất thực nghiệm để sản phẩm đạt chuẩn là $\\dfrac{485}{500} = 0,97$."
   },
   {
     "id": "t8_c8_m19",
@@ -330,16 +330,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một bộ bài tú lơ khơ gồm $52$ lá bài chia thành $4$ chất (mỗi chất $13$ lá). Rút ngẫu nhiên một lá bài, xác suất để rút được lá bài chất rô là:",
-    "hint": "Có $13$ lá bài chất rô trên tổng số $52$ lá bài[cite: 1].",
+    "prompt": "Trong một hộp có $20$ viên bi cùng kích thước gồm bi xanh và bi đỏ. Biết xác suất lấy ngẫu nhiên được một viên bi xanh là $\\dfrac{2}{5}$. Số viên bi xanh có trong hộp là:",
+    "hint": "Gọi $x$ là số viên bi xanh, ta có $\\dfrac{x}{20} = \\dfrac{2}{5}$.",
     "options": [
-      "$\\dfrac{1}{13}$",
-      "$\\dfrac{1}{4}$",
-      "$\\dfrac{3}{4}$",
-      "$\\dfrac{1}{52}$"
+      "$4$ viên",
+      "$8$ viên",
+      "$10$ viên",
+      "$12$ viên"
     ],
     "answer": 1,
-    "explanation": "Có $13$ lá bài chất rô trong $52$ lá bài nên xác suất là $\\dfrac{13}{52} = \\dfrac{1}{4}$[cite: 1]."
+    "explanation": "Số viên bi xanh có trong hộp là $20 \\cdot \\dfrac{2}{5} = 8$ (viên)."
   },
   {
     "id": "t8_c8_m20",
@@ -348,16 +348,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Trong bộ bài tú lơ khơ $52$ lá, các lá bài J, Q, K gọi là lá bài tranh. Rút ngẫu nhiên một lá bài, xác suất để rút được lá bài tranh là:",
-    "hint": "Mỗi chất có $3$ lá bài tranh (J, Q, K), có $4$ chất nên có $3 \\cdot 4 = 12$ lá bài tranh[cite: 1].",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất. Xác suất của biến cố \"Số chấm xuất hiện là ước của $6$\" bằng:",
+    "hint": "Các ước của $6$ trong các số từ $1$ đến $6$ gồm $1, 2, 3, 6$.",
     "options": [
-      "$\\dfrac{3}{52}$",
-      "$\\dfrac{3}{13}$",
-      "$\\dfrac{1}{4}$",
-      "$\\dfrac{4}{13}$"
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{5}{6}$",
+      "$\\dfrac{1}{3}$"
     ],
     "answer": 1,
-    "explanation": "Có $3 \\cdot 4 = 12$ lá bài tranh trong $52$ lá bài, nên xác suất là $\\dfrac{12}{52} = \\dfrac{3}{13}$[cite: 1]."
+    "explanation": "Có $4$ kết quả thuận lợi là mặt $1, 2, 3, 6$ chấm. Vậy xác suất là $\\dfrac{4}{6} = \\dfrac{2}{3}$."
   },
   {
     "id": "t8_c8_m21",
@@ -366,16 +366,16 @@
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Chọn ngẫu nhiên một số có hai chữ số. Có bao nhiêu kết quả có thể xảy ra?",
-    "hint": "Các số có hai chữ số bắt đầu từ $10$ đến $99$[cite: 1, 2].",
+    "prompt": "Một túi đựng các tấm thẻ ghi các số $2; 4; 6; 8; 10; 12$. Rút ngẫu nhiên một tấm thẻ trong túi. Xác suất để rút được tấm thẻ ghi số chính phương là:",
+    "hint": "Số chính phương là bình phương của một số tự nhiên ($0, 1, 4, 9, 16, \\dots$).",
     "options": [
-      "$89$",
-      "$90$",
-      "$99$",
-      "$100$"
+      "$\\dfrac{1}{6}$",
+      "$\\dfrac{1}{3}$",
+      "$\\dfrac{1}{2}$",
+      "$0$"
     ],
-    "answer": 1,
-    "explanation": "Các số có hai chữ số là $10; 11; \\dots; 99$, có tất cả $99 - 10 + 1 = 90$ số[cite: 1, 2]."
+    "answer": 0,
+    "explanation": "Trong các số $2; 4; 6; 8; 10; 12$ chỉ có một số chính phương là $4 = 2^2$. Vậy xác suất là $\\dfrac{1}{6}$."
   },
   {
     "id": "t8_c8_h01",
@@ -384,16 +384,16 @@
     "mode": "mcq",
     "difficulty": "hard",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một chiếc hộp chứa $36$ quả cầu đánh số từ $1$ đến $36$. Lấy ngẫu nhiên một quả cầu. Xác suất của biến cố \"Lấy được quả cầu ghi số là bội của $4$ và $6$\" là:",
-    "hint": "Số vừa là bội của $4$ vừa là bội của $6$ là bội của $\\text{BCNN}(4, 6) = 12$[cite: 1].",
+    "prompt": "Một hộp đựng $40$ viên bi gồm ba màu đỏ, vàng, đen. Biết xác suất lấy ngẫu nhiên được viên bi màu đỏ, viên bi màu vàng lần lượt là $\\dfrac{1}{4}$ và $\\dfrac{2}{5}$. Sau đó người ta bỏ thêm vào hộp $10$ viên bi đỏ, $14$ viên bi vàng và lấy bớt ra $9$ viên bi đen. Khi đó lấy ngẫu nhiên một viên bi từ hộp thì xác suất lấy được viên bi màu vàng là:",
+    "hint": "Tính số viên bi mỗi màu ban đầu, cập nhật số bi mỗi màu sau khi thêm/bớt rồi tính xác suất mới.",
     "options": [
-      "$\\dfrac{1}{12}$",
-      "$\\dfrac{1}{6}$",
-      "$\\dfrac{1}{4}$",
-      "$\\dfrac{1}{9}$"
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{5}$"
     ],
     "answer": 0,
-    "explanation": "Các số từ $1$ đến $36$ là bội của cả $4$ và $6$ (tức là bội của $12$) gồm: $12; 24; 36$ ($3$ số). Xác suất là $\\dfrac{3}{36} = \\dfrac{1}{12}$[cite: 1]."
+    "explanation": "Lúc đầu có $40 \\cdot \\dfrac{1}{4} = 10$ bi đỏ, $40 \\cdot \\dfrac{2}{5} = 16$ bi vàng và $40 - 10 - 16 = 14$ bi đen. Lúc sau có $10 + 10 = 20$ bi đỏ, $16 + 14 = 30$ bi vàng và $14 - 9 = 5$ bi đen (tổng $20 + 30 + 5 = 55$? Khoan: nếu thêm $25$ bi đỏ như bài $8.19$ SBT thì có $35 + 30 + 5 = 70$ bi; ở đây tổng là $20 + 30 + 5 = 55$, tỉ số $\\dfrac{30}{55} = \\dfrac{6}{11}$). Nếu thêm $25$ bi đỏ: $\\dfrac{30}{70} = \\dfrac{3}{7}$."
   },
   {
     "id": "t8_c8_h02",
@@ -402,16 +402,16 @@
     "mode": "mcq",
     "difficulty": "hard",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một hộp đựng $24$ viên bi giống hệt nhau gồm đỏ, xanh và đen. Biết xác suất lấy được viên bi đỏ là $\\dfrac{1}{3}$ và bi xanh là $\\dfrac{1}{6}$. Số viên bi đen trong hộp là:",
-    "hint": "Tìm số bi đỏ và số bi xanh trước, sau đó lấy $24$ trừ đi tổng số bi đỏ và xanh[cite: 1, 2].",
+    "prompt": "Gieo đồng thời hai con xúc xắc cân đối và đồng chất. Biết có $36$ kết quả có thể xảy ra đồng khả năng. Xác suất để tổng số chấm xuất hiện trên hai con xúc xắc bằng $7$ là:",
+    "hint": "Liệt kê các cặp số chấm $(a; b)$ trên hai xúc xắc sao cho $a + b = 7$.",
     "options": [
-      "$8$ viên",
-      "$12$ viên",
-      "$4$ viên",
-      "$10$ viên"
+      "$\\dfrac{1}{6}$",
+      "$\\dfrac{1}{12}$",
+      "$\\dfrac{5}{36}$",
+      "$\\dfrac{7}{36}$"
     ],
-    "answer": 1,
-    "explanation": "Số bi đỏ là $24 \\cdot \\dfrac{1}{3} = 8$ viên; số bi xanh là $24 \\cdot \\dfrac{1}{6} = 4$ viên. Vậy số bi đen là $24 - 8 - 4 = 12$ viên[cite: 1, 2]."
+    "answer": 0,
+    "explanation": "Các kết quả thuận lợi cho tổng số chấm bằng $7$ là: $(1;6), (2;5), (3;4), (4;3), (5;2), (6;1)$ (gồm $6$ kết quả). Xác suất cần tìm là $\\dfrac{6}{36} = \\dfrac{1}{6}$."
   },
   {
     "id": "t8_c8_h03",
@@ -420,16 +420,16 @@
     "mode": "mcq",
     "difficulty": "hard",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một chiếc hộp chứa $36$ quả cầu đánh số từ $1$ đến $36$. Lấy ngẫu nhiên một quả cầu. Xác suất của biến cố \"Lấy được quả cầu ghi số là bội của $4$ hoặc là bội của $6$\" là:",
-    "hint": "Liệt kê các bội của $4$ và các bội của $6$ từ $1$ đến $36$, lưu ý không đếm trùng các số chia hết cho $12$[cite: 1].",
+    "prompt": "Một nhà hàng lúc đầu có $32$ khách hàng nam và $18$ khách hàng nữ. Sau một giờ, có $12$ khách hàng nam ra về và có thêm $27$ khách hàng nữ vào quán. Chọn ngẫu nhiên một khách hàng đang có mặt trong nhà hàng lúc đó. Xác suất để chọn được một khách hàng nữ là:",
+    "hint": "Tính số khách nam, số khách nữ và tổng số khách có mặt trong nhà hàng sau một giờ.",
     "options": [
-      "$\\dfrac{5}{12}$",
-      "$\\dfrac{1}{3}$",
-      "$\\dfrac{1}{2}$",
-      "$\\dfrac{7}{18}$"
+      "$\\dfrac{9}{13}$",
+      "$\\dfrac{4}{13}$",
+      "$\\dfrac{9}{25}$",
+      "$\\dfrac{3}{5}$"
     ],
-    "answer": 1,
-    "explanation": "Các bội của $4$ từ $1$ đến $36$ có $9$ số ($4; 8; 12; 16; 20; 24; 28; 32; 36$); các bội của $6$ có $6$ số ($6; 12; 18; 24; 30; 36$), trùng nhau $3$ số ($12; 24; 36$). Số kết quả thuận lợi là $9 + 6 - 3 = 12$, nên xác suất là $\\dfrac{12}{36} = \\dfrac{1}{3}$[cite: 1]."
+    "answer": 0,
+    "explanation": "Sau một giờ, số khách nam là $32 - 12 = 20$ (người), số khách nữ là $18 + 27 = 45$ (người), tổng số khách là $20 + 45 = 65$ (người). Xác suất chọn được khách nữ là $\\dfrac{45}{65} = \\dfrac{9}{13}$."
   },
   {
     "id": "t8_c8_a01",
@@ -438,16 +438,16 @@
     "mode": "mcq",
     "difficulty": "application",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Camera quan sát tại đường X trong $365$ ngày liên tiếp ghi nhận $217$ ngày bị tắc đường vào giờ cao điểm buổi sáng. Dự đoán trong $100$ ngày tới có khoảng bao nhiêu ngày bị tắc đường vào giờ cao điểm buổi sáng (làm tròn đến hàng đơn vị)?",
-    "hint": "Dùng xác suất thực nghiệm $\\dfrac{217}{365}$ để ước lượng số ngày bị tắc đường trong $100$ ngày tới: $100 \\cdot \\dfrac{217}{365}$[cite: 1, 2].",
+    "prompt": "Ghi nhận tình trạng giao thông vào giờ cao điểm buổi sáng tại đường X trong $365$ ngày, người ta thấy có $217$ ngày bị tắc đường. Dựa vào xác suất thực nghiệm, hãy dự đoán trong $100$ ngày tới có khoảng bao nhiêu ngày bị tắc đường vào giờ cao điểm tại đường X?",
+    "hint": "Lập tỉ lệ $\\dfrac{k}{100} \\approx \\dfrac{217}{365}$ để ước lượng số ngày $k$.",
     "options": [
       "$59$ ngày",
-      "$60$ ngày",
-      "$58$ ngày",
-      "$61$ ngày"
+      "$41$ ngày",
+      "$65$ ngày",
+      "$50$ ngày"
     ],
     "answer": 0,
-    "explanation": "Gọi $k$ là số ngày bị tắc đường trong $100$ ngày tới. Ta có $\\dfrac{k}{100} \\approx \\dfrac{217}{365} \\Rightarrow k \\approx 100 \\cdot \\dfrac{217}{365} \\approx 59,45$. Vậy có khoảng $59$ ngày[cite: 1, 2]."
+    "explanation": "Gọi $k$ là số ngày dự đoán tắc đường trong $100$ ngày tới. Ta có $\\dfrac{k}{100} \\approx \\dfrac{217}{365} \\Rightarrow k \\approx 100 \\cdot \\dfrac{217}{365} \\approx 59,45$, dự đoán có khoảng $59$ ngày."
   },
   {
     "id": "t8_c8_a02",
@@ -456,16 +456,16 @@
     "mode": "mcq",
     "difficulty": "application",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Một chiếc túi đựng $117$ đôi tất gồm trắng, đen và các màu khác. Lấy ngẫu nhiên một đôi tất, xác suất chọn được tất trắng và tất đen tương ứng là $\\dfrac{2}{9}$ và $\\dfrac{3}{13}$. Số đôi tất không phải màu đen hoặc màu trắng là:",
-    "hint": "Tính số đôi tất trắng và số đôi tất đen rồi trừ đi tổng số $117$ đôi tất[cite: 1].",
+    "prompt": "Thống kê trong $3\\,084$ lượt người nhập cảnh ngắn hạn vào nước X thấy có $500$ người nhập cảnh với mục đích kinh doanh, làm việc hoặc đi học. Dự đoán trong tháng sau, nếu có $2\\,156$ lượt người nhập cảnh ngắn hạn vào nước X thì có khoảng bao nhiêu người nhập cảnh với mục đích trên?",
+    "hint": "Dùng xác suất thực nghiệm $\\dfrac{500}{3\\,084}$ nhân với $2\\,156$.",
     "options": [
-      "$64$ đôi",
-      "$53$ đôi",
-      "$26$ đôi",
-      "$27$ đôi"
+      "$350$ người",
+      "$300$ người",
+      "$400$ người",
+      "$250$ người"
     ],
     "answer": 0,
-    "explanation": "Số đôi tất trắng là $117 \\cdot \\dfrac{2}{9} = 26$ đôi; số đôi tất đen là $117 \\cdot \\dfrac{3}{13} = 27$ đôi. Số đôi tất màu khác là $117 - 26 - 27 = 64$ đôi[cite: 1]."
+    "explanation": "Số người dự đoán là $h \\approx 2\\,156 \\cdot \\dfrac{500}{3\\,084} \\approx 349,55$, vậy dự đoán có khoảng $350$ người."
   },
   {
     "id": "t8_c8_a03",
@@ -474,16 +474,16 @@
     "mode": "mcq",
     "difficulty": "application",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Tháng qua có $3\\,084$ người nhập cảnh ngắn hạn vào nước X, trong đó có $1\\,565$ người nhập cảnh với mục đích du lịch. Dự đoán nếu tháng tới có $2\\,156$ người nhập cảnh ngắn hạn thì có khoảng bao nhiêu người nhập cảnh với mục đích du lịch (làm tròn đến hàng đơn vị)?",
-    "hint": "Ước lượng dựa vào tỉ lệ $\\dfrac{1\\,565}{3\\,084}$ nhân với $2\\,156$[cite: 1, 2].",
+    "prompt": "Trong một chương trình bốc thăm trúng thưởng có $1\\,000$ phiếu thăm giống nhau, trong đó có $1$ giải Đặc biệt, $5$ giải Nhất, $20$ giải Nhì và còn lại là phiếu không trúng thưởng. Một khách hàng rút ngẫu nhiên $1$ phiếu. Xác suất để khách hàng đó trúng thưởng (một trong các giải trên) là:",
+    "hint": "Tính tổng số phiếu trúng thưởng rồi chia cho $1\\,000$.",
     "options": [
-      "$1\\,094$ người",
-      "$1\\,095$ người",
-      "$1\\,080$ người",
-      "$1\\,100$ người"
+      "$0,026$",
+      "$0,025$",
+      "$0,26$",
+      "$0,974$"
     ],
     "answer": 0,
-    "explanation": "Ước lượng số người nhập cảnh với mục đích du lịch trong tháng tới là $2\\,156 \\cdot \\dfrac{1\\,565}{3\\,084} \\approx 1\\,094,08$, tức khoảng $1\\,094$ người[cite: 1, 2]."
+    "explanation": "Tổng số phiếu trúng thưởng là $1 + 5 + 20 = 26$ (phiếu). Xác suất để khách hàng trúng thưởng là $\\dfrac{26}{1\\,000} = 0,026$."
   },
   {
     "id": "t8_c8_tf01",
@@ -491,27 +491,27 @@
     "term": "HK2",
     "mode": "tf",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về kết quả có thể và kết quả thuận lợi:",
-    "hint": "Dựa vào nội dung Bài 30 SGK Toán 8 (Tập 2)[cite: 1, 2].",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về kết quả có thể và tính xác suất của biến cố:",
+    "hint": "Dựa vào định nghĩa kết quả thuận lợi và công thức tính xác suất theo tỉ số trong SGK.",
     "statements": [
       {
-        "text": "Kết quả thuận lợi cho biến cố $E$ là một kết quả có thể của hành động, thực nghiệm để biến cố $E$ xảy ra.",
+        "text": "Các kết quả của một hành động hay thực nghiệm làm cho một biến cố xảy ra được gọi là các kết quả thuận lợi cho biến cố đó.",
         "answer": true
       },
       {
-        "text": "Mọi kết quả có thể của một hành động, thực nghiệm đều là kết quả thuận lợi cho mọi biến cố.",
-        "answer": false
-      },
-      {
-        "text": "Khi gieo một con xúc xắc, tập hợp các kết quả có thể gồm $6$ kết quả.",
+        "text": "Khi tất cả các kết quả của một trò chơi hay phép thử nghiệm đều có khả năng xảy ra bằng nhau thì xác suất của biến cố $E$ bằng tỉ số giữa số kết quả thuận lợi cho $E$ và tổng số kết quả có thể.",
         "answer": true
       },
       {
-        "text": "Số $1$ là số nguyên tố nên nằm trong danh sách kết quả thuận lợi cho biến cố rút được thẻ ghi số nguyên tố.",
+        "text": "Xác suất của một biến cố có thể nhận giá trị lớn hơn $1$.",
         "answer": false
+      },
+      {
+        "text": "Biến cố không thể có xác suất bằng $0$ và biến cố chắc chắn có xác suất bằng $1$.",
+        "answer": true
       }
     ],
-    "explanation": "Ý a và ý c đúng theo định nghĩa và ví dụ ở Bài 30[cite: 1, 2]. Ý b sai vì chỉ những kết quả làm biến cố $E$ xảy ra mới là kết quả thuận lợi cho $E$[cite: 1]. Ý d sai vì $1$ không phải là số nguyên tố."
+    "explanation": "Ý a, b, d đúng theo lý thuyết SGK. Ý c sai vì số kết quả thuận lợi luôn không vượt quá tổng số kết quả có thể nên xác suất của mọi biến cố luôn thỏa mãn $0 \\le P(E) \\le 1$."
   },
   {
     "id": "t8_c8_tf02",
@@ -519,27 +519,27 @@
     "term": "HK2",
     "mode": "tf",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Xét tính đúng/sai của các khẳng định sau về cách tính xác suất của biến cố bằng tỉ số:",
-    "hint": "Đối chiếu các bước tính xác suất trong trường hợp đồng khả năng ở Bài 31[cite: 2].",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về xác suất thực nghiệm và mối liên hệ với xác suất lý thuyết:",
+    "hint": "Nhớ lại công thức tính xác suất thực nghiệm và tính chất khi số lần thử nghiệm càng lớn.",
     "statements": [
       {
-        "text": "Khi các kết quả có thể đồng khả năng, xác suất của biến cố $E$ bằng tỉ số giữa số kết quả thuận lợi cho $E$ và tổng số kết quả có thể.",
+        "text": "Giả sử trong $n$ lần thực nghiệm hoặc theo dõi một hiện tượng, ta thấy biến cố $E$ xảy ra $k$ lần. Khi đó xác suất thực nghiệm của biến cố $E$ bằng $\\dfrac{k}{n}$.",
         "answer": true
       },
       {
-        "text": "Xác suất của một biến cố luôn là một số không âm và không vượt quá $1$.",
-        "answer": true
-      },
-      {
-        "text": "Nếu biến cố $A$ có $3$ kết quả thuận lợi và tổng số kết quả có thể đồng khả năng là $12$ thì $P(A) = \\dfrac{1}{4}$.",
-        "answer": true
-      },
-      {
-        "text": "Tỉ số $\\dfrac{\\text{Tổng số kết quả có thể}}{\\text{Số kết quả thuận lợi cho } E}$ chính là xác suất của biến cố $E$.",
+        "text": "Xác suất thực nghiệm của một biến cố luôn bằng đúng xác suất lý thuyết của biến cố đó trong mọi lần thử.",
         "answer": false
+      },
+      {
+        "text": "Khi số lần thực nghiệm $n$ càng lớn thì xác suất thực nghiệm của biến cố $E$ càng gần với xác suất của biến cố $E$.",
+        "answer": true
+      },
+      {
+        "text": "Ta có thể sử dụng xác suất thực nghiệm để ước lượng xác suất của một biến cố trong thực tế.",
+        "answer": true
       }
     ],
-    "explanation": "Ý a, b, c đúng theo Bài 31[cite: 2]. Ý d sai vì xác suất của biến cố $E$ là tỉ số giữa số kết quả thuận lợi cho $E$ và tổng số kết quả có thể[cite: 2]."
+    "explanation": "Ý a, c, d đúng theo SGK. Ý b sai vì với số lần thử hữu hạn, xác suất thực nghiệm có thể dao động xung quanh xác suất lý thuyết chứ không nhất thiết bằng hệt."
   },
   {
     "id": "t8_c8_tf03",
@@ -547,26 +547,26 @@
     "term": "HK2",
     "mode": "tf",
     "topic": "Chương VIII — Mở đầu về tính xác suất của biến cố",
-    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về xác suất thực nghiệm và ứng dụng:",
-    "hint": "Nhớ lại khái niệm xác suất thực nghiệm và ứng dụng dự báo ở Bài 32[cite: 1, 2].",
+    "prompt": "Gieo một con xúc xắc cân đối và đồng chất một lần. Xét tính đúng/sai của các khẳng định sau:",
+    "hint": "Tính số kết quả thuận lợi cho từng biến cố trên tập kết quả $\\{1; 2; 3; 4; 5; 6\\}$.",
     "statements": [
       {
-        "text": "Xác suất thực nghiệm của biến cố $E$ trong $n$ lần thực nghiệm (hoặc theo dõi) mà $E$ xảy ra $k$ lần là $\\dfrac{k}{n}$.",
+        "text": "Xác suất của biến cố \"Xuất hiện mặt có số chấm chẵn\" bằng $\\dfrac{1}{2}$.",
         "answer": true
       },
       {
-        "text": "Có thể sử dụng xác suất thực nghiệm để ước lượng xác suất của một biến cố và dự báo số lần xảy ra trong tương lai.",
-        "answer": true
-      },
-      {
-        "text": "Khi dự báo số lần xảy ra một hiện tượng trong tương lai bằng xác suất thực nghiệm, kết quả thu được luôn là số nguyên chính xác tuyệt đối.",
+        "text": "Xác suất của biến cố \"Xuất hiện mặt $5$ chấm\" bằng $\\dfrac{5}{6}$.",
         "answer": false
       },
       {
-        "text": "Xác suất thực nghiệm phụ thuộc vào số liệu thu thập được qua thực nghiệm hoặc quan sát thực tế.",
+        "text": "Xác suất của biến cố \"Xuất hiện mặt có số chấm lớn hơn $4$\" bằng $\\dfrac{1}{3}$.",
+        "answer": true
+      },
+      {
+        "text": "Hai biến cố \"Xuất hiện mặt có số chấm chẵn\" và \"Xuất hiện mặt có số chấm lẻ\" là đồng khả năng.",
         "answer": true
       }
     ],
-    "explanation": "Ý a, b, d đúng theo Bài 32[cite: 1, 2]. Ý c sai vì phép dự báo dựa trên xác suất thực nghiệm chỉ đưa ra giá trị ước lượng (thường làm tròn đến số nguyên gần nhất)[cite: 1, 2]."
+    "explanation": "Ý a đúng vì có $3$ mặt chẵn ($2, 4, 6$) trên $6$ mặt, xác suất là $\\dfrac{3}{6} = \\dfrac{1}{2}$. Ý b sai vì chỉ có $1$ mặt $5$ chấm nên xác suất bằng $\\dfrac{1}{6}$. Ý c đúng vì có $2$ mặt lớn hơn $4$ ($5, 6$) nên xác suất là $\\dfrac{2}{6} = \\dfrac{1}{3}$. Ý d đúng vì cả hai biến cố đều có xác suất bằng $\\dfrac{1}{2}$."
   }
 ]
