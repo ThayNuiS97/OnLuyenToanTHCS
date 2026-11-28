@@ -1,0 +1,572 @@
+[
+  {
+    "id": "t8_c7_m01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Phương trình nào sau đây là **phương trình bậc nhất một ẩn**?",
+    "hint": "Phương trình bậc nhất một ẩn có dạng $ax + b = 0$ với $a, b$ là các số đã cho và $a \\ne 0$.",
+    "options": [
+      "$2x - 5 = 0$",
+      "$x^2 + 3x - 2 = 0$",
+      "$0x + 4 = 0$",
+      "$\\dfrac{1}{x} + 2 = 0$"
+    ],
+    "answer": 0,
+    "explanation": "Phương trình $2x - 5 = 0$ có dạng $ax + b = 0$ với $a = 2 \\ne 0$ và $b = -5$ nên là phương trình bậc nhất một ẩn."
+  },
+  {
+    "id": "t8_c7_m02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Trong phương trình bậc nhất một ẩn $3x - 9 = 0$, hệ số của $x$ và hạng tử tự do lần lượt là:",
+    "hint": "Đối chiếu với dạng chuẩn $ax + b = 0$ ($a \\ne 0$).",
+    "options": [
+      "$3$ và $9$",
+      "$3$ và $-9$",
+      "$-3$ và $9$",
+      "$9$ và $-3$"
+    ],
+    "answer": 1,
+    "explanation": "Phương trình $3x - 9 = 0$ có $a = 3$ (hệ số của $x$) và $b = -9$ (hạng tử tự do)."
+  },
+  {
+    "id": "t8_c7_m03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Nghiệm của phương trình $2x + 6 = 0$ là:",
+    "hint": "Chuyển vế $6$ sang vế phải rồi chia cả hai vế cho $2$.",
+    "options": [
+      "$x = 3$",
+      "$x = -3$",
+      "$x = 12$",
+      "$x = -12$"
+    ],
+    "answer": 1,
+    "explanation": "Ta có $2x + 6 = 0 \\iff 2x = -6 \\iff x = -3$."
+  },
+  {
+    "id": "t8_c7_m04",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Giá trị nào sau đây là nghiệm của phương trình $4x - 1 = 2x + 5$?",
+    "hint": "Chuyển các hạng tử chứa $x$ về một vế và các hằng số về vế còn lại.",
+    "options": [
+      "$x = 2$",
+      "$x = 3$",
+      "$x = -2$",
+      "$x = 1$"
+    ],
+    "answer": 1,
+    "explanation": "Ta có $4x - 1 = 2x + 5 \\iff 4x - 2x = 5 + 1 \\iff 2x = 6 \\iff x = 3$."
+  },
+  {
+    "id": "t8_c7_m05",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Khi giải phương trình $5(x - 1) = 2x + 7$, bước phá ngoặc đúng là:",
+    "hint": "Nhân phân phối $5$ vào từng hạng tử trong ngoặc $(x - 1)$.",
+    "options": [
+      "$5x - 1 = 2x + 7$",
+      "$5x - 5 = 2x + 7$",
+      "$5x + 5 = 2x + 7$",
+      "$5x - 5 = 2x - 7$"
+    ],
+    "answer": 1,
+    "explanation": "Phá ngoặc vế trái: $5(x - 1) = 5x - 5$, nên được phương trình $5x - 5 = 2x + 7$."
+  },
+  {
+    "id": "t8_c7_m06",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Nghiệm của phương trình $\\dfrac{x + 2}{3} = 4$ là:",
+    "hint": "Nhân cả hai vế của phương trình với $3$.",
+    "options": [
+      "$x = 10$",
+      "$x = 14$",
+      "$x = 6$",
+      "$x = 2$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $\\dfrac{x + 2}{3} = 4 \\iff x + 2 = 12 \\iff x = 10$."
+  },
+  {
+    "id": "t8_c7_m07",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Phương trình $(x - 2)(3x + 9) = 0$ có tập nghiệm gồm các giá trị của $x$ là:",
+    "hint": "Tích bằng $0$ khi ít nhất một thừa số bằng $0$.",
+    "options": [
+      "$x = 2$ và $x = 3$",
+      "$x = 2$ và $x = -3$",
+      "$x = -2$ và $x = 3$",
+      "$x = -2$ và $x = -3$"
+    ],
+    "answer": 1,
+    "explanation": "Ta có $(x - 2)(3x + 9) = 0 \\iff x - 2 = 0$ hoặc $3x + 9 = 0 \\iff x = 2$ hoặc $x = -3$."
+  },
+  {
+    "id": "t8_c7_m08",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Trong các bảng giá trị sau, bảng nào xác định $y$ là một **hàm số** của biến số $x$?",
+    "hint": "Với mỗi giá trị của $x$, $y$ chỉ xác định được duy nhất một giá trị tương ứng[cite: 8].",
+    "options": [
+      "$x \\in \\{1; 2; 1\\}$ tương ứng $y \\in \\{3; 5; 7\\}$",
+      "$x \\in \\{1; 2; 3\\}$ tương ứng $y \\in \\{4; 6; 8\\}$",
+      "$x \\in \\{2; 2; 4\\}$ tương ứng $y \\in \\{1; 5; 9\\}$",
+      "$x \\in \\{0; 0; 1\\}$ tương ứng $y \\in \\{2; 3; 4\\}$"
+    ],
+    "answer": 1,
+    "explanation": "Ở phương án đúng, mỗi giá trị của $x$ chỉ ứng với một giá trị duy nhất của $y$ (các phương án khác có cùng một giá trị $x$ ứng với hai giá trị $y$ khác nhau)[cite: 8]."
+  },
+  {
+    "id": "t8_c7_m09",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Cho hàm số $y = f(x) = 3x - 4$. Giá trị của $f(2)$ bằng:",
+    "hint": "Thay $x = 2$ vào công thức $f(x) = 3x - 4$.",
+    "options": [
+      "$2$",
+      "$-2$",
+      "$10$",
+      "$6$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $f(2) = 3 \\cdot 2 - 4 = 6 - 4 = 2$."
+  },
+  {
+    "id": "t8_c7_m10",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Cho hàm số $f(x) = -2x + 1$. Giá trị của $f(-3)$ bằng:",
+    "hint": "Thay $x = -3$ vào biểu thức $-2x + 1$, chú ý dấu âm.",
+    "options": [
+      "$-5$",
+      "$7$",
+      "$-7$",
+      "$5$"
+    ],
+    "answer": 1,
+    "explanation": "Ta có $f(-3) = -2 \\cdot (-3) + 1 = 6 + 1 = 7$."
+  },
+  {
+    "id": "t8_c7_m11",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Trên mặt phẳng tọa độ $Oxy$, điểm $M(-2; 5)$ có hoành độ và tung độ lần lượt là:",
+    "hint": "Tọa độ điểm được viết theo thứ tự (hoành độ; tung độ).",
+    "options": [
+      "$-2$ và $5$",
+      "$5$ và $-2$",
+      "$2$ và $5$",
+      "$-2$ và $-5$"
+    ],
+    "answer": 0,
+    "explanation": "Điểm $M(-2; 5)$ có hoành độ bằng $-2$ và tung độ bằng $5$."
+  },
+  {
+    "id": "t8_c7_m12",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Điểm nào sau đây thuộc đồ thị của hàm số $y = 2x - 1$?",
+    "hint": "Thay hoành độ $x_0$ vào hàm số $y = 2x - 1$, nếu tính được tung độ đúng bằng $y_0$ thì điểm $(x_0; y_0)$ thuộc đồ thị.",
+    "options": [
+      "$A(1; 3)$",
+      "$B(2; 3)$",
+      "$C(0; 1)$",
+      "$D(-1; 1)$"
+    ],
+    "answer": 1,
+    "explanation": "Với $x = 2$, ta có $y = 2 \\cdot 2 - 1 = 3$, nên điểm $B(2; 3)$ thuộc đồ thị hàm số $y = 2x - 1$."
+  },
+  {
+    "id": "t8_c7_m13",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Hàm số nào sau đây là **hàm số bậc nhất**?",
+    "hint": "Hàm số bậc nhất có dạng $y = ax + b$ với $a \\ne 0$.",
+    "options": [
+      "$y = 4x - 7$",
+      "$y = x^2 + 1$",
+      "$y = 0x + 5$",
+      "$y = \\dfrac{2}{x} + 1$"
+    ],
+    "answer": 0,
+    "explanation": "Hàm số $y = 4x - 7$ có dạng $y = ax + b$ với $a = 4 \\ne 0$ nên là hàm số bậc nhất."
+  },
+  {
+    "id": "t8_c7_m14",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Đồ thị của hàm số bậc nhất $y = ax + b$ ($a \\ne 0$) là:",
+    "hint": "Nhớ lại tính chất hình học của đồ thị hàm số bậc nhất.",
+    "options": [
+      "Một đường parabol",
+      "Một đường thẳng",
+      "Một đường tròn",
+      "Một đường gấp khúc"
+    ],
+    "answer": 1,
+    "explanation": "Đồ thị của hàm số bậc nhất $y = ax + b$ ($a \\ne 0$) là một đường thẳng."
+  },
+  {
+    "id": "t8_c7_m15",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Hàm số bậc nhất $y = 5x - 2$ có tính chất:",
+    "hint": "Xét dấu của hệ số $a = 5 > 0$.",
+    "options": [
+      "Đồng biến trên $\\mathbb{R}$",
+      "Nghịch biến trên $\\mathbb{R}$",
+      "Chỉ đồng biến khi $x > 0$",
+      "Không đồng biến cũng không nghịch biến"
+    ],
+    "answer": 0,
+    "explanation": "Vì hệ số $a = 5 > 0$ nên hàm số $y = 5x - 2$ đồng biến trên $\\mathbb{R}$."
+  },
+  {
+    "id": "t8_c7_m16",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Hàm số bậc nhất $y = -3x + 4$ có tính chất:",
+    "hint": "Xét dấu của hệ số $a = -3 < 0$.",
+    "options": [
+      "Đồng biến trên $\\mathbb{R}$",
+      "Nghịch biến trên $\\mathbb{R}$",
+      "Chỉ nghịch biến khi $x < 0$",
+      "Luôn có giá trị âm"
+    ],
+    "answer": 1,
+    "explanation": "Vì hệ số $a = -3 < 0$ nên hàm số $y = -3x + 4$ nghịch biến trên $\\mathbb{R}$."
+  },
+  {
+    "id": "t8_c7_m17",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Đồ thị của hàm số $y = 2x + 3$ cắt trục tung tại điểm có tung độ bằng:",
+    "hint": "Giao điểm của đồ thị với trục tung có hoành độ $x = 0$.",
+    "options": [
+      "$2$",
+      "$3$",
+      "$-3$",
+      "$-1,5$"
+    ],
+    "answer": 1,
+    "explanation": "Thay $x = 0$ vào $y = 2x + 3$ ta được $y = 3$, nên đồ thị cắt trục tung tại điểm $(0; 3)$."
+  },
+  {
+    "id": "t8_c7_m18",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Hai đường thẳng $y = 3x + 1$ và $y = 3x - 4$ có vị trí tương đối là:",
+    "hint": "So sánh hai hệ số góc $a$ và hai tung độ gốc $b$.",
+    "options": [
+      "Cắt nhau",
+      "Song song với nhau",
+      "Trùng nhau",
+      "Vuông góc với nhau"
+    ],
+    "answer": 1,
+    "explanation": "Hai đường thẳng có cùng hệ số góc $a = 3$ và tung độ gốc khác nhau ($1 \\ne -4$) nên chúng song song với nhau."
+  },
+  {
+    "id": "t8_c7_m19",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Hai đường thẳng $y = 2x + 1$ và $y = -x + 5$ có vị trí tương đối là:",
+    "hint": "Kiểm tra xem hai hệ số góc có khác nhau không.",
+    "options": [
+      "Song song với nhau",
+      "Trùng nhau",
+      "Cắt nhau",
+      "Không xác định được"
+    ],
+    "answer": 2,
+    "explanation": "Vì $2 \\ne -1$ nên hai đường thẳng $y = 2x + 1$ và $y = -x + 5$ cắt nhau."
+  },
+  {
+    "id": "t8_c7_m20",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Hệ số góc của đường thẳng $y = -4x + 7$ là:",
+    "hint": "Trong đường thẳng $y = ax + b$ ($a \\ne 0$), $a$ gọi là hệ số góc.",
+    "options": [
+      "$7$",
+      "$-4$",
+      "$4$",
+      "$-7$"
+    ],
+    "answer": 1,
+    "explanation": "Đường thẳng $y = -4x + 7$ có hệ số góc là $a = -4$."
+  },
+  {
+    "id": "t8_c7_m21",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Nếu đường thẳng $y = ax + b$ ($a \\ne 0$) có hệ số góc âm ($a < 0$) thì góc tạo bởi đường thẳng này với tia $Ox$ là:",
+    "hint": "Nhớ lại quy ước về góc tạo bởi đường thẳng $y = ax + b$ và tia $Ox$ (góc $\\alpha$ trên hình vẽ có đỉnh tại giao điểm với trục $Ox$, nằm phía trên trục $Ox$ và bên phải đường thẳng).",
+    "options": [
+      "Góc nhọn",
+      "Góc vuông",
+      "Góc tù",
+      "Góc bẹt"
+    ],
+    "answer": 2,
+    "explanation": "Khi $a < 0$, góc tạo bởi đường thẳng $y = ax + b$ và tia $Ox$ là góc tù."
+  },
+  {
+    "id": "t8_c7_h01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Tìm tất cả các giá trị của $m$ để phương trình $(m^2 - 4)x + m - 2 = 0$ là **phương trình bậc nhất một ẩn**.",
+    "hint": "Điều kiện để $ax + b = 0$ là phương trình bậc nhất một ẩn là $a \\ne 0$.",
+    "options": [
+      "$m \\ne 2$",
+      "$m \\ne -2$",
+      "$m \\ne 2$ và $m \\ne -2$",
+      "$m = 2$"
+    ],
+    "answer": 2,
+    "explanation": "Để phương trình là phương trình bậc nhất một ẩn thì hệ số của $x$ phải khác $0$: $m^2 - 4 \\ne 0 \\iff (m - 2)(m + 2) \\ne 0 \\iff m \\ne 2$ và $m \\ne -2$."
+  },
+  {
+    "id": "t8_c7_h02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Cho hai đường thẳng $d_1: y = (2m - 1)x + 3$ và $d_2: y = 3x - 2$. Giá trị của $m$ để $d_1 \\parallel d_2$ là:",
+    "hint": "Cho hai hệ số góc bằng nhau: $2m - 1 = 3$ (và kiểm tra $3 \\ne -2$ đã thỏa mãn).",
+    "options": [
+      "$m = 1$",
+      "$m = 2$",
+      "$m = -1$",
+      "$m = \\dfrac{4}{3}$"
+    ],
+    "answer": 1,
+    "explanation": "Vì $3 \\ne -2$ nên $d_1 \\parallel d_2 \\iff 2m - 1 = 3 \\iff 2m = 4 \\iff m = 2$."
+  },
+  {
+    "id": "t8_c7_h03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Đồ thị của hàm số bậc nhất $y = ax + b$ đi qua hai điểm $A(0; 2)$ và $B(1; 5)$. Giá trị của $a + b$ bằng:",
+    "hint": "Thay tọa độ điểm $A(0; 2)$ tìm được $b$, sau đó thay tọa độ điểm $B(1; 5)$ tìm được $a$.",
+    "options": [
+      "$3$",
+      "$5$",
+      "$7$",
+      "$1$"
+    ],
+    "answer": 1,
+    "explanation": "Đi qua $A(0; 2)$ nên $2 = a \\cdot 0 + b \\Rightarrow b = 2$. Đi qua $B(1; 5)$ nên $5 = a \\cdot 1 + 2 \\Rightarrow a = 3$. Vậy $a + b = 3 + 2 = 5$."
+  },
+  {
+    "id": "t8_c7_a01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Lương tháng của một nhân viên bán hàng gồm $3$ triệu đồng lương cơ bản cố định hằng tháng và tiền hoa hồng $5$ triệu đồng cho mỗi chiếc ô tô bán được. Gọi $y$ (triệu đồng) là lương tháng khi bán được $x$ chiếc ô tô[cite: 5]. Lương tháng của nhân viên đó khi bán được $4$ chiếc ô tô là:",
+    "hint": "Áp dụng công thức hàm số $y = 3 + 5x$ với $x = 4$[cite: 5].",
+    "options": [
+      "$18$ triệu đồng",
+      "$20$ triệu đồng",
+      "$23$ triệu đồng",
+      "$28$ triệu đồng"
+    ],
+    "answer": 2,
+    "explanation": "Công thức tính lương tháng là $y = 3 + 5x$[cite: 5]. Khi $x = 4$ thì $y = 3 + 5 \\cdot 4 = 23$ (triệu đồng)."
+  },
+  {
+    "id": "t8_c7_a02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Một ô tô khởi hành từ $A$ đến $B$ với vận tốc $50\\text{ km/h}$. Sau đó $1,5$ giờ, một ô tô thứ hai cũng khởi hành từ $A$ đến $B$ với vận tốc $65\\text{ km/h}$ và đuổi kịp ô tô thứ nhất tại $B$. Quãng đường $AB$ dài bao nhiêu ki-lô-mét?",
+    "hint": "Gọi thời gian ô tô thứ hai đi từ $A$ đến $B$ là $x$ (giờ) ($x > 0$), khi đó quãng đường $AB$ tính theo hai xe bằng nhau: $65x = 50(x + 1,5)$.",
+    "options": [
+      "$325\\text{ km}$",
+      "$250\\text{ km}$",
+      "$390\\text{ km}$",
+      "$195\\text{ km}$"
+    ],
+    "answer": 0,
+    "explanation": "Gọi thời gian ô tô thứ hai đi hết quãng đường $AB$ là $x$ (giờ) ($x > 0$). Ta có phương trình: $65x = 50(x + 1,5) \\iff 15x = 75 \\iff x = 5$. Quãng đường $AB$ dài $65 \\cdot 5 = 325\\text{ (km)}$."
+  },
+  {
+    "id": "t8_c7_a03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Một khu vườn hình chữ nhật có chu vi là $68\\text{ m}$. Biết chiều dài hơn chiều rộng $6\\text{ m}$. Diện tích của khu vườn hình chữ nhật đó là:",
+    "hint": "Nửa chu vi là $34\\text{ m}$; gọi chiều rộng là $x\\text{ (m)}$ thì chiều dài là $x + 6\\text{ (m)}$.",
+    "options": [
+      "$280\\text{ m}^2$",
+      "$247\\text{ m}^2$",
+      "$1\\,120\\text{ m}^2$",
+      "$216\\text{ m}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Nửa chu vi khu vườn là $68 : 2 = 34\\text{ (m)}$. Gọi chiều rộng là $x\\text{ (m)}$ ($0 < x < 34$), chiều dài là $x + 6\\text{ (m)}$. Ta có $x + (x + 6) = 34 \\iff 2x = 28 \\iff x = 14$. Chiều dài là $20\\text{ m}$, diện tích là $14 \\cdot 20 = 280\\text{ (m}^2\\text{)}$."
+  },
+  {
+    "id": "t8_c7_tf01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Xét tính đúng/sai của các khẳng định sau về phương trình bậc nhất một ẩn và giải bài toán bằng cách lập phương trình:",
+    "hint": "Dựa vào kiến thức Bài 25 và Bài 26 SGK Toán 8 (Tập 2)[cite: 5].",
+    "statements": [
+      {
+        "text": "Phương trình $ax + b = 0$ luôn có nghiệm duy nhất $x = -\\dfrac{b}{a}$ với mọi $a, b \\in \\mathbb{R}$.",
+        "answer": false
+      },
+      {
+        "text": "Khi chuyển một hạng tử từ vế này sang vế kia của một phương trình, ta phải đổi dấu hạng tử đó.",
+        "answer": true
+      },
+      {
+        "text": "Khi giải bài toán bằng cách lập phương trình, ta cần đặt điều kiện thích hợp cho ẩn và đối chiếu nghiệm tìm được với điều kiện đó.",
+        "answer": true
+      },
+      {
+        "text": "Nếu $a + b = 0$ thì $x = 1$ là một nghiệm của phương trình bậc nhất $ax + b = 0$ ($a \\ne 0$).",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a sai vì chỉ có nghiệm duy nhất khi $a \\ne 0$. Ý b và ý c đúng theo quy tắc giải phương trình và các bước giải bài toán bằng cách lập phương trình. Ý d đúng vì thay $x = 1$ vào $ax + b$ được $a + b = 0$."
+  },
+  {
+    "id": "t8_c7_tf02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Xét tính đúng/sai của các khẳng định sau về hàm số và đồ thị của hàm số:",
+    "hint": "Nhớ lại khái niệm hàm số, mặt phẳng tọa độ và đồ thị của hàm số ở Bài 27[cite: 8].",
+    "statements": [
+      {
+        "text": "Nếu đại lượng $y$ phụ thuộc vào đại lượng thay đổi $x$ sao cho với mỗi giá trị của $x$ ta luôn xác định được chỉ một giá trị tương ứng của $y$ thì $y$ được gọi là hàm số của $x$[cite: 8].",
+        "answer": true
+      },
+      {
+        "text": "Đồ thị của hàm số $y = f(x)$ là tập hợp tất cả các điểm $M(x; f(x))$ trên mặt phẳng tọa độ $Oxy$.",
+        "answer": true
+      },
+      {
+        "text": "Điểm nằm trên trục tung luôn có tung độ bằng $0$.",
+        "answer": false
+      },
+      {
+        "text": "Gốc tọa độ $O$ có tọa độ là $(0; 0)$.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, b, d đúng theo SGK. Ý c sai vì điểm nằm trên trục tung có hoành độ bằng $0$ (còn điểm nằm trên trục hoành mới có tung độ bằng $0$)."
+  },
+  {
+    "id": "t8_c7_tf03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương VII — Phương trình bậc nhất và hàm số bậc nhất",
+    "prompt": "Xét tính đúng/sai của các khẳng định sau về hàm số bậc nhất và hệ số góc của đường thẳng:",
+    "hint": "Đối chiếu kiến thức Bài 28 và Bài 29 SGK Toán 8 (Tập 2)[cite: 5].",
+    "statements": [
+      {
+        "text": "Hàm số bậc nhất $y = ax + b$ ($a \\ne 0$) đồng biến trên $\\mathbb{R}$ khi $a > 0$ và nghịch biến trên $\\mathbb{R}$ khi $a < 0$.",
+        "answer": true
+      },
+      {
+        "text": "Hai đường thẳng $y = ax + b$ ($a \\ne 0$) và $y = a'x + b'$ ($a' \\ne 0$) song song với nhau khi $a = a'$ và $b \\ne b'$.",
+        "answer": true
+      },
+      {
+        "text": "Đường thẳng $y = ax + b$ ($a \\ne 0$) luôn cắt trục hoành tại điểm có tung độ bằng $b$.",
+        "answer": false
+      },
+      {
+        "text": "Hệ số góc của đường thẳng $y = ax + b$ ($a \\ne 0$) càng lớn thì góc nhọn tạo bởi đường thẳng và tia $Ox$ (khi $a > 0$) càng lớn.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, b, d đúng. Ý c sai vì đường thẳng $y = ax + b$ cắt trục tung tại điểm $(0; b)$, còn giao điểm với trục hoành có tung độ bằng $0$."
+  }
+]
