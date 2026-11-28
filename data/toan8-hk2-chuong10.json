@@ -1,0 +1,572 @@
+[
+  {
+    "id": "t8_c10_m01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Mặt đáy của hình chóp tam giác đều là hình gì?",
+    "hint": "Nhớ lại định nghĩa hình chóp tam giác đều ở Bài 38[cite: 2, 3].",
+    "options": [
+      "Tam giác đều",
+      "Tam giác cân bất kì",
+      "Tam giác vuông",
+      "Hình vuông"
+    ],
+    "answer": 0,
+    "explanation": "Hình chóp tam giác đều có mặt đáy là một tam giác đều và các mặt bên là các tam giác cân bằng nhau chung một đỉnh[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Đường cao của hình chóp tam giác đều là đoạn thẳng nối đỉnh của hình chóp với:",
+    "hint": "Đối chiếu khái niệm đường cao của hình chóp tam giác đều trong SGK[cite: 2].",
+    "options": [
+      "Trọng tâm của tam giác đáy",
+      "Trung điểm một cạnh đáy",
+      "Một đỉnh của tam giác đáy",
+      "Trực tâm của một mặt bên"
+    ],
+    "answer": 0,
+    "explanation": "Đoạn thẳng nối đỉnh của hình chóp và trọng tâm của tam giác đáy gọi là đường cao của hình chóp tam giác đều[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Trung đoạn của hình chóp tam giác đều là gì?",
+    "hint": "Nhớ lại khái niệm trung đoạn ở Bài 38[cite: 2].",
+    "options": [
+      "Đường cao vẽ từ đỉnh của mỗi mặt bên",
+      "Đoạn nối đỉnh hình chóp với trọng tâm đáy",
+      "Đường cao của tam giác đáy",
+      "Cạnh bên của mặt bên"
+    ],
+    "answer": 0,
+    "explanation": "Đường cao vẽ từ đỉnh của mỗi mặt bên gọi là trung đoạn của hình chóp tam giác đều[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m04",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Diện tích xung quanh của hình chóp tam giác đều được tính theo công thức nào (với $p$ là nửa chu vi đáy, $d$ là trung đoạn)?",
+    "hint": "Diện tích xung quanh bằng tích của nửa chu vi đáy với trung đoạn[cite: 2].",
+    "options": [
+      "$S_{xq} = p \\cdot d$",
+      "$S_{xq} = 2p \\cdot d$",
+      "$S_{xq} = \\dfrac{1}{3} p \\cdot d$",
+      "$S_{xq} = p + d$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích xung quanh của hình chóp tam giác đều bằng tích của nửa chu vi đáy với trung đoạn: $S_{xq} = p \\cdot d$[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m05",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Thể tích của hình chóp tam giác đều được tính theo công thức nào (với $S$ là diện tích đáy, $h$ là chiều cao)?",
+    "hint": "Thể tích hình chóp bằng $\\dfrac{1}{3}$ tích diện tích đáy với chiều cao[cite: 2].",
+    "options": [
+      "$V = \\dfrac{1}{3} S \\cdot h$",
+      "$V = S \\cdot h$",
+      "$V = \\dfrac{1}{2} S \\cdot h$",
+      "$V = 3 S \\cdot h$"
+    ],
+    "answer": 0,
+    "explanation": "Thể tích hình chóp tam giác đều bằng $\\dfrac{1}{3}$ tích của diện tích đáy với chiều cao của nó: $V = \\dfrac{1}{3} S \\cdot h$[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m06",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Diện tích toàn phần của hình chóp tam giác đều bằng:",
+    "hint": "Xem phần Chú ý ở Bài 38[cite: 2].",
+    "options": [
+      "Tổng của diện tích xung quanh với diện tích của mặt đáy",
+      "Hiệu của diện tích xung quanh và diện tích mặt đáy",
+      "Ba lần diện tích mặt đáy",
+      "Tích của diện tích xung quanh và diện tích đáy"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích toàn phần của hình chóp tam giác đều bằng tổng của diện tích xung quanh với diện tích của mặt đáy[cite: 2]."
+  },
+  {
+    "id": "t8_c10_m07",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tam giác đều $S.MNE$ có cạnh bên $SM = 10\\text{ cm}$ và cạnh đáy $MN = 5\\text{ cm}$. Độ dài cạnh bên và cạnh đáy còn lại lần lượt là:",
+    "hint": "Các cạnh bên bằng nhau, các cạnh đáy bằng nhau[cite: 2, 3].",
+    "options": [
+      "$10\\text{ cm}$ và $5\\text{ cm}$",
+      "$5\\text{ cm}$ và $10\\text{ cm}$",
+      "$10\\text{ cm}$ và $10\\text{ cm}$",
+      "$5\\text{ cm}$ và $5\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Trong hình chóp tam giác đều $S.MNE$, các cạnh bên bằng nhau (bằng $10\\text{ cm}$) và mặt đáy là tam giác đều nên các cạnh đáy bằng nhau (bằng $5\\text{ cm}$)[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_m08",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tam giác đều có cạnh đáy bằng $10\\text{ cm}$ và trung đoạn bằng $12\\text{ cm}$. Diện tích xung quanh của hình chóp là:",
+    "hint": "Tính nửa chu vi đáy $p = \\dfrac{3 \\cdot 10}{2} = 15\\text{ (cm)}$ rồi nhân với $d = 12\\text{ cm}$[cite: 3].",
+    "options": [
+      "$180\\text{ cm}^2$",
+      "$360\\text{ cm}^2$",
+      "$60\\text{ cm}^2$",
+      "$120\\text{ cm}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $S_{xq} = p \\cdot d = \\dfrac{1}{2} \\cdot (10 + 10 + 10) \\cdot 12 = 180\\text{ (cm}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m09",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tam giác đều có diện tích đáy bằng $15,6\\text{ cm}^2$ và chiều cao bằng $10\\text{ cm}$. Thể tích của hình chóp là:",
+    "hint": "Áp dụng công thức $V = \\dfrac{1}{3} S \\cdot h$[cite: 2, 3].",
+    "options": [
+      "$52\\text{ cm}^3$",
+      "$156\\text{ cm}^3$",
+      "$78\\text{ cm}^3$",
+      "$46,8\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Thể tích hình chóp là $V = \\dfrac{1}{3} S \\cdot h = \\dfrac{1}{3} \\cdot 15,6 \\cdot 10 = 52\\text{ (cm}^3\\text{)}$[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_m10",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tam giác đều có chiều cao $h$ và thể tích $V$. Diện tích đáy $S$ được tính bởi công thức:",
+    "hint": "Từ $V = \\dfrac{1}{3} S \\cdot h$, suy ra $S$[cite: 2, 3].",
+    "options": [
+      "$S = \\dfrac{3V}{h}$",
+      "$S = \\dfrac{V}{h}$",
+      "$S = \\dfrac{h}{V}$",
+      "$S = \\dfrac{3h}{V}$"
+    ],
+    "answer": 0,
+    "explanation": "Từ $V = \\dfrac{1}{3} S \\cdot h \\Rightarrow 3V = S \\cdot h \\Rightarrow S = \\dfrac{3V}{h}$[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_m11",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Mặt đáy của hình chóp tứ giác đều là hình gì?",
+    "hint": "Nhớ lại khái niệm hình chóp tứ giác đều ở Bài 39[cite: 3].",
+    "options": [
+      "Hình vuông",
+      "Hình bình hành",
+      "Hình chữ nhật",
+      "Hình thoi"
+    ],
+    "answer": 0,
+    "explanation": "Hình chóp tứ giác đều có mặt đáy là hình vuông và các mặt bên là các tam giác cân bằng nhau chung một đỉnh[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m12",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Đường cao của hình chóp tứ giác đều là đoạn thẳng nối đỉnh của hình chóp với:",
+    "hint": "Trong hình vuông đáy, hai đường chéo cắt nhau tại tâm của đáy[cite: 3].",
+    "options": [
+      "Giao điểm hai đường chéo của đáy",
+      "Trung điểm một cạnh đáy",
+      "Một đỉnh của mặt đáy",
+      "Trung điểm một cạnh bên"
+    ],
+    "answer": 0,
+    "explanation": "Đoạn thẳng nối đỉnh của hình chóp tứ giác đều và giao điểm hai đường chéo của mặt đáy gọi là đường cao của hình chóp tứ giác đều[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m13",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Tổng số cạnh bên và cạnh đáy của một hình chóp tứ giác đều là:",
+    "hint": "Hình chóp tứ giác đều có $4$ cạnh bên và $4$ cạnh đáy[cite: 3].",
+    "options": [
+      "$8$",
+      "$4$",
+      "$6$",
+      "$10$"
+    ],
+    "answer": 0,
+    "explanation": "Một hình chóp tứ giác đều có $4$ cạnh bên và $4$ cạnh đáy nên tổng số cạnh bên và cạnh đáy là $4 + 4 = 8$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m14",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tứ giác đều có độ dài cạnh đáy bằng $10\\text{ cm}$ và trung đoạn bằng $13\\text{ cm}$. Diện tích xung quanh của hình chóp là:",
+    "hint": "Nửa chu vi đáy là $p = \\dfrac{4 \\cdot 10}{2} = 20\\text{ (cm)}$[cite: 3].",
+    "options": [
+      "$260\\text{ cm}^2$",
+      "$130\\text{ cm}^2$",
+      "$520\\text{ cm}^2$",
+      "$100\\text{ cm}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích xung quanh của hình chóp là $S_{xq} = p \\cdot d = 20 \\cdot 13 = 260\\text{ (cm}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m15",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tứ giác đều có độ dài cạnh đáy bằng $10\\text{ cm}$ và trung đoạn bằng $13\\text{ cm}$. Diện tích toàn phần của hình chóp là:",
+    "hint": "Cộng diện tích xung quanh ($260\\text{ cm}^2$) với diện tích mặt đáy ($10^2 = 100\\text{ cm}^2$)[cite: 3].",
+    "options": [
+      "$360\\text{ cm}^2$",
+      "$260\\text{ cm}^2$",
+      "$160\\text{ cm}^2$",
+      "$390\\text{ cm}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích đáy là $S_{đáy} = 10^2 = 100\\text{ (cm}^2\\text{)}$. Diện tích toàn phần là $S_{tp} = 260 + 100 = 360\\text{ (cm}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m16",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tứ giác đều có cạnh đáy bằng $6\\text{ cm}$ và chiều cao bằng $8\\text{ cm}$. Thể tích của hình chóp là:",
+    "hint": "Diện tích đáy là $6^2 = 36\\text{ (cm}^2\\text{)}$, áp dụng $V = \\dfrac{1}{3} S \\cdot h$[cite: 3].",
+    "options": [
+      "$96\\text{ cm}^3$",
+      "$288\\text{ cm}^3$",
+      "$48\\text{ cm}^3$",
+      "$144\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Thể tích hình chóp tứ giác đều là $V = \\dfrac{1}{3} \\cdot 6^2 \\cdot 8 = \\dfrac{1}{3} \\cdot 36 \\cdot 8 = 96\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m17",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tứ giác đều có thể tích bằng $64\\text{ cm}^3$ và chiều cao bằng $12\\text{ cm}$. Độ dài cạnh đáy của hình chóp là:",
+    "hint": "Tìm diện tích đáy $S = \\dfrac{3V}{h}$, rồi suy ra độ dài cạnh đáy hình vuông[cite: 3].",
+    "options": [
+      "$4\\text{ cm}$",
+      "$8\\text{ cm}$",
+      "$16\\text{ cm}$",
+      "$10\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích đáy là $S = \\dfrac{3 \\cdot 64}{12} = 16\\text{ (cm}^2\\text{)}$. Vì đáy là hình vuông nên độ dài cạnh đáy là $\\sqrt{16} = 4\\text{ (cm)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m18",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tứ giác đều có chiều cao bằng $9\\text{ cm}$ và chu vi đáy bằng $12\\text{ cm}$. Thể tích của hình chóp là:",
+    "hint": "Cạnh đáy là $12 : 4 = 3\\text{ (cm)}$, diện tích đáy là $3^2 = 9\\text{ (cm}^2\\text{)}$[cite: 3].",
+    "options": [
+      "$27\\text{ cm}^3$",
+      "$81\\text{ cm}^3$",
+      "$108\\text{ cm}^3$",
+      "$36\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Cạnh đáy hình vuông là $12 : 4 = 3\\text{ (cm)}$, diện tích đáy là $3^2 = 9\\text{ (cm}^2\\text{)}$. Thể tích hình chóp là $V = \\dfrac{1}{3} \\cdot 9 \\cdot 9 = 27\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m19",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một hình chóp tam giác đều có diện tích đáy bằng $4\\text{ cm}^2$ và thể tích bằng $8\\text{ cm}^3$. Chiều cao của khối chóp bằng:",
+    "hint": "Từ $V = \\dfrac{1}{3} S \\cdot h \\Rightarrow h = \\dfrac{3V}{S}$[cite: 2, 3].",
+    "options": [
+      "$6\\text{ cm}$",
+      "$8\\text{ cm}$",
+      "$4\\text{ cm}$",
+      "$9\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Chiều cao của khối chóp là $h = \\dfrac{3V}{S} = \\dfrac{3 \\cdot 8}{4} = 6\\text{ (cm)}$[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_m20",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Từ một mảnh bìa hình tam giác đều có cạnh $6\\text{ cm}$, gấp theo các nét đứt (nối trung điểm ba cạnh) ta được một hình chóp tam giác đều. Hình chóp tam giác đều này có cạnh bên bằng:",
+    "hint": "Mỗi cạnh của tam giác đều ban đầu được chia đôi bởi trung điểm[cite: 3].",
+    "options": [
+      "$3\\text{ cm}$",
+      "$6\\text{ cm}$",
+      "$9\\text{ cm}$",
+      "$\\dfrac{3\\sqrt{3}}{2}\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Khi gấp theo đường nối trung điểm ba cạnh của tam giác đều cạnh $6\\text{ cm}$, mỗi cạnh bên của hình chóp tam giác đều tạo thành có độ dài bằng $\\dfrac{6}{2} = 3\\text{ (cm)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_m21",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một khối gỗ gồm đế là hình lập phương cạnh $9\\text{ cm}$ và phần trên là một hình chóp tứ giác đều có tổng chiều cao của khối gỗ là $19\\text{ cm}$. Chiều cao của phần hình chóp tứ giác đều bằng:",
+    "hint": "Lấy tổng chiều cao trừ đi chiều cao của hình lập phương ($9\\text{ cm}$)[cite: 3].",
+    "options": [
+      "$10\\text{ cm}$",
+      "$9\\text{ cm}$",
+      "$28\\text{ cm}$",
+      "$19\\text{ cm}$"
+    ],
+    "answer": 0,
+    "explanation": "Chiều cao của hình lập phương là $9\\text{ cm}$ nên chiều cao của phần hình chóp tứ giác đều phía trên là $19 - 9 = 10\\text{ (cm)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_h01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Cho hình chóp tam giác đều $S.MNP$ có cạnh đáy bằng $8\\text{ cm}$ và chiều cao bằng $6\\text{ cm}$. Biết $\\sqrt{48} \\approx 6,9$, thể tích của hình chóp $S.MNP$ xấp xỉ bằng:",
+    "hint": "Tính đường cao của tam giác đều đáy bằng định lí Pythagore, tính diện tích đáy rồi tính thể tích[cite: 3].",
+    "options": [
+      "$55,2\\text{ cm}^3$",
+      "$27,6\\text{ cm}^3$",
+      "$165,6\\text{ cm}^3$",
+      "$48\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Đường cao của tam giác đều đáy là $\\sqrt{8^2 - 4^2} = \\sqrt{48} \\approx 6,9\\text{ (cm)}$. Diện tích đáy là $S = \\dfrac{1}{2} \\cdot 8 \\cdot 6,9 = 27,6\\text{ (cm}^2\\text{)}$. Thể tích hình chóp là $V = \\dfrac{1}{3} \\cdot 27,6 \\cdot 6 = 55,2\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_h02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Hình chóp tứ giác đều $S.ABCD$ có thể tích bằng $144\\text{ cm}^3$. Gọi $M, N, P, Q$ lần lượt là trung điểm của $AB, BC, CD, DA$. Thể tích của hình chóp $S.MNPQ$ bằng:",
+    "hint": "Diện tích hình vuông $MNPQ$ bằng một nửa diện tích hình vuông $ABCD$, và hai chóp có cùng chiều cao[cite: 3].",
+    "options": [
+      "$72\\text{ cm}^3$",
+      "$36\\text{ cm}^3$",
+      "$144\\text{ cm}^3$",
+      "$48\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Vì $M, N, P, Q$ là trung điểm các cạnh của hình vuông $ABCD$ nên $S_{MNPQ} = \\dfrac{1}{2} S_{ABCD}$. Hai hình chóp $S.MNPQ$ và $S.ABCD$ có cùng chiều cao nên $V_{S.MNPQ} = \\dfrac{1}{2} V_{S.ABCD} = \\dfrac{1}{2} \\cdot 144 = 72\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_h03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Từ một khúc gỗ hình lập phương cạnh $30\\text{ cm}$, người ta cắt đi một phần gỗ để được phần còn lại là một hình chóp tứ giác đều có đáy là hình vuông cạnh $30\\text{ cm}$ và chiều cao của hình chóp cũng bằng $30\\text{ cm}$. Thể tích của phần gỗ bị cắt đi bằng:",
+    "hint": "Lấy thể tích hình lập phương trừ đi thể tích hình chóp tứ giác đều[cite: 3].",
+    "options": [
+      "$18\\,000\\text{ cm}^3$",
+      "$9\\,000\\text{ cm}^3$",
+      "$27\\,000\\text{ cm}^3$",
+      "$6\\,000\\text{ cm}^3$"
+    ],
+    "answer": 0,
+    "explanation": "Thể tích hình lập phương là $V_{lp} = 30^3 = 27\\,000\\text{ (cm}^3\\text{)}$. Thể tích hình chóp là $V_{chóp} = \\dfrac{1}{3} \\cdot 30^2 \\cdot 30 = 9\\,000\\text{ (cm}^3\\text{)}$. Thể tích phần gỗ bị cắt đi là $27\\,000 - 9\\,000 = 18\\,000\\text{ (cm}^3\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_a01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Nhân dịp Tết Trung thu, bạn Khôi làm một chiếc đèn lồng có dạng hình chóp tam giác đều, có độ dài cạnh đáy là $30\\text{ cm}$ và đường cao của mặt bên (trung đoạn) tương ứng là $40\\text{ cm}$. Diện tích giấy màu (tính theo $\\text{m}^2$, bỏ qua mép gấp) để dán tất cả các mặt bên của đèn lồng là:",
+    "hint": "Tính $S_{xq}$ theo $\\text{cm}^2$ rồi đổi sang $\\text{m}^2$ ($1\\text{ m}^2 = 10\\,000\\text{ cm}^2$)[cite: 3].",
+    "options": [
+      "$0,18\\text{ m}^2$",
+      "$1,8\\text{ m}^2$",
+      "$0,36\\text{ m}^2$",
+      "$1800\\text{ m}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích xung quanh của đèn lồng là $S_{xq} = \\dfrac{1}{2} \\cdot (30 + 30 + 30) \\cdot 40 = 1800\\text{ (cm}^2\\text{)} = 0,18\\text{ (m}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_a02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một cái lều đồ chơi gồm phần thân là hình lập phương cạnh $1,2\\text{ m}$ và nóc lều là hình chóp tứ giác đều có cạnh đáy $1,2\\text{ m}$, trung đoạn $0,8\\text{ m}$. Tổng diện tích vải để phủ nóc và bốn mặt bên của lều (coi mép nối không đáng kể) bằng:",
+    "hint": "Cộng diện tích $4$ mặt bên của hình lập phương với diện tích xung quanh của nóc chóp tứ giác đều[cite: 3].",
+    "options": [
+      "$7,68\\text{ m}^2$",
+      "$5,76\\text{ m}^2$",
+      "$1,92\\text{ m}^2$",
+      "$8,64\\text{ m}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích $4$ mặt bên của lều là $S_1 = 4 \\cdot 1,2^2 = 5,76\\text{ (m}^2\\text{)}$. Diện tích nóc lều là $S_2 = 4 \\cdot \\left(\\dfrac{1}{2} \\cdot 1,2 \\cdot 0,8\\right) = 1,92\\text{ (m}^2\\text{)}$. Tổng diện tích vải là $5,76 + 1,92 = 7,68\\text{ (m}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_a03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Một khối đồ chơi bằng gỗ được tạo thành từ hai hình chóp tứ giác đều úp đáy vào nhau. Cạnh đáy của mỗi hình chóp bằng $6\\text{ cm}$, trung đoạn của mỗi hình chóp bằng $4\\text{ cm}$. Diện tích cần sơn mặt ngoài của món đồ chơi bằng:",
+    "hint": "Mặt ngoài gồm $8$ mặt tam giác cân (tương ứng $2$ lần diện tích xung quanh của một hình chóp)[cite: 3].",
+    "options": [
+      "$96\\text{ cm}^2$",
+      "$48\\text{ cm}^2$",
+      "$192\\text{ cm}^2$",
+      "$132\\text{ cm}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích cần sơn bằng hai lần diện tích xung quanh của một hình chóp tứ giác đều: $S = 2 \\cdot p \\cdot d = 2 \\cdot (2 \\cdot 6) \\cdot 4 = 96\\text{ (cm}^2\\text{)}$[cite: 3]."
+  },
+  {
+    "id": "t8_c10_tf01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về hình chóp tam giác đều:",
+    "hint": "Đối chiếu kiến thức Bài 38 SGK Toán 8 (Tập 2)[cite: 2, 3].",
+    "statements": [
+      {
+        "text": "Hình chóp tam giác đều có mặt đáy là tam giác đều và các mặt bên là các tam giác cân bằng nhau chung một đỉnh.",
+        "answer": true
+      },
+      {
+        "text": "Đường cao của hình chóp tam giác đều là đoạn thẳng nối đỉnh của hình chóp với trung điểm một cạnh đáy.",
+        "answer": false
+      },
+      {
+        "text": "Diện tích xung quanh của hình chóp tam giác đều bằng tích của nửa chu vi đáy với trung đoạn.",
+        "answer": true
+      },
+      {
+        "text": "Thể tích của hình chóp tam giác đều bằng $\\dfrac{1}{3}$ tích của diện tích đáy với chiều cao của nó.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, c, d đúng theo SGK[cite: 2, 3]. Ý b sai vì đường cao của hình chóp tam giác đều nối đỉnh với trọng tâm của tam giác đáy[cite: 2, 3]."
+  },
+  {
+    "id": "t8_c10_tf02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về hình chóp tứ giác đều:",
+    "hint": "Đối chiếu kiến thức Bài 39 SGK Toán 8 (Tập 2)[cite: 3].",
+    "statements": [
+      {
+        "text": "Hình chóp tứ giác đều có mặt đáy là hình vuông và các mặt bên là các tam giác cân bằng nhau chung một đỉnh.",
+        "answer": true
+      },
+      {
+        "text": "Một hình chóp tứ giác đều có tất cả $8$ cạnh.",
+        "answer": true
+      },
+      {
+        "text": "Diện tích xung quanh của hình chóp tứ giác đều bằng chu vi đáy nhân với trung đoạn.",
+        "answer": false
+      },
+      {
+        "text": "Thể tích của hình chóp tứ giác đều được tính theo công thức $V = \\dfrac{1}{3} S \\cdot h$.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, b, d đúng theo SGK[cite: 3]. Ý c sai vì diện tích xung quanh bằng nửa chu vi đáy nhân với trung đoạn ($S_{xq} = p \\cdot d$)[cite: 3]."
+  },
+  {
+    "id": "t8_c10_tf03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương X — Một số hình khối trong thực tiễn",
+    "prompt": "Xét tính đúng/sai của các khẳng định sau khi tính diện tích và thể tích hình chóp đều:",
+    "hint": "Chú ý phân biệt chiều cao hình chóp ($h$), trung đoạn ($d$) và đơn vị đo[cite: 2, 3].",
+    "statements": [
+      {
+        "text": "Diện tích toàn phần của hình chóp đều bằng tổng diện tích xung quanh và diện tích mặt đáy.",
+        "answer": true
+      },
+      {
+        "text": "Trung đoạn của hình chóp đều luôn bằng chiều cao của hình chóp đó.",
+        "answer": false
+      },
+      {
+        "text": "Nếu giữ nguyên diện tích đáy và tăng chiều cao của hình chóp đều lên $3$ lần thì thể tích của nó cũng tăng lên $3$ lần.",
+        "answer": true
+      },
+      {
+        "text": "$1800\\text{ cm}^2 = 0,18\\text{ m}^2$.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, c, d đúng theo công thức và quy đổi đơn vị diện tích[cite: 2, 3]. Ý b sai vì trung đoạn là đường cao của mặt bên, còn chiều cao của hình chóp nối đỉnh với tâm đáy[cite: 2, 3]."
+  }
+]
