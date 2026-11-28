@@ -1982,16 +1982,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Tỉ số của hai đoạn thẳng $AB$ và $CD$ là gì?",
+    "prompt": "Cho hai đoạn thẳng $AB = 15\\text{ cm}$ và $MN = 35\\text{ cm}$. Tỉ số của hai đoạn thẳng $AB$ và $MN$ bằng:",
     "hint": "Tỉ số của hai đoạn thẳng là tỉ số độ dài của chúng theo cùng một đơn vị đo.",
     "options": [
-      "Tỉ số độ dài của chúng theo cùng một đơn vị đo",
-      "Hiệu độ dài của hai đoạn thẳng",
-      "Tổng độ dài của hai đoạn thẳng",
-      "Tích độ dài của hai đoạn thẳng"
+      "$\\dfrac{3}{7}$",
+      "$\\dfrac{7}{3}$",
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{5}{7}$"
     ],
     "answer": 0,
-    "explanation": "Theo định nghĩa, tỉ số của hai đoạn thẳng là tỉ số độ dài của chúng theo cùng một đơn vị đo."
+    "explanation": "Hai đoạn thẳng đã cùng đơn vị đo ($\\text{cm}$) nên $\\dfrac{AB}{MN} = \\dfrac{15}{35} = \\dfrac{3}{7}$."
   },
   {
     "id": "t8_c4_m02",
@@ -2000,16 +2000,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho đoạn thẳng $AB = 6\\text{ cm}$ và $CD = 15\\text{ cm}$. Tỉ số $\\dfrac{AB}{CD}$ bằng:",
-    "hint": "Đưa về cùng đơn vị $\\text{cm}$ rồi rút gọn phân số $\\dfrac{6}{15}$.",
+    "prompt": "Cho hai đoạn thẳng $PQ = 0,3\\text{ m}$ và $EF = 12\\text{ dm}$. Tỉ số $\\dfrac{PQ}{EF}$ bằng:",
+    "hint": "Đổi $PQ = 0,3\\text{ m} = 3\\text{ dm}$ trước khi lập tỉ số.",
     "options": [
-      "$\\dfrac{2}{5}$",
-      "$\\dfrac{5}{2}$",
-      "$\\dfrac{2}{3}$",
-      "$\\dfrac{3}{5}$"
+      "$\\dfrac{1}{40}$",
+      "$\\dfrac{1}{4}$",
+      "$4$",
+      "$\\dfrac{3}{120}$"
     ],
-    "answer": 0,
-    "explanation": "Ta có $\\dfrac{AB}{CD} = \\dfrac{6}{15} = \\dfrac{2}{5}$."
+    "answer": 1,
+    "explanation": "Đổi $PQ = 0,3\\text{ m} = 3\\text{ dm}$. Khi đó tỉ số $\\dfrac{PQ}{EF} = \\dfrac{3}{12} = \\dfrac{1}{4}$."
   },
   {
     "id": "t8_c4_m03",
@@ -2018,16 +2018,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho đoạn thẳng $MN = 4\\text{ dm}$ và $PQ = 120\\text{ cm}$. Tỉ số $\\dfrac{MN}{PQ}$ bằng:",
-    "hint": "Đổi $4\\text{ dm} = 40\\text{ cm}$ trước khi lập tỉ số.",
+    "prompt": "Cho bốn đoạn thẳng $AB = 2\\text{ cm}$, $CD = 3\\text{ cm}$, $A'B' = 4\\text{ cm}$ và $C'D'$. Biết hai đoạn thẳng $AB$ và $CD$ tỉ lệ với hai đoạn thẳng $A'B'$ và $C'D'$. Độ dài đoạn thẳng $C'D'$ bằng:",
+    "hint": "Lập tỉ lệ thức $\\dfrac{AB}{CD} = \\dfrac{A'B'}{C'D'}$.",
     "options": [
-      "$\\dfrac{1}{30}$",
-      "$\\dfrac{1}{3}$",
-      "$3$",
-      "$30$"
+      "$6\\text{ cm}$",
+      "$8\\text{ cm}$",
+      "$5\\text{ cm}$",
+      "$1,5\\text{ cm}$"
     ],
-    "answer": 1,
-    "explanation": "Đổi $MN = 4\\text{ dm} = 40\\text{ cm}$. Khi đó $\\dfrac{MN}{PQ} = \\dfrac{40}{120} = \\dfrac{1}{3}$."
+    "answer": 0,
+    "explanation": "Vì $AB, CD$ tỉ lệ với $A'B', C'D'$ nên $\\dfrac{AB}{CD} = \\dfrac{A'B'}{C'D'} \\Rightarrow \\dfrac{2}{3} = \\dfrac{4}{C'D'} \\Rightarrow C'D' = \\dfrac{3 \\cdot 4}{2} = 6\\text{ (cm)}$."
   },
   {
     "id": "t8_c4_m04",
@@ -2036,16 +2036,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Hai đoạn thẳng $AB$ và $CD$ được gọi là tỉ lệ với hai đoạn thẳng $A'B'$ và $C'D'$ nếu:",
-    "hint": "Hai đoạn thẳng $AB, CD$ tỉ lệ với hai đoạn thẳng $A'B', C'D'$ khi $\\dfrac{AB}{CD} = \\dfrac{A'B'}{C'D'}$.",
+    "prompt": "Cho tam giác $DEF$ có $MN \\parallel EF$ ($M \\in DE, N \\in DF$) như hình vẽ. Biết $DM = 2\\text{ cm}$, $ME = 4\\text{ cm}$ và $NF = 5\\text{ cm}$. Độ dài đoạn thẳng $DN$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='115,24 45,128 215,128' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='80' y1='59' x2='175' y2='59' stroke='#0284c7' stroke-width='2'/><text x='111' y='19' font-size='11' font-weight='bold' fill='#0f172a'>D</text><text x='32' y='134' font-size='11' font-weight='bold' fill='#0f172a'>E</text><text x='219' y='134' font-size='11' font-weight='bold' fill='#0f172a'>F</text><text x='65' y='62' font-size='11' font-weight='bold' fill='#0284c7'>M</text><text x='180' y='62' font-size='11' font-weight='bold' fill='#0284c7'>N</text><text x='86' y='42' font-size='10' fill='#0f172a'>2</text><text x='52' y='98' font-size='10' fill='#0f172a'>4</text><text x='150' y='42' font-size='10' fill='#dc2626' font-weight='bold'>x</text><text x='198' y='98' font-size='10' fill='#0f172a'>5</text></svg></div>",
+    "hint": "Áp dụng định lí Thalès trong tam giác $DEF$: $\\dfrac{DM}{ME} = \\dfrac{DN}{NF}$.",
     "options": [
-      "$\\dfrac{AB}{CD} = \\dfrac{A'B'}{C'D'}$",
-      "$AB + CD = A'B' + C'D'$",
-      "$\\dfrac{AB}{A'B'} = \\dfrac{C'D'}{CD}$",
-      "$AB \\cdot CD = A'B' \\cdot C'D'$"
+      "$2,5\\text{ cm}$",
+      "$10\\text{ cm}$",
+      "$3\\text{ cm}$",
+      "$1,6\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Hai đoạn thẳng $AB$ và $CD$ tỉ lệ với hai đoạn thẳng $A'B'$ và $C'D'$ nếu có tỉ lệ thức $\\dfrac{AB}{CD} = \\dfrac{A'B'}{C'D'}$."
+    "explanation": "Xét $\\triangle DEF$ có $MN \\parallel EF$, theo định lí Thalès ta có $\\dfrac{DM}{ME} = \\dfrac{DN}{NF} \\Rightarrow \\dfrac{2}{4} = \\dfrac{DN}{5} \\Rightarrow DN = \\dfrac{2 \\cdot 5}{4} = 2,5\\text{ (cm)}$."
   },
   {
     "id": "t8_c4_m05",
@@ -2054,16 +2054,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Phát biểu đúng của định lí Thalès trong tam giác: Nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó:",
-    "hint": "Định lí Thalès: Nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ.",
+    "prompt": "Cho tam giác $ABC$ có $MN \\parallel BC$ ($M \\in AB, N \\in AC$) như hình vẽ. Biết $AM = 6,5\\text{ cm}$, $AN = 4\\text{ cm}$ và $NC = 2\\text{ cm}$. Độ dài đoạn thẳng $MB$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='125,24 45,128 215,128' fill='#f0fdf4' stroke='#16a34a' stroke-width='2'/><line x1='62' y1='93' x2='196' y2='93' stroke='#0284c7' stroke-width='2'/><text x='121' y='19' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='32' y='134' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='219' y='134' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='47' y='96' font-size='11' font-weight='bold' fill='#0284c7'>M</text><text x='201' y='96' font-size='11' font-weight='bold' fill='#0284c7'>N</text><text x='80' y='58' font-size='10' fill='#0f172a'>6,5</text><text x='43' y='115' font-size='10' fill='#dc2626' font-weight='bold'>x</text><text x='168' y='58' font-size='10' fill='#0f172a'>4</text><text x='210' y='115' font-size='10' fill='#0f172a'>2</text></svg></div>",
+    "hint": "Áp dụng định lí Thalès: $\\dfrac{AM}{MB} = \\dfrac{AN}{NC}$.",
     "options": [
-      "Chia hai cạnh đó thành hai phần bằng nhau",
-      "Định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ",
-      "Vuông góc với cạnh thứ ba",
-      "Là đường trung bình của tam giác"
+      "$3,25\\text{ cm}$",
+      "$13\\text{ cm}$",
+      "$4,5\\text{ cm}$",
+      "$3\\text{ cm}$"
     ],
-    "answer": 1,
-    "explanation": "Theo định lí Thalès, đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại sẽ định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ."
+    "answer": 0,
+    "explanation": "Theo định lí Thalès ta có $\\dfrac{AM}{MB} = \\dfrac{AN}{NC} \\Rightarrow \\dfrac{6,5}{MB} = \\dfrac{4}{2} = 2 \\Rightarrow MB = \\dfrac{6,5}{2} = 3,25\\text{ (cm)}$."
   },
   {
     "id": "t8_c4_m06",
@@ -2072,16 +2072,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$, đường thẳng $DE \\parallel BC$ với $D \\in AB$, $E \\in AC$. Hệ thức nào sau đây đúng theo định lí Thalès?",
-    "hint": "Trên hai cạnh $AB$ và $AC$, các đoạn tương ứng tỉ lệ là $\\dfrac{AD}{AB} = \\dfrac{AE}{AC}$, $\\dfrac{AD}{DB} = \\dfrac{AE}{EC}$, $\\dfrac{DB}{AB} = \\dfrac{EC}{AC}$.",
+    "prompt": "Cho tam giác $ABC$ có $DE \\parallel BC$ ($D \\in AB, E \\in AC$) như hình vẽ. Biết $AD = 12$, $DB = 18$ và $EC = 30$. Độ dài đoạn thẳng $AE$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='115,24 45,128 215,128' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='87' y1='66' x2='155' y2='66' stroke='#0284c7' stroke-width='2'/><text x='111' y='19' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='32' y='134' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='219' y='134' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='72' y='69' font-size='11' font-weight='bold' fill='#0284c7'>D</text><text x='160' y='69' font-size='11' font-weight='bold' fill='#0284c7'>E</text><text x='88' y='46' font-size='10' fill='#0f172a'>12</text><text x='52' y='100' font-size='10' fill='#0f172a'>18</text><text x='142' y='46' font-size='10' fill='#dc2626' font-weight='bold'>x</text><text x='194' y='100' font-size='10' fill='#0f172a'>30</text></svg></div>",
+    "hint": "Áp dụng định lí Thalès: $\\dfrac{AD}{DB} = \\dfrac{AE}{EC}$.",
     "options": [
-      "$\\dfrac{AD}{AB} = \\dfrac{AE}{AC}$",
-      "$\\dfrac{AD}{DB} = \\dfrac{EC}{AE}$",
-      "$\\dfrac{AB}{AD} = \\dfrac{EC}{AC}$",
-      "$\\dfrac{AD}{AC} = \\dfrac{AE}{AB}$"
+      "$20$",
+      "$50$",
+      "$12$",
+      "$30$"
     ],
     "answer": 0,
-    "explanation": "Vì $DE \\parallel BC$ nên theo định lí Thalès ta có $\\dfrac{AD}{AB} = \\dfrac{AE}{AC}$ (và $\\dfrac{AD}{DB} = \\dfrac{AE}{EC}$)."
+    "explanation": "Vì $DE \\parallel BC$ nên theo định lí Thalès ta có $\\dfrac{AD}{DB} = \\dfrac{AE}{EC} \\Rightarrow \\dfrac{12}{18} = \\dfrac{AE}{30} \\Rightarrow AE = \\dfrac{12 \\cdot 30}{18} = 20$."
   },
   {
     "id": "t8_c4_m07",
@@ -2090,16 +2090,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$, điểm $D \\in AB$ và $E \\in AC$ sao cho $DE \\parallel BC$. Biết $AD = 4\\text{ cm}$, $DB = 6\\text{ cm}$, $AE = 5\\text{ cm}$. Độ dài $EC$ bằng:",
-    "hint": "Áp dụng định lí Thalès: $\\dfrac{AD}{DB} = \\dfrac{AE}{EC}$.",
+    "prompt": "Cho tam giác $ABC$ có $DE \\parallel AC$ ($D \\in AB, E \\in BC$) như hình vẽ. Biết $BD = 5$, $DA = 2$ và $EC = 2,5$. Độ dài đoạn thẳng $BE$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='75,24 75,122 205,132' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='75' y1='94' x2='168' y2='101' stroke='#0284c7' stroke-width='2'/><text x='63' y='24' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='61' y='97' font-size='11' font-weight='bold' fill='#0284c7'>D</text><text x='62' y='128' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='173' y='101' font-size='11' font-weight='bold' fill='#0284c7'>E</text><text x='210' y='136' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='63' y='62' font-size='10' fill='#0f172a'>5</text><text x='63' y='112' font-size='10' fill='#0f172a'>2</text><text x='128' y='62' font-size='10' fill='#dc2626' font-weight='bold'>x</text><text x='194' y='118' font-size='10' fill='#0f172a'>2,5</text></svg></div>",
+    "hint": "Áp dụng định lí Thalès trong tam giác $ABC$ với $DE \\parallel AC$: $\\dfrac{BD}{DA} = \\dfrac{BE}{EC}$.",
     "options": [
-      "$7,5\\text{ cm}$",
-      "$6\\text{ cm}$",
-      "$8\\text{ cm}$",
-      "$3,3\\text{ cm}$"
+      "$5$",
+      "$7$",
+      "$6,5$",
+      "$6,25$"
     ],
-    "answer": 0,
-    "explanation": "Vì $DE \\parallel BC$ nên $\\dfrac{AD}{DB} = \\dfrac{AE}{EC} \\Rightarrow \\dfrac{4}{6} = \\dfrac{5}{EC} \\Rightarrow EC = \\dfrac{6 \\cdot 5}{4} = 7,5\\text{ (cm)}$."
+    "answer": 3,
+    "explanation": "Vì $DE \\parallel AC$ nên theo định lí Thalès ta có $\\dfrac{BD}{DA} = \\dfrac{BE}{EC} \\Rightarrow \\dfrac{5}{2} = \\dfrac{BE}{2,5} \\Rightarrow BE = \\dfrac{5 \\cdot 2,5}{2} = 6,25$."
   },
   {
     "id": "t8_c4_m08",
@@ -2108,16 +2108,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Định lí Thalès đảo phát biểu rằng: Nếu một đường thẳng cắt hai cạnh của một tam giác và định ra trên hai cạnh này những đoạn thẳng tương ứng tỉ lệ thì đường thẳng đó:",
-    "hint": "Định lí Thalès đảo: Nếu một đường thẳng cắt hai cạnh của một tam giác và định ra trên hai cạnh này những đoạn thẳng tương ứng tỉ lệ thì đường thẳng đó song song với cạnh còn lại của tam giác.",
+    "prompt": "Cho tam giác $PHQ$ vuông tại $H$ như hình vẽ. Trên cạnh $PH$ lấy điểm $E$, trên cạnh $PQ$ lấy điểm $F$ sao cho $EF \\perp PH$. Biết $PE = 4$, $PF = 5$ và $FQ = 3,5$. Độ dài đoạn thẳng $PH$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='75,24 75,126 195,126' fill='#f0f9ff' stroke='#0f172a' stroke-width='2'/><line x1='75' y1='84' x2='145.6' y2='84' stroke='#0284c7' stroke-width='2'/><polyline points='75,116 85,116 85,126' fill='none' stroke='#0f172a' stroke-width='1.2'/><polyline points='75,74 85,74 85,84' fill='none' stroke='#0284c7' stroke-width='1.2'/><text x='63' y='24' font-size='11' font-weight='bold' fill='#0f172a'>P</text><text x='61' y='87' font-size='11' font-weight='bold' fill='#0284c7'>E</text><text x='61' y='132' font-size='11' font-weight='bold' fill='#0f172a'>H</text><text x='151' y='84' font-size='11' font-weight='bold' fill='#0284c7'>F</text><text x='200' y='132' font-size='11' font-weight='bold' fill='#0f172a'>Q</text><text x='62' y='57' font-size='10' fill='#0f172a'>4</text><text x='116' y='52' font-size='10' fill='#0f172a'>5</text><text x='176' y='105' font-size='10' fill='#0f172a'>3,5</text></svg></div>",
+    "hint": "Vì $EF \\perp PH$ và $QH \\perp PH$ nên $EF \\parallel QH$. Tính $EH$ rồi cộng với $PE$.",
     "options": [
-      "Song song với cạnh còn lại của tam giác",
-      "Vuông góc với cạnh còn lại của tam giác",
-      "Đi qua trung điểm của cạnh thứ ba",
-      "Bằng một nửa cạnh thứ ba"
+      "$2,8$",
+      "$6,8$",
+      "$7,5$",
+      "$6,3$"
     ],
-    "answer": 0,
-    "explanation": "Theo định lí Thalès đảo, nếu một đường thẳng cắt hai cạnh của tam giác và định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ thì nó song song với cạnh còn lại."
+    "answer": 1,
+    "explanation": "Ta có $EF \\perp PH$ và $QH \\perp PH$ nên $EF \\parallel QH$. Theo định lí Thalès: $\\dfrac{PE}{EH} = \\dfrac{PF}{FQ} \\Rightarrow \\dfrac{4}{EH} = \\dfrac{5}{3,5} \\Rightarrow EH = \\dfrac{4 \\cdot 3,5}{5} = 2,8$. Vậy $PH = PE + EH = 4 + 2,8 = 6,8$."
   },
   {
     "id": "t8_c4_m09",
@@ -2126,16 +2126,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$, điểm $M$ thuộc cạnh $AB$ sao cho $\\dfrac{AM}{AB} = \\dfrac{1}{3}$ và điểm $N$ thuộc cạnh $AC$ sao cho $\\dfrac{AN}{AC} = \\dfrac{1}{3}$. Kết luận nào sau đây đúng?",
-    "hint": "So sánh hai tỉ số $\\dfrac{AM}{AB}$ và $\\dfrac{AN}{AC}$ rồi áp dụng định lí Thalès đảo.",
+    "prompt": "Cho tam giác $ABC$ có $AB = 6\\text{ cm}$, $AC = 9\\text{ cm}$. Trên cạnh $AB$ lấy điểm $B'$ sao cho $AB' = 4\\text{ cm}$, trên cạnh $AC$ lấy điểm $C'$ sao cho $AC' = 6\\text{ cm}$ như hình vẽ. Khẳng định nào sau đây đúng?<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='115,24 45,128 215,128' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='68.3' y1='93.3' x2='181.7' y2='93.3' stroke='#0284c7' stroke-width='2'/><text x='111' y='19' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='32' y='134' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='219' y='134' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='51' y='96' font-size='11' font-weight='bold' fill='#0284c7'>B'</text><text x='186' y='96' font-size='11' font-weight='bold' fill='#0284c7'>C'</text></svg></div>",
+    "hint": "So sánh hai tỉ số $\\dfrac{AB'}{AB}$ và $\\dfrac{AC'}{AC}$, rồi áp dụng định lí Thalès đảo.",
     "options": [
-      "$MN \\parallel BC$",
-      "$MN \\perp BC$",
-      "$MN = BC$",
-      "$MN$ cắt $BC$"
+      "$B'C' \\parallel BC$",
+      "$B'C' = BC$",
+      "$B'C' \\perp BC$",
+      "$B'C'$ cắt $BC$"
     ],
     "answer": 0,
-    "explanation": "Vì $\\dfrac{AM}{AB} = \\dfrac{AN}{AC} = \\dfrac{1}{3}$ nên theo định lí Thalès đảo, ta có $MN \\parallel BC$."
+    "explanation": "Ta có $\\dfrac{AB'}{AB} = \\dfrac{4}{6} = \\dfrac{2}{3}$ và $\\dfrac{AC'}{AC} = \\dfrac{6}{9} = \\dfrac{2}{3}$. Vì $\\dfrac{AB'}{AB} = \\dfrac{AC'}{AC}$ nên theo định lí Thalès đảo ta có $B'C' \\parallel BC$."
   },
   {
     "id": "t8_c4_m10",
@@ -2144,16 +2144,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Hệ quả của định lí Thalès: Nếu một đường thẳng cắt hai cạnh của một tam giác và song song với cạnh còn lại thì nó tạo thành một tam giác mới có:",
-    "hint": "Hệ quả định lí Thalès tạo ra tam giác mới có ba cạnh tương ứng tỉ lệ với ba cạnh của tam giác đã cho.",
+    "prompt": "Cho tam giác $ABC$ có $DE \\parallel BC$ ($D \\in AB, E \\in AC$). Tỉ lệ thức nào sau đây SAI?",
+    "hint": "Kiểm tra sự tương ứng của các đoạn thẳng trên hai cạnh $AB$ và $AC$.",
     "options": [
-      "Ba cạnh tương ứng tỉ lệ với ba cạnh của tam giác đã cho",
-      "Diện tích bằng tam giác đã cho",
-      "Chu vi bằng tam giác đã cho",
-      "Các góc bằng nhau"
+      "$\\dfrac{AD}{AB} = \\dfrac{AE}{AC}$",
+      "$\\dfrac{AD}{DB} = \\dfrac{AE}{EC}$",
+      "$\\dfrac{DB}{AB} = \\dfrac{EC}{AC}$",
+      "$\\dfrac{AD}{DB} = \\dfrac{EC}{AE}$"
     ],
-    "answer": 0,
-    "explanation": "Theo hệ quả của định lí Thalès, đường thẳng cắt hai cạnh của tam giác và song song với cạnh thứ ba tạo thành một tam giác mới có ba cạnh tương ứng tỉ lệ với ba cạnh của tam giác đã cho."
+    "answer": 3,
+    "explanation": "Theo định lí Thalès, $DE \\parallel BC$ định ra trên $AB$ và $AC$ những đoạn thẳng tương ứng tỉ lệ nên $\\dfrac{AD}{DB} = \\dfrac{AE}{EC}$, do đó $\\dfrac{AD}{DB} = \\dfrac{EC}{AE}$ là sai."
   },
   {
     "id": "t8_c4_m11",
@@ -2162,16 +2162,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$ có $MN \\parallel BC$ ($M \\in AB$, $N \\in AC$). Biết $AM = 3\\text{ cm}$, $AB = 9\\text{ cm}$, $BC = 12\\text{ cm}$. Độ dài $MN$ là:",
-    "hint": "Áp dụng hệ quả định lí Thalès: $\\dfrac{MN}{BC} = \\dfrac{AM}{AB}$.",
+    "prompt": "Cho tam giác $ABC$ có $BC = 13\\text{ cm}$. Gọi $E$ và $F$ lần lượt là trung điểm của $AB$ và $AC$ như hình vẽ. Độ dài đoạn thẳng $EF$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='115,24 45,128 215,128' fill='#f0fdf4' stroke='#16a34a' stroke-width='2'/><line x1='80' y1='76' x2='165' y2='76' stroke='#0284c7' stroke-width='2'/><line x1='94' y1='48' x2='101' y2='52' stroke='#16a34a' stroke-width='1.5'/><line x1='59' y1='100' x2='66' y2='104' stroke='#16a34a' stroke-width='1.5'/><line x1='137' y1='52' x2='144' y2='48' stroke='#16a34a' stroke-width='1.5'/><line x1='140' y1='55' x2='147' y2='51' stroke='#16a34a' stroke-width='1.5'/><line x1='187' y1='104' x2='194' y2='100' stroke='#16a34a' stroke-width='1.5'/><line x1='190' y1='107' x2='197' y2='103' stroke='#16a34a' stroke-width='1.5'/><text x='111' y='19' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='32' y='134' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='219' y='134' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='65' y='79' font-size='11' font-weight='bold' fill='#0284c7'>E</text><text x='170' y='79' font-size='11' font-weight='bold' fill='#0284c7'>F</text><text x='130' y='141' text-anchor='middle' font-size='10' fill='#0f172a'>13 cm</text></svg></div>",
+    "hint": "Đoạn thẳng nối trung điểm hai cạnh của tam giác là đường trung bình của tam giác và bằng nửa cạnh thứ ba.",
     "options": [
-      "$4\\text{ cm}$",
-      "$3\\text{ cm}$",
-      "$6\\text{ cm}$",
-      "$8\\text{ cm}$"
+      "$13\\text{ cm}$",
+      "$26\\text{ cm}$",
+      "$6,5\\text{ cm}$",
+      "$3\\text{ cm}$"
     ],
-    "answer": 0,
-    "explanation": "Vì $MN \\parallel BC$ nên $\\dfrac{MN}{BC} = \\dfrac{AM}{AB} \\Rightarrow \\dfrac{MN}{12} = \\dfrac{3}{9} = \\dfrac{1}{3} \\Rightarrow MN = 4\\text{ (cm)}$."
+    "answer": 2,
+    "explanation": "Vì $E, F$ lần lượt là trung điểm của $AB, AC$ nên $EF$ là đường trung bình của $\\triangle ABC$. Suy ra $EF = \\dfrac{1}{2}BC = \\dfrac{1}{2} \\cdot 13 = 6,5\\text{ (cm)}$."
   },
   {
     "id": "t8_c4_m12",
@@ -2180,16 +2180,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Đường trung bình của tam giác là đoạn thẳng nối:",
-    "hint": "Định nghĩa đường trung bình của tam giác: Đường trung bình của tam giác là đoạn thẳng nối trung điểm hai cạnh của tam giác.",
+    "prompt": "Cho tam giác $ABC$ có $M$ là trung điểm của $AB$. Qua $M$ vẽ đường thẳng song song với $BC$ cắt $AC$ tại $N$ như hình vẽ. Biết $AN = 4,5\\text{ cm}$, độ dài cạnh $AC$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='115,24 45,128 215,128' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='80' y1='76' x2='165' y2='76' stroke='#0284c7' stroke-width='2'/><line x1='94' y1='48' x2='101' y2='52' stroke='#0f172a' stroke-width='1.5'/><line x1='59' y1='100' x2='66' y2='104' stroke='#0f172a' stroke-width='1.5'/><text x='111' y='19' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='32' y='134' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='219' y='134' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='64' y='79' font-size='11' font-weight='bold' fill='#0284c7'>M</text><text x='170' y='79' font-size='11' font-weight='bold' fill='#0284c7'>N</text><text x='145' y='48' font-size='10' fill='#0f172a'>4,5 cm</text></svg></div>",
+    "hint": "Đường thẳng đi qua trung điểm một cạnh của tam giác và song song với cạnh thứ hai thì đi qua trung điểm cạnh thứ ba.",
     "options": [
-      "Đỉnh với trung điểm cạnh đối diện",
-      "Trung điểm hai cạnh của tam giác",
-      "Hai đỉnh của tam giác",
-      "Hai điểm bất kì trên hai cạnh"
+      "$2,25\\text{ cm}$",
+      "$9\\text{ cm}$",
+      "$4,5\\text{ cm}$",
+      "$13,5\\text{ cm}$"
     ],
     "answer": 1,
-    "explanation": "Đường trung bình của tam giác là đoạn thẳng nối trung điểm hai cạnh của tam giác."
+    "explanation": "Trong $\\triangle ABC$, đường thẳng qua trung điểm $M$ của $AB$ và song song với $BC$ đi qua trung điểm $N$ của $AC$. Do đó $AC = 2AN = 2 \\cdot 4,5 = 9\\text{ (cm)}$."
   },
   {
     "id": "t8_c4_m13",
@@ -2198,16 +2198,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Đường trung bình của tam giác thì:",
-    "hint": "Tính chất đường trung bình của tam giác: Song song với cạnh thứ ba và bằng nửa cạnh ấy.",
+    "prompt": "Cho tam giác $ABC$ có độ dài ba cạnh $AB = 6\\text{ cm}$, $BC = 8\\text{ cm}$, $CA = 10\\text{ cm}$. Gọi $M, N, P$ lần lượt là trung điểm của $AB, BC, CA$ như hình vẽ. Chu vi tam giác $MNP$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='105,24 45,128 215,128' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><polygon points='75,76 130,128 160,76' fill='#dbeafe' stroke='#2563eb' stroke-width='1.8'/><text x='101' y='19' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='32' y='134' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='219' y='134' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='59' y='79' font-size='11' font-weight='bold' fill='#2563eb'>M</text><text x='126' y='141' font-size='11' font-weight='bold' fill='#2563eb'>N</text><text x='165' y='79' font-size='11' font-weight='bold' fill='#2563eb'>P</text></svg></div>",
+    "hint": "Ba cạnh của tam giác $MNP$ là ba đường trung bình của tam giác $ABC$.",
     "options": [
-      "Song song với cạnh thứ ba và bằng cạnh thứ ba",
-      "Song song với cạnh thứ ba và bằng nửa cạnh ấy",
-      "Vuông góc với cạnh thứ ba",
-      "Bằng hai lần cạnh thứ ba"
+      "$24\\text{ cm}$",
+      "$12\\text{ cm}$",
+      "$6\\text{ cm}$",
+      "$48\\text{ cm}$"
     ],
     "answer": 1,
-    "explanation": "Đường trung bình của tam giác song song với cạnh thứ ba và bằng nửa cạnh ấy."
+    "explanation": "Ta có $MN = \\dfrac{1}{2}AC = 5\\text{ cm}$, $NP = \\dfrac{1}{2}AB = 3\\text{ cm}$, $PM = \\dfrac{1}{2}BC = 4\\text{ cm}$. Chu vi $\\triangle MNP$ là $5 + 3 + 4 = 12\\text{ (cm)}$."
   },
   {
     "id": "t8_c4_m14",
@@ -2216,16 +2216,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$ có $D$ là trung điểm của $AB$ và $E$ là trung điểm của $AC$. Biết $BC = 14\\text{ cm}$. Độ dài đoạn thẳng $DE$ là:",
-    "hint": "$DE$ là đường trung bình của $\\triangle ABC$ nên $DE = \\dfrac{1}{2}BC$.",
+    "prompt": "Cho tam giác $ABC$ cân tại $B$, hai đường trung tuyến $AM$ và $BN$ cắt nhau tại $G$. Gọi $I$ và $K$ lần lượt là trung điểm của $GB$ và $GC$ như hình vẽ (tương ứng với các đường trung bình của $\\triangle ABC$ và $\\triangle GBC$). Khẳng định nào sau đây đúng?<br><div style='text-align:center;margin:10px 0'><svg width='260' height='160' viewBox='0 0 260 160' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='150' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='115,20 45,134 215,134' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='115' y1='20' x2='130' y2='134' stroke='#64748b' stroke-width='1.3'/><line x1='45' y1='134' x2='165' y2='77' stroke='#64748b' stroke-width='1.3'/><line x1='165' y1='77' x2='130' y2='134' stroke='#0284c7' stroke-width='1.8'/><line x1='85' y1='115' x2='170' y2='115' stroke='#dc2626' stroke-width='1.8'/><text x='111' y='16' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='32' y='140' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='219' y='140' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='170' y='78' font-size='10' font-weight='bold' fill='#0284c7'>N</text><text x='126' y='146' font-size='10' font-weight='bold' fill='#0284c7'>M</text><text x='128' y='92' font-size='10' font-weight='bold' fill='#0f172a'>G</text><text x='72' y='113' font-size='10' font-weight='bold' fill='#dc2626'>I</text><text x='174' y='113' font-size='10' font-weight='bold' fill='#dc2626'>K</text></svg></div>",
+    "hint": "Chứng minh $MN$ và $IK$ cùng bằng $\\dfrac{1}{2}BC$ do $\\triangle ABC$ cân tại $B$ ($AB = BC$).",
     "options": [
-      "$7\\text{ cm}$",
-      "$28\\text{ cm}$",
-      "$14\\text{ cm}$",
-      "$3,5\\text{ cm}$"
+      "$MN = \\dfrac{1}{2}AC$",
+      "$BC = \\dfrac{1}{2}IK$",
+      "$MN > IK$",
+      "$MN = IK$"
     ],
-    "answer": 0,
-    "explanation": "Vì $D$ và $E$ lần lượt là trung điểm của $AB$ và $AC$ nên $DE$ là đường trung bình của $\\triangle ABC$, do đó $DE = \\dfrac{1}{2}BC = \\dfrac{1}{2} \\cdot 14 = 7\\text{ (cm)}$."
+    "answer": 3,
+    "explanation": "Vì $M, N$ là trung điểm của $BC, AC$ nên $MN = \\dfrac{1}{2}AB$. Vì $\\triangle ABC$ cân tại $B$ nên $AB = BC$, suy ra $MN = \\dfrac{1}{2}BC$. Mặt khác $IK$ là đường trung bình của $\\triangle GBC$ nên $IK = \\dfrac{1}{2}BC$. Vậy $MN = IK$."
   },
   {
     "id": "t8_c4_m15",
@@ -2234,16 +2234,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Một tam giác có bao nhiêu đường trung bình?",
-    "hint": "Mỗi tam giác có $3$ cạnh nên có $3$ cặp cạnh tương ứng với $3$ đường trung bình.",
+    "prompt": "Cho tam giác $ABC$ có $AD$ là đường phân giác của góc $BAC$ ($D \\in BC$) như hình vẽ. Tỉ lệ thức nào sau đây đúng?<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='105,24 45,128 215,128' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='105' y1='24' x2='118' y2='128' stroke='#dc2626' stroke-width='2'/><path d='M96,40 A18,18 0 0,0 107,42' fill='none' stroke='#dc2626' stroke-width='1.3'/><path d='M107,42 A18,18 0 0,0 116,38' fill='none' stroke='#dc2626' stroke-width='1.3'/><text x='101' y='19' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='32' y='134' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='219' y='134' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='114' y='141' font-size='11' font-weight='bold' fill='#dc2626'>D</text></svg></div>",
+    "hint": "Trong tam giác, đường phân giác của một góc chia cạnh đối diện thành hai đoạn thẳng tỉ lệ với hai cạnh kề hai đoạn ấy.",
     "options": [
-      "$1$",
-      "$2$",
-      "$3$",
-      "$4$"
+      "$\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$",
+      "$\\dfrac{DB}{DC} = \\dfrac{AC}{AB}$",
+      "$\\dfrac{DB}{AB} = \\dfrac{AC}{DC}$",
+      "$\\dfrac{AD}{BC} = \\dfrac{AB}{AC}$"
     ],
-    "answer": 2,
-    "explanation": "Mỗi tam giác có đúng $3$ đường trung bình ứng với $3$ cạnh của tam giác."
+    "answer": 0,
+    "explanation": "Theo tính chất đường phân giác của tam giác, tia phân giác $AD$ của góc $A$ chia cạnh $BC$ thành hai đoạn $DB, DC$ tỉ lệ với hai cạnh kề $AB, AC$: $\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$."
   },
   {
     "id": "t8_c4_m16",
@@ -2252,16 +2252,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Trong $\\triangle ABC$, tia phân giác của góc $\\widehat{BAC}$ cắt cạnh $BC$ tại $D$. Theo tính chất đường phân giác của tam giác, ta có:",
-    "hint": "Tính chất đường phân giác của tam giác: Đường phân giác của một góc trong tam giác chia cạnh đối diện thành hai đoạn thẳng tỉ lệ với hai cạnh kề hai đoạn ấy.",
+    "prompt": "Cho tam giác $ABC$ có $AB = 6\\text{ cm}$, $AC = 8\\text{ cm}$. Đường phân giác của góc $A$ cắt cạnh $BC$ tại $D$. Biết $DB = 3\\text{ cm}$, độ dài đoạn thẳng $DC$ bằng:",
+    "hint": "Áp dụng tính chất đường phân giác: $\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$.",
     "options": [
-      "$\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$",
-      "$\\dfrac{DB}{DC} = \\dfrac{AC}{AB}$",
-      "$\\dfrac{DB}{AB} = \\dfrac{DC}{AC}$",
-      "$\\dfrac{DB}{BC} = \\dfrac{AB}{AC}$"
+      "$4\\text{ cm}$",
+      "$2,25\\text{ cm}$",
+      "$5\\text{ cm}$",
+      "$6\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Trong $\\triangle ABC$, $AD$ là phân giác góc $\\widehat{BAC}$ nên $\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$."
+    "explanation": "Vì $AD$ là đường phân giác của $\\triangle ABC$ nên $\\dfrac{DB}{DC} = \\dfrac{AB}{AC} \\Rightarrow \\dfrac{3}{DC} = \\dfrac{6}{8} \\Rightarrow DC = \\dfrac{3 \\cdot 8}{6} = 4\\text{ (cm)}$."
   },
   {
     "id": "t8_c4_m17",
@@ -2270,16 +2270,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$ có $AB = 6\\text{ cm}$, $AC = 9\\text{ cm}$, $AD$ là tia phân giác của góc $\\widehat{BAC}$ ($D \\in BC$). Tỉ số $\\dfrac{DB}{DC}$ bằng:",
-    "hint": "Áp dụng tính chất đường phân giác: $\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$.",
+    "prompt": "Cho tam giác $MEF$ có $MK$ là đường phân giác của góc $EMF$ ($K \\in EF$) như hình vẽ. Biết $ME = 5$, $MF = 8,5$ và $EK = 3$. Độ dài đoạn thẳng $x = KF$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='100,24 45,128 215,128' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='100' y1='24' x2='108' y2='128' stroke='#0284c7' stroke-width='2'/><path d='M91,41 A18,18 0 0,0 102,42' fill='none' stroke='#0284c7' stroke-width='1.3'/><path d='M102,42 A18,18 0 0,0 111,38' fill='none' stroke='#0284c7' stroke-width='1.3'/><text x='96' y='19' font-size='11' font-weight='bold' fill='#0f172a'>M</text><text x='32' y='134' font-size='11' font-weight='bold' fill='#0f172a'>E</text><text x='104' y='141' font-size='11' font-weight='bold' fill='#0284c7'>K</text><text x='219' y='134' font-size='11' font-weight='bold' fill='#0f172a'>F</text><text x='62' y='74' font-size='10' fill='#0f172a'>5</text><text x='165' y='70' font-size='10' fill='#0f172a'>8,5</text><text x='76' y='141' font-size='10' fill='#0f172a'>3</text><text x='160' y='141' font-size='10' fill='#dc2626' font-weight='bold'>x</text></svg></div>",
+    "hint": "Áp dụng tính chất đường phân giác trong tam giác $MEF$: $\\dfrac{EK}{KF} = \\dfrac{ME}{MF}$.",
     "options": [
-      "$\\dfrac{2}{3}$",
-      "$\\dfrac{3}{2}$",
-      "$\\dfrac{6}{5}$",
-      "$\\dfrac{3}{5}$"
+      "$5,1$",
+      "$4,5$",
+      "$6,5$",
+      "$5,5$"
     ],
     "answer": 0,
-    "explanation": "Theo tính chất đường phân giác của tam giác, ta có $\\dfrac{DB}{DC} = \\dfrac{AB}{AC} = \\dfrac{6}{9} = \\dfrac{2}{3}$."
+    "explanation": "Theo tính chất đường phân giác của tam giác $MEF$: $\\dfrac{EK}{KF} = \\dfrac{ME}{MF} \\Rightarrow \\dfrac{3}{KF} = \\dfrac{5}{8,5} \\Rightarrow KF = \\dfrac{3 \\cdot 8,5}{5} = 5,1$."
   },
   {
     "id": "t8_c4_m18",
@@ -2288,16 +2288,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$ có $AB = 8\\text{ cm}$, $AC = 12\\text{ cm}$, $BC = 10\\text{ cm}$. Tia phân giác trong của góc $\\widehat{A}$ cắt $BC$ tại $D$. Độ dài đoạn thẳng $DB$ bằng:",
-    "hint": "$\\dfrac{DB}{DC} = \\dfrac{AB}{AC} = \\dfrac{8}{12} = \\dfrac{2}{3}$ và $DB + DC = BC = 10\\text{ cm}$.",
+    "prompt": "Cho tam giác $DEF$ có $EM$ là đường phân giác của góc $DEF$ ($M \\in DF$) như hình vẽ. Biết $DE = 9$, $DM = 3$, $MF = 2$ và $EF = 6$. Tỉ số $\\dfrac{DM}{MF}$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='145,24 45,124 215,124' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='45' y1='124' x2='173' y2='64' stroke='#0284c7' stroke-width='2'/><text x='141' y='19' font-size='11' font-weight='bold' fill='#0f172a'>D</text><text x='32' y='130' font-size='11' font-weight='bold' fill='#0f172a'>E</text><text x='219' y='130' font-size='11' font-weight='bold' fill='#0f172a'>F</text><text x='178' y='65' font-size='11' font-weight='bold' fill='#0284c7'>M</text><text x='85' y='70' font-size='10' fill='#0f172a'>9</text><text x='163' y='44' font-size='10' fill='#0f172a'>3</text><text x='199' y='96' font-size='10' fill='#0f172a'>2</text><text x='130' y='137' font-size='10' fill='#0f172a'>6</text></svg></div>",
+    "hint": "Áp dụng tính chất đường phân giác của góc $E$ trong tam giác $DEF$: $\\dfrac{DM}{MF} = \\dfrac{DE}{EF}$.",
     "options": [
-      "$4\\text{ cm}$",
-      "$6\\text{ cm}$",
-      "$5\\text{ cm}$",
-      "$3\\text{ cm}$"
+      "$\\dfrac{3}{2}$",
+      "$\\dfrac{2}{3}$",
+      "$\\dfrac{3}{5}$",
+      "$\\dfrac{2}{5}$"
     ],
     "answer": 0,
-    "explanation": "Ta có $\\dfrac{DB}{DC} = \\dfrac{AB}{AC} = \\dfrac{8}{12} = \\dfrac{2}{3}$. Suy ra $DB = \\dfrac{2}{2 + 3} \\cdot BC = \\dfrac{2}{5} \\cdot 10 = 4\\text{ (cm)}$."
+    "explanation": "Vì $EM$ là đường phân giác của góc $E$ trong $\\triangle DEF$ nên $\\dfrac{DM}{MF} = \\dfrac{DE}{EF} = \\dfrac{9}{6} = \\dfrac{3}{2}$."
   },
   {
     "id": "t8_c4_m19",
@@ -2306,16 +2306,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$ có $DE \\parallel BC$ ($D \\in AB$, $E \\in AC$). Nếu $AD = 2\\text{ cm}$ và $AB = 6\\text{ cm}$ thì tỉ số $\\dfrac{AE}{AC}$ bằng:",
-    "hint": "Theo định lí Thalès, $\\dfrac{AE}{AC} = \\dfrac{AD}{AB}$.",
+    "prompt": "Cho tam giác $ABC$ có $AB = 15\\text{ cm}$, $AC = 20\\text{ cm}$, $BC = 25\\text{ cm}$. Đường phân giác của góc $BAC$ cắt cạnh $BC$ tại $D$. Độ dài đoạn thẳng $DB$ bằng:",
+    "hint": "Từ $\\dfrac{DB}{DC} = \\dfrac{AB}{AC} = \\dfrac{15}{20} = \\dfrac{3}{4}$ và $DB + DC = 25\\text{ cm}$, tính $DB$.",
     "options": [
-      "$\\dfrac{1}{3}$",
-      "$\\dfrac{1}{2}$",
-      "$\\dfrac{2}{3}$",
-      "$3$"
+      "$\\dfrac{75}{7}\\text{ cm}$",
+      "$\\dfrac{100}{7}\\text{ cm}$",
+      "$10\\text{ cm}$",
+      "$15\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Vì $DE \\parallel BC$ nên $\\dfrac{AE}{AC} = \\dfrac{AD}{AB} = \\dfrac{2}{6} = \\dfrac{1}{3}$."
+    "explanation": "Ta có $\\dfrac{DB}{DC} = \\dfrac{AB}{AC} = \\dfrac{15}{20} = \\dfrac{3}{4} \\Rightarrow \\dfrac{DB}{3} = \\dfrac{DC}{4} = \\dfrac{DB + DC}{3 + 4} = \\dfrac{25}{7}$. Suy ra $DB = \\dfrac{75}{7}\\text{ (cm)}$."
   },
   {
     "id": "t8_c4_m20",
@@ -2324,16 +2324,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle MNP$ có đường trung bình $EF$ ($E$ là trung điểm $MN$, $F$ là trung điểm $MP$). Biết $EF = 5,5\\text{ cm}$, độ dài cạnh $NP$ là:",
-    "hint": "Đường trung bình bằng nửa cạnh thứ ba nên $NP = 2EF$.",
+    "prompt": "Cho hình vuông $ABCD$ có $M$ là trung điểm của cạnh $AD$, đoạn thẳng $AC$ cắt $BM$ tại $I$ như hình vẽ. Tỉ số $\\dfrac{IB}{IM}$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='240' height='155' viewBox='0 0 240 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='230' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><rect x='70' y='28' width='96' height='96' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='70' y1='124' x2='166' y2='28' stroke='#0284c7' stroke-width='1.8'/><line x1='70' y1='28' x2='118' y2='124' stroke='#dc2626' stroke-width='1.8'/><polyline points='70,113 81,113 81,124' fill='none' stroke='#0f172a' stroke-width='1.2'/><circle cx='102' cy='92' r='2.5' fill='#0f172a'/><text x='57' y='28' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='171' y='28' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='171' y='128' font-size='11' font-weight='bold' fill='#0f172a'>D</text><text x='57' y='128' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='114' y='138' font-size='11' font-weight='bold' fill='#dc2626'>M</text><text x='108' y='96' font-size='11' font-weight='bold' fill='#0f172a'>I</text></svg></div>",
+    "hint": "Trong hình vuông $ABCD$, đường chéo $AC$ là tia phân giác của góc $BAD$. Áp dụng tính chất đường phân giác trong tam giác $ABM$.",
     "options": [
-      "$11\\text{ cm}$",
-      "$2,75\\text{ cm}$",
-      "$10\\text{ cm}$",
-      "$5,5\\text{ cm}$"
+      "$2$",
+      "$\\dfrac{1}{2}$",
+      "$3$",
+      "$1$"
     ],
     "answer": 0,
-    "explanation": "Vì $EF$ là đường trung bình của $\\triangle MNP$ nên $NP = 2EF = 2 \\cdot 5,5 = 11\\text{ (cm)}$."
+    "explanation": "Vì $ABCD$ là hình vuông nên $AC$ là đường phân giác của góc $A$. Xét $\\triangle ABM$ có $AI$ là phân giác góc $A$ nên $\\dfrac{IB}{IM} = \\dfrac{AB}{AM}$. Do $M$ là trung điểm của $AD$ nên $AB = AD = 2AM$, suy ra $\\dfrac{IB}{IM} = 2$."
   },
   {
     "id": "t8_c4_m21",
@@ -2342,70 +2342,70 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "medium",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$ có $MN \\parallel BC$ ($M \\in AB$, $N \\in AC$). Biết $AB = 10\\text{ cm}$, $AM = 4\\text{ cm}$, $AC = 15\\text{ cm}$. Độ dài $AN$ là:",
-    "hint": "Áp dụng định lí Thalès: $\\dfrac{AN}{AC} = \\dfrac{AM}{AB}$.",
+    "prompt": "Cho tứ giác $ABCD$ có $E, F, K$ lần lượt là trung điểm của $AD, BC, AC$. Biết $AB = 6\\text{ cm}$ và $CD = 10\\text{ cm}$. Độ dài các đoạn thẳng $EK$ và $FK$ lần lượt là:",
+    "hint": "$EK$ là đường trung bình của $\\triangle ADC$, còn $FK$ là đường trung bình của $\\triangle CAB$.",
     "options": [
-      "$6\\text{ cm}$",
-      "$9\\text{ cm}$",
-      "$5\\text{ cm}$",
-      "$7,5\\text{ cm}$"
+      "$5\\text{ cm}$ và $3\\text{ cm}$",
+      "$3\\text{ cm}$ và $5\\text{ cm}$",
+      "$6\\text{ cm}$ và $10\\text{ cm}$",
+      "$8\\text{ cm}$ và $4\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Vì $MN \\parallel BC$ nên $\\dfrac{AN}{AC} = \\dfrac{AM}{AB} \\Rightarrow \\dfrac{AN}{15} = \\dfrac{4}{10} \\Rightarrow AN = \\dfrac{4 \\cdot 15}{10} = 6\\text{ (cm)}$."
+    "explanation": "$EK$ là đường trung bình của $\\triangle ADC$ nên $EK = \\dfrac{1}{2}CD = 5\\text{ cm}$. $FK$ là đường trung bình của $\\triangle CAB$ nên $FK = \\dfrac{1}{2}AB = 3\\text{ cm}$."
   },
   {
-    "id": "t8_c4_m22",
+    "id": "t8_c4_h01",
     "grade": 8,
     "term": "HK1",
     "mode": "mcq",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$ có $MN \\parallel BC$ ($M \\in AB$, $N \\in AC$). Biết $AB = 10\\text{ cm}$, $AM = 4\\text{ cm}$, $AC = 15\\text{ cm}$. Độ dài $AN$ là:",
-    "hint": "Áp dụng định lí Thalès: $\\dfrac{AN}{AC} = \\dfrac{AM}{AB}$.",
+    "prompt": "Cho hình thang $ABCD$ ($AB \\parallel CD$), một đường thẳng song song với hai đáy cắt các cạnh bên $AD$ và $BC$ lần lượt tại $M$ và $N$, và cắt đường chéo $AC$ tại $I$ như hình vẽ. Giá trị của tổng $\\dfrac{AM}{AD} + \\dfrac{CN}{CB}$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='145' viewBox='0 0 260 145' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='135' rx='6' fill='#ffffff' stroke='#e2e8f0'/><polygon points='80,30 180,30 220,115 40,115' fill='#f8fafc' stroke='#0f172a' stroke-width='2'/><line x1='62' y1='68' x2='198' y2='68' stroke='#0284c7' stroke-width='1.8'/><line x1='80' y1='30' x2='220' y2='115' stroke='#64748b' stroke-width='1.4'/><text x='70' y='26' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='183' y='26' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='224' y='121' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='28' y='121' font-size='11' font-weight='bold' fill='#0f172a'>D</text><text x='47' y='71' font-size='11' font-weight='bold' fill='#0284c7'>M</text><text x='203' y='71' font-size='11' font-weight='bold' fill='#0284c7'>N</text><text x='136' y='81' font-size='11' font-weight='bold' fill='#dc2626'>I</text></svg></div>",
+    "hint": "Áp dụng định lí Thalès trong $\\triangle ADC$ với $MI \\parallel DC$ và trong $\\triangle CAB$ với $IN \\parallel AB$.",
     "options": [
-      "$6\\text{ cm}$",
-      "$9\\text{ cm}$",
-      "$5\\text{ cm}$",
-      "$7,5\\text{ cm}$"
+      "$1$",
+      "$2$",
+      "$\\dfrac{1}{2}$",
+      "Phụ thuộc vào vị trí của đường thẳng $MN$"
     ],
     "answer": 0,
-    "explanation": "Vì $MN \\parallel BC$ nên $\\dfrac{AN}{AC} = \\dfrac{AM}{AB} \\Rightarrow \\dfrac{AN}{15} = \\dfrac{4}{10} \\Rightarrow AN = \\dfrac{4 \\cdot 15}{10} = 6\\text{ (cm)}$."
+    "explanation": "Xét $\\triangle ADC$ có $MI \\parallel DC$ nên $\\dfrac{AM}{AD} = \\dfrac{AI}{AC}$. Xét $\\triangle CAB$ có $IN \\parallel AB$ nên $\\dfrac{CN}{CB} = \\dfrac{CI}{CA}$. Cộng vế theo vế ta được $\\dfrac{AM}{AD} + \\dfrac{CN}{CB} = \\dfrac{AI + CI}{AC} = \\dfrac{AC}{AC} = 1$."
   },
   {
-    "id": "t8_c4_m23",
+    "id": "t8_c4_h02",
     "grade": 8,
     "term": "HK1",
     "mode": "mcq",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$ có $MN \\parallel BC$ ($M \\in AB$, $N \\in AC$). Biết $AB = 10\\text{ cm}$, $AM = 4\\text{ cm}$, $AC = 15\\text{ cm}$. Độ dài $AN$ là:",
-    "hint": "Áp dụng định lí Thalès: $\\dfrac{AN}{AC} = \\dfrac{AM}{AB}$.",
+    "prompt": "Cho góc nhọn $xOy$, trên tia $Ox$ lấy điểm $B$, trên tia $Oy$ lấy điểm $A$, trên đoạn thẳng $AB$ lấy điểm $I$ bất kì. Qua $I$ kẻ đường thẳng song song với $Ox$ cắt $Oy$ tại $M$ và kẻ đường thẳng song song với $Oy$ cắt $Ox$ tại $N$ như hình vẽ. Giá trị của biểu thức $\\dfrac{AM}{AO} + \\dfrac{BN}{BO}$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='150' viewBox='0 0 260 150' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='140' rx='6' fill='#ffffff' stroke='#e2e8f0'/><line x1='40' y1='125' x2='225' y2='125' stroke='#0f172a' stroke-width='1.8'/><line x1='40' y1='125' x2='175' y2='25' stroke='#0f172a' stroke-width='1.8'/><line x1='135' y1='54.6' x2='190' y2='125' stroke='#0f172a' stroke-width='2'/><line x1='102' y1='79' x2='154.2' y2='79' stroke='#0284c7' stroke-width='1.6'/><line x1='154.2' y1='79' x2='92.2' y2='125' stroke='#dc2626' stroke-width='1.6'/><text x='30' y='135' font-size='11' font-weight='bold' fill='#0f172a'>O</text><text x='180' y='27' font-size='11' font-weight='bold' fill='#0f172a'>y</text><text x='228' y='129' font-size='11' font-weight='bold' fill='#0f172a'>x</text><text x='124' y='51' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='188' y='138' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='88' y='80' font-size='11' font-weight='bold' fill='#0284c7'>M</text><text x='88' y='138' font-size='11' font-weight='bold' fill='#dc2626'>N</text><text x='160' y='80' font-size='11' font-weight='bold' fill='#0f172a'>I</text></svg></div>",
+    "hint": "Áp dụng định lí Thalès trong $\\triangle OAB$ với $MI \\parallel OB$ và $NI \\parallel OA$.",
     "options": [
-      "$6\\text{ cm}$",
-      "$9\\text{ cm}$",
-      "$5\\text{ cm}$",
-      "$7,5\\text{ cm}$"
+      "$1$",
+      "$2$",
+      "$\\dfrac{1}{2}$",
+      "$\\dfrac{AB}{AO + BO}$"
     ],
     "answer": 0,
-    "explanation": "Vì $MN \\parallel BC$ nên $\\dfrac{AN}{AC} = \\dfrac{AM}{AB} \\Rightarrow \\dfrac{AN}{15} = \\dfrac{4}{10} \\Rightarrow AN = \\dfrac{4 \\cdot 15}{10} = 6\\text{ (cm)}$."
+    "explanation": "Xét $\\triangle OAB$: vì $MI \\parallel OB$ nên $\\dfrac{AM}{AO} = \\dfrac{AI}{AB}$; vì $NI \\parallel OA$ nên $\\dfrac{BN}{BO} = \\dfrac{BI}{BA}$. Do đó $\\dfrac{AM}{AO} + \\dfrac{BN}{BO} = \\dfrac{AI + BI}{AB} = \\dfrac{AB}{AB} = 1$."
   },
   {
-    "id": "t8_c4_m24",
+    "id": "t8_c4_h03",
     "grade": 8,
     "term": "HK1",
     "mode": "mcq",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Cho $\\triangle ABC$ có $MN \\parallel BC$ ($M \\in AB$, $N \\in AC$). Biết $AB = 10\\text{ cm}$, $AM = 4\\text{ cm}$, $AC = 15\\text{ cm}$. Độ dài $AN$ là:",
-    "hint": "Áp dụng định lí Thalès: $\\dfrac{AN}{AC} = \\dfrac{AM}{AB}$.",
+    "prompt": "Cho tam giác $ABC$ có các đường phân giác trong $AD, BE, CF$ ($D \\in BC, E \\in AC, F \\in AB$). Giá trị của tích $\\dfrac{AE}{EC} \\cdot \\dfrac{CD}{DB} \\cdot \\dfrac{BF}{FA}$ bằng:",
+    "hint": "Biểu diễn từng tỉ số $\\dfrac{AE}{EC}$, $\\dfrac{CD}{DB}$, $\\dfrac{BF}{FA}$ theo độ dài ba cạnh $AB, BC, CA$ bằng tính chất đường phân giác.",
     "options": [
-      "$6\\text{ cm}$",
-      "$9\\text{ cm}$",
-      "$5\\text{ cm}$",
-      "$7,5\\text{ cm}$"
+      "$1$",
+      "$2$",
+      "$\\dfrac{1}{2}$",
+      "$3$"
     ],
     "answer": 0,
-    "explanation": "Vì $MN \\parallel BC$ nên $\\dfrac{AN}{AC} = \\dfrac{AM}{AB} \\Rightarrow \\dfrac{AN}{15} = \\dfrac{4}{10} \\Rightarrow AN = \\dfrac{4 \\cdot 15}{10} = 6\\text{ (cm)}$."
+    "explanation": "Áp dụng tính chất đường phân giác cho ba góc $B, A, C$ ta có: $\\dfrac{AE}{EC} = \\dfrac{AB}{BC}$, $\\dfrac{CD}{DB} = \\dfrac{AC}{AB}$, $\\dfrac{BF}{FA} = \\dfrac{BC}{AC}$. Nhân ba đẳng thức lại ta được $\\dfrac{AB}{BC} \\cdot \\dfrac{AC}{AB} \\cdot \\dfrac{BC}{AC} = 1$."
   },
   {
     "id": "t8_c4_a01",
@@ -2414,16 +2414,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "application",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Để đo chiều rộng của một khúc sông mà không thể sang bờ bên kia, người ta cắm cọc ở các vị trí $A, B, C, D, E$ sao cho $BC \\parallel DE$, $AB = 15\\text{ m}$, $BD = 30\\text{ m}$ và $BC = 24\\text{ m}$. Chiều rộng khúc sông $DE$ bằng:",
-    "hint": "Áp dụng hệ quả định lí Thalès cho cặp đoạn thẳng song song $BC \\parallel DE$: $\\dfrac{DE}{BC} = \\dfrac{AD}{AB}$ với $AD = AB + BD$.",
+    "prompt": "Một cây cầu $AB$ bắc qua một con sông có chiều rộng $AB = 300\\text{ m}$ (hai bờ sông song song với nhau) như hình vẽ. Để đo khoảng cách giữa hai điểm $C$ và $D$ nằm trên hai bờ sông, người ta chọn một điểm $E$ trên tia đối của tia $AB$ sao cho ba điểm $E, C, D$ thẳng hàng. Trên mặt đất, người ta đo được $AE = 400\\text{ m}$ và $EC = 500\\text{ m}$. Khoảng cách $CD$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='270' height='165' viewBox='0 0 270 165' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='260' height='155' rx='6' fill='#ffffff' stroke='#e2e8f0'/><rect x='25' y='88' width='220' height='46' fill='#e0f2fe' stroke='none'/><line x1='25' y1='88' x2='245' y2='88' stroke='#0284c7' stroke-width='1.5'/><line x1='25' y1='134' x2='245' y2='134' stroke='#0284c7' stroke-width='1.5'/><line x1='70' y1='25' x2='70' y2='134' stroke='#0f172a' stroke-width='2.2'/><line x1='70' y1='25' x2='182' y2='134' stroke='#dc2626' stroke-width='2'/><text x='58' y='25' font-size='11' font-weight='bold' fill='#0f172a'>E</text><text x='57' y='84' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='57' y='146' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='138' y='84' font-size='11' font-weight='bold' fill='#dc2626'>C</text><text x='185' y='146' font-size='11' font-weight='bold' fill='#dc2626'>D</text><text x='32' y='60' font-size='10' fill='#0f172a'>400 m</text><text x='32' y='115' font-size='10' fill='#0369a1'>300 m</text><text x='114' y='52' font-size='10' fill='#dc2626' font-weight='bold'>500 m</text></svg></div>",
+    "hint": "Hai bờ sông song song nên $AC \\parallel BD$. Áp dụng định lí Thalès trong tam giác $EBD$: $\\dfrac{EA}{AB} = \\dfrac{EC}{CD}$.",
     "options": [
-      "$72\\text{ m}$",
-      "$48\\text{ m}$",
-      "$36\\text{ m}$",
-      "$60\\text{ m}$"
+      "$375\\text{ m}$",
+      "$400\\text{ m}$",
+      "$666,7\\text{ m}$",
+      "$350\\text{ m}$"
     ],
     "answer": 0,
-    "explanation": "Ta có $AD = AB + BD = 15 + 30 = 45\\text{ (m)}$. Vì $BC \\parallel DE$ nên $\\dfrac{DE}{BC} = \\dfrac{AD}{AB} \\Rightarrow \\dfrac{DE}{24} = \\dfrac{45}{15} = 3 \\Rightarrow DE = 72\\text{ (m)}$."
+    "explanation": "Vì hai bờ sông song song nên $AC \\parallel BD$. Áp dụng định lí Thalès trong $\\triangle EBD$ ta có $\\dfrac{EA}{AB} = \\dfrac{EC}{CD} \\Rightarrow \\dfrac{400}{300} = \\dfrac{500}{CD} \\Rightarrow CD = \\dfrac{300 \\cdot 500}{400} = 375\\text{ (m)}$."
   },
   {
     "id": "t8_c4_a02",
@@ -2432,16 +2432,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "application",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Một cây cao cắm thẳng đứng trên mặt đất có bóng trên mặt đất dài $2,4\\text{ m}$. Cùng thời điểm đó, một cột đèn cao $4,5\\text{ m}$ cắm thẳng đứng có bóng trên mặt đất dài $3,6\\text{ m}$. Chiều cao của cây là:",
-    "hint": "Tia nắng mặt trời song song tạo nên các đoạn thẳng tương ứng tỉ lệ: $\\dfrac{\\text{Chiều cao cây}}{\\text{Bóng cây}} = \\dfrac{\\text{Chiều cao cột đèn}}{\\text{Bóng cột đèn}}$.",
+    "prompt": "Để đo chiều rộng $BC$ của một cái hồ nước mà không cần lội xuống hồ như hình vẽ, người ta đóng cọc tại ba vị trí $A, B, C$ tạo thành tam giác $ABC$, sau đó lấy trung điểm $M$ của $AB$ và trung điểm $N$ của $AC$. Đo trực tiếp khoảng cách trên bờ được $MN = 42,5\\text{ m}$. Chiều rộng $BC$ của hồ nước bằng:<br><div style='text-align:center;margin:10px 0'><svg width='260' height='155' viewBox='0 0 260 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='250' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><ellipse cx='130' cy='116' rx='72' ry='22' fill='#bae6fd' stroke='#38bdf8'/><polygon points='115,24 62,116 198,116' fill='none' stroke='#0f172a' stroke-width='1.8'/><line x1='88.5' y1='70' x2='156.5' y2='70' stroke='#dc2626' stroke-width='2'/><text x='111' y='19' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='48' y='121' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='202' y='121' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='72' y='73' font-size='11' font-weight='bold' fill='#dc2626'>M</text><text x='161' y='73' font-size='11' font-weight='bold' fill='#dc2626'>N</text><text x='123' y='64' text-anchor='middle' font-size='10' fill='#dc2626' font-weight='bold'>42,5 m</text></svg></div>",
+    "hint": "$MN$ là đường trung bình của tam giác $ABC$.",
     "options": [
-      "$3,0\\text{ m}$",
-      "$2,8\\text{ m}$",
-      "$3,6\\text{ m}$",
-      "$2,5\\text{ m}$"
+      "$85\\text{ m}$",
+      "$21,25\\text{ m}$",
+      "$42,5\\text{ m}$",
+      "$127,5\\text{ m}$"
     ],
     "answer": 0,
-    "explanation": "Gọi $h$ là chiều cao của cây. Ta có $\\dfrac{h}{2,4} = \\dfrac{4,5}{3,6} = \\dfrac{5}{4} \\Rightarrow h = 2,4 \\cdot \\dfrac{5}{4} = 3,0\\text{ (m)}$."
+    "explanation": "Vì $M, N$ là trung điểm của $AB, AC$ nên $MN$ là đường trung bình của $\\triangle ABC$. Suy ra $BC = 2MN = 2 \\cdot 42,5 = 85\\text{ (m)}$."
   },
   {
     "id": "t8_c4_a03",
@@ -2450,16 +2450,16 @@ const DEFAULT_QUESTIONS = [
     "mode": "mcq",
     "difficulty": "application",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Một chiếc thang dựa vào tường tạo thành một tam giác vuông với mặt đất và bức tường. Điểm giữa của thang cách mặt đất $1,8\\text{ m}$. Hỏi đầu trên của thang cách mặt đất bao nhiêu mét?",
-    "hint": "Đoạn thẳng nối trung điểm cạnh huyền (giữa thang) với một điểm trên cạnh góc vuông (mặt đất) song song với cạnh góc vuông còn lại (tường) và là đường trung bình của tam giác vuông.",
+    "prompt": "Một chiếc kệ sách chữ A có hai thanh gỗ hai bên tạo thành hai cạnh $AB, AC$ của tam giác $ABC$ và các đợt gỗ nằm ngang song song với mặt sàn $BC$ như hình vẽ. Đợt gỗ thứ nhất gắn tại điểm $D$ trên $AB$ sao cho $\\dfrac{AD}{AB} = \\dfrac{1}{3}$ và cắt $AC$ tại $E$. Biết chiều dài thanh gỗ $AC = 150\\text{ cm}$, độ dài đoạn gỗ $AE$ bằng:<br><div style='text-align:center;margin:10px 0'><svg width='240' height='155' viewBox='0 0 240 155' xmlns='http://www.w3.org/2000/svg'><rect x='5' y='5' width='230' height='145' rx='6' fill='#ffffff' stroke='#e2e8f0'/><line x1='35' y1='132' x2='205' y2='132' stroke='#64748b' stroke-width='2'/><line x1='120' y1='22' x2='65' y2='132' stroke='#92400e' stroke-width='2.5'/><line x1='120' y1='22' x2='175' y2='132' stroke='#92400e' stroke-width='2.5'/><line x1='101.7' y1='58.7' x2='138.3' y2='58.7' stroke='#0284c7' stroke-width='2.2'/><line x1='83.3' y1='95.3' x2='156.7' y2='95.3' stroke='#b45309' stroke-width='2'/><text x='116' y='17' font-size='11' font-weight='bold' fill='#0f172a'>A</text><text x='52' y='136' font-size='11' font-weight='bold' fill='#0f172a'>B</text><text x='180' y='136' font-size='11' font-weight='bold' fill='#0f172a'>C</text><text x='88' y='61' font-size='11' font-weight='bold' fill='#0284c7'>D</text><text x='143' y='61' font-size='11' font-weight='bold' fill='#0284c7'>E</text></svg></div>",
+    "hint": "Áp dụng định lí Thalès trong tam giác $ABC$ với $DE \\parallel BC$: $\\dfrac{AE}{AC} = \\dfrac{AD}{AB}$.",
     "options": [
-      "$3,6\\text{ m}$",
-      "$2,7\\text{ m}$",
-      "$0,9\\text{ m}$",
-      "$4,5\\text{ m}$"
+      "$50\\text{ cm}$",
+      "$100\\text{ cm}$",
+      "$75\\text{ cm}$",
+      "$45\\text{ cm}$"
     ],
     "answer": 0,
-    "explanation": "Khoảng cách từ trung điểm của thang đến mặt đất là đường trung bình nên bằng một nửa độ cao của đầu trên thang so với mặt đất. Do đó đầu trên của thang cách mặt đất $2 \\cdot 1,8 = 3,6\\text{ (m)}$."
+    "explanation": "Vì đợt gỗ $DE$ song song với mặt sàn $BC$ nên theo định lí Thalès ta có $\\dfrac{AE}{AC} = \\dfrac{AD}{AB} = \\dfrac{1}{3} \\Rightarrow AE = \\dfrac{150}{3} = 50\\text{ (cm)}$."
   },
   {
     "id": "t8_c4_tf01",
@@ -2467,27 +2467,27 @@ const DEFAULT_QUESTIONS = [
     "term": "HK1",
     "mode": "tf",
     "topic": "Chương IV — Định lí Thalès",
-    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về định lí Thalès thuận và đảo:",
-    "hint": "Nhớ lại điều kiện song song và các tỉ số đoạn thẳng tương ứng trong định lí Thalès.",
+    "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về tỉ số đoạn thẳng và định lí Thalès:",
+    "hint": "Dựa vào định nghĩa tỉ số hai đoạn thẳng, định lí Thalès thuận và đảo trong SGK.",
     "statements": [
       {
         "text": "Tỉ số của hai đoạn thẳng là tỉ số độ dài của chúng theo cùng một đơn vị đo.",
         "answer": true
       },
       {
-        "text": "Nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ.",
+        "text": "Nếu một đường thẳng song song với một cạnh của tam giác và cắt hai cạnh còn lại thì nó định ra trên hai cạnh đó những đoạn thẳng tương ứng tỉ lệ.",
         "answer": true
       },
       {
-        "text": "Nếu một đường thẳng cắt hai cạnh của tam giác thì luôn song song với cạnh thứ ba.",
+        "text": "Nếu một đường thẳng cắt hai cạnh của một tam giác và định ra trên hai cạnh này những đoạn thẳng tương ứng tỉ lệ thì đường thẳng đó song song với cạnh còn lại của tam giác.",
+        "answer": true
+      },
+      {
+        "text": "Tỉ số của hai đoạn thẳng phụ thuộc vào việc ta chọn đơn vị đo là $\\text{cm}$ hay $\\text{dm}$.",
         "answer": false
-      },
-      {
-        "text": "Định lí Thalès đảo dùng để chứng minh hai đường thẳng song song dựa vào các tỉ số đoạn thẳng bằng nhau.",
-        "answer": true
       }
     ],
-    "explanation": "a) Đúng: định nghĩa tỉ số của hai đoạn thẳng. b) Đúng: nội dung định lí Thalès. c) Sai: đường thẳng chỉ song song với cạnh thứ ba khi định ra trên hai cạnh kia những đoạn thẳng tương ứng tỉ lệ. d) Đúng: định lí Thalès đảo là căn cứ nhận biết hai đường thẳng song song."
+    "explanation": "a) Đúng: theo định nghĩa tỉ số của hai đoạn thẳng. b) Đúng: nội dung định lí Thalès. c) Đúng: nội dung định lí Thalès đảo. d) Sai: khi đổi cùng một đơn vị đo thì tỉ số độ dài của hai đoạn thẳng không thay đổi."
   },
   {
     "id": "t8_c4_tf02",
@@ -2496,18 +2496,18 @@ const DEFAULT_QUESTIONS = [
     "mode": "tf",
     "topic": "Chương IV — Định lí Thalès",
     "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về đường trung bình của tam giác:",
-    "hint": "Nhớ lại định nghĩa và tính chất của đường trung bình trong tam giác.",
+    "hint": "Nhớ lại định nghĩa và tính chất đường trung bình của tam giác trong SGK.",
     "statements": [
       {
         "text": "Đường trung bình của tam giác là đoạn thẳng nối trung điểm hai cạnh của tam giác.",
         "answer": true
       },
       {
-        "text": "Đường trung bình của tam giác song song với cạnh thứ ba và bằng nửa cạnh ấy.",
+        "text": "Đường trung bình của tam giác thì song song với cạnh thứ ba và bằng nửa cạnh ấy.",
         "answer": true
       },
       {
-        "text": "Mỗi tam giác chỉ có duy nhất một đường trung bình.",
+        "text": "Mỗi tam giác có duy nhất một đường trung bình.",
         "answer": false
       },
       {
@@ -2515,7 +2515,7 @@ const DEFAULT_QUESTIONS = [
         "answer": true
       }
     ],
-    "explanation": "a) Đúng: định nghĩa đường trung bình. b) Đúng: tính chất đường trung bình. c) Sai: mỗi tam giác có $3$ đường trung bình. d) Đúng: tính chất liên quan đến trung điểm và đường thẳng song song trong tam giác."
+    "explanation": "a) Đúng: định nghĩa đường trung bình của tam giác. b) Đúng: tính chất đường trung bình của tam giác. c) Sai: mỗi tam giác có ba cạnh nên có tất cả ba đường trung bình. d) Đúng: định lí về đường thẳng đi qua trung điểm một cạnh và song song với cạnh thứ hai."
   },
   {
     "id": "t8_c4_tf03",
@@ -2524,26 +2524,26 @@ const DEFAULT_QUESTIONS = [
     "mode": "tf",
     "topic": "Chương IV — Định lí Thalès",
     "prompt": "Xét tính đúng/sai của các khẳng định lý thuyết sau về tính chất đường phân giác của tam giác:",
-    "hint": "Nhớ lại tính chất đường phân giác trong tam giác: $\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$.",
+    "hint": "Dựa vào định lí về tính chất đường phân giác của tam giác trong SGK.",
     "statements": [
       {
         "text": "Trong tam giác, đường phân giác của một góc chia cạnh đối diện thành hai đoạn thẳng tỉ lệ với hai cạnh kề hai đoạn ấy.",
         "answer": true
       },
       {
-        "text": "Nếu $AD$ là phân giác góc $\\widehat{BAC}$ của $\\triangle ABC$ ($D \\in BC$) thì $\\dfrac{DB}{DC} = \\dfrac{AB}{AC}$.",
+        "text": "Trong tam giác cân, đường phân giác xuất phát từ đỉnh cân chia cạnh đáy thành hai đoạn thẳng bằng nhau.",
         "answer": true
       },
       {
-        "text": "Đường phân giác của góc $\\widehat{BAC}$ luôn chia cạnh $BC$ thành hai đoạn thẳng bằng nhau.",
+        "text": "Đường phân giác của một góc trong tam giác luôn vuông góc với cạnh đối diện.",
         "answer": false
       },
       {
-        "text": "Tính chất đường phân giác áp dụng được cho cả đường phân giác trong và đường phân giác ngoài của tam giác.",
+        "text": "Định lí về tính chất đường phân giác của tam giác vẫn đúng đối với tia phân giác của góc ngoài của tam giác (khi tia phân giác góc ngoài cắt đường thẳng chứa cạnh đối diện).",
         "answer": true
       }
     ],
-    "explanation": "a) Đúng: nội dung tính chất đường phân giác. b) Đúng: hệ thức tỉ lệ ứng với phân giác $\\widehat{BAC}$. c) Sai: hai đoạn $DB$ và $DC$ chỉ bằng nhau khi $AB = AC$ (tam giác cân tại $A$). d) Đúng: tính chất áp dụng cho cả phân giác trong và phân giác ngoài."
+    "explanation": "a) Đúng: nội dung định lí tính chất đường phân giác của tam giác. b) Đúng: trong tam giác cân, đường phân giác góc ở đỉnh đồng thời là đường trung tuyến nên chia cạnh đáy thành hai đoạn bằng nhau. c) Sai: đường phân giác chỉ vuông góc với cạnh đối diện khi tam giác cân tại đỉnh xuất phát của đường phân giác đó. d) Đúng: định lí vẫn đúng đối với tia phân giác góc ngoài của tam giác."
   }
 ];
 /*__QUESTIONS_END__*/
