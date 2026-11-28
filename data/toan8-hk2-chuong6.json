@@ -1,0 +1,572 @@
+[
+  {
+    "id": "t8_c6_m01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Phân thức đại số là biểu thức có dạng:",
+    "hint": "Nhớ lại định nghĩa phân thức đại số với tử thức và mẫu thức là hai đa thức.",
+    "options": [
+      "$\\dfrac{A}{B}$, với $A, B$ là hai đa thức và $B$ khác đa thức $0$",
+      "$\\dfrac{A}{B}$, với $A, B$ là hai số nguyên và $B \\ne 0$",
+      "$\\dfrac{A}{B}$, với $A, B$ là hai đa thức tùy ý",
+      "$A + B$, với $A, B$ là hai đa thức"
+    ],
+    "answer": 0,
+    "explanation": "Phân thức đại số (hay phân thức) là biểu thức có dạng $\\dfrac{A}{B}$, trong đó $A, B$ là những đa thức và $B$ khác đa thức $0$[cite: 2, 7]."
+  },
+  {
+    "id": "t8_c6_m02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Biểu thức nào sau đây **không** phải là phân thức đại số?",
+    "hint": "Kiểm tra xem tử thức và mẫu thức có phải là đa thức và mẫu thức có khác đa thức $0$ hay không[cite: 2].",
+    "options": [
+      "$\\dfrac{2x + 1}{x - 3}$",
+      "$\\dfrac{\\sqrt{x}}{x + 1}$",
+      "$x^2 - 2x + 1$",
+      "$\\dfrac{5}{2x^2 + 3}$"
+    ],
+    "answer": 1,
+    "explanation": "Biểu thức $\\dfrac{\\sqrt{x}}{x + 1}$ không là phân thức đại số vì tử thức $\\sqrt{x}$ không phải là đa thức (còn các đa thức như $x^2 - 2x + 1$ được coi là phân thức với mẫu bằng $1$)[cite: 2]."
+  },
+  {
+    "id": "t8_c6_m03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Điều kiện xác định của phân thức $\\dfrac{x + 2}{x - 5}$ là:",
+    "hint": "Cho mẫu thức khác $0$[cite: 2].",
+    "options": [
+      "$x \\ne -2$",
+      "$x \\ne 5$",
+      "$x \\ne -5$",
+      "$x \\ne 0$"
+    ],
+    "answer": 1,
+    "explanation": "Phân thức $\\dfrac{x + 2}{x - 5}$ xác định khi mẫu thức $x - 5 \\ne 0 \\iff x \\ne 5$[cite: 2]."
+  },
+  {
+    "id": "t8_c6_m04",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Điều kiện xác định của phân thức $\\dfrac{3x}{x^2 - 4}$ là:",
+    "hint": "Phân tích $x^2 - 4 = (x - 2)(x + 2)$ rồi đặt điều kiện khác $0$.",
+    "options": [
+      "$x \\ne 2$",
+      "$x \\ne -2$",
+      "$x \\ne 2$ và $x \\ne -2$",
+      "$x \\ne 0$"
+    ],
+    "answer": 2,
+    "explanation": "Ta có $x^2 - 4 \\ne 0 \\iff (x - 2)(x + 2) \\ne 0 \\iff x \\ne 2$ và $x \\ne -2$."
+  },
+  {
+    "id": "t8_c6_m05",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Hai phân thức $\\dfrac{A}{B}$ và $\\dfrac{C}{D}$ bằng nhau khi:",
+    "hint": "Nhớ lại định nghĩa hai phân thức bằng nhau: tích chéo bằng nhau[cite: 2].",
+    "options": [
+      "$A \\cdot C = B \\cdot D$",
+      "$A \\cdot D = B \\cdot C$",
+      "$A + D = B + C$",
+      "$A - D = B - C$"
+    ],
+    "answer": 1,
+    "explanation": "Hai phân thức $\\dfrac{A}{B}$ và $\\dfrac{C}{D}$ bằng nhau nếu $A \\cdot D = B \\cdot C$[cite: 2]."
+  },
+  {
+    "id": "t8_c6_m06",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Giá trị của phân thức $\\dfrac{2x + 1}{x - 1}$ tại $x = 2$ là:",
+    "hint": "Kiểm tra $x = 2$ thỏa mãn điều kiện xác định rồi thay vào biểu thức[cite: 2, 7].",
+    "options": [
+      "$3$",
+      "$5$",
+      "$\\dfrac{5}{3}$",
+      "$1$"
+    ],
+    "answer": 1,
+    "explanation": "Với $x = 2 \\ne 1$, giá trị của phân thức là $\\dfrac{2 \\cdot 2 + 1}{2 - 1} = \\dfrac{5}{1} = 5$."
+  },
+  {
+    "id": "t8_c6_m07",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Rút gọn phân thức $\\dfrac{6x^2y}{9xy^3}$ (với $x \\ne 0, y \\ne 0$) ta được:",
+    "hint": "Chia cả tử và mẫu cho nhân tử chung $3xy$.",
+    "options": [
+      "$\\dfrac{2x}{3y^2}$",
+      "$\\dfrac{2y}{3x^2}$",
+      "$\\dfrac{3x}{2y^2}$",
+      "$\\dfrac{2x^2}{3y^3}$"
+    ],
+    "answer": 0,
+    "explanation": "Chia cả tử và mẫu cho $3xy$, ta được $\\dfrac{6x^2y : 3xy}{9xy^3 : 3xy} = \\dfrac{2x}{3y^2}$."
+  },
+  {
+    "id": "t8_c6_m08",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Rút gọn phân thức $\\dfrac{x^2 - 9}{x - 3}$ (với $x \\ne 3$) ta được:",
+    "hint": "Phân tích tử thức thành nhân tử bằng hằng đẳng thức hiệu hai bình phương.",
+    "options": [
+      "$x - 3$",
+      "$x + 3$",
+      "$\\dfrac{x + 3}{x - 3}$",
+      "$x^2 + 3$"
+    ],
+    "answer": 1,
+    "explanation": "Ta có $\\dfrac{x^2 - 9}{x - 3} = \\dfrac{(x - 3)(x + 3)}{x - 3} = x + 3$ (với $x \\ne 3$)."
+  },
+  {
+    "id": "t8_c6_m09",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Mẫu thức chung (MTC) đơn giản nhất của hai phân thức $\\dfrac{5}{x^2 + x}$ và $\\dfrac{2}{x^2 - x}$ là:",
+    "hint": "Phân tích các mẫu thức thành nhân tử: $x^2 + x = x(x + 1)$ và $x^2 - x = x(x - 1)$[cite: 2].",
+    "options": [
+      "$x(x - 1)(x + 1)$",
+      "$x^2(x - 1)(x + 1)$",
+      "$(x - 1)(x + 1)$",
+      "$x^2 - 1$"
+    ],
+    "answer": 0,
+    "explanation": "Vì $x^2 + x = x(x + 1)$ và $x^2 - x = x(x - 1)$, mẫu thức chung đơn giản nhất là $x(x - 1)(x + 1)$[cite: 2]."
+  },
+  {
+    "id": "t8_c6_m10",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Theo quy tắc đổi dấu, phân thức $\\dfrac{a}{b - c}$ bằng phân thức nào sau đây?",
+    "hint": "Đổi dấu cả tử và mẫu của phân thức.",
+    "options": [
+      "$\\dfrac{-a}{b - c}$",
+      "$\\dfrac{a}{c - b}$",
+      "$\\dfrac{-a}{c - b}$",
+      "$\\dfrac{-a}{b + c}$"
+    ],
+    "answer": 2,
+    "explanation": "Đổi dấu cả tử và mẫu thức ta có $\\dfrac{a}{b - c} = \\dfrac{-a}{-(b - c)} = \\dfrac{-a}{c - b}$."
+  },
+  {
+    "id": "t8_c6_m11",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Kết quả phép cộng $\\dfrac{2x}{x + 1} + \\dfrac{2}{x + 1}$ (với $x \\ne -1$) là:",
+    "hint": "Cộng hai phân thức cùng mẫu: cộng các tử thức và giữ nguyên mẫu thức[cite: 2].",
+    "options": [
+      "$\\dfrac{2x + 2}{2x + 2}$",
+      "$2$",
+      "$\\dfrac{4x}{x + 1}$",
+      "$\\dfrac{2x + 2}{x + 1}$"
+    ],
+    "answer": 1,
+    "explanation": "Ta có $\\dfrac{2x}{x + 1} + \\dfrac{2}{x + 1} = \\dfrac{2x + 2}{x + 1} = \\dfrac{2(x + 1)}{x + 1} = 2$ (với $x \\ne -1$)."
+  },
+  {
+    "id": "t8_c6_m12",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Kết quả phép trừ $\\dfrac{3x + 1}{x - 2} - \\dfrac{x + 5}{x - 2}$ (với $x \\ne 2$) là:",
+    "hint": "Trừ hai phân thức cùng mẫu: trừ các tử thức và giữ nguyên mẫu thức[cite: 2].",
+    "options": [
+      "$2$",
+      "$\\dfrac{2x + 6}{x - 2}$",
+      "$\\dfrac{4x - 4}{x - 2}$",
+      "$\\dfrac{2x - 4}{x - 2}$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $\\dfrac{3x + 1}{x - 2} - \\dfrac{x + 5}{x - 2} = \\dfrac{(3x + 1) - (x + 5)}{x - 2} = \\dfrac{2x - 4}{x - 2} = \\dfrac{2(x - 2)}{x - 2} = 2$ (với $x \\ne 2$)."
+  },
+  {
+    "id": "t8_c6_m13",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Kết quả phép cộng $\\dfrac{1}{x} + \\dfrac{1}{y}$ (với $x \\ne 0, y \\ne 0$) là:",
+    "hint": "Quy đồng mẫu thức chung là $xy$ rồi cộng hai tử thức[cite: 2].",
+    "options": [
+      "$\\dfrac{1}{x + y}$",
+      "$\\dfrac{2}{xy}$",
+      "$\\dfrac{x + y}{xy}$",
+      "$\\dfrac{xy}{x + y}$"
+    ],
+    "answer": 2,
+    "explanation": "Ta có $\\dfrac{1}{x} + \\dfrac{1}{y} = \\dfrac{y}{xy} + \\dfrac{x}{xy} = \\dfrac{x + y}{xy}$."
+  },
+  {
+    "id": "t8_c6_m14",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Kết quả phép tính $\\dfrac{y}{x - y} + \\dfrac{x}{x + y}$ (với $x \\ne \\pm y$) là:",
+    "hint": "Quy đồng mẫu thức chung là $(x - y)(x + y) = x^2 - y^2$[cite: 2, 7].",
+    "options": [
+      "$\\dfrac{x^2 + y^2}{x^2 - y^2}$",
+      "$\\dfrac{x^2 - y^2}{x^2 + y^2}$",
+      "$\\dfrac{2xy}{x^2 - y^2}$",
+      "$\\dfrac{x + y}{x - y}$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $\\dfrac{y}{x - y} + \\dfrac{x}{x + y} = \\dfrac{y(x + y) + x(x - y)}{(x - y)(x + y)} = \\dfrac{xy + y^2 + x^2 - xy}{x^2 - y^2} = \\dfrac{x^2 + y^2}{x^2 - y^2}$."
+  },
+  {
+    "id": "t8_c6_m15",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Phân thức đối của phân thức $\\dfrac{2x - 1}{x + 3}$ là:",
+    "hint": "Đổi dấu tử thức (hoặc mẫu thức) của phân thức đã cho.",
+    "options": [
+      "$\\dfrac{2x - 1}{-x - 3}$",
+      "$\\dfrac{2x + 1}{x + 3}$",
+      "$\\dfrac{1 - 2x}{3 - x}$",
+      "$\\dfrac{2x - 1}{x - 3}$"
+    ],
+    "answer": 0,
+    "explanation": "Phân thức đối của $\\dfrac{2x - 1}{x + 3}$ là $-\\dfrac{2x - 1}{x + 3} = \\dfrac{2x - 1}{-x - 3}$ (hoặc $\\dfrac{1 - 2x}{x + 3}$)."
+  },
+  {
+    "id": "t8_c6_m16",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Kết quả phép nhân $\\dfrac{3x}{5y^2} \\cdot \\dfrac{5y}{9x^2}$ (với $x \\ne 0, y \\ne 0$) là:",
+    "hint": "Nhân các tử thức với nhau, nhân các mẫu thức với nhau rồi rút gọn.",
+    "options": [
+      "$\\dfrac{1}{3xy}$",
+      "$\\dfrac{15xy}{45x^2y^2}$",
+      "$\\dfrac{3}{5xy}$",
+      "$\\dfrac{3xy}{5}$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $\\dfrac{3x}{5y^2} \\cdot \\dfrac{5y}{9x^2} = \\dfrac{15xy}{45x^2y^2} = \\dfrac{1}{3xy}$."
+  },
+  {
+    "id": "t8_c6_m17",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Kết quả phép chia $\\dfrac{4x^2}{3y} : \\dfrac{2x}{9y^2}$ (với $x \\ne 0, y \\ne 0$) là:",
+    "hint": "Nhân phân thức thứ nhất với phân thức nghịch đảo của phân thức thứ hai.",
+    "options": [
+      "$6xy$",
+      "$\\dfrac{8x^3}{27y^3}$",
+      "$\\dfrac{2x}{3y}$",
+      "$6x^2y$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $\\dfrac{4x^2}{3y} : \\dfrac{2x}{9y^2} = \\dfrac{4x^2}{3y} \\cdot \\dfrac{9y^2}{2x} = \\dfrac{36x^2y^2}{6xy} = 6xy$."
+  },
+  {
+    "id": "t8_c6_m18",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Rút gọn biểu thức $\\dfrac{x^2 - 1}{2x + 1} \\cdot \\dfrac{4x^2 - 1}{x - 1}$ (với $x \\ne 1, x \\ne -\\dfrac{1}{2}$) ta được:",
+    "hint": "Phân tích $x^2 - 1 = (x - 1)(x + 1)$ và $4x^2 - 1 = (2x - 1)(2x + 1)$.",
+    "options": [
+      "$(x + 1)(2x - 1)$",
+      "$(x - 1)(2x + 1)$",
+      "$\\dfrac{x + 1}{2x + 1}$",
+      "$2x^2 + x - 1$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $\\dfrac{(x - 1)(x + 1)}{2x + 1} \\cdot \\dfrac{(2x - 1)(2x + 1)}{x - 1} = (x + 1)(2x - 1)$."
+  },
+  {
+    "id": "t8_c6_m19",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Phân thức nghịch đảo của phân thức $\\dfrac{x + 2}{x - 3}$ (với $x \\ne -2, x \\ne 3$) là:",
+    "hint": "Đảo vị trí tử thức và mẫu thức cho nhau.",
+    "options": [
+      "$\\dfrac{x - 3}{x + 2}$",
+      "$\\dfrac{-x - 2}{x - 3}$",
+      "$\\dfrac{x + 2}{3 - x}$",
+      "$\\dfrac{2 - x}{x + 3}$"
+    ],
+    "answer": 0,
+    "explanation": "Phân thức nghịch đảo của phân thức $\\dfrac{A}{B}$ ($A \\ne 0, B \\ne 0$) là $\\dfrac{B}{A}$, do đó kết quả là $\\dfrac{x - 3}{x + 2}$."
+  },
+  {
+    "id": "t8_c6_m20",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Rút gọn phân thức $\\dfrac{x^2 + 6x + 9}{x^2 - 9}$ (với $x \\ne \\pm 3$) ta được:",
+    "hint": "Phân tích tử thức thành $(x + 3)^2$ và mẫu thức thành $(x - 3)(x + 3)$.",
+    "options": [
+      "$\\dfrac{x + 3}{x - 3}$",
+      "$\\dfrac{x - 3}{x + 3}$",
+      "$\\dfrac{6x}{9}$",
+      "$1$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $\\dfrac{(x + 3)^2}{(x - 3)(x + 3)} = \\dfrac{x + 3}{x - 3}$ (với $x \\ne \\pm 3$)."
+  },
+  {
+    "id": "t8_c6_m21",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Trong đẳng thức $\\dfrac{2x^2 + 1}{4x - 1} = \\dfrac{8x^3 + 4x}{Q}$ (với $x \\ne \\dfrac{1}{4}$), đa thức $Q$ là:",
+    "hint": "Biến đổi $8x^3 + 4x = 4x(2x^2 + 1)$ rồi áp dụng tính chất cơ bản của phân thức[cite: 7].",
+    "options": [
+      "$4x$",
+      "$4x^2$",
+      "$16x - 4$",
+      "$16x^2 - 4x$"
+    ],
+    "answer": 3,
+    "explanation": "Nhân cả tử và mẫu của $\\dfrac{2x^2 + 1}{4x - 1}$ với $4x$, ta được $\\dfrac{4x(2x^2 + 1)}{4x(4x - 1)} = \\dfrac{8x^3 + 4x}{16x^2 - 4x}$, suy ra $Q = 16x^2 - 4x$[cite: 7]."
+  },
+  {
+    "id": "t8_c6_h01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Cho biểu thức $P = \\dfrac{x^2 - 6x + 9}{9 - x^2} + \\dfrac{4x + 8}{x + 3}$ (với $x \\ne \\pm 3$). Rút gọn $P$ ta được:",
+    "hint": "Rút gọn phân thức thứ nhất thành $-\\dfrac{x - 3}{x + 3}$ rồi cộng với $\\dfrac{4x + 8}{x + 3}$[cite: 7].",
+    "options": [
+      "$3x + 11$",
+      "$3x + 5$",
+      "$\\dfrac{3x + 11}{x + 3}$",
+      "$3 + \\dfrac{2}{x + 3}$"
+    ],
+    "answer": 0,
+    "explanation": "Ta có $P = \\dfrac{(x - 3)^2}{-(x - 3)(x + 3)} + \\dfrac{4x + 8}{x + 3} = \\dfrac{-(x - 3) + 4x + 8}{x + 3} = \\dfrac{3x + 11}{x + 3}$[cite: 7]."
+  },
+  {
+    "id": "t8_c6_h02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Với $x, y, z$ đôi một khác nhau, giá trị của biểu thức $\\dfrac{1}{(x - y)(y - z)} + \\dfrac{1}{(y - z)(z - x)} + \\dfrac{1}{(z - x)(x - y)}$ bằng:",
+    "hint": "Quy đồng mẫu thức chung là $(x - y)(y - z)(z - x)$ rồi cộng các tử thức[cite: 2].",
+    "options": [
+      "$0$",
+      "$1$",
+      "$\\dfrac{3}{(x - y)(y - z)(z - x)}$",
+      "$-1$"
+    ],
+    "answer": 0,
+    "explanation": "Quy đồng mẫu thức chung $(x - y)(y - z)(z - x)$, tử thức là $(z - x) + (x - y) + (y - z) = 0$, nên tổng bằng $0$[cite: 2]."
+  },
+  {
+    "id": "t8_c6_h03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "hard",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Cho biểu thức $Q = \\dfrac{3x + 11}{x + 3} = 3 + \\dfrac{2}{x + 3}$ (với $x \\ne -3$). Số các giá trị nguyên của $x$ để $Q$ nhận giá trị nguyên là:",
+    "hint": "$Q \\in \\mathbb{Z} \\iff \\dfrac{2}{x + 3} \\in \\mathbb{Z} \\iff x + 3$ là ước nguyên của $2$[cite: 7].",
+    "options": [
+      "$2$",
+      "$3$",
+      "$4$",
+      "$6$"
+    ],
+    "answer": 2,
+    "explanation": "Để $Q$ nguyên thì $x + 3 \\in \\{-2; -1; 1; 2\\}$, suy ra $x \\in \\{-5; -4; -2; -1\\}$ (tất cả đều thỏa mãn $x \\ne \\pm 3$). Có $4$ giá trị nguyên của $x$[cite: 7]."
+  },
+  {
+    "id": "t8_c6_a01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Một tàu du lịch chạy xuôi dòng $15\\text{ km}$. Biết vận tốc của tàu khi nước yên lặng là $10\\text{ km/h}$ và vận tốc của dòng nước là $x\\text{ (km/h)}$ ($0 < x < 10$). Phân thức biểu thị thời gian tàu chạy xuôi dòng (tính bằng giờ) là:",
+    "hint": "Vận tốc xuôi dòng bằng vận tốc tàu khi nước yên lặng cộng vận tốc dòng nước; thời gian bằng quãng đường chia vận tốc[cite: 7].",
+    "options": [
+      "$\\dfrac{15}{10 + x}$",
+      "$\\dfrac{15}{10 - x}$",
+      "$15(10 + x)$",
+      "$\\dfrac{10 + x}{15}$"
+    ],
+    "answer": 0,
+    "explanation": "Vận tốc xuôi dòng của tàu là $10 + x\\text{ (km/h)}$, nên thời gian tàu chạy xuôi dòng $15\\text{ km}$ là $\\dfrac{15}{10 + x}\\text{ (giờ)}$[cite: 7]."
+  },
+  {
+    "id": "t8_c6_a02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Một xưởng may lập kế hoạch may $80\\,000$ bộ quần áo trong $x$ ngày ($x > 0$). Phân thức biểu thị số bộ quần áo mỗi ngày xưởng may được theo kế hoạch là:",
+    "hint": "Lấy tổng số bộ quần áo chia cho số ngày theo kế hoạch[cite: 7].",
+    "options": [
+      "$\\dfrac{80\\,000}{x}$",
+      "$80\\,000x$",
+      "$\\dfrac{x}{80\\,000}$",
+      "$\\dfrac{80\\,000}{x - 11}$"
+    ],
+    "answer": 0,
+    "explanation": "Số bộ quần áo mỗi ngày xưởng may được theo kế hoạch là $\\dfrac{80\\,000}{x}\\text{ (bộ)}$[cite: 7]."
+  },
+  {
+    "id": "t8_c6_a03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Một ngân hàng huy động vốn với mức lãi suất một năm là $x\\%$. Để sau một năm, người gửi được lãi $a$ đồng thì số tiền người đó phải gửi vào ngân hàng là:",
+    "hint": "Số tiền gửi $\\times \\dfrac{x}{100} = a$.",
+    "options": [
+      "$\\dfrac{100a}{x}$ (đồng)",
+      "$\\dfrac{a}{x + 100}$ (đồng)",
+      "$\\dfrac{a}{x + 1}$ (đồng)",
+      "$\\dfrac{100a}{x + 100}$ (đồng)"
+    ],
+    "answer": 0,
+    "explanation": "Gọi số tiền gửi là $S$ (đồng). Ta có $S \\cdot \\dfrac{x}{100} = a \\Rightarrow S = \\dfrac{100a}{x}$ (đồng)[cite: 7]."
+  },
+  {
+    "id": "t8_c6_tf01",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Xét tính đúng/sai của các khẳng định sau về khái niệm và tính chất cơ bản của phân thức đại số:",
+    "hint": "Dựa vào kiến thức Bài 21 và Bài 22 SGK Toán 8 (Tập 2)[cite: 2, 7].",
+    "statements": [
+      {
+        "text": "Mỗi đa thức đều được coi là một phân thức đại số với mẫu thức bằng $1$.",
+        "answer": true
+      },
+      {
+        "text": "Điều kiện xác định của phân thức $\\dfrac{A}{B}$ là $A \\ne 0$.",
+        "answer": false
+      },
+      {
+        "text": "Nếu nhân cả tử và mẫu của một phân thức với cùng một đa thức khác đa thức $0$ thì được một phân thức bằng phân thức đã cho.",
+        "answer": true
+      },
+      {
+        "text": "Để tính giá trị của phân thức tại một giá trị của biến, ta thay trực tiếp biến đó vào phân thức mà không cần quan tâm đến điều kiện xác định.",
+        "answer": false
+      }
+    ],
+    "explanation": "Ý a và ý c đúng theo định nghĩa và tính chất cơ bản của phân thức[cite: 2, 7]. Ý b sai vì điều kiện xác định là mẫu thức $B \\ne 0$[cite: 2]. Ý d sai vì chỉ tính được giá trị phân thức tại các giá trị của biến thỏa mãn điều kiện xác định[cite: 7]."
+  },
+  {
+    "id": "t8_c6_tf02",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Xét tính đúng/sai của các khẳng định sau về phép cộng và phép trừ phân thức đại số:",
+    "hint": "Đối chiếu quy tắc cộng, trừ phân thức cùng mẫu và khác mẫu ở Bài 23[cite: 2].",
+    "statements": [
+      {
+        "text": "Muốn cộng hai phân thức cùng mẫu, ta cộng các tử thức với nhau và giữ nguyên mẫu thức.",
+        "answer": true
+      },
+      {
+        "text": "Muốn trừ hai phân thức khác mẫu, ta quy đồng mẫu thức rồi trừ các phân thức cùng mẫu nhận được.",
+        "answer": true
+      },
+      {
+        "text": "Phép cộng các phân thức đại số có tính chất giao hoán và kết hợp.",
+        "answer": true
+      },
+      {
+        "text": "$\\dfrac{A}{M} - \\dfrac{B}{M} = \\dfrac{B - A}{M}$ với mọi $M \\ne 0$.",
+        "answer": false
+      }
+    ],
+    "explanation": "Ý a, b, c đúng theo Bài 23 SGK[cite: 2]. Ý d sai vì $\\dfrac{A}{M} - \\dfrac{B}{M} = \\dfrac{A - B}{M}$[cite: 2]."
+  },
+  {
+    "id": "t8_c6_tf03",
+    "grade": 8,
+    "term": "HK2",
+    "mode": "tf",
+    "topic": "Chương VI — Phân thức đại số",
+    "prompt": "Xét tính đúng/sai của các khẳng định sau về phép nhân và phép chia phân thức đại số:",
+    "hint": "Nhớ lại quy tắc nhân, chia phân thức và phân thức nghịch đảo ở Bài 24.",
+    "statements": [
+      {
+        "text": "Muốn nhân hai phân thức, ta nhân các tử thức với nhau và nhân các mẫu thức với nhau.",
+        "answer": true
+      },
+      {
+        "text": "Muốn chia phân thức $\\dfrac{A}{B}$ cho phân thức $\\dfrac{C}{D}$ ($\\dfrac{C}{D} \\ne 0$), ta nhân $\\dfrac{A}{B}$ với phân thức nghịch đảo của $\\dfrac{C}{D}$.",
+        "answer": true
+      },
+      {
+        "text": "Phân thức nghịch đảo của phân thức $\\dfrac{2x}{y}$ ($x \\ne 0, y \\ne 0$) là $\\dfrac{-2x}{y}$.",
+        "answer": false
+      },
+      {
+        "text": "Phép nhân các phân thức đại số cũng có tính chất giao hoán, kết hợp và phân phối đối với phép cộng.",
+        "answer": true
+      }
+    ],
+    "explanation": "Ý a, b, d đúng. Ý c sai vì phân thức nghịch đảo của $\\dfrac{2x}{y}$ là $\\dfrac{y}{2x}$, còn $\\dfrac{-2x}{y}$ là phân thức đối."
+  }
+]
