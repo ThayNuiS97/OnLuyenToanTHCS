@@ -954,7 +954,7 @@
 /*__QUESTIONS_START__*/
 const DEFAULT_QUESTIONS = [
   {
-    "id": "t8_c1_sample_01",
+    "id": "t8_c1_m01",
     "grade": 8,
     "term": "HK1",
     "mode": "mcq",
@@ -963,29 +963,221 @@ const DEFAULT_QUESTIONS = [
     "prompt": "Biểu thức nào sau đây là một đơn thức?",
     "hint": "Đơn thức là biểu thức đại số chỉ gồm một số, hoặc một biến, hoặc một tích giữa các số và các biến.",
     "options": [
-      "$x + 2y$",
-      "$-3x^2y$",
-      "$\\dfrac{2}{x} + 1$",
-      "$x^2 - 1$"
+      "$x + 3y$",
+      "$-2x^2y^3$",
+      "$\\dfrac{1}{x} + 2y$",
+      "$x^2 - y$"
     ],
     "answer": 1,
-    "explanation": "$-3x^2y$ là tích giữa số $-3$ và các biến $x, y$ với số mũ nguyên dương nên là đơn thức."
+    "explanation": "Biểu thức $-2x^2y^3$ là tích của số $-2$ với các biến $x, y$ nên là đơn thức. Các biểu thức còn lại có phép cộng/trừ các hạng tử hoặc biến ở mẫu nên không phải đơn thức."
   },
   {
-    "id": "t8_c1_sample_tf01",
+    "id": "t8_c1_m02",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Bậc của đơn thức thu gọn $4x^3y^2z$ là:",
+    "hint": "Bậc của đơn thức (khác $0$) là tổng số mũ của tất cả các biến có trong đơn thức đó.",
+    "options": [
+      "$3$",
+      "$5$",
+      "$6$",
+      "$9$"
+    ],
+    "answer": 2,
+    "explanation": "Đơn thức $4x^3y^2z$ có các biến $x, y, z$ với số mũ lần lượt là $3, 2, 1$. Tổng số mũ là $3 + 2 + 1 = 6$, nên bậc của đơn thức là $6$."
+  },
+  {
+    "id": "t8_c1_m03",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Đơn thức nào sau đây đồng dạng với đơn thức $-5x^2y$?",
+    "hint": "Hai đơn thức đồng dạng là hai đơn thức có hệ số khác $0$ và có cùng phần biến.",
+    "options": [
+      "$3xy^2$",
+      "$\\dfrac{1}{2}x^2y$",
+      "$0x^2y$",
+      "$-5x^2y^2$"
+    ],
+    "answer": 1,
+    "explanation": "Đơn thức $-5x^2y$ có phần biến là $x^2y$. Đơn thức $\\dfrac{1}{2}x^2y$ có hệ số khác $0$ và cùng phần biến $x^2y$ nên đồng dạng với $-5x^2y$."
+  },
+  {
+    "id": "t8_c1_m04",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Thu gọn đa thức $A = 3x^2 - 5xy + 2x^2 + 8xy - 4$ ta được:",
+    "hint": "Để thu gọn đa thức, ta nhóm các hạng tử đồng dạng với nhau rồi cộng (hoặc trừ) các hệ số của chúng.",
+    "options": [
+      "$5x^2 + 3xy - 4$",
+      "$x^2 + 3xy - 4$",
+      "$5x^2 - 13xy - 4$",
+      "$6x^4 - 3xy - 4$"
+    ],
+    "answer": 0,
+    "explanation": "Nhóm các hạng tử đồng dạng: $A = (3x^2 + 2x^2) + (-5xy + 8xy) - 4 = 5x^2 + 3xy - 4$."
+  },
+  {
+    "id": "t8_c1_m05",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Tìm bậc của đa thức $B = 2x^4y - 3x^2y^5 + x^4y - 7$ sau khi đã thu gọn.",
+    "hint": "Thu gọn đa thức trước, sau đó tìm bậc của từng hạng tử; bậc của đa thức là bậc cao nhất của các hạng tử trong dạng thu gọn.",
+    "options": [
+      "$5$",
+      "$6$",
+      "$7$",
+      "$8$"
+    ],
+    "answer": 2,
+    "explanation": "Thu gọn đa thức: $B = (2x^4y + x^4y) - 3x^2y^5 - 7 = 3x^4y - 3x^2y^5 - 7$. Các hạng tử có bậc lần lượt là $5, 7, 0$. Bậc cao nhất là $7$ nên bậc của đa thức là $7$."
+  },
+  {
+    "id": "t8_c1_m06",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Cho hai đa thức $P = x^2 - 2xy + y^2$ và $Q = 2x^2 + xy - y^2$. Tổng $P + Q$ bằng:",
+    "hint": "Cộng hai đa thức bằng cách viết tổng của chúng rồi thu gọn các hạng tử đồng dạng.",
+    "options": [
+      "$3x^2 - xy$",
+      "$3x^2 + xy$",
+      "$x^2 - 3xy + 2y^2$",
+      "$3x^2 - xy + 2y^2$"
+    ],
+    "answer": 0,
+    "explanation": "$P + Q = (x^2 - 2xy + y^2) + (2x^2 + xy - y^2) = (x^2 + 2x^2) + (-2xy + xy) + (y^2 - y^2) = 3x^2 - xy$."
+  },
+  {
+    "id": "t8_c1_m07",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Cho hai đa thức $M = 4x^2 - 3y + 5$ và $N = x^2 - 5y + 2$. Hiệu $M - N$ bằng:",
+    "hint": "Khi bỏ dấu ngoặc có dấu trừ đứng trước, ta phải đổi dấu tất cả các số hạng bên trong ngoặc rồi thu gọn hạng tử đồng dạng.",
+    "options": [
+      "$3x^2 - 8y + 7$",
+      "$3x^2 + 2y + 3$",
+      "$5x^2 - 8y + 3$",
+      "$3x^2 - 2y + 7$"
+    ],
+    "answer": 1,
+    "explanation": "$M - N = (4x^2 - 3y + 5) - (x^2 - 5y + 2) = 4x^2 - 3y + 5 - x^2 + 5y - 2 = 3x^2 + 2y + 3$."
+  },
+  {
+    "id": "t8_c1_m08",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Tích của đơn thức $2x$ và đa thức $(3x^2 - 4x + 1)$ là:",
+    "hint": "Nhân đơn thức với từng hạng tử của đa thức theo quy tắc $A(B + C) = AB + AC$ và $x^m \\cdot x^n = x^{m+n}$.",
+    "options": [
+      "$6x^3 - 8x^2 + 2x$",
+      "$6x^3 - 8x^2 + 1$",
+      "$5x^3 - 8x^2 + 2x$",
+      "$6x^2 - 8x + 2$"
+    ],
+    "answer": 0,
+    "explanation": "$2x(3x^2 - 4x + 1) = 2x \\cdot 3x^2 - 2x \\cdot 4x + 2x \\cdot 1 = 6x^3 - 8x^2 + 2x$."
+  },
+  {
+    "id": "t8_c1_m09",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Khai triển và thu gọn tích $(x - 2)(x + 5)$ ta được:",
+    "hint": "Nhân mỗi hạng tử của đa thức thứ nhất với từng hạng tử của đa thức thứ hai rồi thu gọn các hạng tử đồng dạng.",
+    "options": [
+      "$x^2 + 3x - 10$",
+      "$x^2 - 3x - 10$",
+      "$x^2 + 7x - 10$",
+      "$x^2 + 3x + 10$"
+    ],
+    "answer": 0,
+    "explanation": "$(x - 2)(x + 5) = x^2 + 5x - 2x - 10 = x^2 + 3x - 10$."
+  },
+  {
+    "id": "t8_c1_m10",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "medium",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Kết quả phép chia đơn thức $12x^4y^3$ cho đơn thức $-3x^2y$ là:",
+    "hint": "Chia hệ số cho hệ số và chia lũy thừa của từng biến theo quy tắc $x^m : x^n = x^{m-n}$ ($m \\ge n$).",
+    "options": [
+      "$-4x^2y^2$",
+      "$4x^2y^2$",
+      "$-4x^2y^3$",
+      "$-9x^2y^2$"
+    ],
+    "answer": 0,
+    "explanation": "$12x^4y^3 : (-3x^2y) = (12 : (-3)) \\cdot (x^4 : x^2) \\cdot (y^3 : y) = -4x^2y^2$."
+  },
+  {
+    "id": "t8_c1_a01",
+    "grade": 8,
+    "term": "HK1",
+    "mode": "mcq",
+    "difficulty": "application",
+    "topic": "Chương I — Đa thức",
+    "prompt": "Một khu vườn hình chữ nhật có chiều dài là $(3x + 4)\\text{ m}$ và chiều rộng là $(2x - 1)\\text{ m}$ (với $x > 0,5$). Biểu thức đại số biểu thị diện tích khu vườn theo $x$ là:",
+    "hint": "Diện tích hình chữ nhật bằng chiều dài nhân chiều rộng: $S = (3x + 4)(2x - 1)$.",
+    "options": [
+      "$(6x^2 + 5x - 4)\\text{ m}^2$",
+      "$(6x^2 + 11x - 4)\\text{ m}^2$",
+      "$(6x^2 - 5x - 4)\\text{ m}^2$",
+      "$(5x + 3)\\text{ m}^2$"
+    ],
+    "answer": 0,
+    "explanation": "Diện tích khu vườn là $(3x + 4)(2x - 1) = 6x^2 - 3x + 8x - 4 = 6x^2 + 5x - 4\\text{ (m}^2)$."
+  },
+  {
+    "id": "t8_c1_tf01",
     "grade": 8,
     "term": "HK1",
     "mode": "tf",
     "topic": "Chương I — Đa thức",
-    "prompt": "Xét tính đúng/sai của các khẳng định sau về đơn thức và đa thức:",
-    "hint": "Dựa vào khái niệm đơn thức thu gọn, bậc của đơn thức và đa thức.",
+    "prompt": "Xét tính đúng/sai của các nhận định sau về đơn thức và đa thức:",
+    "hint": "Vận dụng khái niệm đơn thức, đa thức, bậc của đơn thức/đa thức và quy tắc cộng, trừ đa thức.",
     "statements": [
-      { "text": "Số $0$ được gọi là đơn thức không và không có bậc.", "answer": true },
-      { "text": "Hai đơn thức đồng dạng thì có cùng phần biến và cùng hệ số.", "answer": false },
-      { "text": "Bậc của đa thức là bậc của hạng tử có bậc cao nhất trong dạng thu gọn của đa thức đó.", "answer": true },
-      { "text": "Biểu thức $\\dfrac{x+1}{2}$ là một đa thức.", "answer": true }
+      {
+        "text": "Mỗi đơn thức đều là một đa thức.",
+        "answer": true
+      },
+      {
+        "text": "Bậc của đơn thức $7x^2y^4$ bằng $8$.",
+        "answer": false
+      },
+      {
+        "text": "Khi cộng hai đa thức, ta thu gọn các hạng tử đồng dạng của tổng.",
+        "answer": true
+      },
+      {
+        "text": "Đa thức $-3x^2 + 5x^2 - 2x^2$ thu gọn bằng $0$, gọi là đa thức không và không có bậc.",
+        "answer": true
+      }
     ],
-    "explanation": "Ý a, c, d đúng. Ý b sai vì hai đơn thức đồng dạng chỉ cần có hệ số khác $0$ và có cùng phần biến (hệ số có thể khác nhau)."
+    "explanation": "Ý a đúng vì theo định nghĩa, đa thức là một tổng của những đơn thức nên mỗi đơn thức là một đa thức. Ý b sai vì bậc của $7x^2y^4$ là $2 + 4 = 6$ (không phải $8$). Ý c đúng theo quy tắc cộng hai đa thức. Ý d đúng vì đa thức thu gọn thành $0$ là đa thức không và không có bậc."
   }
 ];
 /*__QUESTIONS_END__*/
